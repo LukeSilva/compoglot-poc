@@ -22,6 +22,14 @@ void Parser::_parseSubject(Language* lang){
    lang->sadj[sub][subadj]=getInt();
    expect(')',__FILE__,__LINE__);
   }
+  else if (rstLook() && check("it")){
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   int i = getInt();
+   noun* n=lang->getIt(i);
+   lang->s[sub]=*n;
+   expect(')',__FILE__,__LINE__);
+  }
   else if (rstLook() && check(",")){
    rstPtr();
    sub++;

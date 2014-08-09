@@ -1,6 +1,6 @@
 ./lang $1 "(sub(n(113,0,false,true,1)))"
 ./lang $1 "(fprepos(42,113,0,false,true,-1) sub(n(1,0,false,false,0)) Verb1(11) obj(n(114,0,false,false,-2)) st 3 )"
-./lang $1 "(sub(n(114,0,false,false,-2)) Verb1(1) prepos1(43,135,0,false,false,-2) clause(8,itsub(114) Verb1(2) obj(n(115,5,false,false,0)) st 1 )))"
+./lang $1 "(sub(n(114,0,false,false,-2)) Verb1(1) prepos1(43,135,0,false,false,-2) clause(8,sub(it(114)) Verb1(2) obj(n(115,5,false,false,0)) st 1 )))"
 ./lang $1 "(sub(115,5,false,false,-1) Verb1(12) obj(122,0,false,false,-2))"
 ./lang $1 "(sub(114,0,false,false,-1) Verb1(13) prepos1(40,105,0,false,false,0) st 3 )"
 ./lang $1 "(sub(1,0,false,false,0) Verb1(14) st 7 clause(18,sub(11,0,false,false,0) itobj(114) st 1 Verb1(15) ) )"
