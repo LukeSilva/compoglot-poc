@@ -149,5 +149,4 @@ void Language::newSentence(){
   prepos_prepos[i]=0;
   prepos_object[i].id=0;
  }
- printf("Created new sentence\n");
 }
