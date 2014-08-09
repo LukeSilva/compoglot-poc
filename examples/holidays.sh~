@@ -1,0 +1,13 @@
+./lang $1 "(sub(113,0,false,true,1))"
+./lang $1 "(fprepos(42,113,0,false,true,-1) sub(1,0,false,false,0) Verb1(11) obj(114,0,false,false,-2) st 3 )"
+./lang $1 "(sub(114,0,false,false,-2) Verb1(1) prepos1(43,135,0,false,false,-2) clause(8,itsub(114) Verb1(2) obj(115,5,false,false,0) st 1 )))"
+./lang $1 "(sub(115,5,false,false,-1) Verb1(12) obj(122,0,false,false,-2))"
+./lang $1 "(sub(114,0,false,false,-1) Verb1(13) prepos1(40,105,0,false,false,0) st 3 )"
+./lang $1 "(sub(1,0,false,false,0) Verb1(14) st 7 clause(18,sub(11,0,false,false,0) itobj(114)  Verb1(15) ) )"
+./lang $1 "(sub(1,0,false,false,0) Verb1(24) st 7 itobj(114) prepos1(26,123,0,false,false,-2) clause(7,sub(5,0,false,false,0) Verb(1) st 3 adjobj(5) clause(3,sub(5,0,false,false,0) Verb1(1) st 3 adjobj(4)) ) )"
+./lang $1 "(sub(1,0,false,false,0) Verb1(16) st 3 obj(116,0,false,false,-2) clause(3,sub(5,0,false,false,0) Verb1(22) st 3 ))"
+./lang $1 "(sub(1,0,false,false,0) Verb1(17) st 3 prepos1(20,118,0,false,false,-2) )"
+./lang $1 "(fprepos(26,118,0,false,false,-1) sub(1,0,false,false,0) Verb1(18) Verb2(19) obj(125,0,false,false,-2) st 0 prepos1(14,119,0,false,true,10) )"
+./lang $1 "(sub(1,0,false,false,0) Verb1(19) st 7 adjobj(2) obj(126,0,false,false,-1) clause(3,obj(120,0,false,false,-1) clause(7,sub(1,0,false,false,0) Verb1(23) Verb2(19) adjobj(3) obj(126,0,false,false,-1))))"
+./lang $1 "(fprepos(40,108,0,false,false,0) sub(99,0,false,false,-2) Verb1(13) st 3 prepos1(4,114,0,false,false,1) clause(3,fprepos(40,109,0,false,false,0) sub(1,0,false,false,0) Verb1(24) st 3 itobj(114) prepos1(26,123,0,false,false,-2) clause(7,sub(5,0,false,false,0) Verb(1) st 3 adjobj(5) adverb(36) ) ) ) )"
+

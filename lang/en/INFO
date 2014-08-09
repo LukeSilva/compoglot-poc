@@ -1,0 +1,33 @@
+present english verb types
+0 irregular verb with no progressive tense
+1 regular verb with irregular progressive tense (run_runn)
+2 regular verb with progressive tense 2_give
+3 modal verb with no progressive tense, and no conjugation
+4 regular verb that has no progressive tense eg: 'like'
+
+present english accepting type
+0 doesn't accept another verb
+1 accepts another verb with 'to' prefix
+2 accepts another verb without a prefix and in progressive tense
+3 accepts another verb without a prefix and in simple tense
+
+past english verb types
+0 irregular verb
+1 both forms are displayed (ran_run)
+3 regular - add 'ed'
+
+
+english noun types
+n - object - regular plural - verbs and reflexive are taken from noun 5
+b - object - regular plural - verbs and reflexive are taken from noun 5 uses 'an' as the indefinate article
+o - object - irregular plural - verbs and reflexive are taken from noun 5
+m - person who is a male - verbs and reflexive are taken from noun 3
+f - person who is a female - verbs and reflexive are taken from noun 4
+p - person of which gender is unknown - irregular plural - verbs are taken form noun 5 and reflexives are taken from noun 10
+d - person of which all forms are defined (cant add an adjective and doesn't have definate and indefinate)
+e - object of which all forms are defined has definate and indefinate and has a regular plural
+
+
+Adverb types:
+m - adverbs that go in the 'middle' of a sentence. They go after the helper verb, and before the next verb.
+e - adverbs of manner, that go at the end of a sentence
