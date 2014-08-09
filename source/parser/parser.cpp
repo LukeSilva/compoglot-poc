@@ -63,6 +63,14 @@ void Parser::_parseObject(Language* lang){
    lang->oadj[obj][objadj]=getInt();
    expect(')',__FILE__,__LINE__);
   }
+  else if (rstLook() && check("it")){
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   int i = getInt();
+   noun* n=lang->getIt(i);
+   lang->o[obj]=*n;
+   expect(')',__FILE__,__LINE__);
+  }
   else if (rstLook() && check(",")){
    rstPtr();
    obj++;
