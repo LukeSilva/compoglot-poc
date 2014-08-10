@@ -1,5 +1,6 @@
 #include "en/en.h"
 #include "de/de.h"
+#include "lt/lt.h"
 #include "Language.h"
 #include "parser/parser.h"
 #include <stdio.h>
@@ -12,6 +13,9 @@ Language* getLanguageFromStringId(char* Id){
  }
  else if (!strcmp(Id,"de")){
   ret = new de;
+ }
+ else if (!strcmp(Id,"lt")){
+  ret = new lt;
  }
  else exit(-1);
  return ret;
