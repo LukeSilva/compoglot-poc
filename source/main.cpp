@@ -3,6 +3,7 @@
 #include "lt/lt.h"
 #include "Language.h"
 #include "parser/parser.h"
+#include "cmdparse.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -22,12 +23,16 @@ Language* getLanguageFromStringId(char* Id){
 }
 int main(int argc, char *argv[])
 {
- if (argc!=3){
-  printf("Usage: %s <language> <string-to-parse>\n",argv[0]);
+ if (argc<3){
+  printf("Usage: %s <mode> <language>\n",argv[0]);
   return -1;
  }
- Parser* out;
- out = new Parser;
- printf("%s\n",out->parse(argv[1],argv[2]));
+ if (!strcmp(argv[1],"cmd")){
+  return cmdParse(argc,argv);
+ }else{
+  printf("Unkown mode %s\n",argv[1]);
+  printf("Usage: %s <mode> <language>\n",argv[0]);
+  return -1;
+ }
  return 0;
 }
