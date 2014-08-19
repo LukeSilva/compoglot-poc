@@ -225,6 +225,5 @@ char* Parser::parse(char* _langid,char* in){
  expect('(',__FILE__,__LINE__);
  //Now do the parsing on lang
  _parse(lang);
- printf("%s",lang->createSentence());
- return (char*)"";
+ return lang->createSentence();
 }

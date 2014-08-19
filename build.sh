@@ -1,5 +1,6 @@
 cd source
 g++ -Wall -c cmdparse.cpp
+g++ -Wall -c fileparse.cpp
 g++ -Wall -c main.cpp
 g++ -Wall -c Language.cpp
 g++ -Wall -c general.cpp

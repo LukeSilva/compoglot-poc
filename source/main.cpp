@@ -4,6 +4,7 @@
 #include "Language.h"
 #include "parser/parser.h"
 #include "cmdparse.h"
+#include "fileparse.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,7 +19,7 @@ Language* getLanguageFromStringId(char* Id){
  else if (!strcmp(Id,"lt")){
   ret = new lt;
  }
- else exit(-1);
+ else {printf("Unkown Language: '%s'\n",Id);exit(-1);}
  return ret;
 }
 int main(int argc, char *argv[])
@@ -29,6 +30,8 @@ int main(int argc, char *argv[])
  }
  if (!strcmp(argv[1],"cmd")){
   return cmdParse(argc,argv);
+ }else if (!strcmp(argv[1],"file")){
+  return fileParse(argc,argv);
  }else{
   printf("Unkown mode %s\n",argv[1]);
   printf("Usage: %s <mode> <language>\n",argv[0]);
