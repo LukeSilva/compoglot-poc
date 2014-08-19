@@ -21,6 +21,7 @@ char* en_en::getConjunction(int conjunction){
 char* en_en::getSubClause(int conjunction,Language* subClause)
 {
   char* conjunc = getConjunction(conjunction);
+  subClause->clause=true;
   char* clause = subClause->createSentence();
   char* buffer = (char*)calloc(strlen(conjunc)+strlen(clause)+3,sizeof(char));
   strcat(buffer,", ");

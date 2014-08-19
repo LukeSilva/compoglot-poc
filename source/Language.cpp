@@ -118,6 +118,7 @@ noun* Language::getIt(int id){
   return n;
 }
 void Language::newSentence(){
+ clause=false;
  data=0;
  verb1=0;
  verb2=0;

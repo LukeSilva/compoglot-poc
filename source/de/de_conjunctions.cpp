@@ -36,6 +36,7 @@ char de::getConjunctionType(int conjunction){
 char* de::getSubClause(){
  char* conjunctionString = getConjunction(conjunction);
  char* clause;
+ subClause->clause=true;
  if (getConjunctionType(conjunction)=='2')
   subClause->data|=1;
  if (getConjunctionType(conjunction)=='0')

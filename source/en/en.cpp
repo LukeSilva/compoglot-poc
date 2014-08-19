@@ -151,5 +151,28 @@ char * en_en::createSentence(){
    strcat(buffer,buf[i]);
   }
  }
+ if (clause==false){
+  char* buf2 = buffer;
+  buffer = (char*) calloc(strlen(buf2)+2,sizeof(char));
+  int len = strlen(buf2);
+  int i=1;
+  int j=1;
+  char c;
+  c = buf2[0];
+  if (c >= 'a' && c <= 'z')
+   buffer[0]=c-32;
+  else buffer[0]=c;
+  while (i<len){
+   if (buf2[i]!=' '){
+    buffer[j++]=buf2[i++];
+   }else if (buf2[i+1]==','){
+    buffer[j++]=',';
+    i=i+2;
+   }else if (buf2[i+1]==0){
+    buffer[j++]='.';
+    i++;
+   }else buffer[j++]=buf2[i++];
+  }
+ }
  return buffer;
 }

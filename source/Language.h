@@ -47,6 +47,7 @@ public:
  int verb1;
  int verb2;
  int conjunction;
+ bool clause;
  void newSentence();
  void addAdverb(int adverbId);
 

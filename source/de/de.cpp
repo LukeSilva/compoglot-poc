@@ -175,7 +175,7 @@ char* de::createSentence(){
   if(verb) buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
   verb = false;
  }
- if (prepos_prepos[2]!=0){
+ if (prepos_prepos[2]>0){
   buf[a++]=getPreposObject(prepos_prepos[2],prepos_object[2].id,prepos_object[2].num,prepos_object[2].plural,prepos_object[2].typ);
   if(verb) buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
   verb = false;
@@ -241,6 +241,29 @@ char* de::createSentence(){
   if(buf[i]!=NULL)
   {
    strcat(buffer,buf[i]);
+  }
+ }
+ if (clause==false){
+  char* buf2 = buffer;
+  buffer = (char*) calloc(strlen(buf2)+2,sizeof(char));
+  int len = strlen(buf2);
+  int i=1;
+  int j=1;
+  char c;
+  c = buf2[0];
+  if (c >= 'a' && c <= 'z')
+   buffer[0]=c-32;
+  else buffer[0]=c;
+  while (i<len){
+   if (buf2[i]!=' '){
+    buffer[j++]=buf2[i++];
+   }else if (buf2[i+1]==','){
+    buffer[j++]=',';
+    i=i+2;
+   }else if (buf2[i+1]==0){
+    buffer[j++]='.';
+    i++;
+   }else buffer[j++]=buf2[i++];
   }
  }
  return buffer;
