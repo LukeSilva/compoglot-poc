@@ -153,7 +153,11 @@ char* de::createSubClause(){
  return buffer;
 }
 char* de::createSentence(){
-
+ char endchar = '.';
+ if (question == 1){
+  data|=0x01;
+  endchar = '?';
+ }
  if(verb1!=0){
   parseVerb(0,verb1);
   verb1=0;
@@ -261,7 +265,7 @@ char* de::createSentence(){
     buffer[j++]=',';
     i=i+2;
    }else if (buf2[i+1]==0){
-    buffer[j++]='.';
+    buffer[j++]=endchar;
     i++;
    }else buffer[j++]=buf2[i++];
   }
