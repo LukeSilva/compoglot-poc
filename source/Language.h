@@ -35,6 +35,7 @@ protected:
  int st;
  char * sentence;
 public:
+ int question;
  noun s[16];
  noun o[16];
  int sadj[16][16];

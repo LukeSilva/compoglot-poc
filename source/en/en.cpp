@@ -307,7 +307,6 @@ char * en_en::createSentence(){
   parseVerb(1,verb2);
   verb2=0;
  }
- question = 1;
  if (question == 0) return getSentenceNormal();
  else if (question == 1) return getReverseQuestionSentence();
 }

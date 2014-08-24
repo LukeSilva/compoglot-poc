@@ -193,6 +193,12 @@ void Parser::_parse(Language* lang){
    lang->conjunction = conj;
    lang->subClause=nlang;
   }
+  else if (rstLook() && check("question")){
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   lang->question=getInt();
+   expect(')',__FILE__,__LINE__);
+  }
   else if (rstLook() && check("st")){
    rstPtr();
    expect(' ',__FILE__,__LINE__);
