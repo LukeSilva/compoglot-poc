@@ -62,6 +62,10 @@ char* de::getVerbPresent(int v, int f, int s, int st){
  return ret; 
 }
 char* de::getVerbPerfekt(int v,int f,int s,int st){
+ #ifdef DE_AUTOCHANGESIMPLE
+  if (v < 2)
+   return getVerbSimple(v,f,s,st);
+ #endif
  FILE* rFile=fopen(DICTIONARY DE_FOLDER "verb_pastperfekt","r");
  gotoline(rFile,v);
  char* buffer = (char*)malloc(BUFFER_SIZE);
@@ -93,7 +97,40 @@ char* de::getVerbPerfekt(int v,int f,int s,int st){
   return getVerbPresent(1,f,s,0);
  }
 }
-
+char* de::getVerbSimple(int v,int f,int s,int st){
+ if (f<0){
+  char t=getNounType(s);
+  f=getVerbFormFromSubjectType(s,t);
+ }
+ FILE* rFile=fopen(DICTIONARY DE_FOLDER "verb_simple","r");
+ gotoline(rFile,v);
+ char* buffer = (char*)malloc(BUFFER_SIZE);
+ fgets(buffer,BUFFER_SIZE-1,rFile);
+ fclose(rFile);
+ char vt=buffer[0];
+ if (vt == '1') return getVerbPerfekt(v,f,s,st);
+ //what we do here, is , we save the past participle for later, and return the helper verb, when we need to get the past participle the create sentence() just reads the endVerb variable
+ int i=0;
+ int u=0;
+ while (u<1){
+  if (buffer[i]=='_') u++;
+  i++;
+ }
+ int a = i;
+ while (u<2){
+  if (buffer[i]=='\n'){
+   //Need to conjugate here
+   if (f==2){ buffer[i++]='s'; buffer[i++]='t';}
+   else if (f==6 || f==8 || f==9){ buffer[i++]='n';}
+   else if (f==7) buffer[i++]='t';
+   buffer[i]=' ';
+   buffer[i+1]=0;
+   u++;
+  }
+  i++;
+ }
+ return &buffer[a];
+}
 char* de::getOtherVerb(int v1,int v2){
  return getVerbPresent(v2,-2,9,0);
 }
@@ -102,7 +139,9 @@ char* de::getVerb(int v, int f, int s, int st)
 {
  if (st<2){
   return getVerbPresent(v,f,s,st);
- }else if (st<10){
+ }else if (st<10 && !(st&0x01)){
   return getVerbPerfekt(v,f,s,st);
+ }else if (st<10 && st&0x01){
+  return getVerbSimple(v,f,s,st);
  }
 }

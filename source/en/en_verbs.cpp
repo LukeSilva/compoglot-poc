@@ -127,11 +127,23 @@ char* en_en::getVerbPresent(int v,int f,int s,int st,char* midadverb){
    bl=getVerbLength(1,f,s,1,&blank);
    char* preadd=getVerbPreAdd(v);
    il=strlen(preadd);
-   char* buffer = (char*)calloc(bl+il+5,sizeof(char));
+   char* gerund;
+   char* buffer;
+   if (question==0)
+   {
+    buffer = (char*)calloc(bl+il+5,sizeof(char));
+    gerund = buffer;
+   }
+   else if (question==1)
+   {
+    buffer = (char*) calloc(bl+1,sizeof(char));
+    QuestionVerb1 = (char*) calloc(il+5,sizeof(char));
+    gerund = QuestionVerb1;
+   }
    strcat(buffer,getVerb(1,f,s,1,&blank));
    strcat(buffer,midadverb);
-   strcat(buffer,preadd);
-   strcat(buffer,"ing ");
+   strcat(gerund,preadd);
+   strcat(gerund,"ing ");
    return buffer;
   }
 }
@@ -217,7 +229,7 @@ char* en_en::getVerbPast(int v,int f, int s,bool dr,char* midadverb)
  else{
   printf("ERROR:\n");
  }
- return (char*)"Doh ";
+ return (char*)"failure in en_en::getVerbPast() ";
 }
 
 char* en_en::getVerbPastProgressive(int v,int f,int s,int st,char* midadverb){
@@ -227,12 +239,24 @@ char* en_en::getVerbPastProgressive(int v,int f,int s,int st,char* midadverb){
   int bl,il;
   bl=getVerbLength(1,f,s,st-2,&blank);
   char* preadd=getVerbPreAdd(v);
-  il=strlen(preadd);
-  char* buffer = (char*)calloc(bl+il+5,sizeof(char));
+  il=strlen(preadd);   
+  char* gerund;
+  char* buffer;
+  if (question==0)
+  {
+   buffer = (char*)calloc(bl+il+5,sizeof(char));
+   gerund = buffer;
+  }
+  else if (question==1)
+  {
+   buffer = (char*) calloc(bl+1,sizeof(char));
+   QuestionVerb1 = (char*) calloc(il+5,sizeof(char));
+   gerund = QuestionVerb1;
+  }
   strcat(buffer,getVerb(1,f,s,st-2,&blank));
-  strcat(buffer,midadverb);
-  strcat(buffer,preadd);
-  strcat(buffer,"ing ");
+  strcat(gerund,midadverb);
+  strcat(gerund,preadd);
+  strcat(gerund,"ing ");
   return buffer;
  }else if(st<10 && t!='4'){
    int bl,il;
@@ -240,11 +264,23 @@ char* en_en::getVerbPastProgressive(int v,int f,int s,int st,char* midadverb){
   bl+=getVerbLength(1,0,s,3,midadverb);
   char* preadd=getVerbPreAdd(v);
   il=strlen(preadd);
-  char* buffer = (char*)calloc(bl+il+5,sizeof(char));
+  char* gerund;
+  char* buffer;
+  if (question==0)
+  {
+   buffer = (char*)calloc(bl+il+5,sizeof(char));
+   gerund = buffer;
+  }
+  else if (question==1)
+  {
+   buffer = (char*) calloc(bl+1,sizeof(char));
+   QuestionVerb1 = (char*) calloc(il+5,sizeof(char));
+   gerund = QuestionVerb1;
+  }
   strcat(buffer,getVerb(2,f,s,1,&blank));
-  strcat(buffer,getVerbPast(1,0,s,3,midadverb));
-  strcat(buffer,preadd);
-  strcat(buffer,"ing ");
+  strcat(gerund,getVerbPast(1,0,s,3,midadverb));
+  strcat(gerund,preadd);
+  strcat(gerund,"ing ");
   return buffer;
  }else if (t=='4'){
    return getVerbPast(v,f,s,4,(char*)"");
@@ -256,8 +292,12 @@ char* en_en::getVerbPastProgressive(int v,int f,int s,int st,char* midadverb){
 char* en_en::getVerbPast(int v,int f,int s,int st,char* midadverb){
  if (st<4 || getVerbType(v,st)=='4')
   return getVerbPast(v,f,s,false,midadverb);
- else
+ else if (question==0)
   return strcat(getVerbPresent(2,f,s,1,&blank),getVerbPast(v,f,s,true,midadverb));
+ else if (question==1){
+  QuestionVerb1 = getVerbPast(v,f,s,true,midadverb);
+  return getVerbPresent(2,f,s,1,&blank);
+ }
 }
 char* en_en::getOtherVerb(int v1,int v2){
  FILE* rFile = fopen(DICTIONARY EN_EN_FOLDER "verb_present","r");

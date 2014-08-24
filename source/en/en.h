@@ -3,12 +3,16 @@
 class en_en: public Language{
  public:
   char * createSentence();
+  int question;
  char lang[3];
  char* buf[256];
+ char* QuestionVerb1;
  private:
  
   bool isVowel(char c);
   void gotoline(FILE* rFile, int line);
+  char* getSentenceNormal();
+  char* getReverseQuestionSentence();
   //Prepositions
   char* getPrepos(int prepos);
   int getPreposLength(int prepos);

@@ -10,6 +10,7 @@
 #define EN_EN_ANDNOUN "and "
 #define DE_UNDNOMEN "und "
 #define DE_NEGATIVE "minus "
+#define DE_AUTOCHANGESIMPLE 1
 void warn(const char * message, const char * fallback);
 int nDigits(int i);
 #include "Language.h"
