@@ -11,7 +11,7 @@ class en_en: public Language{
   bool isVowel(char c);
   void gotoline(FILE* rFile, int line);
   char* getSentenceNormal();
-  char* getReverseQuestionSentence();
+  char* getQuestionSentence();
   //Prepositions
   char* getPrepos(int prepos);
   int getPreposLength(int prepos);

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+char en_en_question_words[6][20]={"who ","what ","when ","where ","why ","how "};
 void en_en_gotoline(FILE* rFile, int line){
  int linenum = 1;
  while (linenum<line){
@@ -168,15 +168,19 @@ char* en_en::getSentenceNormal(){
  }
  return buffer;
 }
-char * en_en::getReverseQuestionSentence(){
+char * en_en::getQuestionSentence(){
  int a=0;
  char debug='a';
  bool splural=(snum>0) | s[0].plural;
  bool doQuestion = st>0 && st < 4;
  bool doVerb1=true;
+ if (question > 1)
+ {
+  buf[a++]=&en_en_question_words[question-2][0];
+ } 
  if (doQuestion){
   //Add helper verb at front of sentence
-  if (v2==0){
+  if (v2==0 && v1!=1){
    //Do is our helper verb
    buf[a++]=getVerb(68,-1,splural?8:s[0].id,st,"");
   }else if (v1!=0){
@@ -308,5 +312,6 @@ char * en_en::createSentence(){
   verb2=0;
  }
  if (question == 0) return getSentenceNormal();
- else if (question == 1) return getReverseQuestionSentence();
+ else if (question < 8) return getQuestionSentence();
+ else exit(-1);
 }

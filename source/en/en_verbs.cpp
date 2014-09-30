@@ -310,10 +310,10 @@ char* en_en::getOtherVerb(int v1,int v2){
   strcat(buf,getVerbPreAdd(v2));
   strcat(buf,"ing ");
  }else if (t=='3'){
-  strcat(buf,getVerbPresent(v2,-1,1,1,(char*)""));
+  strcat(buf,getVerbPresent(v2,-1,0,1,(char*)""));
  }else if (t=='1'){
   strcat(buf,"to ");
-  strcat(buf,getVerbPresent(v2,-1,1,1,(char*)""));
+  strcat(buf,getVerbPresent(v2,-1,0,1,(char*)""));
  }
  return buf;
 }
