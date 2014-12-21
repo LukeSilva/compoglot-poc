@@ -13,6 +13,8 @@ class Parser{
   void _parse(Language* lang);
   void _parseSubject(Language* lang);
   void _parseObject(Language* lang);
+  void __parseObject(Language* lang,int obj);
+  void __parseObjects(Language* lang);
   void expect(char c,const char* file,int line);
   bool check(const char* string);
   bool rstLook();

@@ -86,44 +86,24 @@ char* en_en::getSentenceNormal(){
   buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st,getMiddleAdverbs(&adverbs[0]));
  if (v2!=0)
   buf[a++]=getOtherVerb(v1,v2);
- if (idobj.id!=0){
-  buf[a++]=getArticle(idobj.id,idobj.plural?4:idobj.reflex?3:2,idobj.num,idobj.typ);
-  buf[a++]=getNoun(idobj.id,idobj.plural?4:idobj.reflex?3:2);
- }
- for (int oc=0;oc<16;oc++){
-  if (o[oc].id!=0){
-   if (oc > 0) buf[a++]=", ";
-   if (oc == onum && onum>0) buf[a++]=EN_EN_ANDNOUN;
-   buf[a++]=getArticle(o[oc].id,o[oc].plural?4:o[oc].reflex?3:1,o[oc].num,o[oc].typ);
-  }
-  for (int i=0;i<16;i++)
-  {
-    if (oadj[oc][i]!=0)
-    {
-     buf[a++]=getAdjective(oadj[oc][i]);
-    }
-  }
-  if (o[oc].id!=0)
-   buf[a++]=getNoun(o[oc].id,o[oc].plural?4:o[oc].reflex?3:1);
- }
-//Prepositions goes here
- if(prepos_prepos[0]!=0){
-  buf[a++]=getPrepos(prepos_prepos[0]);
-  buf[a++]=getArticle(prepos_object[0].id,prepos_object[0].plural?4:prepos_object[0].reflex?3:2,prepos_object[0].num,prepos_object[0].typ);
-  for (int i=0;i<16;i++)
-  {
-   if (prepos_adj[0][i]!=0)
-   {
-    buf[a++]=getAdjective(prepos_adj[0][i]);
+ for (int objid=0;objid<8;objid++)
+ {
+  for (int oc=0;oc<16;oc++){
+   if (obj[objid][oc].id!=0){
+    if (oc > 0) buf[a++]=", ";
+    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ANDNOUN;
+     buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1,obj[objid][oc].num,obj[objid][oc].typ);
    }
+   for (int i=0;i<16;i++)
+   {
+      if (objadj[objid][oc][i]!=0)
+     {
+      buf[a++]=getAdjective(objadj[objid][oc][i]);
+     }
+   } 
+   if (obj[objid][oc].id!=0)
+    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1);
   }
-  buf[a++]=getNoun(prepos_object[0].id,prepos_object[0].plural?4:prepos_object[0].reflex?3:2);
-
- } 
- if(prepos_prepos[1]!=0){
-  buf[a++]=getPrepos(prepos_prepos[1]);
-  buf[a++]=getArticle(prepos_object[1].id,prepos_object[1].plural?4:prepos_object[1].reflex?3:2,prepos_object[1].num,prepos_object[1].typ);
-  buf[a++]=getNoun(prepos_object[1].id,prepos_object[1].plural?4:prepos_object[1].reflex?3:2);
  } 
  buf[a++]=getEndAdverbs(&adverbs[0]);
 

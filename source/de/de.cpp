@@ -103,21 +103,21 @@ char* de::createSubClause(){
    buf[a++]=getNoun(s[sc].id,s[sc].plural,0);
   }
  }
- if (idobj.id!=0){
-  buf[a++]=getArticle(idobj.id,idobj.plural?1:0,idobj.num,2,idobj.typ);
-  buf[a++]=getNoun(idobj.id,idobj.plural,2);
- }
- for (int oc=0;oc<16;oc++){
-  if (o[oc].id!=0){
-   buf[a++]=getArticle(o[oc].id,o[oc].plural?1:0,o[oc].num,getCaseOfObject(0,st),o[oc].typ);
-  }
-  for (int i=0;i<16;i++){
-   if (oadj[oc][i]!=0){
-    buf[a++]=getAdjective(oadj[oc][i],o[oc].id,o[oc].plural,o[oc].typ,getCaseOfObject(0,st));
+ for (int objid=0;objid<8;objid++){
+  for (int oc=0;oc<16;oc++){
+   if (obj[objid][oc].id!=0){
+    if (oc>0) buf[a++]=", ";
+    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
+    buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?1:0,obj[objid][oc].num,getCaseOfObject(0,st),obj[objid][oc].typ);
    }
-  }
-  if (o[oc].id!=0){
-   buf[a++]=getNoun(o[oc].id,o[oc].plural,getCaseOfObject(0,st));
+   for (int i=0;i<16;i++){
+    if (objadj[objid][oc][i]!=0){
+     buf[a++]=getAdjective(objadj[objid][oc][i],obj[objid][oc].id,obj[objid][oc].plural,obj[objid][oc].typ,getCaseOfObject(0,st));
+    }
+   }
+   if (obj[objid][oc].id!=0){
+    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural,getCaseOfObject(0,st));
+   }
   }
  }
  if(prepos_prepos[0]!=0){
@@ -201,19 +201,21 @@ char* de::createSentence(){
   buf[a++]=getArticle(idobj.id,idobj.plural?1:0,idobj.num,2,idobj.typ);
   buf[a++]=getNoun(idobj.id,idobj.plural,2);
  }
- for (int oc=0;oc<16;oc++){
-  if (o[oc].id!=0){
-   if (oc>0) buf[a++]=", ";
-   if (oc == onum && onum>0) buf[a++]=DE_UNDNOMEN;
-   buf[a++]=getArticle(o[oc].id,o[oc].plural?1:0,o[oc].num,getCaseOfObject(0,st),o[oc].typ);
-  }
-  for (int i=0;i<16;i++){
-   if (oadj[oc][i]!=0){
-    buf[a++]=getAdjective(oadj[oc][i],o[oc].id,o[oc].plural,o[oc].typ,getCaseOfObject(0,st));
+ for (int objid=0;objid<8;objid++){
+  for (int oc=0;oc<16;oc++){
+   if (obj[objid][oc].id!=0){
+    if (oc>0) buf[a++]=", ";
+    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
+    buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?1:0,obj[objid][oc].num,getCaseOfObject(0,st),obj[objid][oc].typ);
    }
-  }
-  if (o[oc].id!=0){
-   buf[a++]=getNoun(o[oc].id,o[oc].plural,getCaseOfObject(0,st));
+   for (int i=0;i<16;i++){
+    if (objadj[objid][oc][i]!=0){
+     buf[a++]=getAdjective(objadj[objid][oc][i],obj[objid][oc].id,obj[objid][oc].plural,obj[objid][oc].typ,getCaseOfObject(0,st));
+    }
+   }
+   if (obj[objid][oc].id!=0){
+    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural,getCaseOfObject(0,st));
+   }
   }
  }
  if(prepos_prepos[0]!=0){

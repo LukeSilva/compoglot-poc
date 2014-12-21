@@ -37,11 +37,18 @@ protected:
 public:
  int question;
  noun s[16];
- noun o[16];
- int sadj[16][16];
- int oadj[16][16];
  int snum;
+ int sadj[16][16];
+ int case_s;
+ noun obj[8][16];
+ int objnum[8];
+ int objadj[8][16][16];
+ int case_obj[8];
+ 
+ noun o[16];
+ int oadj[16][16];
  int onum;
+
  int data;
  bool neg;
  Language* subClause;
