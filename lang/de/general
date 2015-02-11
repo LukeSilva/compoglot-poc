@@ -19,6 +19,6 @@
 (Verb(20))
 (Verb(11))
 (sub(n(5,0,false,false,0)) v1(22))
-(v1(23) obj(n(12,0,false,false,-2)) )
+(v1(23) obj(1(n(12,0,false,false,-2))) )
 (Verb(11))
 (Verb(24))

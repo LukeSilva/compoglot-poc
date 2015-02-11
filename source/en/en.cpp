@@ -199,22 +199,25 @@ char * en_en::getQuestionSentence(){
   buf[a++]=getArticle(idobj.id,idobj.plural?4:idobj.reflex?3:2,idobj.num,idobj.typ);
   buf[a++]=getNoun(idobj.id,idobj.plural?4:idobj.reflex?3:2);
  }
- for (int oc=0;oc<16;oc++){
-  if (o[oc].id!=0){
-   if (oc > 0) buf[a++]=", ";
-   if (oc == onum && onum>0) buf[a++]=EN_EN_ANDNOUN;
-   buf[a++]=getArticle(o[oc].id,o[oc].plural?4:o[oc].reflex?3:1,o[oc].num,o[oc].typ);
+ for (int objid=0;objid<8;objid++)
+ {
+  for (int oc=0;oc<16;oc++){
+   if (obj[objid][oc].id!=0){
+    if (oc > 0) buf[a++]=", ";
+    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ANDNOUN;
+     buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1,obj[objid][oc].num,obj[objid][oc].typ);
+   }
+   for (int i=0;i<16;i++)
+   {
+      if (objadj[objid][oc][i]!=0)
+     {
+      buf[a++]=getAdjective(objadj[objid][oc][i]);
+     }
+   } 
+   if (obj[objid][oc].id!=0)
+    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1);
   }
-  for (int i=0;i<16;i++)
-  {
-    if (oadj[oc][i]!=0)
-    {
-     buf[a++]=getAdjective(oadj[oc][i]);
-    }
-  }
-  if (o[oc].id!=0)
-   buf[a++]=getNoun(o[oc].id,o[oc].plural?4:o[oc].reflex?3:1);
- }
+ } 
  //Prepositions goes here
  if(prepos_prepos[0]!=0){
   buf[a++]=getPrepos(prepos_prepos[0]);

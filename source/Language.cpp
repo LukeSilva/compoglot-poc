@@ -135,10 +135,8 @@ void Language::newSentence(){
  neg=false;
  for (int i=0;i<16;i++){
   s[i].id=0;
-  o[i].id=0;
   for (int j=0;j<16;j++){
    sadj[j][i]=0;
-   oadj[j][i]=0;
   }
   prepos_adj[0][i]=0;
   prepos_adj[1][i]=0;

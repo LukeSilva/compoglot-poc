@@ -105,47 +105,6 @@ void Parser::__parseObjects(Language* lang){
  LookAHead();
  rstPtr();
 }
-void Parser::_parseObject(Language* lang){
- int obj=0;
- int objadj=0;
- while (rstLook() && string[lookptr]!=')'){
-  if (rstLook() && LookAHead()==0){
-   error("Premature end of string",__FILE__,__LINE__);
-  }
-  else if (rstLook() && check("n")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   noun* n=parseNoun();
-   lang->o[obj]=*n;
-   expect(')',__FILE__,__LINE__);
-  }
-  else if (rstLook() && check("adj")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   lang->oadj[obj][objadj]=getInt();
-   expect(')',__FILE__,__LINE__);
-  }
-  else if (rstLook() && check("it")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   int i = getInt();
-   noun* n=lang->getIt(i);
-   lang->o[obj]=*n;
-   expect(')',__FILE__,__LINE__);
-  }
-  else if (rstLook() && check(",")){
-   rstPtr();
-   obj++;
-   objadj=0;
-  }
-  else{
-   error("Unkown Token!",__FILE__,__LINE__);
-  }
- }
- LookAHead();
- rstPtr();
- lang->onum=obj;
-}
 void Parser::_parse(Language* lang){
  while (rstLook() && string[lookptr]!=')')
  {
@@ -163,9 +122,7 @@ void Parser::_parse(Language* lang){
    __parseObjects(lang);	
   }
   else if (rstLook() && check("o")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   _parseObject(lang);
+   error("Using the o tag is depreciated!",__FILE__,__LINE__);
   }
   else if (rstLook() && check("adjprepos1")){
    rstPtr();
