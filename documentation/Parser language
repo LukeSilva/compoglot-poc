@@ -1,0 +1,27 @@
+To begin a parsed line you need to open and close a bracket. For example:
+ "()"
+This will create a blank line in any language, it will possibly add a punctuation mark.
+
+There are then multiple functions that are called within multiple sentence parts. They are as follows.
+
+n: Defines a noun. Uses the following arguments:
+   id  		- int - Is the identifier of the noun. It is the line number that the noun can be found on.
+   num 		- int - The number of the noun, if the noun is plural. It should be one higher or lower (if negative) than the desired number, as 0 is a blank number.
+   reflex 	- bool - True if the pronoun should be a reflexive one. Can be ignored for non-pronouns
+   plural	- bool - True if the noun should be plural.
+   typ 		- int - The type of article that should be prepended to the noun.
+			-2: "a"
+			-1: "the"
+			 0: ""
+			 1: "my"
+			 2: "your" -- singular / informal
+			 3: "his"
+			 4: "her"
+			 5: "its"
+			 6: "our"
+			 7: "your" -- plural / informal
+			 8: "their"
+			 9: "your" -- plural / formal
+
+it: Allows the use of a "it" pronoun.
+   id 		- int - Is the identifer of the noun. It is the line number that the noun can be found on.
