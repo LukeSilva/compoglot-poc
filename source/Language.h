@@ -43,6 +43,7 @@ public:
  noun obj[8][16];
  int objnum[8];
  int objadj[8][16][16];
+ int objprepos[8];
  int data_obj[8];
  
  //noun o[16];

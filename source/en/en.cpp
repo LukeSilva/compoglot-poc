@@ -201,6 +201,8 @@ char * en_en::getQuestionSentence(){
  }
  for (int objid=0;objid<8;objid++)
  {
+  if (objprepos[objid]!=0)
+   buf[a++]=getPrepos(objprepos[objid]);
   for (int oc=0;oc<16;oc++){
    if (obj[objid][oc].id!=0){
     if (oc > 0) buf[a++]=", ";
@@ -219,7 +221,7 @@ char * en_en::getQuestionSentence(){
   }
  } 
  //Prepositions goes here
- if(prepos_prepos[0]!=0){
+ /*if(prepos_prepos[0]!=0){
   buf[a++]=getPrepos(prepos_prepos[0]);
   buf[a++]=getArticle(prepos_object[0].id,prepos_object[0].plural?4:prepos_object[0].reflex?3:2,prepos_object[0].num,prepos_object[0].typ);
   for (int i=0;i<16;i++)
@@ -241,7 +243,7 @@ char * en_en::getQuestionSentence(){
   buf[a++]=getPrepos(prepos_prepos[2]);
   buf[a++]=getArticle(prepos_object[2].id,prepos_object[2].plural?4:prepos_object[2].reflex?3:2,prepos_object[2].num,prepos_object[2].typ);
   buf[a++]=getNoun(prepos_object[2].id,prepos_object[2].plural?4:prepos_object[2].reflex?3:2);
- } 
+ } */
  buf[a++]=getEndAdverbs(&adverbs[0]);
 
  if(subClause!=NULL && conjunction!=0){
