@@ -22,6 +22,8 @@ n: Defines a noun. Uses the following arguments:
 			 7: "your" -- plural / informal
 			 8: "their"
 			 9: "your" -- plural / formal
+   usegenitive 	- bool - True if the noun has a possive object 
+   n		- noun - If the noun has a possessive object, define that as a noun here.
 
 it: Allows the use of a "it" pronoun.
    id 		- int - Is the identifier of the noun. It is the line number that the noun can be found on.
@@ -46,7 +48,7 @@ Verb1: Sets the first verb. Takes an integer refering to the verb identifier.
 Verb2: Sets the second verb. Takes an integer refereing to the verb identifier.
 neg: Requires no arguments. Turns the sentence in to a negative one. (I did > I did not)
 	Eg:
-		neg
+		neg/
 clause: Takes an integer for the identifier of a conjunction, then another sentence code segment.
 st: Takes an integer, not enclosed in backets to set the sentence type.
 	Eg:
