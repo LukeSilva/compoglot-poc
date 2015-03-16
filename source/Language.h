@@ -18,6 +18,8 @@ typedef struct{
  int typ;
  bool plural;
  bool reflex;
+ bool usegenitive;
+ noun* genitivenoun;
 }noun;
 class Language;
 #include "settings.h"

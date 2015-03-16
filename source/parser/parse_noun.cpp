@@ -21,7 +21,7 @@ noun* Parser::parseNoun(){
  else if (rstLook() && check("false"))
   n->plural=false;
  else error("Couldn't parse boolean",__FILE__,__LINE__);
-
+ 
  expect(',',__FILE__,__LINE__);
  n->typ = getInt();
  if (n->num>2 || n->num<-2)
