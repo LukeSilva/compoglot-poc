@@ -1,6 +1,6 @@
 #ifndef LANGUAGE_H
 #define LANGUAGE_H
-typedef struct{
+typedef struct noun{
  int id;
  int num;
  //-2 for a
@@ -21,6 +21,7 @@ typedef struct{
  bool usegenitive;
  noun* genitivenoun;
 }noun;
+
 class Language;
 #include "settings.h"
 class Language{
