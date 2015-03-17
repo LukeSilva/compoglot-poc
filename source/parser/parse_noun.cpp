@@ -39,6 +39,10 @@ noun* Parser::parseNoun(){
  }
  if (n->num>2 || n->num<-2)
   n->plural = true;
+ for (int i = 0; i < 16; ++i)
+ {
+  n->adj[i]=0;
+ }
  return n;
 }
 

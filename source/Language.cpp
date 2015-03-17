@@ -115,6 +115,10 @@ noun* Language::getIt(int id){
   n->plural=false;
   n->reflex=false;
   n->typ=0;
+  for (int i = 0; i < 16; ++i)
+  {
+    n->adj[i]=0;
+  }
   return n;
 }
 void Language::newSentence(){

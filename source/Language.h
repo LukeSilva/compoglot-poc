@@ -20,6 +20,8 @@ typedef struct noun{
  bool reflex;
  bool usegenitive;
  noun* genitivenoun;
+ // sixteen adjectives per noun
+ int adj[16];
 }noun;
 
 class Language;

@@ -56,6 +56,27 @@ bool en_en::isVowel(char c)
  if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') return true;
  return false;
 }
+char* en_en::getNounString(noun* n,int vr,int vnr)
+{
+  char* buffer;
+  buffer = (char*) malloc(BUFFER_SIZE*10);
+  buffer[0] = 0;
+  strcat(buffer,getArticle(n->id,n->plural?4:n->reflex?vr:vnr, n->num,n->typ));
+  for (int i=0;i<16;i++)
+  {
+   if (n->adj[i]!=0)
+   {
+    strcat(buffer,getAdjective(n->adj[i]));
+   }
+  }
+  strcat(buffer,getNoun(n->id,n->plural?4:n->reflex?vr:vnr));
+  if (n->usegenitive)
+  {
+    strcat(buffer,EN_EN_OF);
+    strcat(buffer,getNounString(n->genitivenoun,vr,vnr));
+  }
+  return buffer;
+}
 char* en_en::getSentenceNormal(){
  int a=0;
  char debug='a';
@@ -71,15 +92,7 @@ char* en_en::getSentenceNormal(){
   if (s[sc].id!=0){
    if (sc > 0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=EN_EN_ANDNOUN;
-   buf[a++]=getArticle(s[sc].id,s[sc].plural ? 4:0, s[sc].num,s[sc].typ);
-   for (int i=0;i<16;i++)
-   {
-    if (sadj[sc][i]!=0)
-    {
-     buf[a++]=getAdjective(sadj[sc][i]);
-    }
-   }
-   buf[a++]=getNoun(s[sc].id,s[sc].plural ?4:0);
+   buf[a++]=getNounString(&s[sc],0,0);
   }
  }
  if (v1!=0)
@@ -92,17 +105,8 @@ char* en_en::getSentenceNormal(){
    if (obj[objid][oc].id!=0){
     if (oc > 0) buf[a++]=", ";
     if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ANDNOUN;
-     buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1,obj[objid][oc].num,obj[objid][oc].typ);
+    buf[a++]=getNounString(&obj[objid][oc],3,1);
    }
-   for (int i=0;i<16;i++)
-   {
-      if (objadj[objid][oc][i]!=0)
-     {
-      buf[a++]=getAdjective(objadj[objid][oc][i]);
-     }
-   } 
-   if (obj[objid][oc].id!=0)
-    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1);
   }
  } 
  buf[a++]=getEndAdverbs(&adverbs[0]);
@@ -180,9 +184,9 @@ char * en_en::getQuestionSentence(){
    buf[a++]=getArticle(s[sc].id,s[sc].plural ? 4:0, s[sc].num,s[sc].typ);
    for (int i=0;i<16;i++)
    {
-    if (sadj[sc][i]!=0)
+    if (s[sc].adj[i]!=0)
     {
-     buf[a++]=getAdjective(sadj[sc][i]);
+     buf[a++]=getAdjective(s[sc].adj[i]);
     }
    }
    buf[a++]=getNoun(s[sc].id,s[sc].plural ?4:0);

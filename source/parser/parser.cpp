@@ -19,7 +19,7 @@ void Parser::_parseSubject(Language* lang){
   else if (rstLook() && check("adj")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->sadj[sub][subadj]=getInt();
+   lang->s[sub].adj[subadj]=getInt();
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("it")){
@@ -60,7 +60,7 @@ void Parser::__parseObject(Language* lang,int objid){
   else if (rstLook() && check("adj")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->objadj[objid][obj][objadj]=getInt();
+   lang->obj[objid][obj].adj[objadj]=getInt();
    expect(')',__FILE__,__LINE__);
    objadj++;
   }

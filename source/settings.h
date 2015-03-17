@@ -8,6 +8,7 @@
 #define EN_NEGATIVE "negative"
 #define EN_EN_DONOT "don't "
 #define EN_EN_ANDNOUN "and "
+#define EN_EN_OF "of "
 #define DE_UNDNOMEN "und "
 #define DE_NEGATIVE "minus "
 #define DE_AUTOCHANGESIMPLE 1

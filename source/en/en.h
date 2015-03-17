@@ -20,6 +20,7 @@ class en_en: public Language{
   int getNounLength(int s,int form);
   char getNounType(int s);
   int getNewNoun(int s);
+  char* getNounString(noun* n,int vr,int vnr);
 
   //Verbs
   char* getOtherVerb(int v1,int v2);
