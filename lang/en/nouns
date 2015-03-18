@@ -848,7 +848,7 @@ n_payment
 n_peace
 n_pen
 n_pencil
-n_person
+o_person_people
 n_picture
 n_pig
 n_pin
@@ -1206,3 +1206,7 @@ n_year
 n_yesterday
 n_noun
 n_identifier
+n_vehicle
+n_verb
+n_action
+

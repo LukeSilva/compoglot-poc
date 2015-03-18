@@ -122,6 +122,7 @@ noun* Language::getIt(int id){
   return n;
 }
 void Language::newSentence(){
+ punctuation = true;
  question = 0;
  clause=false;
  data=0;
@@ -146,7 +147,7 @@ void Language::newSentence(){
   prepos_adj[1][i]=0;
   prepos_adj[2][i]=0;
  }
- for (int i=0;i<3;i++)
+ for (int i=0;i<NUM_ADVERBS;i++)
   adverbs[i]=0;
  for (int i=0;i<2;i++)
  {

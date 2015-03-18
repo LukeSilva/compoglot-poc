@@ -24,6 +24,8 @@ n: Defines a noun. Uses the following arguments:
 			 9: "your" -- plural / formal
    usegenitive 	- bool - True if the noun has a possive object 
    n		- noun - If the noun has a possessive object, define that as a noun here.
+   useprepos	- bool - True if the noun has a preposition
+   prepos 	- int  - Identifier of the prepositoin, if the noun has one.
 
 it: Allows the use of a "it" pronoun.
    id 		- int - Is the identifier of the noun. It is the line number that the noun can be found on.

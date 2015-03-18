@@ -20,6 +20,7 @@ typedef struct noun{
  bool reflex;
  bool usegenitive;
  noun* genitivenoun;
+ int prepos;
  // sixteen adjectives per noun
  int adj[16];
 }noun;
@@ -40,6 +41,7 @@ protected:
  int st;
  char * sentence;
 public:
+ bool punctuation;
  int question;
  noun s[16];
  int snum;

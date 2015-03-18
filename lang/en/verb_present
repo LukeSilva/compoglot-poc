@@ -11,7 +11,7 @@
 41_need
 20_come
 20_go
-20_go
+20_????
 20_land
 00_fly_fly_fly_flies_flies_flies_fly_fly_fly_fly_fly
 20_sail
@@ -225,7 +225,7 @@
 20_tie
 20_tune
 20_understand
-20_use
+21_use
 20_undo
 20_vote
 20_view
@@ -236,3 +236,9 @@
 20_arrive
 00_fly_fly_fly_flies_flies_flies_fly_fly_fly_fly_fly
 20_eat
+00_carry_carry_carry_carries_carries_carries_carry_carry_carry_carry_carry
+20_possess
+20_mean
+20_allow
+20_leave
+20_find

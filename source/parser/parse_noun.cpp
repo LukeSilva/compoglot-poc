@@ -37,6 +37,15 @@ noun* Parser::parseNoun(){
   n->genitivenoun = parseNoun();
   expect(')',__FILE__,__LINE__);
  }
+ expect(',',__FILE__,__LINE__);
+ if (rstLook() && check("true"))
+ {
+  expect(',',__FILE__,__LINE__);
+  n->prepos = getInt();
+ }
+ else if (rstLook() && check("false"))
+  n->prepos = 0;
+ else error("Couldn't parse boolean (preposition-bool)",__FILE__,__LINE__);
  if (n->num>2 || n->num<-2)
   n->plural = true;
  for (int i = 0; i < 16; ++i)

@@ -61,6 +61,8 @@ char* en_en::getNounString(noun* n,int vr,int vnr)
   char* buffer;
   buffer = (char*) malloc(BUFFER_SIZE*10);
   buffer[0] = 0;
+  if (n->prepos > 0)
+   strcat(buffer,getPrepos(n->prepos));
   strcat(buffer,getArticle(n->id,n->plural?4:n->reflex?vr:vnr, n->num,n->typ));
   for (int i=0;i<16;i++)
   {
@@ -145,7 +147,8 @@ char* en_en::getSentenceNormal(){
     buffer[j++]=',';
     i=i+2;
    }else if (buf2[i+1]==0){
-    buffer[j++]='.';
+    if (punctuation)
+     buffer[j++]='.';
     i++;
    }else buffer[j++]=buf2[i++];
   }
@@ -284,7 +287,8 @@ char * en_en::getQuestionSentence(){
     buffer[j++]=',';
     i=i+2;
    }else if (buf2[i+1]==0){
-    buffer[j++]='?';
+    if (punctuation)
+     buffer[j++]='?';
     i++;
    }else buffer[j++]=buf2[i++];
   }
