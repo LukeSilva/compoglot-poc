@@ -1,5 +1,7 @@
 #ifndef LANGUAGE_H
 #define LANGUAGE_H
+
+class Language;
 typedef struct noun{
  int id;
  int num;
@@ -23,9 +25,10 @@ typedef struct noun{
  int prepos;
  // sixteen adjectives per noun
  int adj[16];
+ Language* rClause;
+ bool useRClause;
 }noun;
 
-class Language;
 #include "settings.h"
 class Language{
 protected:

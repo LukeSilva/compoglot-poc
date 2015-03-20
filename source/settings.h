@@ -9,6 +9,8 @@
 #define EN_EN_DONOT "don't "
 #define EN_EN_ANDNOUN "and "
 #define EN_EN_OF "of "
+#define EN_EN_WHO "who"
+#define EN_EN_THAT "that"
 #define DE_UNDNOMEN "und "
 #define DE_NEGATIVE "minus "
 #define DE_AUTOCHANGESIMPLE 1

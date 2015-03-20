@@ -46,6 +46,24 @@ noun* Parser::parseNoun(){
  else if (rstLook() && check("false"))
   n->prepos = 0;
  else error("Couldn't parse boolean (preposition-bool)",__FILE__,__LINE__);
+ expect(',',__FILE__,__LINE__);
+ if (rstLook() && check("true"))
+ {
+  expect(',',__FILE__,__LINE__);
+  expect('(',__FILE__,__LINE__);
+  Language* nlang = getLanguageFromStringId(langid);
+  nlang->newSentence();
+  _parse(nlang);
+  nlang->s[0].id = 14;
+  nlang->punctuation = false;
+  n->rClause = nlang;
+  n->useRClause = true;
+ }
+ else if (rstLook() && check("false"))
+ {
+  n->useRClause = false;
+ }
+ else error("Couldn't parse boolean (rClause-bool)",__FILE__,__LINE__);
  if (n->num>2 || n->num<-2)
   n->plural = true;
  for (int i = 0; i < 16; ++i)

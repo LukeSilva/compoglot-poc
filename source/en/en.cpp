@@ -59,7 +59,7 @@ bool en_en::isVowel(char c)
 char* en_en::getNounString(noun* n,int vr,int vnr)
 {
   char* buffer;
-  buffer = (char*) malloc(BUFFER_SIZE*10);
+  buffer = (char*) malloc(BUFFER_SIZE*20);
   buffer[0] = 0;
   if (n->prepos > 0)
    strcat(buffer,getPrepos(n->prepos));
@@ -76,6 +76,17 @@ char* en_en::getNounString(noun* n,int vr,int vnr)
   {
     strcat(buffer,EN_EN_OF);
     strcat(buffer,getNounString(n->genitivenoun,vr,vnr));
+  }
+  if (n->useRClause)
+  {
+    char t = getNounType(n->id);
+    if (t == 'm' || t == 'f' || t == 'p' || t == 'd')
+    {
+      strcat(buffer,EN_EN_WHO);
+    }
+    else strcat(buffer,EN_EN_THAT);
+    strcat(buffer,n->rClause->createSentence());
+    strcat(buffer," ");
   }
   return buffer;
 }

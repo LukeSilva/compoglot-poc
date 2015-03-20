@@ -218,12 +218,12 @@ char* de::createSentence(){
    }
   }
  }
- if(prepos_prepos[0]!=0){
+ /*if(prepos_prepos[0]!=0){
   buf[a++]=getPreposObject(prepos_prepos[0],prepos_object[0].id,prepos_object[0].num,prepos_object[0].plural,prepos_object[0].typ);
  } 
  if(prepos_prepos[1]!=0){
   buf[a++]=getPreposObject(prepos_prepos[1],prepos_object[1].id,prepos_object[1].num,prepos_object[1].plural,prepos_object[1].typ);
- }
+ }*/
  if (neg){
   buf[a++]=de_nicht;
  }
