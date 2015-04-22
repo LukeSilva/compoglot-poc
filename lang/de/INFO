@@ -1,0 +1,12 @@
+Verbs:
+First number - definition type
+  0 : All forms defined
+  1 : Standard conjugation
+  2 : Seperatable verb
+Second number - Obsolete
+Third number - Prepend zu to second verb
+  0 : Do not prepend zu
+  1 : Prepend zu
+
+Pastperfekt:
+First number - use sein / haben

@@ -52,7 +52,7 @@ char* de::getVerbPresent(int v, int f, int s, int st){
   if (of==1) buffer[u++]='e';
   else if (of==2){ buffer[u++]='s'; buffer[u++]='t';}
   else if (of==3 || of==4 || of==5) buffer[u++]='t';
-  else if (of==6 || of==8 || of==9){ buffer[u++]='e'; buffer[u++]='n';}
+  else if (of==6 || of==8 || of==9 || of==0){ buffer[u++]='e'; buffer[u++]='n';}
   else if (of==7) buffer[u++]='t';
  }
  buffer[u++]=' ';
@@ -109,7 +109,6 @@ char* de::getVerbSimple(int v,int f,int s,int st){
  fclose(rFile);
  char vt=buffer[0];
  if (vt == '1') return getVerbPerfekt(v,f,s,st);
- //what we do here, is , we save the past participle for later, and return the helper verb, when we need to get the past participle the create sentence() just reads the endVerb variable
  int i=0;
  int u=0;
  while (u<1){
@@ -132,7 +131,7 @@ char* de::getVerbSimple(int v,int f,int s,int st){
  return &buffer[a];
 }
 char* de::getOtherVerb(int v1,int v2){
- return getVerbPresent(v2,-2,9,0);
+ return getVerbPresent(v2,0,0,0);
 }
 
 char* de::getVerb(int v, int f, int s, int st)

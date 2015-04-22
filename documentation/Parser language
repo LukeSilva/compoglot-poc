@@ -22,10 +22,14 @@ n: Defines a noun. Uses the following arguments:
 			 7: "your" -- plural / informal
 			 8: "their"
 			 9: "your" -- plural / formal
+			10: "a lot of"
+			11: "this"
    usegenitive 	- bool - True if the noun has a possive object 
    n		- noun - If the noun has a possessive object, define that as a noun here.
    useprepos	- bool - True if the noun has a preposition
    prepos 	- int  - Identifier of the prepositoin, if the noun has one.
+   userclause   - bool - True if the noun has a relative clause
+   rclause 	- ???  - Sentence parts of the relative clause
 
 it: Allows the use of a "it" pronoun.
    id 		- int - Is the identifier of the noun. It is the line number that the noun can be found on.

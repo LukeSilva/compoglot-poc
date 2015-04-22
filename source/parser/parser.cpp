@@ -132,14 +132,30 @@ void Parser::_parse(Language* lang){
    lang->addPreposAdj1(getInt());
    expect(')',__FILE__,__LINE__);
   }
-  else if (rstLook() && check("idobj")){
+  else if (rstLook() && check("datao")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   noun* n=parseNoun();
-   lang->setIndirectObject(n);
+   int id = getInt() - 1;
+   if (id < 0 || id > 7)
+   {
+    error("Invalid id for datao()",__FILE__,__LINE__);
+   }
+   expect(',',__FILE__,__LINE__);
+   int data = getInt();
+   for (int i = 0; i  < 16; ++i)
+   {
+    lang->obj[id][i].data=data;
+   }
    expect(')',__FILE__,__LINE__);
   }
-
+  else if (rstLook() && check("datas")){
+   expect('(',__FILE__,__LINE__);
+   int data = getInt();
+   for (int i = 0; i < 16; ++i)
+   {
+    lang->s[i].data=data;
+   }
+  }
   else if (rstLook() && check("Verb1")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
@@ -176,24 +192,6 @@ void Parser::_parse(Language* lang){
    expect('(',__FILE__,__LINE__);
    lang->addAdverb(getInt());
    expect(')',__FILE__,__LINE__);
-  }
-  else if (rstLook() && check("prepos1")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   int prepos = getInt();
-   expect(',',__FILE__,__LINE__);
-   noun* n=parseNoun();
-   expect(')',__FILE__,__LINE__);
-   lang->setPreposObj1(prepos,n);
-  }
-  else if (rstLook() && check("prepos2")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   int prepos = getInt();
-   expect(',',__FILE__,__LINE__);
-   noun* n=parseNoun();
-   expect(')',__FILE__,__LINE__);
-   lang->setPreposObj2(prepos,n);
   }
   else if (rstLook() && check("fprepos")){
    rstPtr();

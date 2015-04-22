@@ -62,6 +62,32 @@ char de::getCaseOfObject(int v,int st){
  if (t==4) t = getCaseOfObject(v+1,st);
  return t;
 }
+char* de::getNounString(noun* n)
+{
+ char* buffer = (char*) malloc (BUFFER_SIZE*10);
+ buffer[0]=0;
+ int cas = n->data;
+ bool doArticle = true;
+ if (n->prepos!=0)
+ {
+  strcat(buffer,getPreposObject(n->prepos,n,&cas,&doArticle));
+ }
+ strcat(buffer,getArticle(n->id,n->plural?1:0,n->num,n->data,n->typ));
+ for (int i=0;i<16;i++){
+  if (n->adj[i]!=0)
+   strcat(buffer,getAdjective(n->adj[i],n->id,n->plural,n->typ,n->data));
+ }
+ strcat(buffer,getNoun(n->id,n->plural,n->data));
+ if (n->usegenitive)
+ {
+  n->genitivenoun->data = 3;
+  //Force definate article if not yet defined.
+  if (n->genitivenoun->typ == 0)
+    n->genitivenoun->typ = -1;
+  strcat(buffer,getNounString(n->genitivenoun));
+ }
+ return buffer;
+}
 char de::getPreVerb2(int v1){
  FILE* rFile;
  rFile=fopen(DICTIONARY DE_FOLDER "verb_present","r");
@@ -88,19 +114,14 @@ char* de::createSubClause(){
  verbs[1]=v2;
  verbs[2]=v3;
  bool splural=(snum>0) | s[0].plural;
- if (prepos_prepos[2]!=0){
+/* if (prepos_prepos[2]!=0){
   buf[a++]=getPreposObject(prepos_prepos[2],prepos_object[2].id,prepos_object[2].num,prepos_object[2].plural,prepos_object[2].typ);
- }
+ }*/
  for(int sc=0;sc<16;sc++){
   if (s[sc].id!=0){
    if (sc>0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=DE_UNDNOMEN;
-   buf[a++]=getArticle(s[sc].id,s[sc].plural?1:0,s[sc].num,0,s[sc].typ);
-   for (int i=0;i<16;i++){
-    if (sadj[sc][i]!=0)
-     buf[a++]=getAdjective(sadj[sc][i],s[sc].id,s[sc].plural,s[sc].typ,0);
-   }
-   buf[a++]=getNoun(s[sc].id,s[sc].plural,0);
+   buf[a++]=getNounString(&s[sc]);
   }
  }
  for (int objid=0;objid<8;objid++){
@@ -108,24 +129,11 @@ char* de::createSubClause(){
    if (obj[objid][oc].id!=0){
     if (oc>0) buf[a++]=", ";
     if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
-    buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?1:0,obj[objid][oc].num,getCaseOfObject(0,st),obj[objid][oc].typ);
-   }
-   for (int i=0;i<16;i++){
-    if (objadj[objid][oc][i]!=0){
-     buf[a++]=getAdjective(objadj[objid][oc][i],obj[objid][oc].id,obj[objid][oc].plural,obj[objid][oc].typ,getCaseOfObject(0,st));
-    }
-   }
-   if (obj[objid][oc].id!=0){
-    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural,getCaseOfObject(0,st));
+    buf[a++]=getNounString(&obj[objid][oc]);
    }
   }
  }
- if(prepos_prepos[0]!=0){
-  buf[a++]=getPreposObject(prepos_prepos[0],prepos_object[0].id,prepos_object[0].num,prepos_object[0].plural,prepos_object[0].typ);
- }
- if(prepos_prepos[1]!=0){
-  buf[a++]=getPreposObject(prepos_prepos[1],prepos_object[1].id,prepos_object[1].num,prepos_object[1].plural,prepos_object[1].typ);
- }
+
  if (neg){
   buf[a++]=de_nicht;
  }
@@ -140,6 +148,11 @@ char* de::createSubClause(){
  //Verb goes at the end
 
  buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
+ 
+ if(subClause!=NULL && conjunction != 0)
+ {
+  buf[a++]=getSubClause();
+ }
  int sl=0;
  for (int i=0;i<256;i++){
   if(buf[i]!=NULL)
@@ -158,6 +171,8 @@ char* de::createSentence(){
   data|=0x01;
   endchar = '?';
  }
+ if (punctuation == false)
+  endchar = NULL;
  if(verb1!=0){
   parseVerb(0,verb1);
   verb1=0;
@@ -179,51 +194,28 @@ char* de::createSentence(){
   if(verb) buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
   verb = false;
  }
- if (prepos_prepos[2]>0){
+ /*if (prepos_prepos[2]>0){
   buf[a++]=getPreposObject(prepos_prepos[2],prepos_object[2].id,prepos_object[2].num,prepos_object[2].plural,prepos_object[2].typ);
   if(verb) buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
   verb = false;
- }
+ }*/
  for(int sc=0;sc<16;sc++){
   if (s[sc].id!=0){
    if (sc>0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=DE_UNDNOMEN;
-   buf[a++]=getArticle(s[sc].id,s[sc].plural?1:0,s[sc].num,0,s[sc].typ);
-   for (int i=0;i<16;i++){
-    if (sadj[sc][i]!=0)
-     buf[a++]=getAdjective(sadj[sc][i],s[sc].id,s[sc].plural,s[sc].typ,0);
-   }
-   buf[a++]=getNoun(s[sc].id,s[sc].plural,0);
+   buf[a++]=getNounString(&s[sc]);
   }
  }
  if(verb)buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
- if (idobj.id!=0){
-  buf[a++]=getArticle(idobj.id,idobj.plural?1:0,idobj.num,2,idobj.typ);
-  buf[a++]=getNoun(idobj.id,idobj.plural,2);
- }
  for (int objid=0;objid<8;objid++){
   for (int oc=0;oc<16;oc++){
    if (obj[objid][oc].id!=0){
     if (oc>0) buf[a++]=", ";
     if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
-    buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?1:0,obj[objid][oc].num,getCaseOfObject(0,st),obj[objid][oc].typ);
-   }
-   for (int i=0;i<16;i++){
-    if (objadj[objid][oc][i]!=0){
-     buf[a++]=getAdjective(objadj[objid][oc][i],obj[objid][oc].id,obj[objid][oc].plural,obj[objid][oc].typ,getCaseOfObject(0,st));
-    }
-   }
-   if (obj[objid][oc].id!=0){
-    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural,getCaseOfObject(0,st));
+    buf[a++]=getNounString(&obj[objid][oc]);
    }
   }
  }
- /*if(prepos_prepos[0]!=0){
-  buf[a++]=getPreposObject(prepos_prepos[0],prepos_object[0].id,prepos_object[0].num,prepos_object[0].plural,prepos_object[0].typ);
- } 
- if(prepos_prepos[1]!=0){
-  buf[a++]=getPreposObject(prepos_prepos[1],prepos_object[1].id,prepos_object[1].num,prepos_object[1].plural,prepos_object[1].typ);
- }*/
  if (neg){
   buf[a++]=de_nicht;
  }

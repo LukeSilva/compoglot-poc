@@ -31,12 +31,11 @@ bool Parser::check(const char* _string){
  return true;
 }
 void Parser::error(char* str,const char* file,int line){
- printf("Error (%s:%d) at %d,%d \n%s",file,line,ptr,lookptr,string);
- printf("Code: \"%s\"\n",string);
+ printf("Error \"%s\" (%s:%d) at %d,%d \n%s\n",str,file,line,ptr,lookptr,string);
  exit(-1);
 }
 void Parser::error(const char* str,const char* file,int line){
- printf("Error (%s:%d) at %d,%d\n%s\n",file,line,ptr,lookptr,string);
+ printf("Error \"%s\" (%s:%d) at %d,%d\n%s\n",str,file,line,ptr,lookptr,string);
  printf("Code: \"%s\"\n",string);
  exit(-1);
 }

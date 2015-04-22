@@ -131,8 +131,6 @@ void Language::newSentence(){
  subClause=NULL;
  conjunction=0;
  snum=0;
- dobj.id=0;
- idobj.id=0;
  v1=0;
  v2=0;
  v3=0;
@@ -140,8 +138,9 @@ void Language::newSentence(){
  neg=false;
  for (int i=0;i<16;i++){
   s[i].id=0;
+  s[i].data =0;
   for (int j=0;j<16;j++){
-   sadj[j][i]=0;
+   s[i].adj[j]=0;
   }
   prepos_adj[0][i]=0;
   prepos_adj[1][i]=0;

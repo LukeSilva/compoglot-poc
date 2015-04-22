@@ -11,7 +11,9 @@ char defarticles[4*4][7]={
 //Accusative
 "den ","die ","das ","die ",
 //Dative
-"dem ","der ","dem ","den "
+"dem ","der ","dem ","den ",
+//Genitive
+"des ","der ","des ","der "
 };
 char indefarticles[4*4][7]={
 //Nominative
@@ -19,9 +21,11 @@ char indefarticles[4*4][7]={
 //Accusative
 "einen ","eine " ,"ein "  ,"",
 //Dative
-"einem ","einer ","einem ",""
+"einem ","einer ","einem ","",
+//Genitive
+"eines ","einer ","eines ",""
 };
-char possessive_pronouns[4*4*11][9]={
+char possessive_pronouns[4*4*12][9]={
 "mein "   ,"meine "  ,"mein "   ,"meine "  ,
 "meinen " ,"meine "  ,"mein "   ,"meine "  ,
 "meinem " ,"meiner " ,"meinem " ,"meinen " ,
@@ -61,7 +65,11 @@ char possessive_pronouns[4*4*11][9]={
 ""        ,""        ,""        ,"viele "  ,
 ""        ,""        ,""        ,"viele "  ,
 ""        ,""        ,""        ,"vielen " ,
-""        ,""        ,""        ,"vieler " };
+""        ,""        ,""        ,"vieler " ,
+"dieser " ,"diese "  ,"dieses " ,"diese "  ,
+"diesen " ,"diese "  ,"dieses " ,"diese "  ,
+"diesem " ,"dieser " ,"diesem " ,"diesen " ,
+"dieses " ,"dieser " ,"dieses " ,"dieser " };
 char zahlen[11][10]={"null ","ein ","zwei ","drei ","vier ","fünf ","sechs ","sieben ","acht ","neun ","zehn "};
 char* de::_getArticle(int id,int form,int num,int cas,int t){
  char typ = getNounType(id);

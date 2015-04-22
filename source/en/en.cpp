@@ -195,15 +195,7 @@ char * en_en::getQuestionSentence(){
   if (s[sc].id!=0){
    if (sc > 0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=EN_EN_ANDNOUN;
-   buf[a++]=getArticle(s[sc].id,s[sc].plural ? 4:0, s[sc].num,s[sc].typ);
-   for (int i=0;i<16;i++)
-   {
-    if (s[sc].adj[i]!=0)
-    {
-     buf[a++]=getAdjective(s[sc].adj[i]);
-    }
-   }
-   buf[a++]=getNoun(s[sc].id,s[sc].plural ?4:0);
+   buf[a++] = getNounString(&s[sc],0,0);
   }
  }
   buf[a++]=getStartAdverbs(&adverbs[0]);
@@ -238,25 +230,6 @@ char * en_en::getQuestionSentence(){
     buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1);
   }
  } 
- //Prepositions goes here
- /*if(prepos_prepos[0]!=0){
-  buf[a++]=getPrepos(prepos_prepos[0]);
-  buf[a++]=getArticle(prepos_object[0].id,prepos_object[0].plural?4:prepos_object[0].reflex?3:2,prepos_object[0].num,prepos_object[0].typ);
-  for (int i=0;i<16;i++)
-  {
-   if (prepos_adj[0][i]!=0)
-   {
-    buf[a++]=getAdjective(prepos_adj[0][i]);
-   }
-  }
-  buf[a++]=getNoun(prepos_object[0].id,prepos_object[0].plural?4:prepos_object[0].reflex?3:2);
-
- } 
- if(prepos_prepos[1]!=0){
-  buf[a++]=getPrepos(prepos_prepos[1]);
-  buf[a++]=getArticle(prepos_object[1].id,prepos_object[1].plural?4:prepos_object[1].reflex?3:2,prepos_object[1].num,prepos_object[1].typ);
-  buf[a++]=getNoun(prepos_object[1].id,prepos_object[1].plural?4:prepos_object[1].reflex?3:2);
- }*/ 
  if(prepos_prepos[2]!=0){
   buf[a++]=getPrepos(prepos_prepos[2]);
   buf[a++]=getArticle(prepos_object[2].id,prepos_object[2].plural?4:prepos_object[2].reflex?3:2,prepos_object[2].num,prepos_object[2].typ);

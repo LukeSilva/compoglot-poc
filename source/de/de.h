@@ -21,7 +21,7 @@ class de: public Language{
   char* getArticle(int id,int form,int num,int cas,int typ); 
   char* _getArticle(int id,int form,int num,int cas,int typ); 
   //Prepositions
-  char* getPreposObject(int prepos,int object,int amount,bool plural,int typ);
+  char* getPreposObject(int prepos,noun* n,int* cas,bool* adda);
   //Nouns
   char getNounType(int n);
   char* getNoun(int n,bool pl,int cas);
@@ -38,4 +38,5 @@ class de: public Language{
   char* getSubClause();
   //General
   void parseVerb(int v, int n);
+  char* getNounString(noun* n);
 };

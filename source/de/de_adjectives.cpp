@@ -44,7 +44,7 @@ char* de::getAdjective(int adjective,int noun,bool plural, int atyp, int cas){
  }
  buffer[i-1]=0;
  strcat(buffer,(const char*)buffer2+2*(sizeof(char)));
- if (noun>0 && buffer2[0]=='0') strcat(buffer,ending);
+ if (noun>0 && buffer2[0]=='0' && noun != 14) strcat(buffer,ending);
  else if (buffer2[0]!='1') strcat(buffer," ");
  return buffer;
 }

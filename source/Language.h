@@ -27,6 +27,7 @@ typedef struct noun{
  int adj[16];
  Language* rClause;
  bool useRClause;
+ int data;
 }noun;
 
 #include "settings.h"
@@ -49,17 +50,10 @@ public:
  noun s[16];
  int snum;
  int sadj[16][16];
- int data_s;
  noun obj[8][16];
  int objnum[8];
  int objadj[8][16][16];
  int objprepos[8];
- int data_obj[8];
- 
- //noun o[16];
- //int oadj[16][16];
- //int onum;
-
  int data;
  bool neg;
  Language* subClause;
