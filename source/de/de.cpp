@@ -86,6 +86,19 @@ char* de::getNounString(noun* n)
     n->genitivenoun->typ = -1;
   strcat(buffer,getNounString(n->genitivenoun));
  }
+ if (n->useRClause)
+ {
+  strcat(buffer,", ");
+  char* rClauseString =n->rClause->createSubClause();
+  int cas2 = 0;
+  if (n->rClauseObj != 0)
+  {
+    cas2 = n->rClause->obj[n->rClauseObj-1][0].data;
+  }
+  else cas2 = n->rClause->s[0].data;
+  strcat(buffer,getArticle(n->id,n->plural?1:0,n->num,cas2,-1));
+  strcat(buffer,rClauseString);
+ }
  return buffer;
 }
 char de::getPreVerb2(int v1){

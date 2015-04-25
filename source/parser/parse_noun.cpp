@@ -50,11 +50,23 @@ noun* Parser::parseNoun(){
  if (rstLook() && check("true"))
  {
   expect(',',__FILE__,__LINE__);
+  if (rstLook() && check("true"))
+  {
+   n->rClauseEssential = true;
+  }
+  else if (rstLook() && check("false"))
+  {
+   n->rClauseEssential = false;
+  }
+  else error("Couldn't parse boolean (rClause-Essential-bool)",__FILE__,__LINE__);
+  expect(',',__FILE__,__LINE__);
+  n->rClauseObj = getInt();
+  expect(',',__FILE__,__LINE__);
   expect('(',__FILE__,__LINE__);
   Language* nlang = getLanguageFromStringId(langid);
   nlang->newSentence();
-  _parse(nlang);
   nlang->s[0].id = 14;
+  _parse(nlang);
   nlang->punctuation = false;
   n->rClause = nlang;
   n->useRClause = true;

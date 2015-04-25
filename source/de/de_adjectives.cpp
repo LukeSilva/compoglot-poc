@@ -38,13 +38,12 @@ char* de::getAdjective(int adjective,int noun,bool plural, int atyp, int cas){
  }
  int u=0;
  int i=0;
+ strcat(buffer,(const char*)buffer2+2*(sizeof(char)));
  while(u==0){
-  if (buffer[i]=='\n') u=1;
+  if (buffer[i]=='\n') break;
   i++;
  }
- buffer[i-1]=0;
- strcat(buffer,(const char*)buffer2+2*(sizeof(char)));
+ buffer[i]=0;
  if (noun>0 && buffer2[0]=='0' && noun != 14) strcat(buffer,ending);
- else if (buffer2[0]!='1') strcat(buffer," ");
  return buffer;
 }

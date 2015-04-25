@@ -27,6 +27,8 @@ typedef struct noun{
  int adj[16];
  Language* rClause;
  bool useRClause;
+ int rClauseObj;
+ bool rClauseEssential;
  int data;
 }noun;
 

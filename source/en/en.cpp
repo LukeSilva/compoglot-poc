@@ -79,12 +79,14 @@ char* en_en::getNounString(noun* n,int vr,int vnr)
   }
   if (n->useRClause)
   {
+    n->rClause->clause = true;
     char t = getNounType(n->id);
     if (t == 'm' || t == 'f' || t == 'p' || t == 'd')
     {
       strcat(buffer,EN_EN_WHO);
     }
-    else strcat(buffer,EN_EN_THAT);
+    else if (n->rClauseEssential) strcat(buffer,EN_EN_THAT);
+    else strcat(buffer,EN_EN_WHICH);
     strcat(buffer,n->rClause->createSentence());
     strcat(buffer," ");
   }
