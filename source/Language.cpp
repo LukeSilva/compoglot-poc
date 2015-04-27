@@ -121,6 +121,26 @@ noun* Language::getIt(int id){
   }
   return n;
 }
+void clearNoun(noun* n)
+{
+	n->id = 0;
+	n->data = 0;
+	n->num = 0;
+	n->genitivenoun = NULL;
+	n->plural = false;
+	n->prepos = 0;
+	n->rClause = NULL;
+	n->rClauseEssential = false;
+	n->rClauseObj = 0;
+	n->reflex = false;
+	n->typ = 0;
+	n->usegenitive = false;
+	n->useRClause = false;
+	for (int i = 0; i < 16; ++i)
+	{
+		n->adj[i] = 0;
+	}
+}
 void Language::newSentence(){
 	printf("New Sentence!\n");
  punctuation = true;
@@ -138,14 +158,17 @@ void Language::newSentence(){
  st=0;
  neg=false;
  for (int i=0;i<16;i++){
-  s[i].id=0;
-  s[i].data=0;
-  for (int j=0;j<16;j++){
-   s[i].adj[j]=0;
-  }
+	 clearNoun(&s[0]);
   prepos_adj[0][i]=0;
   prepos_adj[1][i]=0;
   prepos_adj[2][i]=0;
+ }
+ for (int i = 0; i < 8; ++i)
+ {
+	 for (int j = 0; j < 16; ++j)
+	 {
+		 clearNoun(&obj[i][j]);
+	 }
  }
  for (int i=0;i<NUM_ADVERBS;i++)
   adverbs[i]=0;

@@ -60,8 +60,10 @@ void Parser::__parseObject(Language* lang,int objid){
   else if (rstLook() && check("adj")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   if (lang->obj[objid][obj].id==0)
-    lang->obj[objid][obj].id=14;
+   if (lang->obj[objid][obj].id == 0)
+   {
+	   lang->obj[objid][obj].id = 14;
+   }
    lang->obj[objid][obj].adj[objadj]=getInt();
    expect(')',__FILE__,__LINE__);
    objadj++;
