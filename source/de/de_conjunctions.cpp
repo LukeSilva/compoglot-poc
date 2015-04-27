@@ -12,7 +12,7 @@ char* de::getConjunction(int conjunction){
  fclose(rFile);
  int i=0;
  while(true){
-  if (buf[i]=='_') break;
+	 if (buf[i] == '_') break;
   i++;
  }
  i++;

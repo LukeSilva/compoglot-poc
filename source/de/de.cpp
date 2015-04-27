@@ -64,6 +64,7 @@ char de::getCaseOfObject(int v,int st){
 }
 char* de::getNounString(noun* n)
 {
+	if (n->data < 0) n->data = 0;
  char* buffer = (char*) malloc (BUFFER_SIZE*10);
  buffer[0]=0;
  int cas = n->data;
@@ -113,11 +114,11 @@ char de::getPreVerb2(int v1){
  return t;
 }
 char* de::createSubClause(){
- if(verb1!=0){
+ if(verb1>0){
   parseVerb(0,verb1);
   verb1=0;
  }
- if (verb2!=0){
+ if (verb2>0){
   parseVerb(1,verb2);
   verb2=0;
  }
@@ -131,7 +132,7 @@ char* de::createSubClause(){
   buf[a++]=getPreposObject(prepos_prepos[2],prepos_object[2].id,prepos_object[2].num,prepos_object[2].plural,prepos_object[2].typ);
  }*/
  for(int sc=0;sc<16;sc++){
-  if (s[sc].id!=0){
+  if (s[sc].id>0){
    if (sc>0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=DE_UNDNOMEN;
    buf[a++]=getNounString(&s[sc]);
@@ -139,7 +140,7 @@ char* de::createSubClause(){
  }
  for (int objid=0;objid<8;objid++){
   for (int oc=0;oc<16;oc++){
-   if (obj[objid][oc].id!=0){
+   if (obj[objid][oc].id>0){
     if (oc>0) buf[a++]=", ";
     if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
     buf[a++]=getNounString(&obj[objid][oc]);
@@ -162,7 +163,7 @@ char* de::createSubClause(){
 
  buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
  
- if(subClause!=NULL && conjunction != 0)
+ if(subClause!=NULL && conjunction > 0)
  {
   buf[a++]=getSubClause();
  }
@@ -179,6 +180,11 @@ char* de::createSubClause(){
  return buffer;
 }
 char* de::createSentence(){
+
+	for (int i = 0; i < 256; ++i)
+	{
+		buf[i] = 0;
+	}
  char endchar = '.';
  if (question == 1){
   data|=0x01;
@@ -186,11 +192,11 @@ char* de::createSentence(){
  }
  if (punctuation == false)
   endchar = NULL;
- if(verb1!=0){
+ if(verb1>0){
   parseVerb(0,verb1);
   verb1=0;
  }
- if (verb2!=0){
+ if (verb2>0){
   parseVerb(1,verb2);
   verb2=0;
  }
@@ -213,7 +219,7 @@ char* de::createSentence(){
   verb = false;
  }*/
  for(int sc=0;sc<16;sc++){
-  if (s[sc].id!=0){
+  if (s[sc].id>0){
    if (sc>0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=DE_UNDNOMEN;
    buf[a++]=getNounString(&s[sc]);
@@ -222,7 +228,7 @@ char* de::createSentence(){
  if(verb)buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st);
  for (int objid=0;objid<8;objid++){
   for (int oc=0;oc<16;oc++){
-   if (obj[objid][oc].id!=0){
+   if (obj[objid][oc].id>0){
     if (oc>0) buf[a++]=", ";
     if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
     buf[a++]=getNounString(&obj[objid][oc]);
@@ -238,7 +244,7 @@ char* de::createSentence(){
   buf[a++]=getOtherVerb(v1,v2);
  if (hasEndVerb)
   buf[a++]=endVerb;
- if(subClause!=NULL && conjunction != 0)
+ if(subClause!=NULL && conjunction > 0)
  {
   buf[a++]=getSubClause();
  }

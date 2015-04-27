@@ -96,45 +96,50 @@ char* en_en::getSentenceNormal(){
  int a=0;
  char debug='a';
  bool splural=(snum>0) | s[0].plural;
-
   buf[a++]=getStartAdverbs(&adverbs[0]);
- if(prepos_prepos[2]!=0){
+  
+ if(prepos_prepos[2]>0){
   buf[a++]=getPrepos(prepos_prepos[2]);
   buf[a++]=getArticle(prepos_object[2].id,prepos_object[2].plural?4:prepos_object[2].reflex?3:2,prepos_object[2].num,prepos_object[2].typ);
   buf[a++]=getNoun(prepos_object[2].id,prepos_object[2].plural?4:prepos_object[2].reflex?3:2);
  } 
+ 
  for (int sc=0;sc<16;sc++){
-  if (s[sc].id!=0){
+  if (s[sc].id>0){
    if (sc > 0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=EN_EN_ANDNOUN;
    buf[a++]=getNounString(&s[sc],0,0);
   }
  }
+ 
  if (v1!=0)
   buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st,getMiddleAdverbs(&adverbs[0]));
  if (v2!=0)
   buf[a++]=getOtherVerb(v1,v2);
+ 
  for (int objid=0;objid<8;objid++)
  {
   for (int oc=0;oc<16;oc++){
-   if (obj[objid][oc].id!=0){
+   if (obj[objid][oc].id>0){
     if (oc > 0) buf[a++]=", ";
     if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ANDNOUN;
     buf[a++]=getNounString(&obj[objid][oc],3,1);
    }
   }
  } 
+ 
  buf[a++]=getEndAdverbs(&adverbs[0]);
-
+ 
  if(subClause!=NULL && conjunction!=0){
   buf[a++]=getSubClause(conjunction,subClause);
  }
-
+ 
  int sl=0;
  for (int i=0;i<256;i++){
   if(buf[i]!=NULL)
    sl+=strlen(buf[i]);
  }
+ 
  char* buffer = (char*)calloc(sl+4,sizeof(char));
  for (int i=0;i<256;i++){
   if(buf[i]!=NULL)
@@ -142,6 +147,7 @@ char* en_en::getSentenceNormal(){
    strcat(buffer,buf[i]);
   }
  }
+ 
  if (clause==false){
   char* buf2 = buffer;
   buffer = (char*) calloc(strlen(buf2)+2,sizeof(char));
@@ -194,7 +200,7 @@ char * en_en::getQuestionSentence(){
  }
  
  for (int sc=0;sc<16;sc++){
-  if (s[sc].id!=0){
+  if (s[sc].id>0){
    if (sc > 0) buf[a++]=", ";
    if (sc == snum && snum>0) buf[a++]=EN_EN_ANDNOUN;
    buf[a++] = getNounString(&s[sc],0,0);
@@ -207,13 +213,14 @@ char * en_en::getQuestionSentence(){
   buf[a++]=QuestionVerb1;
  if (v2!=0)
   buf[a++]=getOtherVerb(v1,v2);
- if (idobj.id!=0){
+ if (idobj.id>0){
   buf[a++]=getArticle(idobj.id,idobj.plural?4:idobj.reflex?3:2,idobj.num,idobj.typ);
   buf[a++]=getNoun(idobj.id,idobj.plural?4:idobj.reflex?3:2);
  }
  for (int objid=0;objid<8;objid++)
  {
-  if (objprepos[objid]!=0)
+	 // This needs to be fixed to use the getNounString function
+  if (objprepos[objid]>0)
    buf[a++]=getPrepos(objprepos[objid]);
   for (int oc=0;oc<16;oc++){
    if (obj[objid][oc].id!=0){
@@ -282,6 +289,10 @@ char * en_en::getQuestionSentence(){
  return buffer;
 }
 char * en_en::createSentence(){
+	for (int i = 0; i < 256; ++i)
+	{
+		buf[i] = 0;
+	}
  if(verb1!=0){
   parseVerb(0,verb1);
   verb1=0;

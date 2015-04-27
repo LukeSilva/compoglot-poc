@@ -122,6 +122,7 @@ noun* Language::getIt(int id){
   return n;
 }
 void Language::newSentence(){
+	printf("New Sentence!\n");
  punctuation = true;
  question = 0;
  clause=false;
@@ -138,7 +139,7 @@ void Language::newSentence(){
  neg=false;
  for (int i=0;i<16;i++){
   s[i].id=0;
-  s[i].data =0;
+  s[i].data=0;
   for (int j=0;j<16;j++){
    s[i].adj[j]=0;
   }
