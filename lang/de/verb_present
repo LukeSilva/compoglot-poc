@@ -4,9 +4,9 @@
 000_können_kann_kannst_kann_kann_kann_können_könnt_können_können
 000_mögen_mag_magst_mag_mag_mag_mögen_mögt_mögen_mögen
 000_müssen_muss_musst_muss_muss_muss_müssen_müsst_müssen_müssen
-
-
-
+000_sollen_soll_sollst_soll_soll_soll_sollen_sollt_sollen_sollen
+100_brauchen
+000_wollen_will_willst_will_will_will_wollen_wollt_wollen_wollen
 
 
 
@@ -63,7 +63,7 @@
 
 
 
-
+100_wünschen
 
 
 
@@ -205,6 +205,7 @@
 
 
 
+100_beginnen
 
 
 
@@ -214,8 +215,7 @@
 
 
 
-
-
+100_studieren
 
 
 
@@ -242,7 +242,7 @@
 
 
 100_finden
-
+000_bilden_bilde_bildest_bildet_bildet_bildet_bilden_bildet_bilden_bilden
 
 
 

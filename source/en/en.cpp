@@ -107,7 +107,8 @@ char* en_en::getSentenceNormal(){
  for (int sc=0;sc<16;sc++){
   if (s[sc].id>0){
    if (sc > 0) buf[a++]=", ";
-   if (sc == snum && snum>0) buf[a++]=EN_EN_ANDNOUN;
+   if (sc == snum && snum>0 && sctype == 0) buf[a++]=EN_EN_ANDNOUN;
+   else if (sc == snum && snum > 0) buf[a++]=EN_EN_ORNOUN;
    buf[a++]=getNounString(&s[sc],0,0);
   }
  }
@@ -122,7 +123,8 @@ char* en_en::getSentenceNormal(){
   for (int oc=0;oc<16;oc++){
    if (obj[objid][oc].id>0){
     if (oc > 0) buf[a++]=", ";
-    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ANDNOUN;
+    if (oc == objnum[objid] && objnum[objid]>0 && octype == 0) buf[a++]=EN_EN_ANDNOUN;
+    else if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ORNOUN;
     buf[a++]=getNounString(&obj[objid][oc],3,1);
    }
   }
@@ -202,7 +204,8 @@ char * en_en::getQuestionSentence(){
  for (int sc=0;sc<16;sc++){
   if (s[sc].id>0){
    if (sc > 0) buf[a++]=", ";
-   if (sc == snum && snum>0) buf[a++]=EN_EN_ANDNOUN;
+   if (sc == snum && snum>0 && sctype == 0) buf[a++]=EN_EN_ANDNOUN;
+   else if (sc == snum && snum > 0) buf[a++]=EN_EN_ORNOUN;
    buf[a++] = getNounString(&s[sc],0,0);
   }
  }
@@ -219,24 +222,13 @@ char * en_en::getQuestionSentence(){
  }
  for (int objid=0;objid<8;objid++)
  {
-	 // This needs to be fixed to use the getNounString function
-  if (objprepos[objid]>0)
-   buf[a++]=getPrepos(objprepos[objid]);
   for (int oc=0;oc<16;oc++){
-   if (obj[objid][oc].id!=0){
+   if (obj[objid][oc].id>0){
     if (oc > 0) buf[a++]=", ";
-    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ANDNOUN;
-     buf[a++]=getArticle(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1,obj[objid][oc].num,obj[objid][oc].typ);
+    if (oc == objnum[objid] && objnum[objid]>0 && octype == 0) buf[a++]=EN_EN_ANDNOUN;
+    else if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ORNOUN;
+    buf[a++]=getNounString(&obj[objid][oc],3,1);
    }
-   for (int i=0;i<16;i++)
-   {
-      if (objadj[objid][oc][i]!=0)
-     {
-      buf[a++]=getAdjective(objadj[objid][oc][i]);
-     }
-   } 
-   if (obj[objid][oc].id!=0)
-    buf[a++]=getNoun(obj[objid][oc].id,obj[objid][oc].plural?4:obj[objid][oc].reflex?3:1);
   }
  } 
  if(prepos_prepos[2]!=0){

@@ -501,7 +501,7 @@ n_flame
 n_flight
 n_floor
 n_flower
-n_food
+o_food_food
 n_foot
 n_force
 n_fork
@@ -1210,3 +1210,6 @@ n_vehicle
 n_verb
 n_action
 n_something
+n_responsibility
+n_probability
+b_event

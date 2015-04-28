@@ -142,7 +142,6 @@ void clearNoun(noun* n)
 	}
 }
 void Language::newSentence(){
-	printf("New Sentence!\n");
  punctuation = true;
  question = 0;
  clause=false;
@@ -157,6 +156,7 @@ void Language::newSentence(){
  v3=0;
  st=0;
  neg=false;
+ sctype = 0;
  for (int i=0;i<16;i++){
 	 clearNoun(&s[0]);
   prepos_adj[0][i]=0;
@@ -164,7 +164,8 @@ void Language::newSentence(){
   prepos_adj[2][i]=0;
  }
  for (int i = 0; i < 8; ++i)
- {
+ {  
+   octype[i] = 0;
 	 for (int j = 0; j < 16; ++j)
 	 {
 		 clearNoun(&obj[i][j]);

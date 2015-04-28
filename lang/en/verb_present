@@ -11,7 +11,7 @@
 41_need
 20_come
 20_go
-20_????
+40_want
 20_land
 00_fly_fly_fly_flies_flies_flies_fly_fly_fly_fly_fly
 20_sail
@@ -242,3 +242,6 @@
 20_allow
 20_leave
 20_find
+20_show
+20_require
+

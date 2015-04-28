@@ -82,6 +82,7 @@ void Parser::__parseObject(Language* lang,int objid){
    objadj=0;
   }
   else{
+   
    error("Unkown Token!",__FILE__,__LINE__);
   }
  }
@@ -125,9 +126,6 @@ void Parser::_parse(Language* lang){
    expect('(',__FILE__,__LINE__);
    __parseObjects(lang);	
   }
-  else if (rstLook() && check("o")){
-   error("Using the o tag is depreciated!",__FILE__,__LINE__);
-  }
   else if (rstLook() && check("adjprepos1")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
@@ -150,6 +148,20 @@ void Parser::_parse(Language* lang){
    }
    expect(')',__FILE__,__LINE__);
   }
+  else if (rstLook() && check("octype"))
+  {
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   int id = getInt() - 1;
+   if (id < 0 || id > 7 )
+   {
+    error("Invalid id for octype()",__FILE__,__LINE__);
+   }
+   expect(',',__FILE__,__LINE__);
+   int ctype = getInt();
+   lang->octype[id] = ctype;
+   expect(')',__FILE__,__LINE__);
+  }
   else if (rstLook() && check("datas")){
    expect('(',__FILE__,__LINE__);
    int data = getInt();
@@ -157,6 +169,13 @@ void Parser::_parse(Language* lang){
    {
     lang->s[i].data=data;
    }
+   expect(')',__FILE__,__LINE__);
+  }
+  else if (rstLook() && check("sctype")){
+   expect('(',__FILE__,__LINE__);
+   int data = getInt();
+   lang->sctype=data;
+   expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("Verb1")){
    rstPtr();
@@ -237,6 +256,10 @@ void Parser::_parse(Language* lang){
    lang->punctuation = getInt();
    expect(' ',__FILE__,__LINE__);
   }
+  else if (rstLook() && check("o")){
+   error("Using the o tag is depreciated!",__FILE__,__LINE__);
+  }
+
   else{
    error("Unknown Token",__FILE__,__LINE__);
   }

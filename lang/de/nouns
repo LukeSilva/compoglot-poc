@@ -446,7 +446,7 @@ f_Blamage_Blamagen
 
 
 
-
+f_Veranstaltung_Veranstaltungen
 n_Beispiel_Beispiele
 
 
@@ -615,7 +615,7 @@ n_Haus_Häuser
 
 
 
-
+m_Mensch_Menschen
 
 
 
@@ -1210,7 +1210,8 @@ f_Kennung_Kennungen
 n_Verb_Verben
 f_Handeln_
 n_etwas_etwas
-
+f_Verantwortung_Verantwortungen
+f_Wahrscheinlichkeit_Wahrscheinlichkeiten
 
 
 

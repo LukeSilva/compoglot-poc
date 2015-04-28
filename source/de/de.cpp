@@ -134,7 +134,8 @@ char* de::createSubClause(){
  for(int sc=0;sc<16;sc++){
   if (s[sc].id>0){
    if (sc>0) buf[a++]=", ";
-   if (sc == snum && snum>0) buf[a++]=DE_UNDNOMEN;
+   if (sc == snum && snum>0 && sctype==0) buf[a++]=DE_UNDNOMEN;
+   else if (sc == snum && snum>0) buf[a++]=DE_ODERNOMEN;
    buf[a++]=getNounString(&s[sc]);
   }
  }
@@ -142,7 +143,8 @@ char* de::createSubClause(){
   for (int oc=0;oc<16;oc++){
    if (obj[objid][oc].id>0){
     if (oc>0) buf[a++]=", ";
-    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
+    if (oc == objnum[objid] && objnum[objid]>0 && octype[objid]==0) buf[a++]=DE_UNDNOMEN;
+    else if (oc == objnum[objid] && objnum[objid]>0) buf[a++] = DE_ODERNOMEN;
     buf[a++]=getNounString(&obj[objid][oc]);
    }
   }
@@ -221,7 +223,8 @@ char* de::createSentence(){
  for(int sc=0;sc<16;sc++){
   if (s[sc].id>0){
    if (sc>0) buf[a++]=", ";
-   if (sc == snum && snum>0) buf[a++]=DE_UNDNOMEN;
+   if (sc == snum && snum>0 && sctype==0) buf[a++]=DE_UNDNOMEN;
+   else if (sc == snum && snum>0) buf[a++]=DE_ODERNOMEN;
    buf[a++]=getNounString(&s[sc]);
   }
  }
@@ -230,7 +233,8 @@ char* de::createSentence(){
   for (int oc=0;oc<16;oc++){
    if (obj[objid][oc].id>0){
     if (oc>0) buf[a++]=", ";
-    if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=DE_UNDNOMEN;
+    if (oc == objnum[objid] && objnum[objid]>0 && octype[objid]==0) buf[a++]=DE_UNDNOMEN;
+    else if (oc == objnum[objid] && objnum[objid]>0) buf[a++] = DE_ODERNOMEN;    
     buf[a++]=getNounString(&obj[objid][oc]);
    }
   }

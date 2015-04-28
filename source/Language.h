@@ -53,6 +53,8 @@ public:
  int snum;
  int sadj[16][16];
  noun obj[8][16];
+ int octype[8];
+ int sctype;
  int objnum[8];
  int objadj[8][16][16];
  int objprepos[8];

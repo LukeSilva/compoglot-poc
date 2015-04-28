@@ -4,9 +4,9 @@
 (Verb(4) )
 (Verb(5) )
 (Verb(6) )
-
-
-
+(Verb(7) )
+(Verb(8) datao(1,1))
+(Verb(9) )
 
 
 
@@ -63,7 +63,7 @@
 
 
 
-
+(Verb(66) datao(1,1))
 
 
 
@@ -205,6 +205,7 @@
 
 
 
+(Verb(208) datao(1,1))
 
 
 
@@ -214,8 +215,7 @@
 
 
 
-
-
+(Verb(218) datao(1,1))
 
 
 
@@ -242,7 +242,7 @@
 
 (Verb(13) datao(1,1))
 (Verb(244) datao(1,1))
-
+(Verb(245) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false))) )
 
 
 
