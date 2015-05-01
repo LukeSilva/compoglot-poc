@@ -132,6 +132,22 @@ void Parser::_parse(Language* lang){
    lang->addPreposAdj1(getInt());
    expect(')',__FILE__,__LINE__);
   }
+  else if (rstLook() && check("oprepos")){
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   int id = getInt() - 1;
+   if (id < 0 || id > 7)
+   {
+    error("Invalid id for oprepos()",__FILE__,__LINE__);
+   }
+   expect(',',__FILE__,__LINE__);
+   int prepos = getInt();
+   for (int i = 0; i < 16; ++i)
+   {
+    lang->obj[id][i].prepos = prepos;
+   }
+   expect(')',__FILE__,__LINE__);
+  }
   else if (rstLook() && check("datao")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
