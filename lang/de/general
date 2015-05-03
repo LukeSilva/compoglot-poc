@@ -9,11 +9,11 @@
 (Verb(9) )
 (Verb(10) )
 (Verb(11) )
-(Verb(12) datao(1,1) oprepos(1,19))
-(Verb(13) datao(1,1) oprepos(1,19))
-
-
-
+(Verb(12) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18))
+(Verb(13) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18))
+(Verb(9) datao(1,1))
+(Verb(15) datao(1,1))
+(Verb(16))
 
 
 
@@ -235,7 +235,7 @@
 
 
 
-
+(Verb(238) datao(1,1))
 
 (Verb(240) datao(1,1))
 (Verb(241) datao(1,0))
