@@ -6,7 +6,6 @@ class de: public Language{
  public:
   char * createSubClause();
   char * createSentence();
-  char * buf[256];
  private: 
   char * endVerb;
   bool hasEndVerb;

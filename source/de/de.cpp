@@ -114,10 +114,6 @@ char de::getPreVerb2(int v1){
  return t;
 }
 char* de::createSubClause(){
-	for (int i = 0; i < 256; ++i)
-	{
-		buf[i] = 0;
-	}
  if(verb1>0){
   parseVerb(0,verb1);
   verb1=0;
@@ -174,23 +170,18 @@ char* de::createSubClause(){
   buf[a++]=getSubClause();
  }
  int sl=0;
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
    sl+=strlen(buf[i]);
  }
  char* buffer = (char*)calloc(sl+4,sizeof(char));
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
    strcat(buffer,buf[i]);
  }
  return buffer;
 }
 char* de::createSentence(){
-	for (int i = 0; i < 256; ++i)
-	{
-		buf[i] = 0;
-	}
-
  char endchar = '.';
  if (question == 1){
   data|=0x01;
@@ -257,12 +248,12 @@ char* de::createSentence(){
   buf[a++]=getSubClause();
  }
  int sl=0;
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
    sl+=strlen(buf[i]);
  }
  char* buffer = (char*)calloc(sl+4,sizeof(char));
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
   {
    strcat(buffer,buf[i]);

@@ -4,6 +4,7 @@
 #define EN_EN_FOLDER "en/"
 #define DE_FOLDER "de/"
 #define BUFFER_SIZE 100
+#define NUM_BUF 256
 #define NUM_ADVERBS 5
 #define EN_NEGATIVE "negative"
 #define EN_EN_DONOT "don't "

@@ -4,7 +4,6 @@ class en_en: public Language{
  public:
   char * createSentence();
  char lang[3];
- char* buf[256];
  char* QuestionVerb1;
  private:
  

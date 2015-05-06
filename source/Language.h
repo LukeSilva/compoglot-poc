@@ -1,3 +1,4 @@
+
 #ifndef LANGUAGE_H
 #define LANGUAGE_H
 
@@ -35,6 +36,7 @@ typedef struct noun{
 #include "settings.h"
 class Language{
 protected:
+ char* buf[NUM_BUF];
  int v1;
  int v2;
  int v3;
@@ -90,8 +92,6 @@ public:
  virtual char * createSubClause();
  virtual noun * getIt(int id);
  void setSentenceType(int sentenceType);
-
- 
 };
 
 //always use simple present

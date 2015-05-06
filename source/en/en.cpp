@@ -137,13 +137,13 @@ char* en_en::getSentenceNormal(){
  }
  
  int sl=0;
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
    sl+=strlen(buf[i]);
  }
  
  char* buffer = (char*)calloc(sl+4,sizeof(char));
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
   {
    strcat(buffer,buf[i]);
@@ -243,12 +243,12 @@ char * en_en::getQuestionSentence(){
  }
 
  int sl=0;
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
    sl+=strlen(buf[i]);
  }
  char* buffer = (char*)calloc(sl+4,sizeof(char));
- for (int i=0;i<256;i++){
+ for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
   {
    strcat(buffer,buf[i]);
@@ -280,11 +280,7 @@ char * en_en::getQuestionSentence(){
  }
  return buffer;
 }
-char * en_en::createSentence(){
-	for (int i = 0; i < 256; ++i)
-	{
-		buf[i] = 0;
-	}
+char * en_en::createSentence(){	
  if(verb1!=0){
   parseVerb(0,verb1);
   verb1=0;

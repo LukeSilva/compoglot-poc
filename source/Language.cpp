@@ -142,6 +142,10 @@ void clearNoun(noun* n)
 	}
 }
 void Language::newSentence(){
+ for (int i = 0; i < NUM_BUF; ++i)
+ {
+  buf[i] = 0;
+ }
  punctuation = true;
  question = 0;
  clause=false;
