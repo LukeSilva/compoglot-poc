@@ -114,6 +114,10 @@ char de::getPreVerb2(int v1){
  return t;
 }
 char* de::createSubClause(){
+	for (int i = 0; i < 256; ++i)
+	{
+		buf[i] = 0;
+	}
  if(verb1>0){
   parseVerb(0,verb1);
   verb1=0;
@@ -182,11 +186,11 @@ char* de::createSubClause(){
  return buffer;
 }
 char* de::createSentence(){
-
 	for (int i = 0; i < 256; ++i)
 	{
 		buf[i] = 0;
 	}
+
  char endchar = '.';
  if (question == 1){
   data|=0x01;
