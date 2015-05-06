@@ -44,7 +44,7 @@ int fileParse(int argc,char* argv[]){
              char* string;
              string = parser.parse(argv[2],in);
              fputs(string,wFile);
-             free(in);
+             //free(in);
   		
            }else{fputs("${LAN",wFile);fputc(c,wFile);}
          }else{fputs("${LA",wFile);fputc(c,wFile);}

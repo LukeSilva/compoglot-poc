@@ -231,14 +231,14 @@ char * en_en::getQuestionSentence(){
    }
   }
  } 
- if(prepos_prepos[2]!=0){
+ if(prepos_prepos[2]>0){
   buf[a++]=getPrepos(prepos_prepos[2]);
   buf[a++]=getArticle(prepos_object[2].id,prepos_object[2].plural?4:prepos_object[2].reflex?3:2,prepos_object[2].num,prepos_object[2].typ);
   buf[a++]=getNoun(prepos_object[2].id,prepos_object[2].plural?4:prepos_object[2].reflex?3:2);
  } 
  buf[a++]=getEndAdverbs(&adverbs[0]);
 
- if(subClause!=NULL && conjunction!=0){
+ if(subClause!=NULL && conjunction>0){
   buf[a++]=getSubClause(conjunction,subClause);
  }
 
