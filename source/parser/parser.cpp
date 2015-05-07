@@ -148,6 +148,21 @@ void Parser::_parse(Language* lang){
    }
    expect(')',__FILE__,__LINE__);
   }
+  else if (rstLook() && check("oarticle")){
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   int id = getInt() - 1;
+   if (id < 0 || id > 7)
+   {
+    error("Invalid id for oarticle()",__FILE__,__LINE__);
+   }
+   expect(',',__FILE__,__LINE__);
+   int article = getInt();
+   for (int i = 0; i < 16; ++i)
+   {
+    lang->obj[id][i].typ = article;
+   }
+  }
   else if (rstLook() && check("datao")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
