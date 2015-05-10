@@ -19,7 +19,7 @@
 (Verb(19) datao(1,1) oprepos(1,4))
 (Verb(20) datao(1,1))
 (Verb(21) datao(1,2) oprepos(1,26))
-(Verb(22) datao(1,0))
+(Verb(22) datao(1,2) oprepos(1,14))
 
 
 
@@ -245,7 +245,7 @@
 (Verb(245) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false))) )
 
 (Verb(247))
-
+(Verb(248))
 
 
 
