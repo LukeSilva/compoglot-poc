@@ -15,19 +15,19 @@
 (Verb(15))
 (Verb(16))
 (Verb(17) oprepos(1,19) oprepos(2,18))
-
-
-
+(Verb(18) oprepos(1,19) oprepos(2,18))
+(Verb(19) oprepos(1,4))
+(Verb(20))
 (Verb(21))
 (Verb(22))
-
-
-
-
-
-
+(Verb(23))
+(Verb(24))
+(Verb(25))
+(Verb(26))
+(Verb(27))
+(Verb(28))
 (Verb(29) oprepos(1,44) oarticle(1,0))
-
+(Verb(30))
 
 
 
@@ -65,7 +65,7 @@
 
 (Verb(66) )
 
-
+(Verb(68) )
 
 
 
@@ -144,7 +144,7 @@
 
 
 
-
+(Verb(147))
 
 
 
@@ -243,3 +243,6 @@
 (Verb(243))
 (Verb(244))
 (Verb(245))
+
+(Verb(247))
+(Verb(248))
