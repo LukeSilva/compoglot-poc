@@ -16,7 +16,7 @@
 100_fliegen
 000_segeln_segle_segelst_segelt_segelt_segelt_segeln_segelt_segeln_segeln
 000_laufen_laufe_läufst_läuft_läuft_läuft_laufen_lauft_laufen_laufen
-
+000_warten_warte_wartest_wartet_wartet_wartet_warten_wartet_warten_warten
 
 
 000_sprechen_spreche_sprichst_spricht_spricht_spricht_sprechen_sprecht_sprechen_sprechen
@@ -65,7 +65,7 @@
 
 100_wünschen
 
-
+100_machen
 
 
 
@@ -244,7 +244,7 @@
 100_finden
 000_bilden_bilde_bildest_bildet_bildet_bildet_bilden_bildet_bilden_bilden
 
-
+100_bleiben
 
 
 
