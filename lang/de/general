@@ -22,8 +22,8 @@
 (Verb(22) datao(1,2) oprepos(1,14))
 (Verb(23) datao(1,2))
 (Verb(24) datao(1,1))
-
-
+(Verb(25) datao(1,1))
+(Verb(26) )
 
 
 (Verb(13) oprepos(1,14) datao(1,2) oarticle(1,-1))
@@ -247,7 +247,7 @@
 (Verb(247))
 (Verb(248))
 (Verb(249) datao(1,1))
-
+(Verb(24) oprepos(1,14) datao(1,2) obj(7(n(14,0,false,false,0,false,false,false) adj(160))) ) 
 
 
 
