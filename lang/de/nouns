@@ -483,6 +483,11 @@ f_Erklärung_Erklärungen
 
 
 
+m_Fakt_Fakten
+
+
+
+m_Vater_Väter
 
 
 
@@ -490,12 +495,7 @@ f_Erklärung_Erklärungen
 
 
 
-
-
-
-
-
-
+m_Fisch_Fische
 
 
 
@@ -721,6 +721,7 @@ f_Liste_Listen
 
 
 
+m_Mann_Männer
 
 
 
@@ -745,8 +746,7 @@ f_Liste_Listen
 
 
 
-
-
+f_Mutter_Mütter
 
 
 
@@ -992,6 +992,7 @@ f_Schule_Schulen
 
 
 
+n_Meer_Meere
 
 
 
@@ -1176,8 +1177,7 @@ f_Schule_Schulen
 
 
 
-
-
+n_Wasser_Wässer
 
 
 
@@ -1206,14 +1206,14 @@ f_Schule_Schulen
 
 
 f_Kennung_Kennungen
-
+n_Fahrzeug_Fahrzeuge
 n_Verb_Verben
 f_Handeln_
 n_etwas_etwas
 f_Verantwortung_Verantwortungen
 f_Wahrscheinlichkeit_Wahrscheinlichkeiten
 
-
+n_nichts_nichts
 
 
 

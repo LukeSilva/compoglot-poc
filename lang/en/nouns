@@ -341,7 +341,7 @@ n_ceremony
 n_certificate
 n_chair
 n_character
-n_child
+o_child_children
 n_chimney
 n_China
 n_choice
@@ -495,7 +495,7 @@ n_field
 n_fight
 n_finger
 n_fire
-n_fish
+o_fish_fish
 n_flag
 n_flame
 n_flight
@@ -1213,3 +1213,5 @@ n_something
 n_responsibility
 n_probability
 b_event
+n_nothing
+
