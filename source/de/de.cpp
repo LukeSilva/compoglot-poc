@@ -7,7 +7,7 @@ char a[2]="";
 char de_nicht[7]="nicht ";
 char de_zu[4]="zu ";
 char de::getVerbType(int v,int st){
- FILE* rFile;
+ FILE* rFile = NULL;
  if (st<2){
   rFile = fopen(DICTIONARY DE_FOLDER "verb_present","r");
  }
@@ -50,7 +50,7 @@ void de::gotoline(FILE* rFile, int line){
 }
 
 char de::getCaseOfObject(int v,int st){
- FILE* rFile;
+	FILE* rFile = NULL;
  if (st<10){
   rFile=fopen(DICTIONARY DE_FOLDER "verb_present","r");
  }

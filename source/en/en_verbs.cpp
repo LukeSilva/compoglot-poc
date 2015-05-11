@@ -127,8 +127,8 @@ char* en_en::getVerbPresent(int v,int f,int s,int st,char* midadverb){
    bl=getVerbLength(1,f,s,1,&blank);
    char* preadd=getVerbPreAdd(v);
    il=strlen(preadd);
-   char* gerund;
-   char* buffer;
+   char* gerund=NULL;
+   char* buffer = NULL;
    if (question==0)
    {
     buffer = (char*)calloc(bl+il+5,sizeof(char));
@@ -240,8 +240,8 @@ char* en_en::getVerbPastProgressive(int v,int f,int s,int st,char* midadverb){
   bl=getVerbLength(1,f,s,st-2,&blank);
   char* preadd=getVerbPreAdd(v);
   il=strlen(preadd);   
-  char* gerund;
-  char* buffer;
+  char* gerund = NULL;
+  char* buffer = NULL;
   if (question==0)
   {
    buffer = (char*)calloc(bl+il+5,sizeof(char));
@@ -264,8 +264,8 @@ char* en_en::getVerbPastProgressive(int v,int f,int s,int st,char* midadverb){
   bl+=getVerbLength(1,0,s,3,midadverb);
   char* preadd=getVerbPreAdd(v);
   il=strlen(preadd);
-  char* gerund;
-  char* buffer;
+  char* gerund = NULL;
+  char* buffer = NULL;
   if (question==0)
   {
    buffer = (char*)calloc(bl+il+5,sizeof(char));
