@@ -21,7 +21,7 @@
 (Verb(21) datao(1,2) oprepos(1,26))
 (Verb(22) datao(1,2) oprepos(1,14))
 (Verb(23) datao(1,2))
-
+(Verb(24) datao(1,1))
 
 
 
@@ -123,7 +123,7 @@
 
 
 
-
+(Verb(126) datao(1,1))
 
 
 
@@ -246,7 +246,7 @@
 
 (Verb(247))
 (Verb(248))
-
+(Verb(249) datao(1,1))
 
 
 
