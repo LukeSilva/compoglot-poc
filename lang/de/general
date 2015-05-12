@@ -26,7 +26,7 @@
 (Verb(26) )
 
 
-(Verb(13) oprepos(1,14) datao(1,2) oarticle(1,-1))
+(Verb(13) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) oprepos(3,14) datao(3,2) oarticle(3,-1))
 
 
 

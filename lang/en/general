@@ -26,7 +26,7 @@
 (Verb(26))
 (Verb(27))
 (Verb(28))
-(Verb(29) oprepos(1,44) oarticle(1,0))
+(Verb(29) oprepos(1,19) oprepos(2,18) oprepos(3,44) oarticle(3,0))
 (Verb(30))
 
 
@@ -161,7 +161,7 @@
 
 
 
-
+(Verb(164) )
 
 
 
