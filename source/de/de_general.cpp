@@ -9,7 +9,7 @@ void de::parseVerb(int verb,int n){
  FILE * rFile=fopen(DICTIONARY DE_FOLDER "general","r");
  gotoline(rFile,n);
  char* buf = (char*)calloc(BUFFER_SIZE,sizeof(char));
- fgets(buf,BUFFER_SIZE-1,rFile);
+ fgets(buf,BUFFER_SIZE*2-1,rFile);
  fclose(rFile);
  Parser* p=new Parser; 
  p->string=buf;
