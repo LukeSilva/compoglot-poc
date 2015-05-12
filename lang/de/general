@@ -24,10 +24,10 @@
 (Verb(24) datao(1,1))
 (Verb(25) datao(1,1))
 (Verb(26) )
-
-
-(Verb(13) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) oprepos(3,14) datao(3,2) oarticle(3,-1))
-
+(Verb(27) datao(1,1))
+(Verb(28) )
+(Verb(13) datao(3,2) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) oprepos(3,14) oarticle(3,-1) )
+(Verb(30) )
 
 
 
@@ -161,7 +161,7 @@
 
 
 
-
+(Verb(164) datao(1,1))
 
 
 
