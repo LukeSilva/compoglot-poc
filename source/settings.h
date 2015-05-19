@@ -14,6 +14,7 @@
 #define EN_EN_WHO "who "
 #define EN_EN_THAT "that "
 #define EN_EN_WHICH ", which "
+#define EN_EN_FUTURE "will "
 #define DE_UNDNOMEN "und "
 #define DE_ODERNOMEN "oder "
 #define DE_NEGATIVE "minus "

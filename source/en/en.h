@@ -29,6 +29,7 @@ class en_en: public Language{
   char* getVerbPastProgressive(int v,int f,int s,int st,char* midadverb);
   char* getVerbPast(int v,int f,int s,int st,char* midadverb);
   char* getVerb(int v, int f,int s, int st,char* midadverb);
+  char* getVerbFutureSimple(int v,int f,int s,int st,char* midadverb);
   int getVerbLength(int v,int f,int s,int st,char* midadverb);
   int getVerbFormFromSubjectType(int t,int s);
   char getVerbType(int v, int st);
