@@ -1115,7 +1115,7 @@ n_time
 n_tin
 n_toe
 n_tongue
-n_tooth
+o_tooth_teeth
 n_town
 n_tray
 n_tree
@@ -1214,4 +1214,5 @@ n_responsibility
 n_probability
 b_event
 n_nothing
+n_research
 
