@@ -325,6 +325,30 @@ char* en_en::getVerbFutureSimple(int v, int f, int s, int st, char* midadverb){
   strcat(buf,verb);
   return buf;
 }
+char* en_en::getVerbFutureProgressive(int v, int f, int s, int st, char* midadverb){
+  char* verb;
+  verb = getVerbPresent(v,f,0,0,midadverb);
+  char* buf = (char*)calloc(sizeof(verb) + sizeof(EN_EN_FUTURE) + 1,sizeof(char));
+  strcat(buf,EN_EN_FUTURE);
+  strcat(buf,verb);
+  return buf;
+}
+char* en_en::getVerbFuturePastSimple(int v, int f, int s, int st, char* midadverb){
+  char* verb;
+  verb = getVerb(v,f,1,6,midadverb);
+  char* buf = (char*)calloc(sizeof(verb) + sizeof(EN_EN_FUTURE) + 1,sizeof(char));
+  strcat(buf,EN_EN_FUTURE);
+  strcat(buf,verb);
+  return buf;
+}
+char* en_en::getVerbFuturePastProgressive(int v, int f, int s, int st, char* midadverb){
+  char* verb;
+  verb = getVerb(v,f,1,8,midadverb);
+  char* buf = (char*)calloc(sizeof(verb) + sizeof(EN_EN_FUTURE) + 1,sizeof(char));
+  strcat(buf,EN_EN_FUTURE);
+  strcat(buf,verb);
+  return buf;
+}
 char* en_en::getVerb(int v, int f,int s, int st,char* midadverb){
   if (st < 2)
    return getVerbPresent(v,f,s,st,midadverb);
@@ -336,8 +360,14 @@ char* en_en::getVerb(int v, int f,int s, int st,char* midadverb){
    return getVerbPast(v,f,s,st,midadverb);
   else if (st<10)
    return getVerbPastProgressive(v,f,s,st,midadverb);
-  else if (st<11)
+  else if (st==10 || st == 12)
    return getVerbFutureSimple(v,f,s,st,midadverb);
+  else if (st==11 || st == 13)
+   return getVerbFutureProgressive(v,f,s,st,midadverb);
+  else if (st==14)
+   return getVerbFuturePastSimple(v,f,s,st,midadverb);
+  else if (st==15)
+   return getVerbFuturePastProgressive(v,f,s,st,midadverb);
   char* buffer = (char*)malloc(10);
   buffer[0]=0;
   return buffer;
