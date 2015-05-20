@@ -202,7 +202,7 @@ char* en_en::getVerbPast(int v,int f, int s,bool dr,char* midadverb)
   f=getVerbFormFromSubjectType(t,s);
   }
   char of=f;
-  if (vt!='0') f=0;
+  if (dr) f = 0;
   int u=0;
   int i=0;
   while (u<=f){
@@ -349,6 +349,15 @@ char* en_en::getVerbFuturePastProgressive(int v, int f, int s, int st, char* mid
   strcat(buf,verb);
   return buf;
 }
+char* en_en::getVerbPassivePresent(int v,int f,int s,int st, char* midadverb){
+  if (st > 25) f = 0;
+  char* fv = getVerb(1,f,s,st - 16,&blank);
+  char* sv = getVerbPast(v,f,s,true,midadverb);
+  char* buf = (char*) calloc(sizeof(fv) + sizeof(sv) + 1,sizeof(char));
+  strcat(buf,fv);
+  strcat(buf,sv);
+  return buf;
+}
 char* en_en::getVerb(int v, int f,int s, int st,char* midadverb){
   if (st < 2)
    return getVerbPresent(v,f,s,st,midadverb);
@@ -368,6 +377,8 @@ char* en_en::getVerb(int v, int f,int s, int st,char* midadverb){
    return getVerbFuturePastSimple(v,f,s,st,midadverb);
   else if (st==15)
    return getVerbFuturePastProgressive(v,f,s,st,midadverb);
+  else if (st<31)
+   return getVerbPassivePresent(v,f,s,st,midadverb);
   char* buffer = (char*)malloc(10);
   buffer[0]=0;
   return buffer;
