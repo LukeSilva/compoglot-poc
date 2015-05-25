@@ -30,6 +30,7 @@ class de: public Language{
   char* getVerbPresent(int v, int f, int s, int st);
   char* getVerbPerfekt(int v,int f,int s,int st);
   char* getVerbSimple(int v,int f, int s, int st);
+  char* getVerbFuture(int v,int f,int s,int st);
   //Adjectives
   char* getAdjective(int adjective,int noun,bool plural, int typ, int cas);
   char* getConjunction(int conjunction);

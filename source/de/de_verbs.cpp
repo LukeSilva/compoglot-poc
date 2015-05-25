@@ -133,7 +133,13 @@ char* de::getVerbSimple(int v,int f,int s,int st){
 char* de::getOtherVerb(int v1,int v2){
  return getVerbPresent(v2,0,0,0);
 }
-
+char* de::getVerbFuture(int v,int f,int s,int st){
+ char* verb = getVerbPresent(v,0,0,0);
+ char* hilfsverb = getVerbPresent(14,-1,s,0);
+ endVerb = verb;
+ hasEndVerb = true;
+ return hilfsverb;
+}
 char* de::getVerb(int v, int f, int s, int st)
 {
  if (st<2){
@@ -142,5 +148,7 @@ char* de::getVerb(int v, int f, int s, int st)
   return getVerbPerfekt(v,f,s,st);
  }else if (st<10 && st&0x01){
   return getVerbSimple(v,f,s,st);
+ }else if (st<14){
+  return getVerbFuture(v,f,s,st);
  }
 }
