@@ -116,7 +116,7 @@ char* en_en::getSentenceNormal(){
  if (v1!=0)
   buf[a++]=getVerb(v1,-1,splural?8:s[0].id,st,getMiddleAdverbs(&adverbs[0]));
  if (v2!=0)
-  buf[a++]=getOtherVerb(v1,v2);
+  buf[a++]=getOtherVerb(v1,v2,&adverbs[0]);
  
  for (int objid=0;objid<8;objid++)
  {
@@ -215,7 +215,7 @@ char * en_en::getQuestionSentence(){
  else if (v1!=0 && doQuestion == false)
   buf[a++]=QuestionVerb1;
  if (v2!=0)
-  buf[a++]=getOtherVerb(v1,v2);
+  buf[a++]=getOtherVerb(v1,v2,&adverbs[0]);
  if (idobj.id>0){
   buf[a++]=getArticle(idobj.id,idobj.plural?4:idobj.reflex?3:2,idobj.num,idobj.typ);
   buf[a++]=getNoun(idobj.id,idobj.plural?4:idobj.reflex?3:2);

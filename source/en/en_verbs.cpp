@@ -299,21 +299,30 @@ char* en_en::getVerbPast(int v,int f,int s,int st,char* midadverb){
   return getVerbPresent(2,f,s,1,&blank);
  }
 }
-char* en_en::getOtherVerb(int v1,int v2){
- FILE* rFile = fopen(DICTIONARY EN_EN_FOLDER "verb_present","r");
- gotoline(rFile,v1);
- fgetc(rFile);
- char t = fgetc(rFile);
- fclose(rFile);
+char* en_en::getOtherVerb(int v1,int v2,int* adv){
+ char* adverbs = "";
+ char t = '1';
+ if (v1!=0)
+ {
+  FILE* rFile = fopen(DICTIONARY EN_EN_FOLDER "verb_present","r");
+  gotoline(rFile,v1);
+  fgetc(rFile);
+  t = fgetc(rFile);
+  fclose(rFile);
+ }else
+ {
+  adverbs = getMiddleAdverbs(adv);
+ }
+
  char* buf = (char*)calloc(BUFFER_SIZE,sizeof(char));
  if (t=='2'){ 
   strcat(buf,getVerbPreAdd(v2));
   strcat(buf,"ing ");
  }else if (t=='3'){
-  strcat(buf,getVerbPresent(v2,-1,0,1,(char*)""));
+  strcat(buf,getVerbPresent(v2,-1,0,1,adverbs));
  }else if (t=='1'){
   strcat(buf,"to ");
-  strcat(buf,getVerbPresent(v2,-1,0,1,(char*)""));
+  strcat(buf,getVerbPresent(v2,-1,0,1,adverbs));
  }
  return buf;
 }

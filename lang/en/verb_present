@@ -39,7 +39,7 @@
 20_break
 20_burn
 20_burst
-20_bet
+20_beat
 20_become
 20_buy
 20_care
@@ -205,7 +205,7 @@
 20_sneeze
 20_snow
 20_stamp
-20_start
+21_start
 20_stop
 20_save
 20_search
@@ -250,3 +250,5 @@
 20_sense
 01_try_try_try_tries_tries_tries_try_try_try_try_try
 20_establish
+20_hit
+20_protect

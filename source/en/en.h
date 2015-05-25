@@ -22,7 +22,7 @@ class en_en: public Language{
   char* getNounString(noun* n,int vr,int vnr);
 
   //Verbs
-  char* getOtherVerb(int v1,int v2);
+  char* getOtherVerb(int v1,int v2,int* adv);
   char* getVerbPreAdd(int v);
   char* getVerbPresent(int v,int f,int s,int st,char* midadverb);
   char* getVerbPast(int v,int f, int s,bool dr,char* midadverb);

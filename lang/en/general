@@ -38,16 +38,16 @@
 (Verb(38))
 (Verb(39))
 (Verb(40))
-
-
+(Verb(41))
+(Verb(42))
 (Verb(43))
 (Verb(44))
-
-
-
-
-
-
+(Verb(45) oprepos(1,4))
+(Verb(46))
+(Verb(47))
+(Verb(48))
+(Verb(49))
+(Verb(50))
 
 (Verb(52))
 
@@ -187,7 +187,7 @@
 
 
 
-
+(Verb(190))
 
 
 
@@ -250,3 +250,5 @@
 (Verb(250) oprepos(1,14))
 (Verb(251))
 (Verb(252) oprepos(1,45))
+(Verb(253))
+(Verb(254))
