@@ -140,6 +140,18 @@ char* de::getVerbFuture(int v,int f,int s,int st){
  hasEndVerb = true;
  return hilfsverb;
 }
+char* de::getVerbFuturePerfekt(int v,int f,int s,int st){
+ char* verb = getVerbPerfekt(v,0,0,2);
+ char* hilfsverb = getVerbPresent(14,-1,s,0);
+ if (!hasEndVerb)
+  return (char*)"FAIL DE:GVFP()";
+ char* ev = (char*)malloc(strlen(endVerb) + strlen(verb) + 1);
+ ev[0] = 0;
+ strcat(ev,endVerb);
+ strcat(ev,verb);
+ endVerb = ev;
+ return hilfsverb;
+}
 char* de::getVerb(int v, int f, int s, int st)
 {
  if (st<2){
@@ -150,5 +162,7 @@ char* de::getVerb(int v, int f, int s, int st)
   return getVerbSimple(v,f,s,st);
  }else if (st<14){
   return getVerbFuture(v,f,s,st);
+ }else if (st<16){
+  return getVerbFuturePerfekt(v,f,s,st);
  }
 }
