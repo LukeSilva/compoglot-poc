@@ -120,7 +120,7 @@ char* de::getVerbSimple(int v,int f,int s,int st){
   if (buffer[i]=='\n'){
    //Need to conjugate here
    if (f==2){ buffer[i++]='s'; buffer[i++]='t';}
-   else if (f==6 || f==8 || f==9){ buffer[i++]='n';}
+   else if (f==6 || f==8 || f==9){ if (buffer[i-1]!='e') buffer[i++]='e'; buffer[i++]='n';}
    else if (f==7) buffer[i++]='t';
    buffer[i]=' ';
    buffer[i+1]=0;
@@ -152,6 +152,31 @@ char* de::getVerbFuturePerfekt(int v,int f,int s,int st){
  endVerb = ev;
  return hilfsverb;
 }
+char* de::getVerbPassivePresent(int v,int f,int s,int st)
+{
+ char* hilfsverb = getVerbPresent(14,f,s,0);
+ //Set the endVerb
+ getVerbPerfekt(v,2,0,0);
+ return hilfsverb;
+}
+char* de::getVerbPassivePast(int v,int f,int s,int st)
+{
+ char* hilfsverb = getVerbSimple(14,f,s,3);
+ getVerbPerfekt(v,2,0,0);
+ return hilfsverb;
+}
+char* de::getVerbPassiveFuture(int v,int f,int s,int st)
+{
+ char* hilfsverb = getVerbPresent(14,f,s,0);
+ char* hilfs2verb = getVerbPresent(14,-1,0,0);
+ getVerbPerfekt(v,2,0,0);
+ char* ev = (char*)malloc(strlen(endVerb) + strlen(hilfs2verb) + 1);
+ ev[0]=0;
+ strcat(ev,endVerb);
+ strcat(ev,hilfs2verb);
+ endVerb = ev;
+ return hilfsverb;
+}
 char* de::getVerb(int v, int f, int s, int st)
 {
  if (st<2){
@@ -164,5 +189,11 @@ char* de::getVerb(int v, int f, int s, int st)
   return getVerbFuture(v,f,s,st);
  }else if (st<16){
   return getVerbFuturePerfekt(v,f,s,st);
+ }else if (st<18){
+  return getVerbPassivePresent(v,f,s,st);
+ }else if (st<26){
+  return getVerbPassivePast(v,f,s,st);
+ }else if (st<32){
+  return getVerbPassiveFuture(v,f,s,st);
  }
 }
