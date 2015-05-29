@@ -30,6 +30,9 @@
 000_handeln_handle_handelst_handelt_handelt_handelt_handeln_handelt_handeln_handeln
 000_antworten_antworte_antwortest_antwortet_antwortet_antwortet_antworten_antwortet_antworten_antworten
 100_kämpfen
+100_versuchen
+000_begründen_begründe_begründest_begründet_begründet_begründet_begründen_begründen_begründet_begründen_begründen
+000_beißen_beiße_beißt_beißt_beißt_beißt_beißen_beißt_beißen_beißen
 
 
 
@@ -46,10 +49,7 @@
 
 
 
-
-
-
-
+000_schneiden_schneide_schneidest_schneidet_schneidet_schneidet_schneiden_schneidet_schneiden_schneiden
 
 
 
@@ -249,7 +249,7 @@
 100_entfernen
 
 
-
+100_gründen_gründe_gründest_gründet_gründet_gründet_gründen_gründet_gründen_gründen
 
 
 
