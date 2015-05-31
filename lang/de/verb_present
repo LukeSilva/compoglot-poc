@@ -30,14 +30,14 @@
 000_handeln_handle_handelst_handelt_handelt_handelt_handeln_handelt_handeln_handeln
 000_antworten_antworte_antwortest_antwortet_antwortet_antwortet_antworten_antwortet_antworten_antworten
 100_kämpfen
-100_versuchen
+101_versuchen
 000_begründen_begründe_begründest_begründet_begründet_begründet_begründen_begründen_begründet_begründen_begründen
 000_beißen_beiße_beißt_beißt_beißt_beißt_beißen_beißt_beißen_beißen
-
-
-
-
-
+000_blasen_blase_bläst_bläst_bläst_bläst_blasen_blast_blasen_blasen
+100_kochen
+000_bremsen_bremse_bremst_bremst_bremst_bremst_bremsen_bremst_bremsen
+000_brechen_breche_brichst_bricht_bricht_bicht_brechen_brecht_brechen_brechen
+100_brennen
 
 
 
@@ -118,7 +118,7 @@
 
 
 
-
+000_heizen_heize_heizt_heizt_heizt_heizt_heizen_heizt_heizen_heizen
 
 
 
@@ -147,7 +147,7 @@
 100_machen
 
 
-
+100_bewegen
 
 
 
@@ -206,7 +206,7 @@
 
 
 100_beginnen
-
+000_halten_halte_haltest_haltet_haltet_haltet_halten_haltet_halten_halten
 
 
 

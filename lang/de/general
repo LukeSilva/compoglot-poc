@@ -33,11 +33,11 @@
 (Verb(33) )
 (Verb(34) oprepos(1,14) datao(1,2))
 (Verb(35) )
-
-
-
-
-
+(Verb(36) )
+(Verb(37) )
+(Verb(38) )
+(Verb(39) datao(1,1))
+(Verb(40) datao(1,1))
 
 
 
@@ -118,7 +118,7 @@
 
 
 
-
+(Verb(121) datao(1,1))
 
 
 
@@ -147,7 +147,7 @@
 (Verb(147) datao(1,1))
 
 
-
+(Verb(150) datao(2,2) oprepos(2,19) datao(3,2) oprepos(3,18))
 
 
 
@@ -206,7 +206,7 @@
 
 
 (Verb(208) datao(1,1))
-
+(Verb(209) datao(1,1))
 
 
 
@@ -251,3 +251,5 @@
 
 (Verb(252))
 
+
+(Verb(1) oprepos(1,26) datao(1,2) )
