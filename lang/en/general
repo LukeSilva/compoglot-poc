@@ -147,7 +147,7 @@
 (Verb(147))
 
 
-(Verb(150) oprepos(1,19) oprepos(2,18))
+(Verb(150) oprepos(2,19) oprepos(3,18))
 
 
 
@@ -252,3 +252,4 @@
 (Verb(252) oprepos(1,45))
 (Verb(253))
 (Verb(254))
+(Verb(1) oprepos(1,26) datao(1,2) )
