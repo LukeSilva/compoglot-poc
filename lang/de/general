@@ -38,11 +38,11 @@
 (Verb(38) )
 (Verb(39) datao(1,1))
 (Verb(40) datao(1,1))
-
-
-
-
-
+(Verb(41) datao(1,1))
+(Verb(42) datao(1,1))
+(Verb(43) datao(1,1))
+(Verb(44) datao(1,1))
+(Verb(45) datao(1,1) oprepos(1,4) ) 
 
 
 
@@ -187,7 +187,7 @@
 
 
 
-
+(Verb(190) datao(1,1))
 
 
 
@@ -250,6 +250,6 @@
 (Verb(24) oprepos(1,14) datao(1,2) obj(7(n(14,0,false,false,0,false,false,false) adj(160))) ) 
 
 (Verb(252))
-
-
+(Verb(42) datao(1,1))
+(Verb(254) datao(1,1))
 (Verb(1) oprepos(1,26) datao(1,2) )

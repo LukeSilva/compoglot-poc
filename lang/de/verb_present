@@ -38,11 +38,11 @@
 000_bremsen_bremse_bremst_bremst_bremst_bremst_bremsen_bremst_bremsen
 000_brechen_breche_brichst_bricht_bricht_bicht_brechen_brecht_brechen_brechen
 100_brennen
-
-
-
-
-
+000_platzen_platze_platzt_platzt_platzt_platzt_platzen_platzt_platzen_platzen
+000_schlagen_schlägst_schlägt_schlägt_schlägt_schlagen_schlagt_schlagen_schlagen
+000_werden_werde_wirst_wird_wird_wird_werden_werdet_werden_werden
+100_kaufen
+100_sorgen
 
 
 
@@ -187,7 +187,7 @@
 
 
 
-
+100_bekommen
 
 
 
@@ -251,7 +251,7 @@
 
 100_gründen_gründe_gründest_gründet_gründet_gründet_gründen_gründet_gründen_gründen
 
-
+000_schützen_schütze_schützt_schützt_schützt_schützt_schützen_schützt_schützen_schützen
 
 
 

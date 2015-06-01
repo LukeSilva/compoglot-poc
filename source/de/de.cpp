@@ -99,6 +99,7 @@ char* de::getNounString(noun* n)
   else cas2 = n->rClause->s[0].data;
   strcat(buffer,getArticle(n->id,n->plural?1:0,n->num,cas2,-1));
   strcat(buffer,rClauseString);
+  strcat(buffer,", ");
  }
  return buffer;
 }
