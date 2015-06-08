@@ -53,10 +53,10 @@
 (Verb(27))
 (Verb(54) obj(7(n(14,0,false,false,0,false,true,20,false))) )
 (Verb(55) obj(7(n(14,0,false,false,0,false,true,20,false))) datao(2,3) oprepos(2,46))
-
-
-
-
+(Verb(56) datao(1,1))
+(Verb(57) datao(1,1))
+(Verb(58))
+(Verb(59))
 
 
 
