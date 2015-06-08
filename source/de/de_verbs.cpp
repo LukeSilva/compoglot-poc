@@ -48,7 +48,7 @@ char* de::getVerbPresent(int v, int f, int s, int st){
  if(vt!='0'){
   u--;
   if (buffer[u]=='n') buffer[u--]=' ';
-  if (buffer[u]=='e') buffer[u]=' ';
+  if (buffer[u]!='e') u++;
   if (of==1) buffer[u++]='e';
   else if (of==2){ buffer[u++]='s'; buffer[u++]='t';}
   else if (of==3 || of==4 || of==5) buffer[u++]='t';
