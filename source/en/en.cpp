@@ -123,7 +123,7 @@ char* en_en::getSentenceNormal(){
   for (int oc=0;oc<16;oc++){
    if (obj[objid][oc].id>0){
     if (oc > 0) buf[a++]=", ";
-    if (oc == objnum[objid] && objnum[objid]>0 && octype == 0) buf[a++]=EN_EN_ANDNOUN;
+    if (oc == objnum[objid] && objnum[objid]>0 && octype[objid] == 0) buf[a++]=EN_EN_ANDNOUN;
     else if (oc == objnum[objid] && objnum[objid]>0) buf[a++]=EN_EN_ORNOUN;
     buf[a++]=getNounString(&obj[objid][oc],3,1);
    }
