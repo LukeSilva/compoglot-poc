@@ -371,7 +371,7 @@ n_court
 n_crop
 n_cardboard
 n_cupboard
-n_clothing
+o_piece of clothing_clothes
 n_damage
 n_dance
 n_danger
