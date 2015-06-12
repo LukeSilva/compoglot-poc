@@ -134,7 +134,7 @@ char* en_en::getVerbPresent(int v,int f,int s,int st,char* midadverb){
     buffer = (char*)calloc(bl+il+5,sizeof(char));
     gerund = buffer;
    }
-   else if (question==1)
+   else if (question>0)
    {
     buffer = (char*) calloc(bl+1,sizeof(char));
     QuestionVerb1 = (char*) calloc(il+5,sizeof(char));
