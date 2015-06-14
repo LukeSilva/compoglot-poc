@@ -142,7 +142,8 @@ char* en_en::getSentenceNormal(){
    sl+=strlen(buf[i]);
  }
  
- char* buffer = (char*)calloc(sl+4,sizeof(char));
+ char* buffer = (char*)malloc(sl+4*sizeof(char));
+ buffer[0]=0;
  for (int i=0;i<NUM_BUF;i++){
   if(buf[i]!=NULL)
   {

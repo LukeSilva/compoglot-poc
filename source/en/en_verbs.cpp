@@ -112,7 +112,10 @@ char* en_en::getVerbPresent(int v,int f,int s,int st,char* midadverb){
    char* ret=(char*)calloc(BUFFER_SIZE,sizeof(char));
    strcat(ret,midadverb);
    if (neg && vt!='3' && vt!='0'){
-    strcat(ret,donot);
+    if (of>2 && of<6)
+     strcat(ret,EN_EN_DOESNOT);
+    else
+     strcat(ret,donot);
    }
    strcat(ret,buffer);
    return ret;
