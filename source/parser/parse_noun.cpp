@@ -66,6 +66,7 @@ noun* Parser::parseNoun(){
   Language* nlang = getLanguageFromStringId(langid);
   nlang->newSentence();
   nlang->s[0].id = 14;
+  nlang->s[0].plural=n->plural;
   _parse(nlang);
   nlang->punctuation = false;
   n->rClause = nlang;
