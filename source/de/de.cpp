@@ -6,6 +6,7 @@
 char a[2]="";
 char de_nicht[7]="nicht ";
 char de_zu[4]="zu ";
+char de_question_words[6][20]={"wer ","was ","wann ","wo ","warum ","wie "};
 char de::getVerbType(int v,int st){
  FILE* rFile = NULL;
  if (st<2){
@@ -183,10 +184,17 @@ char* de::createSubClause(){
  return buffer;
 }
 char* de::createSentence(){
+ int a=0;
  char endchar = '.';
  if (question == 1){
   data|=0x01;
   endchar = '?';
+ }
+ else if (question > 1)
+ {
+  buf[a++] = &de_question_words[question-2][0];
+  endchar = '?';
+  data |= 0x01;
  }
  if (punctuation == false)
   endchar = NULL;
@@ -199,7 +207,7 @@ char* de::createSentence(){
   verb2=0;
  }
  char debug='a';
- int a=0;
+
  hasEndVerb=false;
  verbs[0]=v1;
  verbs[1]=v2;
