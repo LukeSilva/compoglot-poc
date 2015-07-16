@@ -64,15 +64,15 @@
 (Verb(64) datao(1,1))
 (Verb(65) datao(1,1))
 (Verb(66) datao(1,1))
-
-(Verb(68))
-
-
-
-
-
-
-
+(Verb(67) datao(1,1))
+(Verb(68) datao(1,1))
+(Verb(69) datao(1,1))
+(Verb(70) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false))))
+(Verb(71) datao(1,1))
+(Verb(72) datao(1,1))
+(v1(70) v2(73) datao(1,1))
+(Verb(74) datao(1,1))
+(Verb(75) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false))))
 
 
 
