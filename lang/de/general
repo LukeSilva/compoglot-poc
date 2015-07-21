@@ -73,11 +73,11 @@
 (v1(70) v2(73) datao(1,1))
 (Verb(74) datao(1,1))
 (Verb(75) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false))))
-
-
-
-
-
+(Verb(76) datao(1,2) oprepos(1,14))
+(Verb(24) obj(7(n(14,0,false,false,0,false,true,44,false))))
+(Verb(78) datao(1,1))
+(Verb(79) datao(1,1) obj(7(n(14,0,false,false,-2,false,false,false))) )
+(Verb(80))
 
 
 
@@ -193,7 +193,7 @@
 
 
 
-
+(Verb(196) datao(1,1))
 
 
 
