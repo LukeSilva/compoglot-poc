@@ -549,11 +549,11 @@ f_Kraft_Kräfte
 
 
 
+n_Glas_Gläser
 
 
 
-
-
+f_Regierung_Regierungen
 
 
 
@@ -896,7 +896,7 @@ m_Preis_Preise
 
 
 m_Präsident_Präsidenten
-
+m_Prinz_Prinzen
 
 
 
@@ -1227,3 +1227,7 @@ f_Stadt_Städte
 f_Dokument_Dokumente
 m_Beweis_Beweise
 f_Erdbeere_Erdbeeren
+n_Spiel_Spiele
+m_Bauer_Bauern
+
+

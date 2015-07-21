@@ -82,11 +82,11 @@
 ()
 (Verb(81) datao(1,1) oprepos(1,27))
 (Verb(84))
-
-
-
-
-
+()
+(v1(70) v2(73) datao(1,1))
+(Verb(87) datao(1,1))
+(Verb(88) datao(1,1))
+(Verb(89) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false))) datao(2,1) oprepos(2,4))
 (Verb(90) datao(1,1))
 
 
