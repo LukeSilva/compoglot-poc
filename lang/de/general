@@ -78,10 +78,10 @@
 (Verb(78) datao(1,1))
 (Verb(79) datao(1,1) obj(7(n(14,0,false,false,-2,false,false,false))) )
 (Verb(80))
-
-
-
-
+(Verb(81) datao(1,1) obj(7(n(14,0,false,false,-2,false,false,false)))  datao(1,2) oprepos(2,26))
+()
+(Verb(81) datao(1,1) oprepos(1,27))
+(Verb(84))
 
 
 
