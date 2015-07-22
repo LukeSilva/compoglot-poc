@@ -88,11 +88,11 @@
 (Verb(88) datao(1,1))
 (Verb(89) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false))) datao(2,1) oprepos(2,4))
 (Verb(90) datao(1,1))
-
-
-
-
-
+(Verb(91) datao(1,1))
+(Verb(92) datao(1,1))
+(Verb(93))
+(Verb(72) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false))) )
+(Verb(95) datao(1,1) obj(7(n(14,0,false,false,0,false,true,13,false))) )
 
 
 
