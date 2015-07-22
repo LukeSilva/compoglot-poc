@@ -560,7 +560,7 @@ f_Regierung_Regierungen
 
 
 
-
+f_Pistole_Pistolen
 
 
 
@@ -807,7 +807,7 @@ f_Nuss_Nüsse
 
 f_Krankenschwester_Krankenschwestern
 
-
+f_Zeitung_Zeitungen
 
 
 
@@ -1229,5 +1229,6 @@ m_Beweis_Beweise
 f_Erdbeere_Erdbeeren
 n_Spiel_Spiele
 m_Bauer_Bauern
-
-
+f_Bauerin_Bauerinnen
+f_Spinne_Spinnen
+f_Angst_Ängste
