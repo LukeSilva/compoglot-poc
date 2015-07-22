@@ -98,10 +98,10 @@
 (Verb(32) datao(1,1))
 (Verb(99) datao(1,1))
 (Verb(100) datao(1,1))
-
-
-
-
+(Verb(101) datao(1,1) datao(2,1) oprepos(2,27))
+(Verb(245) datao(1,1))
+(Verb(103))
+(Verb(104))
 
 
 

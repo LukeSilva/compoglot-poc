@@ -594,7 +594,7 @@ f_Pistole_Pistolen
 
 
 
-
+n_Loch_Löcher
 
 
 n_Pferd_Pferde
@@ -858,7 +858,7 @@ n_Flugzeug_Flugzeuge
 
 
 
-
+m_Punkt_Punkte
 
 
 
@@ -1086,7 +1086,7 @@ f_Küste_Küsten
 
 
 
-
+f_Erde_Erden
 
 
 
@@ -1229,6 +1229,9 @@ m_Beweis_Beweise
 f_Erdbeere_Erdbeeren
 n_Spiel_Spiele
 m_Bauer_Bauern
-f_Bauerin_Bauerinnen
+f_Bäuerin_Bäuerinnen
 f_Spinne_Spinnen
 f_Angst_Ängste
+m_Sinn_Sinne
+f_Traube_Trauben
+
