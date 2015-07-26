@@ -114,6 +114,8 @@ noun* Language::getIt(int id){
   n->num=0;
   n->plural=false;
   n->reflex=false;
+  n->useRClause=false;
+  n->usegenitive=false;
   n->typ=0;
   for (int i = 0; i < 16; ++i)
   {
