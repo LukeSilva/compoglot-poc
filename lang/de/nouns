@@ -1,17 +1,17 @@
-P_ich_mich_mir
-P_du_dich_dir
-P_er_ihn_ihm
-P_sie_sie_ihr
-P_es_es_ihm
-P_wir_uns_uns
-P_ihr_euch_euch
-P_sie_sie_ihnen
-P_Sie_Sie_Ihnen
-P___
-P_man_man_man
+P_ich_mich_mir_mich
+P_du_dich_dir_dich
+P_er_ihn_ihm_sich
+P_sie_sie_ihr_sich
+P_es_es_ihm_sich
+P_wir_uns_uns_uns
+P_ihr_euch_euch_euch
+P_sie_sie_ihnen_sich
+P_Sie_Sie_Ihnen_sich
+P____
+P_man_man_man_sich
 f_Weile
 
-P___
+P____
 
 
 
@@ -681,7 +681,7 @@ n_Wissen_
 
 
 
-
+n_Bein_Beine
 
 
 
@@ -1234,4 +1234,5 @@ f_Spinne_Spinnen
 f_Angst_Ängste
 m_Sinn_Sinne
 f_Traube_Trauben
+f_Hausaufgaben_Hausaufgaben
 

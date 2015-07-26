@@ -104,8 +104,8 @@
 (Verb(104))
 (Verb(105))
 (Verb(106))
-(Verb(107))
-(Verb(108))
+(Verb(107) obj(1(reflex())) oprepos(2,22) datao(2,1) )
+(Verb(108) datao(1,1))
 (Verb(109))
 (Verb(110))
 
