@@ -76,6 +76,14 @@ void Parser::__parseObject(Language* lang,int objid){
    lang->obj[objid][obj]=*n;
    expect(')',__FILE__,__LINE__);
   }
+  else if (rstLook() && check("reflex")){
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   expect(')',__FILE__,__LINE__);
+   noun* n=lang->getIt(lang->s[0].id);
+   n->reflex = true;
+   lang->obj[objid][obj]=*n;
+  }
   else if (rstLook() && check(",")){
    rstPtr();
    obj++;

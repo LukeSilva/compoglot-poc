@@ -69,6 +69,11 @@ char* de::getNounString(noun* n)
  char* buffer = (char*) malloc (BUFFER_SIZE*10);
  buffer[0]=0;
  int cas = n->data;
+ if (n->reflex)
+ {
+  cas = 3;
+  n->data = 3;
+ }
  bool doArticle = true;
  if (n->prepos!=0)
  {
