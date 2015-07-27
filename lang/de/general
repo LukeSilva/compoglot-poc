@@ -108,11 +108,11 @@
 (Verb(108) datao(1,1))
 (Verb(109))
 (Verb(110))
-
-(Verb(112))
-
-
-
+(Verb(111))
+(Verb(112) datao(1,2) datao(2,1))
+(Verb(113) datao(1,1))
+(Verb(114))
+(Verb(115))
 
 
 
