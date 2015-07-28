@@ -115,7 +115,7 @@
 (Verb(115))
 (Verb(116))
 (Verb(117) datao(1,1))
-(Verb(118) datao(1,1) oprepos(1,21))
+(Verb(118) datao(1,2) oprepos(1,21))
 (Verb(119) datao(1,1))
 (Verb(120) datao(1,1))
 (Verb(121) datao(1,1))
@@ -253,3 +253,4 @@
 (Verb(42) datao(1,1))
 (Verb(254) datao(1,1))
 (Verb(1) oprepos(1,26) datao(1,2) )
+(Verb(256))

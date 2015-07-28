@@ -751,7 +751,7 @@ f_Mutter_Mütter
 
 
 
-
+f_Musik_Musiken
 
 
 
@@ -849,7 +849,7 @@ m_Teil_Teile
 
 
 f_Person_Personnen
-
+n_Bild_Bilder
 
 
 
@@ -926,7 +926,7 @@ n_Blumenblatt_Blumenblätter
 
 
 
-
+m_Druck_Drucke
 
 
 
@@ -996,7 +996,7 @@ n_Meer_Meere
 
 
 
-
+f_Sekretärin_Sekretärinnnen
 
 
 
@@ -1175,7 +1175,7 @@ m_Opfer_Opfer
 
 
 
-
+f_Wand_Wände
 
 n_Wasser_Wässer
 
@@ -1235,4 +1235,5 @@ f_Angst_Ängste
 m_Sinn_Sinne
 f_Traube_Trauben
 f_Hausaufgaben_Hausaufgaben
-
+m_Student_Studenten
+f_Studentin_Studentinnen
