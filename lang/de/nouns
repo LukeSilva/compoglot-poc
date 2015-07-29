@@ -840,7 +840,7 @@ f_Organisation_Orangisationen
 
 
 
-n_Packet_Packete
+n_Paket_Pakete
 m_Teil_Teile
 
 
@@ -1237,3 +1237,6 @@ f_Traube_Trauben
 f_Hausaufgaben_Hausaufgaben
 m_Student_Studenten
 f_Studentin_Studentinnen
+m_Bürgermeister_Bürgermeister
+f_Bürgermeisterin_Bürgermeisterinnen
+n_Passwort_passwörter
