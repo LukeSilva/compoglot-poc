@@ -126,7 +126,7 @@
 (Verb(126) datao(1,1))
 (Verb(127) datao(1,1))
 (Verb(128))
-(Verb(28) obj(1(reflex())) )} 
+(Verb(28) obj(1(reflex())) datao(2,2) )} 
 (Verb(72) obj(7(n(14,0,false,false,-2,false,false,false))) ) 
 (Verb(131) oprepos(1,26) datao(1,1))
 (Verb(132) obj(7(n(14,0,false,false,0,false,true,44,false))) ) 
