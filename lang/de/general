@@ -131,13 +131,13 @@
 (Verb(131) datao(1,1) oprepos(2,26) datao(2,1))
 (Verb(132) obj(7(n(14,0,false,false,0,false,true,44,false))) ) 
 (Verb(112) obj(7(n(14,0,false,false,-2,false,false,false))) )
-(Verb(134) datao(1,1) obj(7(n(14,0,false,false,0,false,true,12,false))) )}
+(Verb(134) datao(1,1) obj(7(n(14,0,false,false,0,false,true,12,false))) )
 (Verb(135) datao(1,1))
-
-
-
-
-
+(Verb(136))
+(Verb(137) datao(1,1) datao(2,1) obj(7(n(14,0,false,false,0,false,true,22,false))) )
+(Verb(134) datao(1,1))
+(Verb(139) datao(1,1))
+(Verb(140))
 
 
 
