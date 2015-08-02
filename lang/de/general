@@ -143,10 +143,10 @@
 (Verb(143))
 (Verb(144) datao(1,1))
 (Verb(145))
-
+(Verb(196) obj(7(n(14,0,false,false,0,false,true,10,false))) )
 (Verb(147) datao(1,1))
-
-
+(Verb(148) datao(1,1))
+(Verb(149) datao(1,1))
 (Verb(150) datao(2,2) oprepos(2,19) datao(3,2) oprepos(3,18))
 
 
