@@ -44,17 +44,18 @@ These functions are called in other functions that express parts of a sentence. 
 
 sub: Defines the subject of a sentence, uses the previous functions.
 	Eg:
-		sub(n(1,0,false,false,0))
+		sub(n(1,0,false,false,0,false,false,false))
 obj: Defines all the objects of a sentence. Inside it contains functions 1 through 9 defining all nine possible objects in a sentence, these objects use the previously mentioned functions.
 	Eg:
-		obj(1(n(193,0,false,false,0)))
+		obj(1(n(193,0,false,false,0,false,false,false)))
 Verb1: Sets the first verb. Takes an integer refering to the verb identifier.
 	Eg:
-		Verb(1)
+		Verb1(1)
 Verb2: Sets the second verb. Takes an integer refereing to the verb identifier.
+
 neg: Requires no arguments. Turns the sentence in to a negative one. (I did > I did not)
 	Eg:
-		neg/
+		neg
 clause: Takes an integer for the identifier of a conjunction, then another sentence code segment.
 st: Takes an integer, not enclosed in backets to set the sentence type.
 	Eg:
