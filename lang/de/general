@@ -148,12 +148,12 @@
 (Verb(148) datao(1,1))
 (Verb(149) datao(1,1))
 (Verb(150) datao(2,2) oprepos(2,19) datao(3,2) oprepos(3,18))
-
-
-
-
-
-
+(Verb(151) datao(1,1))
+(Verb(152) datao(1,1))
+(Verb(153) datao(1,1))
+(Verb(154) datao(1,1) obj(7(n(14,0,false,false,0,false,true,20,false))) )
+(Verb(155) datao(1,1) obj(7(n(14,0,false,false,0,false,true,20,false))) )
+(Verb(156) datao(1,1))
 
 
 
