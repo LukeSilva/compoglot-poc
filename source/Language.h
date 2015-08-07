@@ -34,6 +34,7 @@ typedef struct noun{
 }noun;
 
 #include "settings.h"
+void clearNoun(noun* n);
 class Language{
 protected:
  char* buf[NUM_BUF];

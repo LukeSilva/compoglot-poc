@@ -32,6 +32,7 @@ noun* de::getIt(int id){
   char st = fgetc(rFile);
   fclose(rFile);
   noun * n = new noun;
+  clearNoun(n);
   n->id=getVerbFormFromSubjectType(id,st);
   n->num=0;
   n->plural=false;
