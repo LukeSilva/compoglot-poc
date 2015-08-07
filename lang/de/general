@@ -154,7 +154,7 @@
 (Verb(154) datao(1,1) obj(7(n(14,0,false,false,0,false,true,20,false))) )
 (Verb(155) datao(1,1) obj(7(n(14,0,false,false,0,false,true,20,false))) )
 (Verb(156) datao(1,1))
-(Verb(157) obj(1(reflex())))
+(Verb(157) obj(1(n(14,0,false,false,0,false,false,false) reflex())) )
 (Verb(112) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false))) )
 (Verb(159) datao(1,1))
 (Verb(160) datao(1,1))
