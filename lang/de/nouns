@@ -1030,7 +1030,7 @@ f_Schlange_Schlangen
 
 
 
-
+m_Schwamm_Schwämme
 
 
 
@@ -1074,7 +1074,7 @@ m_Zucker_Zucker
 
 
 
-
+m_Satz_Sätze
 
 
 
@@ -1240,3 +1240,4 @@ f_Studentin_Studentinnen
 m_Bürgermeister_Bürgermeister
 f_Bürgermeisterin_Bürgermeisterinnen
 n_Passwort_passwörter
+f_Schwester_Schwestern
