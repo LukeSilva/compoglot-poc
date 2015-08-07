@@ -160,7 +160,7 @@ void Language::newSentence(){
  v1=0;
  v2=0;
  v3=0;
- st=0;
+ st=1;
  neg=false;
  sctype = 0;
  for (int i=0;i<16;i++){
