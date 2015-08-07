@@ -13,14 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Deutsch">
+      <UniqueIdentifier>{cfb69184-8875-459b-b66e-f78e78101555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\English">
+      <UniqueIdentifier>{f42d7ecb-707b-49ac-b079-bdfdff0d5576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Parsing">
+      <UniqueIdentifier>{62449ee7-ae50-45d1-9eb6-1843d7cd0cb7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\source\cmdparse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\fileparse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\general.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -30,65 +33,71 @@
     <ClCompile Include="..\..\source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\parser\parse_noun.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\parser\parser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\parser\parser_io.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_adjectives.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_adverbs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_articles.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_conjunctions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_general.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_nouns.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_prepos.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\en\en_verbs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\de\de.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\de\de_adjectives.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\de\de_articles.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\de\de_conjunctions.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\de\de_general.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\de\de_nouns.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\de\de_prepos.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\de\de_verbs.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deutsch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_adjectives.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_adverbs.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_articles.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_conjunctions.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_general.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_nouns.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_prepos.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_verbs.cpp">
+      <Filter>Source Files\English</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\fileparse.cpp">
+      <Filter>Source Files\Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\cmdparse.cpp">
+      <Filter>Source Files\Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\parser\parse_noun.cpp">
+      <Filter>Source Files\Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\parser\parser.cpp">
+      <Filter>Source Files\Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\parser\parser_io.cpp">
+      <Filter>Source Files\Parsing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
