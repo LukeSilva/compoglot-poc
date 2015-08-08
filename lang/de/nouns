@@ -720,7 +720,7 @@ f_Limone_Limonen
 
 
 
-n_Gerät_Geräte
+f_Maschine_Maschinen
 m_Mann_Männer
 m_Geschäftsführer_Geschäftsführer
 
@@ -781,7 +781,7 @@ f_Musik_Musiken
 
 
 m_Mord_Morde
-
+m_Nagel_Nägel
 
 
 
@@ -1241,3 +1241,5 @@ m_Bürgermeister_Bürgermeister
 f_Bürgermeisterin_Bürgermeisterinnen
 n_Passwort_passwörter
 f_Schwester_Schwestern
+n__Daten
+

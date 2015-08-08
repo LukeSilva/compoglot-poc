@@ -721,7 +721,7 @@ n_lump
 n_lunch
 n_lung
 n_machine
-n_man
+o_man_men
 n_manager
 n_male
 n_map
@@ -1241,3 +1241,5 @@ m_mayor
 f_mayor
 n_password
 f_sister
+o__data
+
