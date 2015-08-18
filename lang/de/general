@@ -213,11 +213,11 @@
 (Verb(213) datao(1,1) obj(1(reflex())) )}
 (Verb(214) datao(1,1) obj(7(n(14,0,false,false,0,false,true,36,false))) )
 (Verb(215) )
-
-
+(Verb(216) datao(1,1))
+(Verb(217) datao(1,1))
 (Verb(218) datao(1,1))
-
-
+(Verb(219) datao(1,1) datao(1,2))
+(Verb(220) datao(1,1))
 
 
 
