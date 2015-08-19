@@ -223,11 +223,11 @@
 (Verb(223) datao(1,1))
 (Verb(223) datao(1,1))
 (Verb(225) datao(1,1))
-
-
+(Verb(226) datao(1,1))
+(Verb(227) datao(1,1))
 (Verb(228) datao(1,1))
-
-
+(Verb(229) datao(1,1))
+(Verb(226) datao(1,1) oprepos(1,4))
 
 
 
