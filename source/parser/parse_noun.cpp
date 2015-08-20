@@ -7,6 +7,7 @@ noun* Parser::parseNoun(){
  
  noun* n = new noun;
  n->id = getInt();
+ n->data = 0;
  expect(',',__FILE__,__LINE__);
  n->num = getInt();
  expect(',',__FILE__,__LINE__);

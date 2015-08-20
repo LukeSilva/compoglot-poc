@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-char defarticles[4*4][7]={
+char defarticles[4*4][10]={
 //Nominative
 "der ","die ","das ","die ",
 //Accusative
@@ -15,7 +15,7 @@ char defarticles[4*4][7]={
 //Genitive
 "des ","der ","des ","der "
 };
-char indefarticles[4*4][7]={
+char indefarticles[4*4][10]={
 //Nominative
 "ein "  ,"eine " ,"ein "  ,"",
 //Accusative
@@ -111,12 +111,13 @@ char* de::getArticle(int id,int form,int num,int cas,int t){
    sprintf(buffer,"%d ",num-1);
   else if (num <0)
    sprintf(buffer,"%d ",num+1);
- }else{
+ }else {
   if (num<0){
    strcat(buffer,DE_NEGATIVE);
    num=num*-1;
   }
-  strcat(buffer,zahlen[num-1]);
+	if (num>0)
+	  strcat(buffer,zahlen[num-1]);
  }
  return buffer;
 }
