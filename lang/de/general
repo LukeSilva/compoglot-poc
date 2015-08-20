@@ -233,10 +233,10 @@
 (Verb(233))
 (Verb(234))
 (Verb(235))
-
-
+(Verb(12) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) obj(7(n(14,0,false,false,0,false,true,20,false))) )
+(Verb(16) datao(1,1))
 (Verb(238) datao(1,1))
-
+(Verb(239) datao(1,1))
 (Verb(240) datao(1,1))
 (Verb(241) datao(1,0))
 
