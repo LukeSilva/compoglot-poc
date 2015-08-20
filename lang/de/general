@@ -208,10 +208,10 @@
 (Verb(208) datao(1,1))
 (Verb(209) datao(1,1))
 (Verb(210) datao(1,1))
-(Verb(211) datao(1,1))
+(Verb(211) datao(1,2) oprepos(1,15))
 (Verb(212) datao(1,1))
 (Verb(213) datao(1,1) obj(1(reflex())) )}
-(Verb(214) datao(1,1) obj(7(n(14,0,false,false,0,false,true,36,false))) )
+(Verb(214) datao(1,2) datao(1,1) obj(7(n(14,0,false,false,0,false,true,36,false))) )
 (Verb(215) )
 (Verb(216) datao(1,1))
 (Verb(217) datao(1,1))
