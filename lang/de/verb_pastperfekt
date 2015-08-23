@@ -9,7 +9,7 @@
 0_gewollt
 0_gemocht
 0_gebraucht
-0_gekommen
+1_gekommen
 1_gegangen
 0_gewollt
 1_gelandet
@@ -234,7 +234,7 @@
 0_gearbeitet
 0_gegähnt
 
-
+0_geflogen
 0_gegessen
 0_getragen
 0_besessen
