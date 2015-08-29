@@ -246,7 +246,7 @@
 (Verb(246) datao(1,1))
 (Verb(247))
 (Verb(248))
-(Verb(249) datao(1,1))
+(Verb(249) datao(1,1) datao(2,2) oprepos(2,18))
 (Verb(24) oprepos(1,14) datao(1,2) obj(7(n(14,0,false,false,0,false,false,false) adj(160))) ) 
 (Verb(33) )
 (Verb(252))
