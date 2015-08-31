@@ -1,7 +1,4 @@
-
-#ifndef LANGUAGE_H
-#define LANGUAGE_H
-
+#pragma once
 class Language;
 typedef struct noun{
  int id;
@@ -139,7 +136,3 @@ public:
 #define PASSIVE_FUTURE_DISTANT_PROGRESSIVE 29
 #define PASSIVE_FUTURE_PAST 30
 #define PASSIVE_FUTURE_PAST_PROGRESSIVE 31
-
-
-
-#endif

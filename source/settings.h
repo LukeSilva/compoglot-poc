@@ -1,5 +1,6 @@
-#ifndef SETTINGS_H
-#define SETTINGS_H
+#pragma once
+
+
 #define DICTIONARY "../lang/"
 #define EN_EN_FOLDER "en/"
 #define DE_FOLDER "de/"
@@ -27,6 +28,3 @@ Language* getLanguageFromStringId(char* Id);
 
 
 #define DE_CONTRACTPREPOSITIONS 1
-
-
-#endif

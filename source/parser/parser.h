@@ -1,5 +1,4 @@
-#ifndef PARSER_H
-#define PARSER_H
+#pragma once
 #include "../settings.h"
 #include "../Language.h"
 class Parser{
@@ -25,9 +24,3 @@ class Parser{
   int getInt();
   int verb;
 };
-
-
-
-
-
-#endif
