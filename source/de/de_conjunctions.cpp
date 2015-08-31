@@ -40,8 +40,8 @@ char* de::getSubClause(){
  if (getConjunctionType(conjunction)=='2')
   subClause->data|=1;
  if (getConjunctionType(conjunction)=='0')
-  clause=subClause->createSubClause();
- else clause=subClause->createSentence();
+  clause= (char*) subClause->createSubClause().c_str();
+ else clause=(char*)subClause->createSentence().c_str();
  char* buf = (char*)calloc(strlen(clause)+strlen(conjunctionString)+4,sizeof(char));
  strcat(buf,", ");
  strcat(buf,conjunctionString);

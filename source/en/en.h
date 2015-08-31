@@ -2,7 +2,7 @@
 #include <stdio.h>
 class en_en: public Language{
  public:
-  char * createSentence();
+  std::string createSentence();
  char lang[3];
  char* QuestionVerb1;
  private:

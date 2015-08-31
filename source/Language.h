@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 class Language;
 typedef struct noun{
  int id;
@@ -86,8 +87,8 @@ public:
 
  void setIndirectObject(int objectId,int amount,bool plural,bool reflexive,int typ);
  void setIndirectObject(noun* _idobj);
- virtual char * createSentence();
- virtual char * createSubClause();
+ virtual std::string createSentence();
+ virtual std::string createSubClause();
  virtual noun * getIt(int id);
  void setSentenceType(int sentenceType);
 };

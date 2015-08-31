@@ -325,5 +325,5 @@ char* Parser::parse(char* _langid,char* in){
  expect('(',__FILE__,__LINE__);
  //Now do the parsing on lang
  _parse(lang);
- return lang->createSentence();
+ return (char*)lang->createSentence().c_str();
 }

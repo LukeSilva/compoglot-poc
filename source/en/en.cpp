@@ -3,6 +3,7 @@
 #include "../parser/parser.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 #include <string.h>
 char en_en_question_words[6][20]={"who ","what ","when ","where ","why ","how "};
 void en_en_gotoline(FILE* rFile, int line){
@@ -87,7 +88,7 @@ char* en_en::getNounString(noun* n,int vr,int vnr)
     }
     else if (n->rClauseEssential) strcat(buffer,EN_EN_THAT);
     else strcat(buffer,EN_EN_WHICH);
-    strcat(buffer,n->rClause->createSentence());
+    strcat(buffer,n->rClause->createSentence().c_str());
     strcat(buffer," ");
   }
   return buffer;
@@ -279,9 +280,9 @@ char * en_en::getQuestionSentence(){
    }else buffer[j++]=buf2[i++];
   }
  }
- return buffer;
+ return "";
 }
-char * en_en::createSentence(){	
+std::string en_en::createSentence(){
  if(verb1!=0){
   parseVerb(0,verb1);
   verb1=0;
@@ -290,7 +291,7 @@ char * en_en::createSentence(){
   parseVerb(1,verb2);
   verb2=0;
  }
- if (question == 0) return getSentenceNormal();
- else if (question < 8) return getQuestionSentence();
+ if (question == 0) return std::string(getSentenceNormal());
+ else if (question < 8) return std::string(getQuestionSentence());
  else exit(-1);
 }

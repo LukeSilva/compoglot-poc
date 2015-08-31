@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <string>
 void Language::addPreposAdj1(int adj){
  for (int i=0;i<16;i++)
  {
@@ -89,13 +90,11 @@ void Language::setIndirectObject(int obj,int amount,bool plural,bool reflexive,i
  idobj.reflex=reflexive;
  idobj.typ=typ;
 }
-char* Language::createSentence(){
- sentence=(char *) malloc(1);
- sentence[0]=0;
- return sentence;
+std::string Language::createSentence(){
+	return "";
 }
-char* Language::createSubClause(){
- return createSentence();
+std::string Language::createSubClause(){
+	return "";
 }
 void Language::setSentenceType(int t){
  st=t;

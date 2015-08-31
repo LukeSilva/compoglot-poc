@@ -99,7 +99,7 @@ char* de::getNounString(noun* n)
  if (n->useRClause)
  {
   strcat(buffer,", ");
-  char* rClauseString =n->rClause->createSubClause();
+  char* rClauseString =(char*)n->rClause->createSubClause().c_str();
   int cas2 = 0;
   if (n->rClauseObj != 0)
   {
@@ -123,7 +123,7 @@ char de::getPreVerb2(int v1){
  fclose(rFile);
  return t;
 }
-char* de::createSubClause(){
+std::string de::createSubClause(){
  if(verb1>0){
   parseVerb(0,verb1);
   verb1=0;
@@ -191,7 +191,7 @@ char* de::createSubClause(){
  }
  return buffer;
 }
-char* de::createSentence(){
+std::string de::createSentence(){
  int a=0;
  char endchar = '.';
  if (question == 1){
@@ -299,5 +299,5 @@ char* de::createSentence(){
    }else buffer[j++]=buf2[i++];
   }
  }
- return buffer;
+ return std::string(buffer);
 }

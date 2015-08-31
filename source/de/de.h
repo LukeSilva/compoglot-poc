@@ -4,8 +4,8 @@ class de: public Language{
  //Data flags:
  //data&0x1:make verb come first (conjunctions)
  public:
-  char * createSubClause();
-  char * createSentence();
+  std::string createSubClause();
+  std::string createSentence();
  private: 
   char * endVerb;
   bool hasEndVerb;
