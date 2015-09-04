@@ -1,4 +1,5 @@
 #include "en_old/en.h"
+#include "en/en.h"
 #include "de/de.h"
 #include "lt/lt.h"
 #include "Language.h"
@@ -8,8 +9,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#ifdef _WIN32
-#endif
 Language* getLanguageFromStringId(char* Id){
  Language* ret;
  if (!strcmp(Id,"en_old")){
@@ -20,6 +19,9 @@ Language* getLanguageFromStringId(char* Id){
  }
  else if (!strcmp(Id,"lt")){
   ret = new lt;
+ }
+ else if (!strcmp(Id,"en")){
+  ret = new en;
  }
  else {printf("Unkown Language: '%s'\n",Id);exit(-1);}
  return ret;
