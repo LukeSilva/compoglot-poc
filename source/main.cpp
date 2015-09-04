@@ -1,4 +1,4 @@
-#include "en/en.h"
+#include "en_old/en.h"
 #include "de/de.h"
 #include "lt/lt.h"
 #include "Language.h"
@@ -12,7 +12,7 @@
 #endif
 Language* getLanguageFromStringId(char* Id){
  Language* ret;
- if (!strcmp(Id,"en")){
+ if (!strcmp(Id,"en_old")){
   ret = new en_en;
  }
  else if (!strcmp(Id,"de")){

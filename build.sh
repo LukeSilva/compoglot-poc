@@ -9,15 +9,15 @@ g++ -Wall -c parser/parser.cpp
 g++ -Wall -c parser/parser_io.cpp
 g++ -Wall -c parser/parse_noun.cpp
 
-g++ -Wall -c en/en.cpp
-g++ -Wall -c en/en_nouns.cpp
-g++ -Wall -c en/en_articles.cpp
-g++ -Wall -c en/en_verbs.cpp
-g++ -Wall -c en/en_adjectives.cpp
-g++ -Wall -c en/en_adverbs.cpp
-g++ -Wall -c en/en_prepos.cpp
-g++ -Wall -c en/en_conjunctions.cpp
-g++ -Wall -c en/en_general.cpp
+g++ -Wall -c en_old/en.cpp
+g++ -Wall -c en_old/en_nouns.cpp
+g++ -Wall -c en_old/en_articles.cpp
+g++ -Wall -c en_old/en_verbs.cpp
+g++ -Wall -c en_old/en_adjectives.cpp
+g++ -Wall -c en_old/en_adverbs.cpp
+g++ -Wall -c en_old/en_prepos.cpp
+g++ -Wall -c en_old/en_conjunctions.cpp
+g++ -Wall -c en_old/en_general.cpp
 
 g++ -Wall -c de/de.cpp
 g++ -Wall -c de/de_articles.cpp
