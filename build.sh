@@ -10,7 +10,7 @@ g++ -Wall -c parser/parser_io.cpp
 g++ -Wall -c parser/parse_noun.cpp
 
 g++ -Wall -c en_old/en_old.cpp
-g++ -Wall -c en_old/en_nouns.cpp
+g++ -Wall -c en_old/en_old_nouns.cpp
 g++ -Wall -c en_old/en_articles.cpp
 g++ -Wall -c en_old/en_verbs.cpp
 g++ -Wall -c en_old/en_adjectives.cpp
@@ -29,6 +29,7 @@ g++ -Wall -c de/de_conjunctions.cpp
 g++ -Wall -c de/de_general.cpp
 
 g++ -Wall -c en/en.cpp
+g++ -Wall -c en/en_nouns.cpp
 
 g++ -o lang *.o
 rm *.o

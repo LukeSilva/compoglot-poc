@@ -18,14 +18,11 @@ past english verb types
 
 
 english noun types
-n - object - regular plural - verbs and reflexive are taken from noun 5
-b - object - regular plural - verbs and reflexive are taken from noun 5 uses 'an' as the indefinate article
 o - object - irregular plural - verbs and reflexive are taken from noun 5
+n - object - regular plural - verbs and reflexive are taken from noun 5
 m - person who is a male - verbs and reflexive are taken from noun 3
 f - person who is a female - verbs and reflexive are taken from noun 4
-p - person of which gender is unknown - irregular plural - verbs are taken form noun 5 and reflexives are taken from noun 10
 d - person of which all forms are defined (cant add an adjective and doesn't have definate and indefinate)
-e - object of which all forms are defined has definate and indefinate and has a regular plural
 
 
 Adverb types:

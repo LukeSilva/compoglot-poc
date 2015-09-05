@@ -50,7 +50,9 @@ protected:
 public:
  bool punctuation;
  int question;
+ //List of subjects
  noun s[16];
+ //Number of filled subjects.
  int snum;
  int sadj[16][16];
  noun obj[8][16];

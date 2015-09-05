@@ -1,7 +1,8 @@
 #pragma once
-
+#include <string>
 
 #define DICTIONARY "../lang/"
+#define EN_FOLDER "en/"
 #define EN_EN_FOLDER "en/"
 #define DE_FOLDER "de/"
 #define BUFFER_SIZE 256
@@ -21,10 +22,12 @@
 #define DE_ODERNOMEN "oder "
 #define DE_NEGATIVE "minus "
 #define DE_AUTOCHANGESIMPLE 1
+
 void warn(const char * message, const char * fallback);
 int nDigits(int i);
 #include "Language.h"
 Language* getLanguageFromStringId(char* Id);
+void printNoun(std::string name, noun* n);
 
 
 #define DE_CONTRACTPREPOSITIONS 1
