@@ -1,6 +1,11 @@
 #include "en.h"
 #include <iostream>
 
+bool en::IsVowel(char Letter)
+{
+	return (Letter == 'a' || Letter == 'e' || Letter == 'i' || Letter == 'o' || Letter == 'u');
+}
+
 std::string en::GetSegment(std::ifstream& File)
 {
 	std::string Segment = "";
@@ -47,15 +52,19 @@ bool en::GotoLine(std::ifstream& File, int Line)
 	return false;
 }
 
-std::string en::getNounString(noun* Noun, bool ObjCase)
+std::string en::GetNounString(noun* Noun, bool ObjCase)
 {
 #ifdef DEBUG
-	std::cout << "[EN] getNounString(noun* Noun)" << std::endl;
-	//printNoun("Noun",Noun);
+	std::cout << "[EN] GetNounString(noun* Noun)" << std::endl;
 #endif
 	if (Noun->id==0) return "";
 	std::string NounString = "";
-	NounString += getNoun(Noun,ObjCase);
+	std::string NounResult = GetNoun(Noun,ObjCase);
+	char FirstLetter = NounResult[0];
+	std::string Article = GetArticle(Noun,IsVowel(FirstLetter));
+	if (Article.compare("")!=0)
+		NounString+=Article + " ";
+	NounString+=NounResult;
 	return NounString;
 }
 
@@ -71,7 +80,7 @@ std::string en::createSentence()
 #ifdef DEBUG
 		std::cout << "[EN] Noun: " << i << std::endl;
 #endif
-		Sentence +=	getNounString(&s[i],false);
+		Sentence +=	GetNounString(&s[i],false);
 	}
 
 	return Sentence;

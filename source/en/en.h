@@ -6,8 +6,12 @@ class en: public Language{
 	public:
 		std::string createSentence();
 	private:
-		std::string getNoun(noun* Noun,bool ObjCase);
-		std::string getNounString(noun* Noun,bool ObjCase);
+		std::string GetNoun(noun* Noun,bool ObjCase);
+		std::string GetNounString(noun* Noun,bool ObjCase);
+
+		std::string GetArticle(noun* Noun,bool NextLetterIsVowel);
+
+		bool IsVowel(char Letter);
 		bool GotoLine(std::ifstream& File,int Line);
 		bool GotoSegment(std::ifstream& File, int Segment);
 		std::string GetSegment(std::ifstream& File);

@@ -4,10 +4,10 @@
 #include <iostream>
 #include <fstream>
 
-std::string en::getNoun(noun* Noun,bool ObjCase)
+std::string en::GetNoun(noun* Noun,bool ObjCase)
 {
 #ifdef DEBUG
-	std::cout << "[EN] getNoun(noun* Noun)" <<std::endl;
+	std::cout << "[EN] GetNoun(noun* Noun)" <<std::endl;
 #endif
 	std::ifstream is(DICTIONARY EN_FOLDER "nouns");
 	if (GotoLine(is,Noun->id)) return "";
