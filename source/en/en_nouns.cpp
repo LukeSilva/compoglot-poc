@@ -21,6 +21,21 @@ std::string en::getNoun(noun* Noun,bool ObjCase)
 		if (GotoSegment(is,GetID)) return "";
 		return GetSegment(is);
 	}
+	else if (Typ == 'n' || Typ == 'm' || Typ == 'f')
+	{
+		if (GotoSegment(is,1)) return "";
+		std::string Base = GetSegment(is);
+		if (Noun->plural) Base += "s";
+		return Base;
+	}
+	else if (Typ == 'o')
+	{
+		int GetID = 1;
+		if (Noun->plural)
+			GetID = 2;
+		if (GotoSegment(is,GetID)) return "";
+		return GetSegment(is);
+	}
 	return "";
 }
 
