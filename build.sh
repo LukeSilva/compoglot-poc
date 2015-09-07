@@ -31,6 +31,7 @@ g++ -Wall -c de/de_general.cpp
 g++ -Wall -c en/en.cpp
 g++ -Wall -c en/en_nouns.cpp
 g++ -Wall -c en/en_articles.cpp
+g++ -Wall -c en/en_numerals.cpp
 
 g++ -o lang *.o
 rm *.o

@@ -62,8 +62,11 @@ std::string en::GetNounString(noun* Noun, bool ObjCase)
 	std::string NounResult = GetNoun(Noun,ObjCase);
 	char FirstLetter = NounResult[0];
 	std::string Article = GetArticle(Noun,IsVowel(FirstLetter));
+	std::string Numeral = GetNumeral(Noun,false);
 	if (Article.compare("")!=0)
 		NounString+=Article + " ";
+	if (Numeral.compare("")!=0)
+		NounString+=Numeral + " ";
 	NounString+=NounResult;
 	return NounString;
 }

@@ -11,6 +11,8 @@ class en: public Language{
 
 		std::string GetArticle(noun* Noun,bool NextLetterIsVowel);
 
+		std::string GetNumeral(noun* Noun,bool ForceN);
+
 		bool IsVowel(char Letter);
 		bool GotoLine(std::ifstream& File,int Line);
 		bool GotoSegment(std::ifstream& File, int Segment);
