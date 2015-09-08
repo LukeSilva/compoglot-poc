@@ -17,10 +17,14 @@ class en: public Language{
 		//Numerals
 		std::string GetNumeral(noun* Noun,bool ForceN);
 
+		//Verbs
+		std::string GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType);
+		std::string GetVerbSimplePresent(int VerbForm, int VerbNum);
 
 		//General Boilerplate
 		bool IsVowel(char Letter);
 		bool GotoLine(std::ifstream& File,int Line);
 		bool GotoSegment(std::ifstream& File, int Segment);
 		std::string GetSegment(std::ifstream& File);
+		void ParseVerb(int Verb, int N);
 };

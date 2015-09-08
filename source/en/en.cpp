@@ -1,5 +1,23 @@
 #include "en.h"
+#include "../parser/parser.h"
 #include <iostream>
+
+void en::ParseVerb(int verb,int n){
+	std::ifstream is(DICTIONARY EN_EN_FOLDER "general");
+	if (GotoLine(is,n)) return;
+	std::string Line;
+	std::getline(is,Line);
+	is.close();
+	Parser* p=new Parser; 
+	p->string=(char*)Line.c_str();
+	p->ptr=0;
+	p->lookptr=0;
+	p->look=Line[0];
+	p->verb=verb;
+	p->expect('(',__FILE__,__LINE__);
+	p->_parse(this);
+ 
+}
 
 bool en::IsVowel(char Letter)
 {
@@ -74,6 +92,14 @@ std::string en::GetNounString(noun* Noun, bool ObjCase)
 
 std::string en::createSentence()
 {
+	if(verb1!=0){
+		ParseVerb(0,verb1);
+		verb1=0;
+	}
+	if (verb2!=0){
+		ParseVerb(1,verb2);
+		verb2=0;
+	}
 #ifdef DEBUG
 	std::cout << "[EN] createSentence()" << std::endl;
 #endif
@@ -88,5 +114,6 @@ std::string en::createSentence()
 		Sentence +=	GetNounString(&s[i],false);
 	}
 	if (snum >= 0) Sentence += " ";
+	Sentence += GetVerb(s[0],snum,v1,st);
 	return Sentence;
 }
