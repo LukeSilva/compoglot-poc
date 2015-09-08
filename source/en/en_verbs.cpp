@@ -21,7 +21,22 @@ std::string en::GetVerbSimplePresent(int VerbForm, int VerbNum)
 	}
 	else
 	{
-		std::cout <<"blah" << std::endl;
+		if (GotoSegment(is,1)) return "";
+		std::string Segment = GetSegment(is);
+		if (Data != '3')
+		{
+			if (VerbForm > 2 && VerbForm < 6)
+			{
+				//Need to add 's' conjugation
+				int u = Segment.length();
+				if (Segment[u-1]=='o' || (Segment[u-1]=='s' && Segment[u-2]=='s') || (Segment[u-1]=='h' && Segment[u-2]=='s') || (Segment[u-1]=='h' && Segment[u-2]=='c') || (Segment[u-1]=='z' && Segment[u-2]=='z') || Segment[u-1]=='x')
+				{
+					Segment +="e";
+				}
+				Segment += "s";
+			}
+		}
+		return Segment;
 	}
 	return "";
 }
@@ -37,7 +52,7 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 	//We can do this with VerbNum and SentenceType information.
 	int VerbForm;
 	if (Noun.id < 10 && Noun.id > 0) VerbForm = Noun.id;
-	else if (snum > 0) VerbForm = 8;
+	else if (snum > 0 || Noun.plural) VerbForm = 8;
 	else if (snum < 0) VerbForm = 0;
 	else VerbForm = 5;
 #ifdef DEBUG
