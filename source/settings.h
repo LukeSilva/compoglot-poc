@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 
+
 #define DICTIONARY "../lang/"
 #define EN_FOLDER "en/"
 #define EN_EN_FOLDER "en/"

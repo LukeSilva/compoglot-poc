@@ -163,7 +163,7 @@ void Language::newSentence(){
  neg=false;
  sctype = 0;
  for (int i=0;i<16;i++){
-	 clearNoun(&s[0]);
+	 clearNoun(&s[i]);
   prepos_adj[0][i]=0;
   prepos_adj[1][i]=0;
   prepos_adj[2][i]=0;

@@ -114,6 +114,7 @@ std::string en::createSentence()
 		Sentence +=	GetNounString(&s[i],false);
 	}
 	if (snum >= 0) Sentence += " ";
-	Sentence += GetVerb(s[0],snum,v1,st);
+	if (v1 != 0)
+		Sentence += GetVerb(s[0],snum,v1,st) + " ";
 	return Sentence;
 }
