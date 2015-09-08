@@ -9,6 +9,9 @@ std::string en_Numerals[] = {"", "zero", "one", "two", "three", "four", "five", 
 
 std::string en::GetNumeral(noun* Noun,bool ForceN)
 {
+#ifdef DEBUG
+	std::cout << "[EN] GetNumeral(noun* Noun, bool ForceN = " << ForceN << " )" << std::endl;
+#endif
 	if (!ForceN && Noun->num <= 10 && Noun->num >= -10)
 	{
 		int ID = Noun->num < 0 ? -Noun->num : Noun->num;
