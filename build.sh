@@ -12,7 +12,7 @@ g++ -Wall -c parser/parse_noun.cpp
 g++ -Wall -c en_old/en_old.cpp
 g++ -Wall -c en_old/en_old_nouns.cpp
 g++ -Wall -c en_old/en_old_articles.cpp
-g++ -Wall -c en_old/en_verbs.cpp
+g++ -Wall -c en_old/en_old_verbs.cpp
 g++ -Wall -c en_old/en_adjectives.cpp
 g++ -Wall -c en_old/en_adverbs.cpp
 g++ -Wall -c en_old/en_prepos.cpp
@@ -32,6 +32,7 @@ g++ -Wall -c en/en.cpp
 g++ -Wall -c en/en_nouns.cpp
 g++ -Wall -c en/en_articles.cpp
 g++ -Wall -c en/en_numerals.cpp
+g++ -Wall -c en/en_verbs.cpp
 
 g++ -o lang *.o
 rm *.o
