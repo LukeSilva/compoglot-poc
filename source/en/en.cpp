@@ -83,8 +83,10 @@ std::string en::createSentence()
 #ifdef DEBUG
 		std::cout << "[EN] Noun: " << i << std::endl;
 #endif
+		if (i!=0 && i < snum) Sentence +=", ";
+		if (i==snum && snum >0) Sentence += " and ";
 		Sentence +=	GetNounString(&s[i],false);
 	}
-
+	if (snum >= 0) Sentence += " ";
 	return Sentence;
 }

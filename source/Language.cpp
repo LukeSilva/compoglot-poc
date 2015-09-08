@@ -155,7 +155,7 @@ void Language::newSentence(){
  verb2=0;
  subClause=NULL;
  conjunction=0;
- snum=0;
+ snum=-1;
  v1=0;
  v2=0;
  v3=0;
