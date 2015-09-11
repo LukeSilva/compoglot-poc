@@ -5,7 +5,6 @@
 #include <fstream>
 #include <sstream>
 
-
 std::string en::GetVerbPreAdd(int VerbNum)
 {
 	std::ifstream is (DICTIONARY EN_EN_FOLDER "verb_present");
@@ -104,6 +103,11 @@ std::string en::GetVerbSimplePresent(int VerbForm, int VerbNum)
 	return "";
 }
 
+std::string en::GetVerbPresentProgressive(int VerbForm, int VerbNum)
+{
+	return GetVerbSimplePresent(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
+}
+
 std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 {
 #ifdef DEBUG
@@ -121,5 +125,5 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 #ifdef DEBUG
 	std::cout << "[EN] VerbForm = " << VerbForm << std::endl;
 #endif
-	return GetVerbSimplePresent(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
+	return GetVerbPresentProgressive(VerbForm,VerbNum);
 }
