@@ -6,6 +6,65 @@
 #include <sstream>
 
 
+std::string en::GetVerbPreAdd(int VerbNum)
+{
+	std::ifstream is (DICTIONARY EN_EN_FOLDER "verb_present");
+	if (GotoLine(is,VerbNum)) return "";
+	int Data = is.get();
+	if (Data == '1')
+	{
+		if (GotoSegment(is,2)) return "";
+		std::string Segment = GetSegment(is);
+		is.close();
+		return Segment;
+	}
+	else if (Data == '0')
+	{
+		if (GotoSegment(is,11)) return "";
+		std::string Segment = GetSegment(is);
+		is.close();
+		return Segment;
+	}
+	else
+	{
+		if (GotoSegment(is,1)) return "";
+		std::string Segment = GetSegment(is);
+		is.close();
+		//Now follow all the english spelling rules
+		//http://www.oxforddictionaries.com/words/verb-tenses-adding-ed-and-ing
+		//http://www.grammar.cl/Notes/Spelling_ING.htm
+		int u = Segment.length();
+		if (Segment[u-1] == 'e' && Segment[u-2] == 'i')
+		{
+			//Turn 'ie' into y
+			Segment = Segment.substr(0,u-2);
+			Segment += "y";
+		}
+		else if (Segment[u-1] == 'e' && ( Segment[u-2] != 'e' && Segment[u-2] != 'y' && Segment[u-2] != 'o' ))
+		{
+			//Drop final e, if e is not before y,e or o
+			//make -> mak ( + {ed,ing} )
+			Segment = Segment.substr(0,u-1);
+		}
+		else if (Segment[u-1] == 'c')
+		{
+			//Add a k after a c
+			//picnic -> picnick ( + {ed,ing} )
+			Segment += "k";
+		}
+		else if (!IsVowel(Segment[u-3]) && IsVowel(Segment[u-2]) && !IsVowel(Segment[u-1]) && Segment[u-1]!='x' && Segment[u-1]!='y' && Segment[u-1]!='z' && Segment[u-1]!='w')
+		{
+			//Double consonant after consonant-vowel-consonant cluster.
+			//Provided that final consonant is not w,x,y or z
+			//Travel -> Travell ( + {ed,ing} )
+			Segment += Segment[u-1];
+		}
+		return Segment;
+	}
+	return "";
+}
+
+
 std::string en::GetVerbSimplePresent(int VerbForm, int VerbNum)
 {
 #ifdef DEBUG
@@ -17,7 +76,9 @@ std::string en::GetVerbSimplePresent(int VerbForm, int VerbNum)
 	if (Data == '0')
 	{
 		if (GotoSegment(is,VerbForm+1)) return "";
-		return GetSegment(is);
+		std::string Segment = GetSegment(is);
+		is.close();
+		return Segment;
 	}
 	else
 	{
@@ -36,8 +97,10 @@ std::string en::GetVerbSimplePresent(int VerbForm, int VerbNum)
 				Segment += "s";
 			}
 		}
+		is.close();
 		return Segment;
 	}
+	is.close();
 	return "";
 }
 
@@ -58,5 +121,5 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 #ifdef DEBUG
 	std::cout << "[EN] VerbForm = " << VerbForm << std::endl;
 #endif
-	return GetVerbSimplePresent(VerbForm,VerbNum);
+	return GetVerbSimplePresent(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }

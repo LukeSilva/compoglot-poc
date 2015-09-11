@@ -20,6 +20,7 @@ class en: public Language{
 		//Verbs
 		std::string GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType);
 		std::string GetVerbSimplePresent(int VerbForm, int VerbNum);
+		std::string GetVerbPreAdd(int VerbNum);
 
 		//General Boilerplate
 		bool IsVowel(char Letter);
