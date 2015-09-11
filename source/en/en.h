@@ -19,10 +19,11 @@ class en: public Language{
 
 		//Verbs
 		std::string GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType);
-		std::string GetVerbSimplePresent(int VerbForm, int VerbNum);
+		std::string GetVerbPresentSimple(int VerbForm, int VerbNum);
 		std::string GetVerbPreAdd(int VerbNum);
 		std::string GetVerbPresentProgressive(int VerbForm, int VerbNum);
 		std::string GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect = false);
+		std::string GetVerbPastProgressive(int VerbForm, int VerbNum);
 
 		//General Boilerplate
 		bool IsVowel(char Letter);

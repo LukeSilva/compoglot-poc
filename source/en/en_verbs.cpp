@@ -67,10 +67,10 @@ std::string en::GetVerbPreAdd(int VerbNum)
 }
 
 
-std::string en::GetVerbSimplePresent(int VerbForm, int VerbNum)
+std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum)
 {
 #ifdef DEBUG
-	std::cout << "[EN] GetVerbSimplePresent(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " ) " << std::endl;
+	std::cout << "[EN] GetVerbPresentSimple(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " ) " << std::endl;
 #endif
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "verb_present");
 	if (GotoLine(is,VerbNum)) return "";
@@ -111,7 +111,7 @@ std::string en::GetVerbPresentProgressive(int VerbForm, int VerbNum)
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPresentProgressive(int VerbForm = " << VerbForm << " ,int VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	return GetVerbSimplePresent(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
+	return GetVerbPresentSimple(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }
 
 std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect)
@@ -155,6 +155,13 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect)
 	return "";
 }
 
+std::string en::GetVerbPastProgressive(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPastProgressive(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbPastSimple(VerbForm,1,false) + " " + GetVerbPreAdd(VerbNum) + "ing";
+}
 
 std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 {
@@ -173,5 +180,13 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 #ifdef DEBUG
 	std::cout << "[EN] VerbForm = " << VerbForm << std::endl;
 #endif
+	if (st == 0)
+		return GetVerbPresentProgressive(VerbForm,VerbNum);
+	else if (st == 1)
+		return GetVerbPresentSimple(VerbForm,VerbNum);
+	else if (st == 2 || st == 3)
+		return GetVerbPastSimple(VerbForm,VerbNum);
+	else if (st == 4 || st == 5)
+		return GetVerbPastProgressive(VerbForm,VerbNum);
 	return GetVerbPastSimple(VerbForm,VerbNum);
 }
