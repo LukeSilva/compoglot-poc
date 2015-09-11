@@ -114,8 +114,44 @@ std::string en::GetVerbPresentProgressive(int VerbForm, int VerbNum)
 	return GetVerbSimplePresent(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }
 
-std::string en::GetVerbPastSimple(int VerbForm, int VerbNum)
+std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect)
 {
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPastSimple(int VerbForm = " << VerbForm << ", int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	std::ifstream is(DICTIONARY EN_EN_FOLDER "verb_past");
+	GotoLine(is,VerbNum);
+	int Data = is.get();
+	if (Data == '2' || Data == '3')
+	{
+		is.close();
+		std::string V = GetVerbPreAdd(VerbNum);
+		if (Data == '3') V += "e";
+		V += "d";
+		return V;
+	} 
+	else if (Data == '1')
+	{
+		if(GotoSegment(is,Perfect?2:1))
+		{
+			is.close();
+			return "";
+		}
+		std::string Verb = GetSegment(is);
+		is.close();
+		return Verb;
+	}
+	else if (Data == '0')
+	{
+		if (GotoSegment(is,VerbForm+1))
+		{
+			is.close();
+			return "";
+		}
+		std::string Verb = GetSegment(is);
+		is.close();
+		return Verb;
+	}
 	return "";
 }
 
@@ -137,5 +173,5 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 #ifdef DEBUG
 	std::cout << "[EN] VerbForm = " << VerbForm << std::endl;
 #endif
-	return GetVerbPresentProgressive(VerbForm,VerbNum);
+	return GetVerbPastSimple(VerbForm,VerbNum);
 }
