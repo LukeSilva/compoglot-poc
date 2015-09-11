@@ -7,6 +7,9 @@
 
 std::string en::GetVerbPreAdd(int VerbNum)
 {
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPreAdd(int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
 	std::ifstream is (DICTIONARY EN_EN_FOLDER "verb_present");
 	if (GotoLine(is,VerbNum)) return "";
 	int Data = is.get();
@@ -105,8 +108,17 @@ std::string en::GetVerbSimplePresent(int VerbForm, int VerbNum)
 
 std::string en::GetVerbPresentProgressive(int VerbForm, int VerbNum)
 {
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPresentProgressive(int VerbForm = " << VerbForm << " ,int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
 	return GetVerbSimplePresent(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }
+
+std::string en::GetVerbPastSimple(int VerbForm, int VerbNum)
+{
+	return "";
+}
+
 
 std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 {
