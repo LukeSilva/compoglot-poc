@@ -143,6 +143,7 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect)
 	}
 	else if (Data == '0')
 	{
+		if (Perfect) VerbForm = 0;
 		if (GotoSegment(is,VerbForm+1))
 		{
 			is.close();
