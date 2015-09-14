@@ -172,6 +172,14 @@ std::string en::GetVerbPastPerfect(int VerbForm, int VerbNum)
 	return GetVerbPresentSimple(VerbForm,2) + " " + GetVerbPastSimple(1,VerbNum,true);
 }
 
+std::string en::GetVerbPastPerfectProgressive(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPastPerfectProgressive(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbPastPerfect(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
+}
+
 std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 {
 #ifdef DEBUG
@@ -199,5 +207,7 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 		return GetVerbPastProgressive(VerbForm,VerbNum);
 	else if (st == 6 || st == 7)
 		return GetVerbPastPerfect(VerbForm,VerbNum);
+	else if (st == 8 || st == 9)
+		return GetVerbPastPerfectProgressive(VerbForm,VerbNum);
 	return GetVerbPastSimple(VerbForm,VerbNum);
 }
