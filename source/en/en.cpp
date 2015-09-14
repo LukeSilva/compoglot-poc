@@ -2,6 +2,8 @@
 #include "../parser/parser.h"
 #include <iostream>
 
+const std::string en::FutureTenseMarker = "will";
+
 void en::ParseVerb(int verb,int n){
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "general");
 	if (GotoLine(is,n)) return;

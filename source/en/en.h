@@ -1,3 +1,4 @@
+#include "../settings.h"
 #include "../Language.h"
 #pragma once
 #include <string>
@@ -6,6 +7,10 @@ class en: public Language{
 	public:
 		std::string createSentence();
 	private:
+
+		//Definitions (these are set in en.cpp)
+		static const std::string FutureTenseMarker; // = "will"
+
 
 		//Nouns
 		std::string GetNoun(noun* Noun,bool ObjCase);
@@ -26,6 +31,7 @@ class en: public Language{
 		std::string GetVerbPastProgressive(int VerbForm, int VerbNum);
 		std::string GetVerbPastPerfect(int VerbForm, int VerbNum);
 		std::string GetVerbPastPerfectProgressive(int VerbForm, int VerbNum);
+		std::string GetVerbFutureSimple(int VerbForm, int VerbNum);
 
 		//General Boilerplate
 		bool IsVowel(char Letter);
