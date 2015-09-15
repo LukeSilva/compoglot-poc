@@ -32,6 +32,7 @@ class en: public Language{
 		std::string GetVerbPastPerfect(int VerbForm, int VerbNum);
 		std::string GetVerbPastPerfectProgressive(int VerbForm, int VerbNum);
 		std::string GetVerbFutureSimple(int VerbForm, int VerbNum);
+		std::string GetVerbFutureProgressive(int VerbForm,int VerbNum);
 
 		//General Boilerplate
 		bool IsVowel(char Letter);
