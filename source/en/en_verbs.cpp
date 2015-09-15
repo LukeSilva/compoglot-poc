@@ -185,7 +185,7 @@ std::string en::GetVerbFutureSimple(int VerbForm, int VerbNum)
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbFutureSimple(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" <<std::endl;
 #endif
-	return FutureTenseMarker + " " + GetVerbPresentSimple(1,VerbNum);
+	return FutureTenseMarker + " " + GetVerbPresentSimple(0,VerbNum);
 }
 
 std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
