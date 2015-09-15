@@ -217,18 +217,26 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 #ifdef DEBUG
 	std::cout << "[EN] GetVerb(noun& Noun, int snum = " << snum << " , int VerbNum = " << VerbNum << " , int SentenceType = " << SentenceType << " )" << std::endl;
 #endif
+
+
 	//First we need to figure out which form of a verb we need.
 	//We can do this with Noun and snum information.
-	//Then we need to get the verb string from the appropriate function, and return it.
-	//We can do this with VerbNum and SentenceType information.
-	int VerbForm;
+
+	//By default use the he/she/it verb form (append 's' in present tense)
+	int VerbForm = 5;
+
+	//If a pronoun, VerbForm is the pronoun number
 	if (Noun.id < 10 && Noun.id > 0) VerbForm = Noun.id;
-	else if (snum > 0 || Noun.plural) VerbForm = 8;
-	else if (snum < 0) VerbForm = 0;
-	else VerbForm = 5;
+	//If more than one subject, or the subject is plural, use the plural form
+	if (snum > 0 || Noun.plural) VerbForm = 8;
+	//If there is no subjects, set the infinitive verb form.
+	if (snum < 0) VerbForm = 0;
+
 #ifdef DEBUG
 	std::cout << "[EN] VerbForm = " << VerbForm << std::endl;
 #endif
+	//Then we need to get the verb string from the appropriate function, and return it.
+	//We can do this with VerbNum and VerbForm information.
 	if (st == 0)
 		return GetVerbPresentProgressive(VerbForm,VerbNum);
 	else if (st == 1)
