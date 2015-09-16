@@ -33,6 +33,7 @@ g++ -Wall -c en/en_nouns.cpp
 g++ -Wall -c en/en_articles.cpp
 g++ -Wall -c en/en_numerals.cpp
 g++ -Wall -c en/en_verbs.cpp
+g++ -Wall -c en/en_passiveverbs.cpp
 
 g++ -o lang *.o
 rm *.o
