@@ -12,3 +12,12 @@ std::string en::GetVerbPassivePresentProgressive(int VerbForm, int VerbNum)
 #endif
 	return GetVerbPresentProgressive(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
 }
+
+
+std::string en::GetVerbPassivePresentSimple(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPassivePresentSimple(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbPresentSimple(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
+}

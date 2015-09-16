@@ -259,5 +259,7 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 		return GetVerbFuturePastProgressive(VerbForm,VerbNum);
 	else if (st == 16)
 		return GetVerbPassivePresentProgressive(VerbForm,VerbNum);
+	else if (st == 17)
+		return GetVerbPassivePresentSimple(VerbForm,VerbNum);
 	return GetVerbPastSimple(VerbForm,VerbNum);
 }
