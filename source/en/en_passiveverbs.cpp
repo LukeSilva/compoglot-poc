@@ -13,11 +13,18 @@ std::string en::GetVerbPassivePresentProgressive(int VerbForm, int VerbNum)
 	return GetVerbPresentProgressive(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
 }
 
-
 std::string en::GetVerbPassivePresentSimple(int VerbForm, int VerbNum)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPassivePresentSimple(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " )" << std::endl;
 #endif
 	return GetVerbPresentSimple(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
+}
+
+std::string en::GetVerbPassivePastSimple(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPassivePastSimple(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbPastSimple(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
 }
