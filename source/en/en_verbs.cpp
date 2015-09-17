@@ -275,7 +275,7 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 		case PASSIVE_PAST_RECENT_FORMAL:
 			return GetVerbPassivePastSimple(VerbForm,VerbNum);
 		case PASSIVE_PAST_RECENT_PROGRESSIVE:
-		case PASSIVE_PAST_RECENT_FORMAL_PROGRESSIVE;
+		case PASSIVE_PAST_RECENT_FORMAL_PROGRESSIVE:
 			return GetVerbPassivePastProgressive(VerbForm,VerbNum);
 		case PASSIVE_PAST_DISTANT:
 		case PASSIVE_PAST_DISTANT_FORMAL:
