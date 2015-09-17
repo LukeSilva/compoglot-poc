@@ -262,14 +262,20 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 	else if (st == 17)
 		return GetVerbPassivePresentSimple(VerbForm,VerbNum);
 	else if (st == 18 || st == 19)
-		return GetVerbPassivePastSimple(VerbForm,VerbNum);
+		return GetVerbPassivePastSimple(VerbForm, VerbNum);
 	else if (st == 20 || st == 21)
 		return GetVerbPassivePastProgressive(VerbForm,VerbNum);
 	else if (st == 22 || st == 23)
 		return GetVerbPassivePastPerfect(VerbForm,VerbNum);
 	else if (st == 24 || st == 25)
 		return GetVerbPassivePastPerfectProgressive(VerbForm,VerbNum);
-
-
+	else if (st == 26 || st == 28)
+		return GetVerbPassiveFutureSimple(VerbForm,VerbNum);
+	else if (st == 27 || st == 29)
+		return GetVerbPassiveFutureProgressive(VerbForm,VerbNum);
+	else if (st == 30)
+		return GetVerbPassiveFuturePast(VerbForm,VerbNum);
+	else if (st == 31)
+		return GetVerbPassiveFuturePastProgressive(VerbForm,VerbNum);
 	return GetVerbPastSimple(VerbForm,VerbNum);
 }

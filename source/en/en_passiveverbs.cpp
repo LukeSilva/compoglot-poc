@@ -53,3 +53,34 @@ std::string en::GetVerbPassivePastPerfectProgressive(int VerbForm, int VerbNum)
 	return GetVerbPastPerfectProgressive(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
 }
 
+std::string en::GetVerbPassiveFutureSimple(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPassiveFutureSimple(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbFutureSimple(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
+}
+
+std::string en::GetVerbPassiveFutureProgressive(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPassiveFutureProgressive(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbFutureProgressive(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
+}
+
+std::string en::GetVerbPassiveFuturePast(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPassiveFuturePast(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbFuturePast(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
+}
+
+std::string en::GetVerbPassiveFuturePastProgressive(int VerbForm, int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetVerbPassiveFuturePastProgressive(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbFuturePastProgressive(VerbForm,1) + " " + GetVerbPastSimple(0,VerbNum);
+}
