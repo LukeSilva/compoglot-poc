@@ -218,6 +218,8 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 	std::cout << "[EN] GetVerb(noun& Noun, int snum = " << snum << " , int VerbNum = " << VerbNum << " , int SentenceType = " << SentenceType << " )" << std::endl;
 #endif
 
+	//If the verb is not a verb, return now, preventing any crashes.
+	if (VerbNum == 0) return "";
 
 	//First we need to figure out which form of a verb we need.
 	//We can do this with Noun and snum information.
@@ -237,45 +239,60 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 #endif
 	//Then we need to get the verb string from the appropriate function, and return it.
 	//We can do this with VerbNum and VerbForm information.
-	if (st == 0)
-		return GetVerbPresentProgressive(VerbForm,VerbNum);
-	else if (st == 1)
-		return GetVerbPresentSimple(VerbForm,VerbNum);
-	else if (st == 2 || st == 3)
-		return GetVerbPastSimple(VerbForm,VerbNum);
-	else if (st == 4 || st == 5)
-		return GetVerbPastProgressive(VerbForm,VerbNum);
-	else if (st == 6 || st == 7)
-		return GetVerbPastPerfect(VerbForm,VerbNum);
-	else if (st == 8 || st == 9)
-		return GetVerbPastPerfectProgressive(VerbForm,VerbNum);
-	else if (st == 10 || st == 12)
-		return GetVerbFutureSimple(VerbForm,VerbNum);	
-	else if (st == 11 || st == 13)
-		return GetVerbFutureProgressive(VerbForm,VerbNum);
-	else if (st == 14)
-		return GetVerbFuturePast(VerbForm,VerbNum);
-	else if (st == 15)
-		return GetVerbFuturePastProgressive(VerbForm,VerbNum);
-	else if (st == 16)
-		return GetVerbPassivePresentProgressive(VerbForm,VerbNum);
-	else if (st == 17)
-		return GetVerbPassivePresentSimple(VerbForm,VerbNum);
-	else if (st == 18 || st == 19)
-		return GetVerbPassivePastSimple(VerbForm, VerbNum);
-	else if (st == 20 || st == 21)
-		return GetVerbPassivePastProgressive(VerbForm,VerbNum);
-	else if (st == 22 || st == 23)
-		return GetVerbPassivePastPerfect(VerbForm,VerbNum);
-	else if (st == 24 || st == 25)
-		return GetVerbPassivePastPerfectProgressive(VerbForm,VerbNum);
-	else if (st == 26 || st == 28)
-		return GetVerbPassiveFutureSimple(VerbForm,VerbNum);
-	else if (st == 27 || st == 29)
-		return GetVerbPassiveFutureProgressive(VerbForm,VerbNum);
-	else if (st == 30)
-		return GetVerbPassiveFuturePast(VerbForm,VerbNum);
-	else if (st == 31)
-		return GetVerbPassiveFuturePastProgressive(VerbForm,VerbNum);
-	return GetVerbPastSimple(VerbForm,VerbNum);
+	switch (st)
+	{
+		case PRESENT_PROGRESSIVE:
+			return GetVerbPresentProgressive(VerbForm,VerbNum);
+		case PRESENT_SIMPLE:
+			return GetVerbPresentSimple(VerbForm,VerbNum);
+		case PAST_RECENT:
+		case PAST_RECENT_FORMAL:			
+			return GetVerbPastSimple(VerbForm,VerbNum);
+		case PAST_RECENT_PROGRESSIVE:
+		case PAST_RECENT_PROGRESSIVE_FORMAL:
+			return GetVerbPastProgressive(VerbForm,VerbNum);
+		case PAST_DISTANT:
+		case PAST_DISTANT_FORMAL:
+			return GetVerbPastPerfect(VerbForm,VerbNum);
+		case PAST_DISTANT_PROGRESSIVE:
+		case PAST_DISTANT_PROGRESSIVE_FORMAL:
+			return GetVerbPastPerfectProgressive(VerbForm,VerbNum);
+		case FUTURE_RECENT:
+		case FUTURE_DISTANT:
+			return GetVerbFutureSimple(VerbForm,VerbNum);
+		case FUTURE_RECENT_PROGRESSIVE:
+		case FUTURE_DISTANT_PROGRESSIVE:
+			return GetVerbFutureProgressive(VerbForm,VerbNum);
+		case FUTURE_PAST:
+			return GetVerbFuturePast(VerbForm,VerbNum);
+		case FUTURE_PAST_PROGRESSIVE:
+			return GetVerbFuturePastProgressive(VerbForm,VerbNum);
+		case PASSIVE_PRESENT_PROGRESSIVE:
+			return GetVerbPassivePresentProgressive(VerbForm,VerbNum);
+		case PASSIVE_PRESENT_SIMPLE:
+			return GetVerbPassivePresentSimple(VerbForm,VerbNum);
+		case PASSIVE_PAST_RECENT:
+		case PASSIVE_PAST_RECENT_FORMAL:
+			return GetVerbPassivePastSimple(VerbForm,VerbNum);
+		case PASSIVE_PAST_RECENT_PROGRESSIVE:
+		case PASSIVE_PAST_RECENT_FORMAL_PROGRESSIVE;
+			return GetVerbPassivePastProgressive(VerbForm,VerbNum);
+		case PASSIVE_PAST_DISTANT:
+		case PASSIVE_PAST_DISTANT_FORMAL:
+			return GetVerbPassivePastPerfect(VerbForm,VerbNum);		
+		case PASSIVE_PAST_DISTANT_PROGRESSIVE:
+		case PASSIVE_PAST_DISTANT_FORMAL_PROGRESSIVE:
+			return GetVerbPassivePastPerfectProgressive(VerbForm,VerbNum);
+		case PASSIVE_FUTURE_RECENT:
+		case PASSIVE_FUTURE_DISTANT:
+			return GetVerbPassiveFutureSimple(VerbForm,VerbNum);
+		case PASSIVE_FUTURE_RECENT_PROGRESSIVE:
+		case PASSIVE_FUTURE_DISTANT_PROGRESSIVE:
+			return GetVerbPassiveFutureProgressive(VerbForm,VerbNum);
+		case PASSIVE_FUTURE_PAST:
+			return GetVerbPassiveFuturePast(VerbForm,VerbNum);
+		case PASSIVE_FUTURE_PAST_PROGRESSIVE:
+			return GetVerbPassiveFuturePastProgressive(VerbForm,VerbNum);	
+	}
+	return "";
 }
