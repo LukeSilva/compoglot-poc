@@ -112,6 +112,10 @@ std::string en::createSentence()
 	if (v1 != 0)
 		Sentence += GetVerb(s[0],snum,v1,st) + " ";
 
+	//Add the second verb to the sentenc, if it exists
+	if (v2 != 0)
+		Sentence += GetOtherVerb(v2) + " ";
+
 	//Loop through the objects, adding them to the sentence
 	for (int objid = 0; objid < 8; ++objid)
 	{

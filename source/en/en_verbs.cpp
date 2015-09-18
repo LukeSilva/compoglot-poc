@@ -296,3 +296,11 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 	}
 	return "";
 }
+
+std::string en::GetOtherVerb(int VerbNum)
+{
+#ifdef DEBUG
+	std::cout << "[EN] GetOtherVerb(int VerbNum = " << VerbNum << " )" << std::endl;
+#endif
+	return GetVerbPresentSimple(0,VerbNum);
+}

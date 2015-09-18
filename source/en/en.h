@@ -24,6 +24,7 @@ class en: public Language{
 		std::string GetNumeral(noun* Noun,bool ForceN);
 
 		//Verbs
+		std::string GetOtherVerb(int VerbNum);
 		std::string GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType);
 		std::string GetVerbPresentSimple(int VerbForm, int VerbNum);
 		std::string GetVerbPreAdd(int VerbNum);
