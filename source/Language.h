@@ -40,11 +40,6 @@ protected:
  int v2;
  int v3;
  int adverbs[NUM_ADVERBS];
-// noun dobj;
-// noun idobj;
-// noun prepos_object[3];
-// int prepos_prepos[3];
-// int prepos_adj[3][16];
  int st;
  char * sentence;
 public:
@@ -71,25 +66,9 @@ public:
  bool clause;
  void newSentence();
  void addAdverb(int adverbId);
-
- void setPreposObj1(int prepos,int object,int amount,bool plural,int typ);
- void setPreposObj1(int prepos,noun* o);
- void addPreposAdj1(int adjective);
- void setPreposObj2(int prepos,int object,int amount,bool plural,int typ);
- void setPreposObj2(int prepos,noun* o);
- void setFrontPreposObj(int prepos,int object,int amount,bool plural,int typ);
- void setFrontPreposObj(int prepos,noun* o);
-
  void setVerb1(int verbId);
  void setVerb2(int verbId);
-
  void setVerb3(int verbId);
-
-
- void setDirectObject(int objectId,int amount,bool plural,bool reflexive,int typ);
-
- void setIndirectObject(int objectId,int amount,bool plural,bool reflexive,int typ);
- void setIndirectObject(noun* _idobj);
  virtual std::string createSentence();
  virtual std::string createSubClause();
  virtual noun * getIt(int id);

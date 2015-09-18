@@ -3,8 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <string>
-void Language::addPreposAdj1(int adj){
-}
+
 void Language::setVerb1(int v){
  v1=v;
 }
@@ -13,75 +12,6 @@ void Language::setVerb2(int v){
 }
 void Language::setVerb3(int v){
  v3=v;
-}
-void Language::setIndirectObject(noun* _o){
-/* idobj.id=_o->id;
- idobj.num=_o->num;
- idobj.plural=_o->plural;
- idobj.reflex=_o->reflex;
- idobj.typ=_o->typ;*/
-}
-void Language::setPreposObj1(int prepos,int obj,int amount,bool plural,int typ){
-/* prepos_object[0].id=obj;
- prepos_object[0].num=amount;
- prepos_object[0].plural=plural;
- prepos_object[0].reflex=false; 
- prepos_prepos[0]=prepos;
- prepos_object[0].typ=typ;*/
-}
-void Language::setPreposObj1(int prepos,noun* _o){
-/* prepos_object[0].id=_o->id;
- prepos_object[0].num=_o->num;
- prepos_object[0].plural=_o->plural;
- prepos_object[0].reflex=_o->reflex; 
- prepos_prepos[0]=prepos;
- prepos_object[0].typ=_o->typ;*/
-}
-void Language::setPreposObj2(int prepos,int obj,int amount,bool plural,int typ){
-/* prepos_object[1].id=obj;
- prepos_object[1].num=amount;
- prepos_object[1].plural=plural;
- prepos_object[1].reflex=false; 
- prepos_prepos[1]=prepos;
- prepos_object[1].typ=typ;*/
-}
-void Language::setPreposObj2(int prepos,noun* _o){
-/* prepos_object[1].id=_o->id;
- prepos_object[1].num=_o->num;
- prepos_object[1].plural=_o->plural;
- prepos_object[1].reflex=_o->reflex; 
- prepos_prepos[1]=prepos;
- prepos_object[1].typ=_o->typ;*/
-}
-void Language::setFrontPreposObj(int prepos,int obj,int amount,bool plural,int typ){
-/* prepos_object[2].id=obj;
- prepos_object[2].num=amount;
- prepos_object[2].plural=plural;
- prepos_object[2].reflex=false; 
- prepos_prepos[2]=prepos;
- prepos_object[2].typ=typ;*/
-}
-void Language::setFrontPreposObj(int prepos,noun* _o){
-/* prepos_object[2].id=_o->id;
- prepos_object[2].num=_o->num;
- prepos_object[2].plural=_o->plural;
- prepos_object[2].reflex=_o->reflex; 
- prepos_prepos[2]=prepos;
- prepos_object[2].typ=_o->typ;*/
-}
-void Language::setDirectObject(int obj,int amount,bool plural,bool reflexive,int typ){
-/* dobj.id=obj;
- dobj.num=amount;
- dobj.plural=plural;
- dobj.reflex=reflexive;
- dobj.typ=typ;*/
-}
-void Language::setIndirectObject(int obj,int amount,bool plural,bool reflexive,int typ){
-/* idobj.id=obj;
- idobj.num=amount;
- idobj.plural=plural;
- idobj.reflex=reflexive;
- idobj.typ=typ;*/
 }
 std::string Language::createSentence(){
 	return "";

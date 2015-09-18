@@ -134,12 +134,6 @@ void Parser::_parse(Language* lang){
    expect('(',__FILE__,__LINE__);
    __parseObjects(lang);	
   }
-  else if (rstLook() && check("adjprepos1")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   lang->addPreposAdj1(getInt());
-   expect(')',__FILE__,__LINE__);
-  }
   else if (rstLook() && check("oprepos")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
@@ -253,15 +247,6 @@ void Parser::_parse(Language* lang){
    lang->addAdverb(getInt());
    expect(')',__FILE__,__LINE__);
   }
-  else if (rstLook() && check("fprepos")){
-   rstPtr();
-   expect('(',__FILE__,__LINE__);
-   int prepos = getInt();
-   expect(',',__FILE__,__LINE__);
-   noun* n=parseNoun();
-   expect(')',__FILE__,__LINE__);
-   lang->setFrontPreposObj(prepos,n);
-  }
   else if (rstLook() && check("neg ")){
    rstPtr();
    lang->neg=!lang->neg;
@@ -295,10 +280,6 @@ void Parser::_parse(Language* lang){
    lang->punctuation = getInt();
    expect(' ',__FILE__,__LINE__);
   }
-  else if (rstLook() && check("o")){
-   error("Using the o tag is depreciated!",__FILE__,__LINE__);
-  }
-
   else{
    error("Unknown Token",__FILE__,__LINE__);
   }
