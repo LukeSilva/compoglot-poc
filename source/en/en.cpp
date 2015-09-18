@@ -75,6 +75,7 @@ bool en::GotoLine(std::ifstream& File, int Line)
 
 std::string en::createSentence()
 {
+	//First of all, parse the ExtVerb files
 	if(verb1!=0){
 		ParseVerb(0,verb1);
 		verb1=0;
@@ -83,21 +84,49 @@ std::string en::createSentence()
 		ParseVerb(1,verb2);
 		verb2=0;
 	}
+
+	//Print debugging information, if enabled
 #ifdef DEBUG
 	std::cout << "[EN] createSentence()" << std::endl;
 #endif
+
+	//Create blank sentence
 	std::string Sentence = "";
+
+	//Loop through the subjects, adding them to the sentence
 	for (int i = 0; i < 16; ++i)
 	{
 #ifdef DEBUG
-		std::cout << "[EN] Noun: " << i << std::endl;
+		if (s[i].id!=0)
+			std::cout << "[EN] Noun: " << i << std::endl;
 #endif
 		if (i!=0 && i < snum) Sentence +=", ";
 		if (i==snum && snum >0) Sentence += " and ";
 		Sentence +=	GetNounString(&s[i],false);
 	}
+
+	//If there is a subject, insert a space beteen the subjects and the verb.
 	if (snum >= 0) Sentence += " ";
+
+	//Add the first verb to the sentence, if it exists
 	if (v1 != 0)
 		Sentence += GetVerb(s[0],snum,v1,st) + " ";
+
+	//Loop through the objects, adding them to the sentence
+	for (int objid = 0; objid < 8; ++objid)
+	{
+		for (int i = 0; i < 16; ++i)
+		{
+#ifdef DEBUG
+			if (obj[objid][i].id!=0)
+				std::cout << "[EN] Obj " << objid << " Noun: " << i << std::endl;
+#endif
+			if (i != 0 && i < objnum[objid]) Sentence += ", ";
+			if (objnum[objid] > 0 && i == objnum[objid]) Sentence += " and ";
+			Sentence += GetNounString(&obj[objid][i],true);
+		}
+		if (objnum[objid]>=0) Sentence += " ";
+	}
+
 	return Sentence;
 }
