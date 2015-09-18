@@ -40,11 +40,11 @@ protected:
  int v2;
  int v3;
  int adverbs[NUM_ADVERBS];
- noun dobj;
- noun idobj;
- noun prepos_object[3];
- int prepos_prepos[3];
- int prepos_adj[3][16];
+// noun dobj;
+// noun idobj;
+// noun prepos_object[3];
+// int prepos_prepos[3];
+// int prepos_adj[3][16];
  int st;
  char * sentence;
 public:
@@ -54,13 +54,14 @@ public:
  noun s[16];
  //Number of filled subjects.
  int snum;
- int sadj[16][16];
+ //List of objects
  noun obj[8][16];
- int octype[8];
- int sctype;
+ //Number of filled objects
  int objnum[8];
- int objadj[8][16][16];
- int objprepos[8];
+ //conjunction type between objects (and / or)
+ int octype[8];
+ //conjunction type between subjects (and / or)
+ int sctype;
  int data;
  bool neg;
  Language* subClause;
