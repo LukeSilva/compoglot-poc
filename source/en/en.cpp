@@ -3,6 +3,7 @@
 #include <iostream>
 
 const std::string en::FutureTenseMarker = "will";
+const std::string en::GenitiveMarker = "of";
 
 void en::ParseVerb(int verb,int n){
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "general");
@@ -71,26 +72,6 @@ bool en::GotoLine(std::ifstream& File, int Line)
 	}
 	return false;
 }
-
-std::string en::GetNounString(noun* Noun, bool ObjCase)
-{
-#ifdef DEBUG
-	std::cout << "[EN] GetNounString(noun* Noun)" << std::endl;
-#endif
-	if (Noun->id==0) return "";
-	std::string NounString = "";
-	std::string NounResult = GetNoun(Noun,ObjCase);
-	char FirstLetter = NounResult[0];
-	std::string Article = GetArticle(Noun,IsVowel(FirstLetter));
-	std::string Numeral = GetNumeral(Noun,false);
-	if (Article.compare("")!=0)
-		NounString+=Article + " ";
-	if (Numeral.compare("")!=0)
-		NounString+=Numeral + " ";
-	NounString+=NounResult;
-	return NounString;
-}
-
 
 std::string en::createSentence()
 {

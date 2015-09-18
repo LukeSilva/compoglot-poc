@@ -10,6 +10,7 @@ class en: public Language{
 
 		//Definitions (these are set in en.cpp)
 		static const std::string FutureTenseMarker; // = "will"
+		static const std::string GenitiveMarker; // = "of"
 
 
 		//Nouns

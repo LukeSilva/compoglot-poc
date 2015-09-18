@@ -4,6 +4,30 @@
 #include <iostream>
 #include <fstream>
 
+std::string en::GetNounString(noun* Noun, bool ObjCase)
+{
+	if (Noun->id==0) return "";
+#ifdef DEBUG
+	std::cout << "[EN] GetNounString(noun* Noun)" << std::endl;
+#endif
+	std::string NounString = "";
+	std::string NounResult = GetNoun(Noun,ObjCase);
+	char FirstLetter = NounResult[0];
+	std::string Article = GetArticle(Noun,IsVowel(FirstLetter));
+	std::string Numeral = GetNumeral(Noun,false);
+	if (Article.compare("")!=0)
+		NounString+=Article + " ";
+	if (Numeral.compare("")!=0)
+		NounString+=Numeral + " ";
+	NounString+=NounResult;
+	if (Noun->usegenitive)
+	{
+		NounString += " " + GenitiveMarker + " ";
+		NounString += GetNounString(Noun->genitivenoun,true);
+	}
+	return NounString;
+}
+
 std::string en::GetNoun(noun* Noun,bool ObjCase)
 {
 #ifdef DEBUG
