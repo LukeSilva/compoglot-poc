@@ -12,5 +12,7 @@ std::string en::GetPrepos(int PreposNum)
 #endif
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "prepos");
 	if(GotoLine(is,PreposNum)) return "";
-	return GetSegment(is);
+	std::string Preposition = GetSegment(is);
+	is.close();
+	return Preposition;
 }
