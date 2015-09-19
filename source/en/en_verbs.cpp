@@ -297,10 +297,26 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 	return "";
 }
 
-std::string en::GetOtherVerb(int VerbNum)
+std::string en::GetOtherVerb(int VerbNum1,int VerbNum2)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetOtherVerb(int VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	return GetVerbPresentSimple(0,VerbNum);
+	
+	int data = '1';
+	if (VerbNum1!=0)
+	{
+		std::ifstream is(DICTIONARY EN_EN_FOLDER "verb_present");
+		GotoLine(is,VerbNum1);
+		is.get();
+		data = is.get();
+		is.close();
+	}
+	if (data == '2')
+		return GetVerbPreAdd(VerbNum2) + "ing";
+	else if (data == '3' || data == '0')
+		return GetVerbPresentSimple(0,VerbNum2);
+	else if (data == '1')
+		return "to " + GetVerbPresentSimple(0,VerbNum2);
+	return GetVerbPresentSimple(0,VerbNum2);
 }

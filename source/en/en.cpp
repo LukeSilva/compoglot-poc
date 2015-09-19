@@ -114,7 +114,7 @@ std::string en::createSentence()
 
 	//Add the second verb to the sentenc, if it exists
 	if (v2 != 0)
-		Sentence += GetOtherVerb(v2) + " ";
+		Sentence += GetOtherVerb(v1,v2) + " ";
 
 	//Loop through the objects, adding them to the sentence
 	for (int objid = 0; objid < 8; ++objid)
