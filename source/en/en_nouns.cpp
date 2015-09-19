@@ -11,7 +11,16 @@ std::string en::GetNounString(noun* Noun, bool ObjCase)
 	std::cout << "[EN] GetNounString(noun* Noun)" << std::endl;
 #endif
 	std::string NounString = "";
-	std::string NounResult = GetNoun(Noun,ObjCase);
+	std::string NounResult;
+
+	for (int i = 0; i < 16; ++i)
+	{
+		std::string Adjective = GetAdjective(Noun->adj[i]);
+		if (Adjective.compare("")!=0)
+			NounResult += Adjective + " ";
+	}
+
+	NounResult += GetNoun(Noun,ObjCase);
 	char FirstLetter = NounResult[0];
 	std::string Article = GetArticle(Noun,IsVowel(FirstLetter));
 	std::string Numeral = GetNumeral(Noun,false);

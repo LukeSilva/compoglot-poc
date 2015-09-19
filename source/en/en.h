@@ -53,6 +53,9 @@ class en: public Language{
 		//Prepositions
 		std::string GetPrepos(int PreposNum);
 
+		//Adjectives
+		std::string GetAdjective(int AdjectiveNum);
+
 		//General Boilerplate
 		bool IsVowel(char Letter);
 		bool GotoLine(std::ifstream& File,int Line);
