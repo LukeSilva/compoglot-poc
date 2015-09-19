@@ -50,6 +50,9 @@ class en: public Language{
 		std::string GetVerbPassiveFuturePast(int VerbForm, int VerbNum);
 		std::string GetVerbPassiveFuturePastProgressive(int VerbForm, int VerbNum);
 
+		//Prepositions
+		std::string GetPrepos(int PreposNum);
+
 		//General Boilerplate
 		bool IsVowel(char Letter);
 		bool GotoLine(std::ifstream& File,int Line);
