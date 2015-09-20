@@ -140,6 +140,11 @@ std::string en::createSentence()
 	{
 		Sentence += GetSubClause() + " ";
 	}
-
+	
+	Sentence.pop_back();
+	if (punctuation)
+	{
+		Sentence+=".";
+	}
 	return Sentence;
 }
