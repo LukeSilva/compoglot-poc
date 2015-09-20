@@ -28,7 +28,7 @@ g++ -Wall -c de/de_adjectives.cpp
 g++ -Wall -c de/de_conjunctions.cpp
 g++ -Wall -c de/de_general.cpp
 
-g++ -Wall -c en/en.cpp
+g++ -Wall -std=c++11 -c en/en.cpp
 g++ -Wall -c en/en_nouns.cpp
 g++ -Wall -c en/en_articles.cpp
 g++ -Wall -c en/en_numerals.cpp

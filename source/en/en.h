@@ -60,6 +60,10 @@ class en: public Language{
 		//Adjectives
 		std::string GetAdjective(int AdjectiveNum);
 
+		//Conjunctions/Subclauses
+		std::string GetSubClause();
+		std::string GetConjunction(int ConjunctionNum);
+
 		//General Boilerplate
 		bool IsVowel(char Letter);
 		bool GotoLine(std::ifstream& File,int Line);

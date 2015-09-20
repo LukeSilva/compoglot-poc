@@ -135,5 +135,11 @@ std::string en::createSentence()
 		if (objnum[objid]>=0) Sentence += " ";
 	}
 
+	//If a conjunction and subclause exists, create the subclause, and add it to the sentence.
+	if (subClause!=NULL && conjunction != 0)
+	{
+		Sentence += GetSubClause() + " ";
+	}
+
 	return Sentence;
 }
