@@ -25,29 +25,12 @@ std::string en::GetNounString(noun* Noun, bool ObjCase)
 #endif
 	std::string NounString = "";
 	std::string NounResult;
-
 	for (int i = 0; i < 16; ++i)
 	{
 		std::string Adjective = GetAdjective(Noun->adj[i]);
 		if (Adjective.compare("")!=0)
 			NounResult += Adjective + " ";
 	}
-
-
-/*if (n->useRClause)
-  {
-    n->rClause->clause = true;
-    char t = getNounType(n->id);
-    if (t == 'm' || t == 'f' || t == 'p' || t == 'd')
-    {
-      strcat(buffer,EN_EN_WHO);
-    }
-    else if (n->rClauseEssential) strcat(buffer,EN_EN_THAT);
-    else strcat(buffer,EN_EN_WHICH);
-    strcat(buffer,n->rClause->createSentence().c_str());
-    strcat(buffer," ");
-  }*/
-
 	NounResult += GetNoun(Noun,ObjCase);
 	char FirstLetter = NounResult[0];
 	std::string Article = GetArticle(Noun,IsVowel(FirstLetter));
