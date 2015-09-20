@@ -11,11 +11,15 @@ class en: public Language{
 		//Definitions (these are set in en.cpp)
 		static const std::string FutureTenseMarker; // = "will"
 		static const std::string GenitiveMarker; // = "of"
+		static const std::string RClausePersonalMarker; // = "who"
+		static const std::string RClauseEssentialMarker; // = "that"
+		static const std::string RClauseNonEssentialMarker; // = "which"
 
 
 		//Nouns
 		std::string GetNoun(noun* Noun,bool ObjCase);
 		std::string GetNounString(noun* Noun,bool ObjCase);
+		int GetNounType(int NounNum);
 
 		//Articles
 		std::string GetArticle(noun* Noun,bool NextLetterIsVowel);

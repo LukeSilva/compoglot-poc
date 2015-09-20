@@ -68,6 +68,7 @@ noun* Parser::parseNoun(){
   nlang->newSentence();
   nlang->s[0].id = 14;
   nlang->s[0].plural=n->plural;
+	nlang->snum = 0;	
   _parse(nlang);
   nlang->punctuation = false;
   n->rClause = nlang;
