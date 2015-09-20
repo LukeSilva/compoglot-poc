@@ -91,6 +91,7 @@ void Language::newSentence(){
  for (int i = 0; i < 8; ++i)
  {  
    octype[i] = 0;
+	 objnum[i] = -1;
 	 for (int j = 0; j < 16; ++j)
 	 {
 		 clearNoun(&obj[i][j]);
