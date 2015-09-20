@@ -70,6 +70,7 @@ void Language::newSentence(){
  {
   buf[i] = 0;
  }
+ Capital = true;
  punctuation = true;
  question = 0;
  clause=false;

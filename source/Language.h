@@ -43,6 +43,7 @@ protected:
  int st;
  char * sentence;
 public:
+ bool Capital;
  bool punctuation;
  int question;
  //List of subjects

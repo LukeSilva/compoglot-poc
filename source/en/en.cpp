@@ -146,5 +146,16 @@ std::string en::createSentence()
 	{
 		Sentence+=".";
 	}
+
+	if (Capital)
+	{
+		int FirstLetter = Sentence.at(0);
+		if (FirstLetter >= 'a' && FirstLetter <= 'z')
+		{
+			FirstLetter -= ('a' - 'A');
+			Sentence[0] = FirstLetter;
+		}
+	}	
+		
 	return Sentence;
 }
