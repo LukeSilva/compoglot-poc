@@ -16,7 +16,7 @@ g++ -Wall -c en_old/en_old_verbs.cpp
 g++ -Wall -c en_old/en_old_adjectives.cpp
 g++ -Wall -c en_old/en_adverbs.cpp
 g++ -Wall -c en_old/en_old_prepos.cpp
-g++ -Wall -c en_old/en_conjunctions.cpp
+g++ -Wall -c en_old/en_old_conjunctions.cpp
 g++ -Wall -c en_old/en_general.cpp
 
 g++ -Wall -c de/de.cpp
@@ -36,6 +36,7 @@ g++ -Wall -c en/en_verbs.cpp
 g++ -Wall -c en/en_passiveverbs.cpp
 g++ -Wall -c en/en_prepos.cpp
 g++ -Wall -c en/en_adjectives.cpp
+g++ -Wall -c en/en_conjunctions.cpp
 
 g++ -o lang *.o
 rm *.o
