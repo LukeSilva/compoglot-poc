@@ -9,7 +9,7 @@ std::string en::GetConjunction(int ConjunctionNum)
 	if (ConjunctionNum < 0) return "";
 
 #ifdef DEBUG
-	std::cout << "[EN] GetConjunction(int ConjunctionNum = " << ConjunctionNum << " )" std::endl;
+	std::cout << "[EN] GetConjunction(int ConjunctionNum = " << ConjunctionNum << " )" << std::endl;
 #endif
 	
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "conjunctions");

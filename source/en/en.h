@@ -14,6 +14,7 @@ class en: public Language{
 		static const std::string RClausePersonalMarker; // = "who"
 		static const std::string RClauseEssentialMarker; // = "that"
 		static const std::string RClauseNonEssentialMarker; // = "which"
+		static const std::string QuestionMarkers[6]; // = {"who ","what ","when ","where ","why ","how "};
 
 
 		//Nouns

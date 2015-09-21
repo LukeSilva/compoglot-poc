@@ -7,6 +7,7 @@ const std::string en::GenitiveMarker = "of";
 const std::string en::RClausePersonalMarker = "who";
 const std::string en::RClauseEssentialMarker = "that";
 const std::string en::RClauseNonEssentialMarker = "which";
+const std::string en::QuestionMarkers[6] = {"who ","what ","when ","where ","why ","how "};
 
 void en::ParseVerb(int verb,int n){
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "general");
@@ -96,12 +97,16 @@ std::string en::createSentence()
 	//Create blank sentence
 	std::string Sentence = "";
 
+	if (question > 1)
+	{
+		Sentence += QuestionMarkers[question-2] + " ";
+	}
+
 	//Loop through the subjects, adding them to the sentence
 	for (int i = 0; i < 16; ++i)
 	{
-#ifdef DEBUG
-		if (s[i].id!=0)
-			std::cout << "[EN] Noun: " << i << std::endl;
+#ifdef SUPER_DEBUG
+		std::cout << "[EN] Noun: " << i << std::endl;
 #endif
 		if (i!=0 && i < snum) Sentence +=", ";
 		if (i==snum && snum >0) Sentence += " and ";
@@ -124,9 +129,8 @@ std::string en::createSentence()
 	{
 		for (int i = 0; i < 16; ++i)
 		{
-#ifdef DEBUG
-			if (obj[objid][i].id!=0)
-				std::cout << "[EN] Obj " << objid << " Noun: " << i << std::endl;
+#ifdef SUPER_DEBUG
+			std::cout << "[EN] Obj " << objid << " Noun: " << i << std::endl;
 #endif
 			if (i != 0 && i < objnum[objid]) Sentence += ", ";
 			if (objnum[objid] > 0 && i == objnum[objid]) Sentence += " and ";
@@ -140,8 +144,9 @@ std::string en::createSentence()
 	{
 		Sentence += GetSubClause() + " ";
 	}
-	
-	Sentence.pop_back();
+
+	if(Sentence.compare("")!=0)
+		Sentence.pop_back();
 	if (punctuation)
 	{
 		Sentence+=".";

@@ -329,7 +329,7 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 std::string en::GetOtherVerb(int VerbNum1,int VerbNum2)
 {
 #ifdef DEBUG
-	std::cout << "[EN] GetOtherVerb(int VerbNum = " << VerbNum << " )" << std::endl;
+	std::cout << "[EN] GetOtherVerb(int VerbNum1 = " << VerbNum1 << " , VerbNum2 = " << VerbNum2 << " )" << std::endl;
 #endif
 	
 	int data = '1';

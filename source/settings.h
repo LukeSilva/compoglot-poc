@@ -2,6 +2,11 @@
 #include <string>
 
 
+
+#ifdef SUPER_DEBUG
+#define DEBUG
+#endif
+
 #define DICTIONARY "../lang/"
 #define EN_FOLDER "en/"
 #define EN_EN_FOLDER "en/"
