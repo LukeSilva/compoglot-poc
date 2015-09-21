@@ -1,43 +1,61 @@
 cd source
-g++ -Wall -c cmdparse.cpp
-g++ -Wall -c fileparse.cpp
-g++ -Wall -c main.cpp
-g++ -Wall -c Language.cpp
-g++ -Wall -c general.cpp
+CFLAGS="-Wall -std=c++11"
+BASEFILES="cmdparse.cpp fileparse.cpp main.cpp Language.cpp general.cpp"
+PARSERFILES="parser.cpp parser_io.cpp parse_noun.cpp"
+EN_OLDFILES="en_old.cpp en_old_nouns.cpp en_old_articles.cpp en_old_verbs.cpp en_old_adjectives.cpp en_adverbs.cpp en_old_prepos.cpp en_old_conjunctions.cpp en_general.cpp"
+DEFILES="de.cpp de_articles.cpp de_nouns.cpp de_verbs.cpp de_prepos.cpp de_adjectives.cpp de_conjunctions.cpp de_general.cpp"
+ENFILES="en.cpp en_nouns.cpp en_articles.cpp en_numerals.cpp en_verbs.cpp en_passiveverbs.cpp en_prepos.cpp en_adjectives.cpp en_conjunctions.cpp"
 
-g++ -Wall -c parser/parser.cpp
-g++ -Wall -c parser/parser_io.cpp
-g++ -Wall -c parser/parse_noun.cpp
+echo
+echo "Compiling base..."
+echo
+for file in $BASEFILES
+do
+	echo $file
+	g++ $CFLAGS -c $file
+done
 
-g++ -Wall -c en_old/en_old.cpp
-g++ -Wall -c en_old/en_old_nouns.cpp
-g++ -Wall -c en_old/en_old_articles.cpp
-g++ -Wall -c en_old/en_old_verbs.cpp
-g++ -Wall -c en_old/en_old_adjectives.cpp
-g++ -Wall -c en_old/en_adverbs.cpp
-g++ -Wall -c en_old/en_old_prepos.cpp
-g++ -Wall -c en_old/en_old_conjunctions.cpp
-g++ -Wall -c en_old/en_general.cpp
+echo
+echo "Compiling parser..."
+echo
+for file in $PARSERFILES
+do
+	echo $file
+	g++ $CFLAGS -c parser/$file
+done
 
-g++ -Wall -c de/de.cpp
-g++ -Wall -c de/de_articles.cpp
-g++ -Wall -c de/de_nouns.cpp
-g++ -Wall -c de/de_verbs.cpp
-g++ -Wall -c de/de_prepos.cpp
-g++ -Wall -c de/de_adjectives.cpp
-g++ -Wall -c de/de_conjunctions.cpp
-g++ -Wall -c de/de_general.cpp
+echo
+echo "Compiling en_old..."
+echo
+for file in $EN_OLDFILES
+do
+	echo $file
+	g++ $CFLAGS -c en_old/$file
+done
 
-g++ -Wall -std=c++11 -c en/en.cpp
-g++ -Wall -c en/en_nouns.cpp
-g++ -Wall -c en/en_articles.cpp
-g++ -Wall -c en/en_numerals.cpp
-g++ -Wall -c en/en_verbs.cpp
-g++ -Wall -c en/en_passiveverbs.cpp
-g++ -Wall -c en/en_prepos.cpp
-g++ -Wall -c en/en_adjectives.cpp
-g++ -Wall -c en/en_conjunctions.cpp
+echo
+echo "Compiling de..."
+echo
+for file in $DEFILES
+do
+	echo $file
+	g++ $CFLAGS -c de/$file
+done
 
+echo
+echo "Compiling en..."
+echo
+for file in $ENFILES
+do
+	echo $file
+	g++ $CFLAGS -c en/$file
+done
+
+echo
+echo "Linking..."
+echo
 g++ -o lang *.o
+
+echo "Clean Up..."
 rm *.o
 cp lang ../examples/
