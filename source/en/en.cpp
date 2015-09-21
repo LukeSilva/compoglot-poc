@@ -147,12 +147,12 @@ std::string en::createSentence()
 
 	if(Sentence.compare("")!=0)
 		Sentence.pop_back();
-	if (punctuation)
+	if (punctuation && !clause)
 	{
 		Sentence+=".";
 	}
 
-	if (Capital)
+	if (Capital && !clause)
 	{
 		int FirstLetter = Sentence.at(0);
 		if (FirstLetter >= 'a' && FirstLetter <= 'z')
