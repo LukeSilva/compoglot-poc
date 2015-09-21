@@ -30,17 +30,17 @@ class en: public Language{
 		//Verbs
 		std::string GetOtherVerb(int VerbNum1, int VerbNum2);
 		std::string GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType);
-		std::string GetVerbPresentSimple(int VerbForm, int VerbNum);
+		std::string GetVerbPresentSimple(int VerbForm, int VerbNum, bool IgnoreNeg = false, bool HelperVerb = false);
 		std::string GetVerbPreAdd(int VerbNum);
-		std::string GetVerbPresentProgressive(int VerbForm, int VerbNum);
-		std::string GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect = false);
-		std::string GetVerbPastProgressive(int VerbForm, int VerbNum);
-		std::string GetVerbPastPerfect(int VerbForm, int VerbNum);
-		std::string GetVerbPastPerfectProgressive(int VerbForm, int VerbNum);
-		std::string GetVerbFutureSimple(int VerbForm, int VerbNum);
-		std::string GetVerbFutureProgressive(int VerbForm,int VerbNum);
-		std::string GetVerbFuturePast(int VerbForm, int VerbNum);
-		std::string GetVerbFuturePastProgressive(int VerbForm, int VerbNum);
+		std::string GetVerbPresentProgressive(int VerbForm, int VerbNum, bool IgnoreNeg = false);
+		std::string GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect = false, bool IgnoreNeg = false, bool HelperVerb = false);
+		std::string GetVerbPastProgressive(int VerbForm, int VerbNum, bool IgnoreNeg = false);
+		std::string GetVerbPastPerfect(int VerbForm, int VerbNum, bool IgnoreNeg = false);
+		std::string GetVerbPastPerfectProgressive(int VerbForm, int VerbNum, bool IgnoreNeg = false);
+		std::string GetVerbFutureSimple(int VerbForm, int VerbNum, bool IgnoreNeg = false);
+		std::string GetVerbFutureProgressive(int VerbForm,int VerbNum, bool IgnoreNeg = false);
+		std::string GetVerbFuturePast(int VerbForm, int VerbNum, bool IgnoreNeg = false);
+		std::string GetVerbFuturePastProgressive(int VerbForm, int VerbNum, bool IgnoreNeg = false);
 
 		//Passive Verbs
 		std::string GetVerbPassivePresentProgressive(int VerbForm, int VerbNum);
