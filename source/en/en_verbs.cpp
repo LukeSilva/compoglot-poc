@@ -80,8 +80,8 @@ std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, std::string Mid,
 		if (GotoSegment(is,VerbForm+1)) return "";
 		std::string Segment = GetSegment(is);
 		is.close();
-		if (!IgnoreMid && (VerbNum == 1 || HelperVerb) && neg ) Segment += " " + Mid;
-		else if (!IgnoreMid && neg)
+		if (!IgnoreMid && (VerbNum == 1 || HelperVerb) && Mid.compare("")!=0 ) Segment += " " + Mid;
+		else if (!IgnoreMid && Mid.compare("")!=0)
 		{
 			return GetVerbPresentSimple(VerbForm,68,"",true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
 		}
@@ -90,7 +90,7 @@ std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, std::string Mid,
 	else
 	{
 
-		if (!IgnoreMid && neg)
+		if (!IgnoreMid && Mid.compare("")!=0)
 		{
 			is.close();
 			return GetVerbPresentSimple(VerbForm,68,"",true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
@@ -136,7 +136,7 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, std::string Mid, bo
 	if (Data == '2' || Data == '3')
 	{
 		is.close();
-		if (!IgnoreMid && neg)
+		if (!IgnoreMid && Mid.compare("")!=0)
 		{
 			return GetVerbPastSimple(VerbForm,68,"",Perfect,true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true,false);
 		}
@@ -147,7 +147,7 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, std::string Mid, bo
 	} 
 	else if (Data == '1')
 	{
-		if (!IgnoreMid && neg)
+		if (!IgnoreMid && Mid.compare("")!=0)
 		{
 			is.close();
 			return GetVerbPastSimple(VerbForm,68,"",Perfect,true,true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
@@ -171,8 +171,8 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, std::string Mid, bo
 		}
 		std::string Verb = GetSegment(is);
 		is.close();
-		if (!IgnoreMid && (VerbNum == 1 || HelperVerb) && neg ) Verb += " " + Mid;
-		else if (!IgnoreMid && neg)
+		if (!IgnoreMid && (VerbNum == 1 || HelperVerb) && Mid.compare("")!=0 ) Verb += " " + Mid;
+		else if (!IgnoreMid && Mid.compare("")!=0)
 		{
 			return GetVerbPastSimple(VerbForm,68,"",Perfect,true,true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
 		}
@@ -264,7 +264,11 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType, std
 #endif
 
 	if (neg)
+	{
+		if (Mid.compare("")!=0)
+			Mid += " ";
 		Mid += "not";
+	}
 	
 	//Then we need to get the verb string from the appropriate function, and return it.
 	//We can do this with VerbNum and VerbForm information.

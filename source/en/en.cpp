@@ -102,23 +102,38 @@ std::string en::createSentence()
 		Sentence += QuestionMarkers[question-2] + " ";
 	}
 
-	//Loop through the subjects, adding them to the sentence
+	//Store the subjects in a different string
+	std::string Subjects = "";
+
+	//Loop through the subjects, adding them
 	for (int i = 0; i < 16; ++i)
 	{
 #ifdef SUPER_DEBUG
 		std::cout << "[EN] Noun: " << i << std::endl;
 #endif
-		if (i!=0 && i < snum) Sentence +=", ";
-		if (i==snum && snum >0) Sentence += " and ";
-		Sentence +=	GetNounString(&s[i],false);
+		if (i!=0 && i < snum) Subjects +=", ";
+		if (i==snum && snum >0) Subjects += " and ";
+		Subjects +=	GetNounString(&s[i],false);
 	}
 
-	//If there is a subject, insert a space beteen the subjects and the verb.
-	if (snum >= 0) Sentence += " ";
+	
+	std::string Mid = "";
+	
+	if (question>1)
+	{
+		Mid = Subjects;
+	}
+	else
+	{
+		Sentence += Subjects;
+		//If there is a subject, insert a space beteen the subjects and the verb.
+		if (snum >= 0) Sentence += " ";
+	}
+
 
 	//Add the first verb to the sentence, if it exists
 	if (v1 != 0)
-		Sentence += GetVerb(s[0],snum,v1,st) + " ";
+		Sentence += GetVerb(s[0],snum,v1,st,Mid) + " ";
 
 	//Add the second verb to the sentenc, if it exists
 	if (v2 != 0)
