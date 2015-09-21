@@ -7,7 +7,7 @@ const std::string en::GenitiveMarker = "of";
 const std::string en::RClausePersonalMarker = "who";
 const std::string en::RClauseEssentialMarker = "that";
 const std::string en::RClauseNonEssentialMarker = "which";
-const std::string en::QuestionMarkers[6] = {"who ","what ","when ","where ","why ","how "};
+const std::string en::QuestionMarkers[6] = {"who","what","when","where","why","how"};
 
 void en::ParseVerb(int verb,int n){
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "general");

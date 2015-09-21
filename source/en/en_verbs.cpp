@@ -67,7 +67,7 @@ std::string en::GetVerbPreAdd(int VerbNum)
 }
 
 
-std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, bool IgnoreNeg, bool HelperVerb)
+std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid, bool HelperVerb)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPresentSimple(int VerbForm = " << VerbForm << " , int VerbNum = " << VerbNum << " ) " << std::endl;
@@ -80,20 +80,20 @@ std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, bool IgnoreNeg, 
 		if (GotoSegment(is,VerbForm+1)) return "";
 		std::string Segment = GetSegment(is);
 		is.close();
-		if (!IgnoreNeg && (VerbNum == 1 || HelperVerb) && neg ) Segment += " not";
-		else if (!IgnoreNeg && neg)
+		if (!IgnoreMid && (VerbNum == 1 || HelperVerb) && neg ) Segment += " " + Mid;
+		else if (!IgnoreMid && neg)
 		{
-			return GetVerbPresentSimple(VerbForm,68,true) + " not " + GetVerbPresentSimple(0,VerbNum,true);
+			return GetVerbPresentSimple(VerbForm,68,"",true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
 		}
 		return Segment;
 	}
 	else
 	{
 
-		if (!IgnoreNeg && neg)
+		if (!IgnoreMid && neg)
 		{
 			is.close();
-			return GetVerbPresentSimple(VerbForm,68,true) + " not " + GetVerbPresentSimple(0,VerbNum,true);
+			return GetVerbPresentSimple(VerbForm,68,"",true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
 		}
 		if (GotoSegment(is,1)) return "";
 		std::string Segment = GetSegment(is);
@@ -117,15 +117,15 @@ std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, bool IgnoreNeg, 
 	return "";
 }
 
-std::string en::GetVerbPresentProgressive(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbPresentProgressive(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPresentProgressive(int VerbForm = " << VerbForm << " ,int VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	return GetVerbPresentSimple(VerbForm,1) + " " + GetVerbPreAdd(VerbNum) + "ing";
+	return GetVerbPresentSimple(VerbForm,1,Mid) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }
 
-std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect, bool IgnoreNeg, bool HelperVerb)
+std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, std::string Mid, bool Perfect, bool IgnoreMid, bool HelperVerb)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPastSimple(int VerbForm = " << VerbForm << ", int VerbNum = " << VerbNum << " )" << std::endl;
@@ -136,9 +136,9 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect, bool 
 	if (Data == '2' || Data == '3')
 	{
 		is.close();
-		if (!IgnoreNeg && neg)
+		if (!IgnoreMid && neg)
 		{
-			return GetVerbPastSimple(VerbForm,68,Perfect,true) + " not " + GetVerbPresentSimple(0,VerbNum,true,false);
+			return GetVerbPastSimple(VerbForm,68,"",Perfect,true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true,false);
 		}
 		std::string V = GetVerbPreAdd(VerbNum);
 		if (Data == '3') V += "e";
@@ -147,10 +147,10 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect, bool 
 	} 
 	else if (Data == '1')
 	{
-		if (!IgnoreNeg && neg)
+		if (!IgnoreMid && neg)
 		{
 			is.close();
-			return GetVerbPastSimple(VerbForm,68,Perfect,true,true) + " not " + GetVerbPresentSimple(0,VerbNum,true);
+			return GetVerbPastSimple(VerbForm,68,"",Perfect,true,true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
 		}
 		if(GotoSegment(is,Perfect?2:1))
 		{
@@ -171,77 +171,73 @@ std::string en::GetVerbPastSimple(int VerbForm, int VerbNum, bool Perfect, bool 
 		}
 		std::string Verb = GetSegment(is);
 		is.close();
-		if (!IgnoreNeg && (VerbNum == 1 || HelperVerb) && neg ) Verb += " not";
-		else if (!IgnoreNeg && neg)
+		if (!IgnoreMid && (VerbNum == 1 || HelperVerb) && neg ) Verb += " " + Mid;
+		else if (!IgnoreMid && neg)
 		{
-			return GetVerbPastSimple(VerbForm,68,Perfect,true,true) + " not " + GetVerbPresentSimple(0,VerbNum,true);
+			return GetVerbPastSimple(VerbForm,68,"",Perfect,true,true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
 		}
 		return Verb;
 	}
 	return "";
 }
 
-std::string en::GetVerbPastProgressive(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbPastProgressive(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPastProgressive(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	return GetVerbPastSimple(VerbForm,1,false) + " " + GetVerbPreAdd(VerbNum) + "ing";
+	return GetVerbPastSimple(VerbForm,1,Mid,false) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }
 
-std::string en::GetVerbPastPerfect(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbPastPerfect(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPastPerfect(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	return GetVerbPresentSimple(VerbForm,2,IgnoreNeg,true) + " " + GetVerbPastSimple(1,VerbNum,true,true);
+	return GetVerbPresentSimple(VerbForm,2,Mid,IgnoreMid,true) + " " + GetVerbPastSimple(1,VerbNum,"",true,true);
 }
 
-std::string en::GetVerbPastPerfectProgressive(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbPastPerfectProgressive(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbPastPerfectProgressive(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	return GetVerbPastPerfect(VerbForm,1,IgnoreNeg) + " " + GetVerbPreAdd(VerbNum) + "ing";
+	return GetVerbPastPerfect(VerbForm,1,Mid,IgnoreMid) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }
 
-std::string en::GetVerbFutureSimple(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbFutureSimple(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbFutureSimple(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" <<std::endl;
 #endif
-	std::string Mid = neg ? "not " : "";
-	return FutureTenseMarker + " " + Mid + GetVerbPresentSimple(0,VerbNum,true);
+	return FutureTenseMarker + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
 }
 
-std::string en::GetVerbFutureProgressive(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbFutureProgressive(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbFutureProgressive(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	std::string Mid = neg ? "not " : "";
-	return FutureTenseMarker + " " + Mid + GetVerbPresentSimple(0,1,true) + " " + GetVerbPreAdd(VerbNum) + "ing";
+	return FutureTenseMarker + " " + Mid + " " + GetVerbPresentSimple(0,1,"",true) + " " + GetVerbPreAdd(VerbNum) + "ing";
 }
 
-std::string en::GetVerbFuturePast(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbFuturePast(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbFuturePast(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	std::string Mid = neg ? "not " : "";
-	return FutureTenseMarker + " " + Mid + GetVerbPastPerfect(0,VerbNum,true);
+	return FutureTenseMarker + " " + Mid + " " + GetVerbPastPerfect(0,VerbNum,"",true);
 }
 
-std::string en::GetVerbFuturePastProgressive(int VerbForm, int VerbNum, bool IgnoreNeg)
+std::string en::GetVerbFuturePastProgressive(int VerbForm, int VerbNum, std::string Mid, bool IgnoreMid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerbFuturePastProgressive(int VerbForm = " << VerbForm << " , VerbNum = " << VerbNum << " )" << std::endl;
 #endif
-	std::string Mid = neg ? "not " : "";
-	return FutureTenseMarker + " " + Mid + GetVerbPastPerfectProgressive(0,VerbNum,true);
+	return FutureTenseMarker + " " + Mid + " " + GetVerbPastPerfectProgressive(0,VerbNum,"",true);
 }
 
-std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
+std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType, std::string Mid)
 {
 #ifdef DEBUG
 	std::cout << "[EN] GetVerb(noun& Noun, int snum = " << snum << " , int VerbNum = " << VerbNum << " , int SentenceType = " << SentenceType << " )" << std::endl;
@@ -266,62 +262,66 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType)
 #ifdef DEBUG
 	std::cout << "[EN] VerbForm = " << VerbForm << std::endl;
 #endif
+
+	if (neg)
+		Mid += "not";
+	
 	//Then we need to get the verb string from the appropriate function, and return it.
 	//We can do this with VerbNum and VerbForm information.
 	switch (st)
 	{
 		case PRESENT_PROGRESSIVE:
-			return GetVerbPresentProgressive(VerbForm,VerbNum);
+			return GetVerbPresentProgressive(VerbForm,VerbNum,Mid);
 		case PRESENT_SIMPLE:
-			return GetVerbPresentSimple(VerbForm,VerbNum);
+			return GetVerbPresentSimple(VerbForm,VerbNum,Mid);
 		case PAST_RECENT:
 		case PAST_RECENT_FORMAL:			
-			return GetVerbPastSimple(VerbForm,VerbNum);
+			return GetVerbPastSimple(VerbForm,VerbNum,Mid);
 		case PAST_RECENT_PROGRESSIVE:
 		case PAST_RECENT_PROGRESSIVE_FORMAL:
-			return GetVerbPastProgressive(VerbForm,VerbNum);
+			return GetVerbPastProgressive(VerbForm,VerbNum,Mid);
 		case PAST_DISTANT:
 		case PAST_DISTANT_FORMAL:
-			return GetVerbPastPerfect(VerbForm,VerbNum);
+			return GetVerbPastPerfect(VerbForm,VerbNum,Mid);
 		case PAST_DISTANT_PROGRESSIVE:
 		case PAST_DISTANT_PROGRESSIVE_FORMAL:
-			return GetVerbPastPerfectProgressive(VerbForm,VerbNum);
+			return GetVerbPastPerfectProgressive(VerbForm,VerbNum,Mid);
 		case FUTURE_RECENT:
 		case FUTURE_DISTANT:
-			return GetVerbFutureSimple(VerbForm,VerbNum);
+			return GetVerbFutureSimple(VerbForm,VerbNum,Mid);
 		case FUTURE_RECENT_PROGRESSIVE:
 		case FUTURE_DISTANT_PROGRESSIVE:
-			return GetVerbFutureProgressive(VerbForm,VerbNum);
+			return GetVerbFutureProgressive(VerbForm,VerbNum,Mid);
 		case FUTURE_PAST:
-			return GetVerbFuturePast(VerbForm,VerbNum);
+			return GetVerbFuturePast(VerbForm,VerbNum,Mid);
 		case FUTURE_PAST_PROGRESSIVE:
-			return GetVerbFuturePastProgressive(VerbForm,VerbNum);
+			return GetVerbFuturePastProgressive(VerbForm,VerbNum,Mid);
 		case PASSIVE_PRESENT_PROGRESSIVE:
-			return GetVerbPassivePresentProgressive(VerbForm,VerbNum);
+			return GetVerbPassivePresentProgressive(VerbForm,VerbNum,Mid);
 		case PASSIVE_PRESENT_SIMPLE:
-			return GetVerbPassivePresentSimple(VerbForm,VerbNum);
+			return GetVerbPassivePresentSimple(VerbForm,VerbNum,Mid);
 		case PASSIVE_PAST_RECENT:
 		case PASSIVE_PAST_RECENT_FORMAL:
-			return GetVerbPassivePastSimple(VerbForm,VerbNum);
+			return GetVerbPassivePastSimple(VerbForm,VerbNum,Mid);
 		case PASSIVE_PAST_RECENT_PROGRESSIVE:
 		case PASSIVE_PAST_RECENT_FORMAL_PROGRESSIVE:
-			return GetVerbPassivePastProgressive(VerbForm,VerbNum);
+			return GetVerbPassivePastProgressive(VerbForm,VerbNum,Mid);
 		case PASSIVE_PAST_DISTANT:
 		case PASSIVE_PAST_DISTANT_FORMAL:
-			return GetVerbPassivePastPerfect(VerbForm,VerbNum);		
+			return GetVerbPassivePastPerfect(VerbForm,VerbNum,Mid);		
 		case PASSIVE_PAST_DISTANT_PROGRESSIVE:
 		case PASSIVE_PAST_DISTANT_FORMAL_PROGRESSIVE:
-			return GetVerbPassivePastPerfectProgressive(VerbForm,VerbNum);
+			return GetVerbPassivePastPerfectProgressive(VerbForm,VerbNum,Mid);
 		case PASSIVE_FUTURE_RECENT:
 		case PASSIVE_FUTURE_DISTANT:
-			return GetVerbPassiveFutureSimple(VerbForm,VerbNum);
+			return GetVerbPassiveFutureSimple(VerbForm,VerbNum,Mid);
 		case PASSIVE_FUTURE_RECENT_PROGRESSIVE:
 		case PASSIVE_FUTURE_DISTANT_PROGRESSIVE:
-			return GetVerbPassiveFutureProgressive(VerbForm,VerbNum);
+			return GetVerbPassiveFutureProgressive(VerbForm,VerbNum,Mid);
 		case PASSIVE_FUTURE_PAST:
-			return GetVerbPassiveFuturePast(VerbForm,VerbNum);
+			return GetVerbPassiveFuturePast(VerbForm,VerbNum,Mid);
 		case PASSIVE_FUTURE_PAST_PROGRESSIVE:
-			return GetVerbPassiveFuturePastProgressive(VerbForm,VerbNum);	
+			return GetVerbPassiveFuturePastProgressive(VerbForm,VerbNum,Mid);	
 	}
 	return "";
 }
