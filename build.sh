@@ -24,24 +24,6 @@ do
 	g++ $CFLAGS -c parser/$file
 done
 
-#echo
-#echo "Compiling en_old..."
-#echo
-#for file in $EN_OLDFILES
-#do
-#	echo $file
-#	g++ $CFLAGS -c en_old/$file
-#done
-
-#echo
-#echo "Compiling de..."
-#echo
-#for file in $DEFILES
-#do
-#	echo $file
-#	g++ $CFLAGS -c de/$file
-#done
-
 echo
 echo "Compiling en..."
 echo
