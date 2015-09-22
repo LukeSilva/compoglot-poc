@@ -90,7 +90,7 @@ std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, std::string Mid,
 	else
 	{
 
-		if (!IgnoreMid && Mid.compare("")!=0)
+		if (!IgnoreMid && Mid.compare("")!=0 && Data != '3')
 		{
 			is.close();
 			return GetVerbPresentSimple(VerbForm,68,"",true) + " " + Mid + " " + GetVerbPresentSimple(0,VerbNum,"",true);
@@ -110,6 +110,7 @@ std::string en::GetVerbPresentSimple(int VerbForm, int VerbNum, std::string Mid,
 				Segment += "s";
 			}
 		}
+		else if (!IgnoreMid && Mid.compare("")!=0) Segment+= " " + Mid;
 		is.close();
 		return Segment;
 	}
