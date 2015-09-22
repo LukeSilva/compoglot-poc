@@ -1,7 +1,4 @@
-#include "en_old/en.h"
 #include "en/en.h"
-#include "de/de.h"
-#include "lt/lt.h"
 #include "Language.h"
 #include "parser/parser.h"
 #include "cmdparse.h"
@@ -11,16 +8,7 @@
 #include <string.h>
 Language* getLanguageFromStringId(char* Id){
  Language* ret;
- if (!strcmp(Id,"en_old")){
-  ret = new en_en;
- }
- else if (!strcmp(Id,"de")){
-  ret = new de;
- }
- else if (!strcmp(Id,"lt")){
-  ret = new lt;
- }
- else if (!strcmp(Id,"en")){
+ if (!strcmp(Id,"en")){
   ret = new en;
  }
  else {printf("Unkown Language: '%s'\n",Id);exit(-1);}
