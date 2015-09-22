@@ -13,13 +13,13 @@ void Parser::_parseSubject(Language* lang){
    rstPtr();
    expect('(',__FILE__,__LINE__);
    noun* n=parseNoun();
-   lang->s[sub]=*n;
+   lang->Subjects[sub]=*n;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("adj")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->s[sub].adj[subadj]=getInt();
+   lang->Subjects[sub].adj[subadj]=getInt();
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("it")){
@@ -27,7 +27,7 @@ void Parser::_parseSubject(Language* lang){
    expect('(',__FILE__,__LINE__);
    int i = getInt();
    noun* n=lang->getIt(i);
-   lang->s[sub]=*n;
+   lang->Subjects[sub]=*n;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check(",")){
@@ -41,7 +41,7 @@ void Parser::_parseSubject(Language* lang){
  }
  LookAHead();
  rstPtr();
- lang->snum=sub;
+ lang->NumFilledSubjects=sub;
 }
 void Parser::__parseObject(Language* lang,int objid){
  int obj=0;
@@ -54,17 +54,17 @@ void Parser::__parseObject(Language* lang,int objid){
    rstPtr();
    expect('(',__FILE__,__LINE__);
    noun* n=parseNoun();
-   lang->obj[objid][obj]=*n;
+   lang->Objects[objid][obj]=*n;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("adj")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   if (lang->obj[objid][obj].id == 0)
+   if (lang->Objects[objid][obj].id == 0)
    {
-	   lang->obj[objid][obj].id = 14;
+	   lang->Objects[objid][obj].id = 14;
    }
-   lang->obj[objid][obj].adj[objadj]=getInt();
+   lang->Objects[objid][obj].adj[objadj]=getInt();
    expect(')',__FILE__,__LINE__);
    objadj++;
   }
@@ -73,16 +73,16 @@ void Parser::__parseObject(Language* lang,int objid){
    expect('(',__FILE__,__LINE__);
    int i = getInt();
    noun* n=lang->getIt(i);
-   lang->obj[objid][obj]=*n;
+   lang->Objects[objid][obj]=*n;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("reflex")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
    expect(')',__FILE__,__LINE__);
-   noun* n=lang->getIt(lang->s[0].id);
+   noun* n=lang->getIt(lang->Subjects[0].id);
    n->reflex = true;
-   lang->obj[objid][obj]=*n;
+   lang->Objects[objid][obj]=*n;
   }
   else if (rstLook() && check(",")){
    rstPtr();
@@ -96,7 +96,7 @@ void Parser::__parseObject(Language* lang,int objid){
  }
  LookAHead();
  rstPtr();
- lang->objnum[objid]=obj;
+ lang->NumFilledObjects[objid]=obj;
 }
 
 void Parser::__parseObjects(Language* lang){
@@ -146,7 +146,7 @@ void Parser::_parse(Language* lang){
    int prepos = getInt();
    for (int i = 0; i < 16; ++i)
    {
-    lang->obj[id][i].prepos = prepos;
+    lang->Objects[id][i].prepos = prepos;
    }
    expect(')',__FILE__,__LINE__);
   }
@@ -162,7 +162,7 @@ void Parser::_parse(Language* lang){
    int article = getInt();
    for (int i = 0; i < 16; ++i)
    {
-    lang->obj[id][i].typ = article;
+    lang->Objects[id][i].typ = article;
    }
   }
   else if (rstLook() && check("datao")){
@@ -177,7 +177,7 @@ void Parser::_parse(Language* lang){
    int data = getInt();
    for (int i = 0; i  < 16; ++i)
    {
-    lang->obj[id][i].data=data;
+    lang->Objects[id][i].data=data;
    }
    expect(')',__FILE__,__LINE__);
   }
@@ -192,7 +192,7 @@ void Parser::_parse(Language* lang){
    }
    expect(',',__FILE__,__LINE__);
    int ctype = getInt();
-   lang->octype[id] = ctype;
+   lang->ObjConjunctionType[id] = ctype;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("datas")){
@@ -200,45 +200,51 @@ void Parser::_parse(Language* lang){
    int data = getInt();
    for (int i = 0; i < 16; ++i)
    {
-    lang->s[i].data=data;
+    lang->Subjects[i].data=data;
    }
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("sctype")){
    expect('(',__FILE__,__LINE__);
    int data = getInt();
-   lang->sctype=data;
+   lang->SubConjunctionType=data;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("Verb1")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->verb1=getInt();
+   lang->ExtVerb1=getInt();
    expect(')',__FILE__,__LINE__);
   } 
   else if (rstLook() && check("Verb2")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->verb2=getInt();
+   lang->ExtVerb2=getInt();
+   expect(')',__FILE__,__LINE__);
+  } 
+  else if (rstLook() && check("Verb3")){
+   rstPtr();
+   expect('(',__FILE__,__LINE__);
+   lang->ExtVerb3=getInt();
    expect(')',__FILE__,__LINE__);
   } 
   else if (rstLook() && check("Verb")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   if (verb==0) lang->setVerb1(getInt());
-   else lang->setVerb2(getInt());
+   if (verb==0) lang->Verb1 = getInt();
+   else lang->Verb2 =getInt();
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("v1")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->setVerb1(getInt());
+   lang->Verb1 = getInt();
    expect(')',__FILE__,__LINE__);
   }  
   else if (rstLook() && check("v2")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->setVerb2(getInt());
+   lang->Verb2 = getInt();
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("adverb")){
@@ -249,7 +255,7 @@ void Parser::_parse(Language* lang){
   }
   else if (rstLook() && check("neg ")){
    rstPtr();
-   lang->neg=!lang->neg;
+   lang->Negate=!lang->Negate;
   }
   else if (rstLook() && check("clause")){
    rstPtr();
@@ -257,27 +263,27 @@ void Parser::_parse(Language* lang){
    int conj = getInt();
    expect(',',__FILE__,__LINE__);
    Language* nlang = getLanguageFromStringId(langid);
-   nlang->newSentence();
+   nlang->NewSentence();
    _parse(nlang);
-   lang->conjunction = conj;
-   lang->subClause=nlang;
+   lang->Conjunction = conj;
+   lang->SubClause=nlang;
   }
   else if (rstLook() && check("question")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->question=getInt();
+   lang->Question=getInt();
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("st")){
    rstPtr();
    expect(' ',__FILE__,__LINE__);
-   lang->setSentenceType(getInt());
+   lang->st=getInt();
    expect(' ',__FILE__,__LINE__);
   }
   else if (rstLook() && check("punc")){
    rstPtr();
    expect(' ',__FILE__,__LINE__);
-   lang->punctuation = getInt();
+   lang->Punctuation = getInt();
    expect(' ',__FILE__,__LINE__);
   }
   else{
@@ -298,9 +304,9 @@ char* Parser::parse(char* _langid,char* in){
 
  //Create the language class form the langid
  lang = getLanguageFromStringId(langid);
- lang->newSentence();
- //Setup progressive present tense for default
- lang->setSentenceType(1);
+ lang->NewSentence();
+ //Setup progressive present tense for default, should be in Language.cpp
+ lang->st = 1;
 
  //Expect an opening clause
  expect('(',__FILE__,__LINE__);

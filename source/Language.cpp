@@ -4,23 +4,11 @@
 #include <string.h>
 #include <string>
 
-void Language::setVerb1(int v){
- v1=v;
-}
-void Language::setVerb2(int v){
- v2=v;
-}
-void Language::setVerb3(int v){
- v3=v;
-}
 std::string Language::createSentence(){
 	return "";
 }
 std::string Language::createSubClause(){
 	return "";
-}
-void Language::setSentenceType(int t){
- st=t;
 }
 void Language::addAdverb(int adverbId){
  for (int i=0;i<3;i++){
@@ -65,37 +53,33 @@ void clearNoun(noun* n)
 		n->adj[i] = 0;
 	}
 }
-void Language::newSentence(){
- for (int i = 0; i < NUM_BUF; ++i)
- {
-  buf[i] = 0;
- }
+void Language::NewSentence(){
  Capital = true;
- punctuation = true;
- question = 0;
- clause=false;
- data=0;
- verb1=0;
- verb2=0;
- subClause=NULL;
- conjunction=0;
- snum=-1;
- v1=0;
- v2=0;
- v3=0;
+ Punctuation = true;
+ Question = 0;
+ IsClause=false; 
+ ExtVerb1 = 0;
+ ExtVerb2 = 0;
+ ExtVerb3 = 0;
+ SubClause=NULL;
+ Conjunction=0;
+ NumFilledSubjects=-1;
+ Verb1=0;
+ Verb2=0;
+ Verb3=0;
  st=1;
- neg=false;
- sctype = 0;
+ Negate=false;
+ SubConjunctionType = 0;
  for (int i=0;i<16;i++){
-	 clearNoun(&s[i]);
+	 clearNoun(&Subjects[i]);
  }
  for (int i = 0; i < 8; ++i)
  {  
-   octype[i] = 0;
-	 objnum[i] = -1;
+   ObjConjunctionType[i] = 0;
+	 NumFilledObjects[i] = -1;
 	 for (int j = 0; j < 16; ++j)
 	 {
-		 clearNoun(&obj[i][j]);
+		 clearNoun(&Objects[i][j]);
 	 }
  }
  for (int i=0;i<NUM_ADVERBS;i++)

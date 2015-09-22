@@ -35,45 +35,39 @@ typedef struct noun{
 void clearNoun(noun* n);
 class Language{
 protected:
- char* buf[NUM_BUF];
- int v1;
- int v2;
- int v3;
  int adverbs[NUM_ADVERBS];
- int st;
- char * sentence;
 public:
- bool Capital;
- bool punctuation;
- int question;
+ int st;
+ int Verb1;
+ int Verb2;
+ int Verb3;
  //List of subjects
- noun s[16];
- //Number of filled subjects.
- int snum;
+ noun Subjects[16];
  //List of objects
- noun obj[8][16];
+ noun Objects[8][16];
+ //Number of filled subjects.
+ int NumFilledSubjects;
  //Number of filled objects
- int objnum[8];
- //conjunction type between objects (and / or)
- int octype[8];
- //conjunction type between subjects (and / or)
- int sctype;
- int data;
- bool neg;
- Language* subClause;
- int verb1;
- int verb2;
- int conjunction;
- bool clause;
- void newSentence();
+ int NumFilledObjects[8];
+ //Conjunction type between objects (and / or)
+ int ObjConjunctionType[8];
+ //Conjunction type between subjects (and / or)
+ int SubConjunctionType;
+ int ExtVerb1;
+ int ExtVerb2;
+ int ExtVerb3;
+ bool Negate;
+ Language* SubClause;
+ bool Capital;
+ int Punctuation;
+ int Question;
+ int Conjunction;
+ bool IsClause;
+ void NewSentence();
  void addAdverb(int adverbId);
- void setVerb1(int verbId);
- void setVerb2(int verbId);
- void setVerb3(int verbId);
  virtual std::string createSentence();
  virtual std::string createSubClause();
  virtual noun * getIt(int id);
- void setSentenceType(int sentenceType);
 };
 
 //always use simple present

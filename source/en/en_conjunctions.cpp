@@ -25,9 +25,9 @@ std::string en::GetSubClause()
 #ifdef DEBUG
 	std::cout << "[EN] GetSubClause()" << std::endl;
 #endif
-	std::string SubClauseString = GetConjunction(conjunction);
+	std::string SubClauseString = GetConjunction(Conjunction);
 	SubClauseString += " ";
-	subClause->clause = true;
-	SubClauseString += subClause->createSentence();
+	SubClause->IsClause = true;
+	SubClauseString += SubClause->createSentence();
 	return SubClauseString;
 }

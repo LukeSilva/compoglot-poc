@@ -80,13 +80,13 @@ bool en::GotoLine(std::ifstream& File, int Line)
 std::string en::createSentence()
 {
 	//First of all, parse the ExtVerb files
-	if(verb1!=0){
-		ParseVerb(0,verb1);
-		verb1=0;
+	if(ExtVerb1!=0){
+		ParseVerb(0,ExtVerb1);
+		ExtVerb1=0;
 	}
-	if (verb2!=0){
-		ParseVerb(1,verb2);
-		verb2=0;
+	if (ExtVerb2!=0){
+		ParseVerb(1,ExtVerb2);
+		ExtVerb2=0;
 	}
 
 	//Print debugging information, if enabled
@@ -97,13 +97,13 @@ std::string en::createSentence()
 	//Create blank sentence
 	std::string Sentence = "";
 
-	if (question > 1)
+	if (Question > 1)
 	{
-		Sentence += QuestionMarkers[question-2] + " ";
+		Sentence += QuestionMarkers[Question-2] + " ";
 	}
 
 	//Store the subjects in a different string
-	std::string Subjects = "";
+	std::string SubjectString = "";
 
 	//Loop through the subjects, adding them
 	for (int i = 0; i < 16; ++i)
@@ -111,33 +111,33 @@ std::string en::createSentence()
 #ifdef SUPER_DEBUG
 		std::cout << "[EN] Noun: " << i << std::endl;
 #endif
-		if (i!=0 && i < snum) Subjects +=", ";
-		if (i==snum && snum >0) Subjects += " and ";
-		Subjects +=	GetNounString(&s[i],false);
+		if (i!=0 && i < NumFilledSubjects) SubjectString +=", ";
+		if (i==NumFilledSubjects && NumFilledSubjects > 0) SubjectString += " and ";
+		SubjectString +=	GetNounString(&Subjects[i],false);
 	}
 
 	
 	std::string Mid = "";
 	
-	if (question>=1)
+	if (Question>=1)
 	{
-		Mid = Subjects;
+		Mid = SubjectString;
 	}
 	else
 	{
-		Sentence += Subjects;
+		Sentence += SubjectString;
 		//If there is a subject, insert a space beteen the subjects and the verb.
-		if (snum >= 0) Sentence += " ";
+		if (NumFilledSubjects >= 0) Sentence += " ";
 	}
 
 
 	//Add the first verb to the sentence, if it exists
-	if (v1 != 0)
-		Sentence += GetVerb(s[0],snum,v1,st,Mid) + " ";
+	if (Verb1 != 0)
+		Sentence += GetVerb(Subjects[0],NumFilledSubjects,Verb1,st,Mid) + " ";
 
 	//Add the second verb to the sentenc, if it exists
-	if (v2 != 0)
-		Sentence += GetOtherVerb(v1,v2) + " ";
+	if (Verb2 != 0)
+		Sentence += GetOtherVerb(Verb1,Verb2) + " ";
 
 	//Loop through the objects, adding them to the sentence
 	for (int objid = 0; objid < 8; ++objid)
@@ -147,30 +147,30 @@ std::string en::createSentence()
 #ifdef SUPER_DEBUG
 			std::cout << "[EN] Obj " << objid << " Noun: " << i << std::endl;
 #endif
-			if (i != 0 && i < objnum[objid]) Sentence += ", ";
-			if (objnum[objid] > 0 && i == objnum[objid]) Sentence += " and ";
-			Sentence += GetNounString(&obj[objid][i],true);
+			if (i != 0 && i < NumFilledObjects[objid]) Sentence += ", ";
+			if (NumFilledObjects[objid] > 0 && i == NumFilledObjects[objid]) Sentence += " and ";
+			Sentence += GetNounString(&Objects[objid][i],true);
 		}
-		if (objnum[objid]>=0) Sentence += " ";
+		if (NumFilledObjects[objid]>=0) Sentence += " ";
 	}
 
 	//If a conjunction and subclause exists, create the subclause, and add it to the sentence.
-	if (subClause!=NULL && conjunction != 0)
+	if (SubClause!=NULL && Conjunction != 0)
 	{
 		Sentence += GetSubClause() + " ";
 	}
 
 	if(Sentence.compare("")!=0)
 		Sentence.pop_back();
-	if (punctuation && !clause)
+	if (Punctuation && !IsClause)
 	{
-		if (question==0)
+		if (Question==0)
 			Sentence+=".";
 		else
 			Sentence+="?";
 	}
 
-	if (Capital && !clause)
+	if (Capital && !IsClause)
 	{
 		int FirstLetter = Sentence.at(0);
 		if (FirstLetter >= 'a' && FirstLetter <= 'z')

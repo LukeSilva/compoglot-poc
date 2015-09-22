@@ -74,7 +74,7 @@ std::string en::GetNounString(noun* Noun, bool ObjCase)
 	//If there is a relative clause, add it.
 	if (Noun->useRClause)
 	{
-		Noun->rClause->clause = true;
+		Noun->rClause->IsClause = true;
 		
 		//If the relative clause is about a persion, use "who"
 		int NounType = GetNounType(Noun->id);

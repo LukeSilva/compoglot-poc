@@ -264,7 +264,7 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType, std
 	std::cout << "[EN] VerbForm = " << VerbForm << std::endl;
 #endif
 
-	if (neg)
+	if (Negate)
 	{
 		if (Mid.compare("")!=0)
 			Mid += " ";

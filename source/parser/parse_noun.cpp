@@ -65,12 +65,12 @@ noun* Parser::parseNoun(){
   expect(',',__FILE__,__LINE__);
   expect('(',__FILE__,__LINE__);
   Language* nlang = getLanguageFromStringId(langid);
-  nlang->newSentence();
-  nlang->s[0].id = 14;
-  nlang->s[0].plural=n->plural;
-	nlang->snum = 0;	
+  nlang->NewSentence();
+  nlang->Subjects[0].id = 14;
+  nlang->Subjects[0].plural=n->plural;
+	nlang->NumFilledSubjects = 0;	
   _parse(nlang);
-  nlang->punctuation = false;
+  nlang->Punctuation = false;
   n->rClause = nlang;
   n->useRClause = true;
  }
