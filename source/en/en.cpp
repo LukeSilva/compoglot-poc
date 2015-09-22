@@ -119,7 +119,7 @@ std::string en::createSentence()
 	
 	std::string Mid = "";
 	
-	if (question>1)
+	if (question>=1)
 	{
 		Mid = Subjects;
 	}
