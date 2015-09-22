@@ -3,48 +3,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../settings.h"
-noun* Parser::parseNoun(){
-	noun* n = new noun;
-	n->id = getInt();
-	n->data = 0;
+Noun* Parser::parseNoun(){
+	Noun* n = new Noun;
+	n->ID = getInt();
+	n->Data = 0;
 	expect(',',__FILE__,__LINE__);
-	n->num = getInt();
+	n->Numeral = getInt();
 	expect(',',__FILE__,__LINE__);
 	if (rstLook() && check("true"))
-		n->reflex=true;
+		n->IsReflexive=true;
 	else if (rstLook() && check("false"))
-		n->reflex=false;
+		n->IsReflexive=false;
 	else error("Couldn't parse boolean",__FILE__,__LINE__);
 		expect(',',__FILE__,__LINE__);
 	if (rstLook() && check("true"))
-		n->plural=true;
+		n->IsPlural=true;
 	else if (rstLook() && check("false"))
-		n->plural=false;
+		n->IsPlural=false;
 	else error("Couldn't parse boolean",__FILE__,__LINE__);
 	expect(',',__FILE__,__LINE__);
-	n->typ = getInt();
+	n->ArticleType = getInt();
 	expect(',',__FILE__,__LINE__);
 	if (rstLook() && check("true"))
-		n->usegenitive=true;
+		n->ShouldUseGenitive=true;
 	else if (rstLook() && check("false"))
-		n->usegenitive=false;
+		n->ShouldUseGenitive=false;
 	else error("Couldn't parse boolean (genitive-bool)",__FILE__,__LINE__);
-	if (n->usegenitive==true)
+	if (n->ShouldUseGenitive==true)
 	{
 		expect(',',__FILE__,__LINE__);
 		expect('n',__FILE__,__LINE__);
 		expect('(',__FILE__,__LINE__);
-		n->genitivenoun = parseNoun();
+		n->GenitiveNoun = parseNoun();
 		expect(')',__FILE__,__LINE__);
 	}
 	expect(',',__FILE__,__LINE__);
 	if (rstLook() && check("true"))
 	{
 		expect(',',__FILE__,__LINE__);
-		n->prepos = getInt();
+		n->PreposNum = getInt();
 	}
 	else if (rstLook() && check("false"))
-		n->prepos = 0;
+		n->PreposNum = 0;
 	else error("Couldn't parse boolean (preposition-bool)",__FILE__,__LINE__);
 	expect(',',__FILE__,__LINE__);
 	if (rstLook() && check("true"))
@@ -52,37 +52,37 @@ noun* Parser::parseNoun(){
 		expect(',',__FILE__,__LINE__);
 		if (rstLook() && check("true"))
 		{
-			n->rClauseEssential = true;
+			n->IsRelativeClauseEssential = true;
 		}
 		else if (rstLook() && check("false"))
 		{
-			n->rClauseEssential = false;
+			n->IsRelativeClauseEssential = false;
 		}
 		else error("Couldn't parse boolean (rClause-Essential-bool)",__FILE__,__LINE__);
 		expect(',',__FILE__,__LINE__);
-		n->rClauseObj = getInt();
+		n->RelativeClauseObj = getInt();
 		expect(',',__FILE__,__LINE__);
 		expect('(',__FILE__,__LINE__);
 		Language* nlang = getLanguageFromStringId(langid);
 		nlang->NewSentence();
-		nlang->Subjects[0].id = 14;
-		nlang->Subjects[0].plural=n->plural;
+		nlang->Subjects[0].ID = 14;
+		nlang->Subjects[0].IsPlural=n->IsPlural;
 		nlang->NumFilledSubjects = 0;	
 		_parse(nlang);
 		nlang->Punctuation = false;
-		n->rClause = nlang;
-		n->useRClause = true;
+		n->RelativeClause = nlang;
+		n->ShouldUseRelativeClause = true;
 	}
 	else if (rstLook() && check("false"))
 	{
-		n->useRClause = false;
+		n->ShouldUseRelativeClause = false;
 	}
 	else error("Couldn't parse boolean (rClause-bool)",__FILE__,__LINE__);
-	if (n->num>2 || n->num<-2)
-		n->plural = true;
+	if (n->Numeral>2 || n->Numeral<-2)
+		n->IsPlural = true;
 	for (int i = 0; i < 16; ++i)
 	{
-		n->adj[i]=0;
+		n->Adjectives[i]=0;
 	}
 	return n;
 }

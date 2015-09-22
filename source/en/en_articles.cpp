@@ -6,14 +6,14 @@
 
 std::string en_Articles[] = {"a", "the", "", "my", "your", "his", "her", "its", "our", "your", "their", "your", "a lot of ","this"};
 
-std::string en::GetArticle(noun* Noun,bool NextLetterIsVowel)
+std::string en::GetArticle(Noun* NounObj,bool NextLetterIsVowel)
 {
 #ifdef DEBUG
-	std::cout << "[EN] GetArticle(noun* Noun,bool NextLetterIsVowel = " << NextLetterIsVowel << " )" << std::endl;
+	std::cout << "[EN] GetArticle(Noun* NounObj,bool NextLetterIsVowel = " << NextLetterIsVowel << " )" << std::endl;
 #endif
-	if (Noun->typ < -2 || Noun->typ > 11) return "";
-	std::string Article = en_Articles[Noun->typ+2];
-	if (NextLetterIsVowel && Noun->typ == -2)
+	if (NounObj->ArticleType < -2 || NounObj->ArticleType > 11) return "";
+	std::string Article = en_Articles[NounObj->ArticleType+2];
+	if (NextLetterIsVowel && NounObj->ArticleType == -2)
 		Article+="n";
 	return Article;
 }

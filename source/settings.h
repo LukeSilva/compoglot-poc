@@ -33,7 +33,7 @@ void warn(const char * message, const char * fallback);
 int nDigits(int i);
 #include "Language.h"
 Language* getLanguageFromStringId(char* Id);
-void printNoun(std::string name, noun* n);
+void printNoun(std::string name, Noun* n);
 
 
 #define DE_CONTRACTPREPOSITIONS 1

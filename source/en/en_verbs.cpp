@@ -238,10 +238,10 @@ std::string en::GetVerbFuturePastProgressive(int VerbForm, int VerbNum, std::str
 	return FutureTenseMarker + " " + Mid + " " + GetVerbPastPerfectProgressive(0,VerbNum,"",true);
 }
 
-std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType, std::string Mid)
+std::string en::GetVerb(Noun& NounObj, int snum, int VerbNum, int SentenceType, std::string Mid)
 {
 #ifdef DEBUG
-	std::cout << "[EN] GetVerb(noun& Noun, int snum = " << snum << " , int VerbNum = " << VerbNum << " , int SentenceType = " << SentenceType << " )" << std::endl;
+	std::cout << "[EN] GetVerb(Noun& Noun, int snum = " << snum << " , int VerbNum = " << VerbNum << " , int SentenceType = " << SentenceType << " )" << std::endl;
 #endif
 
 	//If the verb is not a verb, return now, preventing any crashes.
@@ -254,9 +254,9 @@ std::string en::GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType, std
 	int VerbForm = 5;
 
 	//If a pronoun, VerbForm is the pronoun number
-	if (Noun.id < 10 && Noun.id > 0) VerbForm = Noun.id;
+	if (NounObj.ID < 10 && NounObj.ID > 0) VerbForm = NounObj.ID;
 	//If more than one subject, or the subject is plural, use the plural form
-	if (snum > 0 || Noun.plural) VerbForm = 8;
+	if (snum > 0 || NounObj.IsPlural) VerbForm = 8;
 	//If there is no subjects, set the infinitive verb form.
 	if (snum < 0) VerbForm = 0;
 

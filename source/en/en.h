@@ -18,19 +18,19 @@ class en: public Language{
 
 
 		//Nouns
-		std::string GetNoun(noun* Noun,bool ObjCase);
-		std::string GetNounString(noun* Noun,bool ObjCase);
+		std::string GetNoun(Noun* Noun,bool ObjCase);
+		std::string GetNounString(Noun* Noun,bool ObjCase);
 		int GetNounType(int NounNum);
 
 		//Articles
-		std::string GetArticle(noun* Noun,bool NextLetterIsVowel);
+		std::string GetArticle(Noun* Noun,bool NextLetterIsVowel);
 
 		//Numerals
-		std::string GetNumeral(noun* Noun,bool ForceN);
+		std::string GetNumeral(Noun* Noun,bool ForceN);
 
 		//Verbs
 		std::string GetOtherVerb(int VerbNum1, int VerbNum2);
-		std::string GetVerb(noun& Noun, int snum, int VerbNum, int SentenceType, std::string Mid = "");
+		std::string GetVerb(Noun& Noun, int snum, int VerbNum, int SentenceType, std::string Mid = "");
 		std::string GetVerbPresentSimple(int VerbForm, int VerbNum, std::string Mid = "", bool IgnoreMid = false, bool HelperVerb = false);
 		std::string GetVerbPreAdd(int VerbNum);
 		std::string GetVerbPresentProgressive(int VerbForm, int VerbNum, std::string Mid = "",bool IgnoreMid = false);

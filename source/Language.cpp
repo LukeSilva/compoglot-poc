@@ -4,6 +4,33 @@
 #include <string.h>
 #include <string>
 
+Noun::Noun()
+{
+	ID = 0;
+	Data = 0;
+	Numeral = 0;
+	GenitiveNoun = NULL;
+	IsPlural = false;
+	PreposNum = 0;
+	RelativeClause = NULL;
+	IsRelativeClauseEssential = false;
+	RelativeClauseObj = 0;
+	IsReflexive = false;
+	ArticleType = 0;
+	ShouldUseGenitive = false;
+	ShouldUseRelativeClause = false;
+	for (int i = 0; i < 16; ++i)
+	{
+		Adjectives[i] = 0;
+	}
+}
+Noun::~Noun()
+{
+}
+
+
+
+
 std::string Language::createSentence(){
 	return "";
 }
@@ -18,40 +45,24 @@ void Language::addAdverb(int adverbId){
 		}
 	}
 }
-noun* Language::getIt(int id){
-	noun * n = new noun;
-	n->id=5;
-	n->num=0;
-	n->plural=false;
-	n->reflex=false;
-	n->useRClause=false;
-	n->usegenitive=false;
-	n->typ=0;
+Noun* Language::getIt(int id){
+	Noun * n = new Noun;
+	n->ID=5;
+	n->Numeral=0;
+	n->IsPlural=false;
+	n->IsReflexive=false;
+	n->ShouldUseRelativeClause=false;
+	n->ShouldUseGenitive=false;
+	n->ArticleType=0;
 	for (int i = 0; i < 16; ++i)
 	{
-		n->adj[i]=0;
+		n->Adjectives[i]=0;
 	}
 	return n;
 }
-void clearNoun(noun* n)
+void clearNoun(Noun* n)
 {
-	n->id = 0;
-	n->data = 0;
-	n->num = 0;
-	n->genitivenoun = NULL;
-	n->plural = false;
-	n->prepos = 0;
-	n->rClause = NULL;
-	n->rClauseEssential = false;
-	n->rClauseObj = 0;
-	n->reflex = false;
-	n->typ = 0;
-	n->usegenitive = false;
-	n->useRClause = false;
-	for (int i = 0; i < 16; ++i)
-	{
-		n->adj[i] = 0;
-	}
+
 }
 void Language::NewSentence(){
 	Capital = true;
@@ -70,17 +81,10 @@ void Language::NewSentence(){
 	st=1;
 	Negate=false;
 	SubConjunctionType = 0;
-	for (int i=0;i<16;i++){
-		clearNoun(&Subjects[i]);
-	}
 	for (int i = 0; i < 8; ++i)
 	{  
 		ObjConjunctionType[i] = 0;
 		NumFilledObjects[i] = -1;
-		for (int j = 0; j < 16; ++j)
-		{
-			clearNoun(&Objects[i][j]);
-		}
 	}
 	for (int i=0;i<NUM_ADVERBS;i++)
 		adverbs[i]=0;

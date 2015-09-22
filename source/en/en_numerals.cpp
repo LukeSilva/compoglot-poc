@@ -7,22 +7,22 @@
 
 std::string en_Numerals[] = {"", "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
 
-std::string en::GetNumeral(noun* Noun,bool ForceN)
+std::string en::GetNumeral(Noun* NounObj,bool ForceN)
 {
 #ifdef DEBUG
-	std::cout << "[EN] GetNumeral(noun* Noun, bool ForceN = " << ForceN << " )" << std::endl;
+	std::cout << "[EN] GetNumeral(Noun* NounObj, bool ForceN = " << ForceN << " )" << std::endl;
 #endif
-	if (!ForceN && Noun->num <= 10 && Noun->num >= -10)
+	if (!ForceN && NounObj->Numeral <= 10 && NounObj->Numeral >= -10)
 	{
-		int ID = Noun->num < 0 ? -Noun->num : Noun->num;
+		int ID = NounObj->Numeral < 0 ? -NounObj->Numeral : NounObj->Numeral;
 		std::string Prefix = "";
-		if (Noun->num < 0) Prefix = "negative ";
+		if (NounObj->Numeral < 0) Prefix = "negative ";
 		return Prefix + en_Numerals[ID];
 	} 
 	else
 	{
 		std::ostringstream Stream;
-		Stream << Noun->num;
+		Stream << NounObj->Numeral;
 		return Stream.str();
 	}
 	return "";

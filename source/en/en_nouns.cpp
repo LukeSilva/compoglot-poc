@@ -17,11 +17,11 @@ int en::GetNounType(int NounNum)
 	return Data;
 }
 
-std::string en::GetNounString(noun* Noun, bool ObjCase)
+std::string en::GetNounString(Noun* NounObj, bool ObjCase)
 {
-	if (Noun->id==0) return "";
+	if (NounObj->ID==0) return "";
 #ifdef DEBUG
-	std::cout << "[EN] GetNounString(noun* Noun)" << std::endl;
+	std::cout << "[EN] GetNounString(Noun* NounObj)" << std::endl;
 #endif
 	//Create the final string that will be returned. (Empty for now).
 	std::string NounString = "";
@@ -32,22 +32,22 @@ std::string en::GetNounString(noun* Noun, bool ObjCase)
 	//Prepend all the adjectives to the NounResult, if the adjectives exist.
 	for (int i = 0; i < 16; ++i)
 	{
-		std::string Adjective = GetAdjective(Noun->adj[i]);
+		std::string Adjective = GetAdjective(NounObj->Adjectives[i]);
 		if (Adjective.compare("")!=0)
 			NounResult += Adjective + " ";
 	}
 
 	//Prepend the Noun to NounResult.
-	NounResult += GetNoun(Noun,ObjCase);
+	NounResult += GetNoun(NounObj,ObjCase);
 
 	//Get the string of the article, telling it to turn 'a' into 'an' if NounResult begins with a vowel.
-	std::string Article = GetArticle(Noun,IsVowel(NounResult[0]));
+	std::string Article = GetArticle(NounObj,IsVowel(NounResult[0]));
 
 	//Get the numberal
-	std::string Numeral = GetNumeral(Noun,false);
+	std::string Numeral = GetNumeral(NounObj,false);
 
 	//Get the preposition
-	std::string Prepos = GetPrepos(Noun->prepos);
+	std::string Prepos = GetPrepos(NounObj->PreposNum);
 
 	//Start the NounString with the preposition if necessary
 	if (Prepos.compare("")!=0)
@@ -65,48 +65,48 @@ std::string en::GetNounString(noun* Noun, bool ObjCase)
 	NounString+=NounResult;
 
 	//If there is a genitive object, add it.
-	if (Noun->usegenitive)
+	if (NounObj->ShouldUseGenitive)
 	{
 		NounString += " " + GenitiveMarker + " ";
-		NounString += GetNounString(Noun->genitivenoun,true);
+		NounString += GetNounString(NounObj->GenitiveNoun,true);
 	}
 
 	//If there is a relative clause, add it.
-	if (Noun->useRClause)
+	if (NounObj->ShouldUseRelativeClause)
 	{
-		Noun->rClause->IsClause = true;
+		NounObj->RelativeClause->IsClause = true;
 		
 		//If the relative clause is about a persion, use "who"
-		int NounType = GetNounType(Noun->id);
+		int NounType = GetNounType(NounObj->ID);
 		if (NounType == 'm' || NounType == 'f' || NounType == 'p' || NounType == 'd')
 		{
 			NounString += " " + RClausePersonalMarker;	
 		}
 		//Otherwise if the relative clause is essential use "that"
-		else if (Noun->rClauseEssential) NounString += " " + RClauseEssentialMarker;
+		else if (NounObj->IsRelativeClauseEssential) NounString += " " + RClauseEssentialMarker;
 		//Otherwise (non essential) use "which"
 		else NounString += " " + RClauseNonEssentialMarker;
 		
 		//Append the clause
-		NounString += " " + Noun->rClause->createSentence();
+		NounString += " " + NounObj->RelativeClause->createSentence();
 	}
 
 	//Return the result.
 	return NounString;
 }
 
-std::string en::GetNoun(noun* Noun,bool ObjCase)
+std::string en::GetNoun(Noun* NounObj,bool ObjCase)
 {
 #ifdef DEBUG
-	std::cout << "[EN] GetNoun(noun* Noun)" <<std::endl;
+	std::cout << "[EN] GetNoun(noun* NounObj)" <<std::endl;
 #endif
 	std::ifstream is(DICTIONARY EN_FOLDER "nouns");
-	if (GotoLine(is,Noun->id)) return "";
+	if (GotoLine(is,NounObj->ID)) return "";
 	int Typ = is.get();
 	if (Typ == 'd')
 	{
 		int GetID = 1;
-		if (ObjCase && Noun->reflex) GetID = 4;
+		if (ObjCase && NounObj->IsReflexive) GetID = 4;
 		else if (ObjCase) GetID = 2;
 		if (GotoSegment(is,GetID)) return "";
 		return GetSegment(is);
@@ -115,13 +115,13 @@ std::string en::GetNoun(noun* Noun,bool ObjCase)
 	{
 		if (GotoSegment(is,1)) return "";
 		std::string Base = GetSegment(is);
-		if (Noun->plural) Base += "s";
+		if (NounObj->IsPlural) Base += "s";
 		return Base;
 	}
 	else if (Typ == 'o')
 	{
 		int GetID = 1;
-		if (Noun->plural)
+		if (NounObj->IsPlural)
 			GetID = 2;
 		if (GotoSegment(is,GetID)) return "";
 		return GetSegment(is);

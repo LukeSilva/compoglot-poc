@@ -12,21 +12,21 @@ void Parser::_parseSubject(Language* lang){
   else if (rstLook() && check("n")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   noun* n=parseNoun();
+   Noun* n=parseNoun();
    lang->Subjects[sub]=*n;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("adj")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   lang->Subjects[sub].adj[subadj]=getInt();
+   lang->Subjects[sub].Adjectives[subadj]=getInt();
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("it")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
    int i = getInt();
-   noun* n=lang->getIt(i);
+   Noun* n=lang->getIt(i);
    lang->Subjects[sub]=*n;
    expect(')',__FILE__,__LINE__);
   }
@@ -53,18 +53,18 @@ void Parser::__parseObject(Language* lang,int objid){
   else if (rstLook() && check("n")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   noun* n=parseNoun();
+   Noun* n=parseNoun();
    lang->Objects[objid][obj]=*n;
    expect(')',__FILE__,__LINE__);
   }
   else if (rstLook() && check("adj")){
    rstPtr();
    expect('(',__FILE__,__LINE__);
-   if (lang->Objects[objid][obj].id == 0)
+   if (lang->Objects[objid][obj].ID == 0)
    {
-	   lang->Objects[objid][obj].id = 14;
+	   lang->Objects[objid][obj].ID = 14;
    }
-   lang->Objects[objid][obj].adj[objadj]=getInt();
+   lang->Objects[objid][obj].Adjectives[objadj]=getInt();
    expect(')',__FILE__,__LINE__);
    objadj++;
   }
@@ -72,7 +72,7 @@ void Parser::__parseObject(Language* lang,int objid){
    rstPtr();
    expect('(',__FILE__,__LINE__);
    int i = getInt();
-   noun* n=lang->getIt(i);
+   Noun* n=lang->getIt(i);
    lang->Objects[objid][obj]=*n;
    expect(')',__FILE__,__LINE__);
   }
@@ -80,8 +80,8 @@ void Parser::__parseObject(Language* lang,int objid){
    rstPtr();
    expect('(',__FILE__,__LINE__);
    expect(')',__FILE__,__LINE__);
-   noun* n=lang->getIt(lang->Subjects[0].id);
-   n->reflex = true;
+   Noun* n=lang->getIt(lang->Subjects[0].ID);
+   n->IsReflexive = true;
    lang->Objects[objid][obj]=*n;
   }
   else if (rstLook() && check(",")){
@@ -146,7 +146,7 @@ void Parser::_parse(Language* lang){
    int prepos = getInt();
    for (int i = 0; i < 16; ++i)
    {
-    lang->Objects[id][i].prepos = prepos;
+    lang->Objects[id][i].PreposNum = prepos;
    }
    expect(')',__FILE__,__LINE__);
   }
@@ -162,7 +162,7 @@ void Parser::_parse(Language* lang){
    int article = getInt();
    for (int i = 0; i < 16; ++i)
    {
-    lang->Objects[id][i].typ = article;
+    lang->Objects[id][i].ArticleType = article;
    }
   }
   else if (rstLook() && check("datao")){
@@ -177,7 +177,7 @@ void Parser::_parse(Language* lang){
    int data = getInt();
    for (int i = 0; i  < 16; ++i)
    {
-    lang->Objects[id][i].data=data;
+    lang->Objects[id][i].Data=data;
    }
    expect(')',__FILE__,__LINE__);
   }
@@ -200,7 +200,7 @@ void Parser::_parse(Language* lang){
    int data = getInt();
    for (int i = 0; i < 16; ++i)
    {
-    lang->Subjects[i].data=data;
+    lang->Subjects[i].Data=data;
    }
    expect(')',__FILE__,__LINE__);
   }

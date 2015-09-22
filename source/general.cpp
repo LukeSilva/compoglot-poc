@@ -25,10 +25,10 @@ int nDigits(int i)
   return n;
 }
 
-void printNoun(std::string name, noun* n)
+void printNoun(std::string name, Noun* n)
 {
 #ifdef DEBUG
-	std::cout << name << "->id = " << n->id << std::endl;
+/*	std::cout << name << "->id = " << n->id << std::endl;
 	std::cout << name << "->num = " << n->num << std::endl;
 	std::cout << name << "->typ = " << n->typ << std::endl;
 	std::cout << name << "->plural = " << n->plural << std::endl;
@@ -44,6 +44,6 @@ void printNoun(std::string name, noun* n)
 	std::cout << name << "->useRClause = " << n->useRClause << std::endl;
 	std::cout << name << "->rClauseObj = " << n->rClauseObj << std::endl;
 	std::cout << name << "->rClauseEssential = " << n->rClauseEssential << std::endl;
-	std::cout << name << "->data = " << n->data << std::endl;
+	std::cout << name << "->data = " << n->data << std::endl;*/
 #endif
 }

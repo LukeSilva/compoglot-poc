@@ -20,7 +20,7 @@ class Parser{
   char LookAHead();
   void error(char* string,const char* file,int line);
   void error(const char* string,const char* file,int line);
-  noun* parseNoun();
+  Noun* parseNoun();
   int getInt();
   int verb;
 };

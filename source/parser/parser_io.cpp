@@ -17,7 +17,7 @@ bool Parser::rstPtr(){
 char Parser::LookAHead(){
  look=string[++lookptr];
  //Skip over whitespace
- if (look==' ' || look=='\n')
+ if (look==' ' || look=='\n' || look=='\t')
   LookAHead();
  return look;
 }

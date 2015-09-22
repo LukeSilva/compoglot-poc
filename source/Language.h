@@ -1,9 +1,12 @@
 #pragma once
 #include <string>
 class Language;
-typedef struct noun{
-	int id;
-	int num;
+class Noun{
+public:
+	Noun();
+	~Noun();
+	int ID;
+	int Numeral;
 	//-2 for a
 	//-1 for the
 	//0 for nothing
@@ -16,23 +19,23 @@ typedef struct noun{
 	//7 for your
 	//8 for their
 	//9 for your
-	int typ;
-	bool plural;
-	bool reflex;
-	bool usegenitive;
-	noun* genitivenoun;
-	int prepos;
+	int ArticleType;
+	bool IsPlural;
+	bool IsReflexive;
+	bool ShouldUseGenitive;
+	Noun* GenitiveNoun;
+	int PreposNum;
 	// sixteen adjectives per noun
-	int adj[16];
-	Language* rClause;
-	bool useRClause;
-	int rClauseObj;
-	bool rClauseEssential;
-	int data;
-}noun;
+	int Adjectives[16];
+	Language* RelativeClause;
+	bool ShouldUseRelativeClause;
+	int RelativeClauseObj;
+	bool IsRelativeClauseEssential;
+	int Data;
+};
 
 #include "settings.h"
-void clearNoun(noun* n);
+void clearNoun(Noun* n);
 class Language{
 protected:
 	int adverbs[NUM_ADVERBS];
@@ -42,9 +45,9 @@ public:
 	int Verb2;
 	int Verb3;
 	//List of subjects
-	noun Subjects[16];
+	Noun Subjects[16];
 	//List of objects
-	noun Objects[8][16];
+	Noun Objects[8][16];
 	//Number of filled subjects.
 	int NumFilledSubjects;
 	//Number of filled objects
@@ -67,7 +70,7 @@ public:
 	void addAdverb(int adverbId);
 	virtual std::string createSentence();
 	virtual std::string createSubClause();
-	virtual noun * getIt(int id);
+	virtual Noun * getIt(int id);
 };
 
 //always use simple present
