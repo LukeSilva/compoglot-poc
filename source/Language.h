@@ -2,72 +2,72 @@
 #include <string>
 class Language;
 typedef struct noun{
- int id;
- int num;
- //-2 for a
- //-1 for the
- //0 for nothing
- //1 for my
- //2 for your
- //3 for his
- //4 for her
- //5 for its
- //6 for our
- //7 for your
- //8 for their
- //9 for your
- int typ;
- bool plural;
- bool reflex;
- bool usegenitive;
- noun* genitivenoun;
- int prepos;
- // sixteen adjectives per noun
- int adj[16];
- Language* rClause;
- bool useRClause;
- int rClauseObj;
- bool rClauseEssential;
- int data;
+	int id;
+	int num;
+	//-2 for a
+	//-1 for the
+	//0 for nothing
+	//1 for my
+	//2 for your
+	//3 for his
+	//4 for her
+	//5 for its
+	//6 for our
+	//7 for your
+	//8 for their
+	//9 for your
+	int typ;
+	bool plural;
+	bool reflex;
+	bool usegenitive;
+	noun* genitivenoun;
+	int prepos;
+	// sixteen adjectives per noun
+	int adj[16];
+	Language* rClause;
+	bool useRClause;
+	int rClauseObj;
+	bool rClauseEssential;
+	int data;
 }noun;
 
 #include "settings.h"
 void clearNoun(noun* n);
 class Language{
 protected:
- int adverbs[NUM_ADVERBS];
+	int adverbs[NUM_ADVERBS];
 public:
- int st;
- int Verb1;
- int Verb2;
- int Verb3;
- //List of subjects
- noun Subjects[16];
- //List of objects
- noun Objects[8][16];
- //Number of filled subjects.
- int NumFilledSubjects;
- //Number of filled objects
- int NumFilledObjects[8];
- //Conjunction type between objects (and / or)
- int ObjConjunctionType[8];
- //Conjunction type between subjects (and / or)
- int SubConjunctionType;
- int ExtVerb1;
- int ExtVerb2;
- int ExtVerb3;
- bool Negate;
- Language* SubClause;
- bool Capital;
- int Punctuation;
- int Question;
- int Conjunction;
- bool IsClause;
- void NewSentence();
- void addAdverb(int adverbId);
- virtual std::string createSentence();
- virtual std::string createSubClause();
- virtual noun * getIt(int id);
+	int st;
+	int Verb1;
+	int Verb2;
+	int Verb3;
+	//List of subjects
+	noun Subjects[16];
+	//List of objects
+	noun Objects[8][16];
+	//Number of filled subjects.
+	int NumFilledSubjects;
+	//Number of filled objects
+	int NumFilledObjects[8];
+	//Conjunction type between objects (and / or)
+	int ObjConjunctionType[8];
+	//Conjunction type between subjects (and / or)
+	int SubConjunctionType;
+	int ExtVerb1;
+	int ExtVerb2;
+	int ExtVerb3;
+	bool Negate;
+	Language* SubClause;
+	bool Capital;
+	int Punctuation;
+	int Question;
+	int Conjunction;
+	bool IsClause;
+	void NewSentence();
+	void addAdverb(int adverbId);
+	virtual std::string createSentence();
+	virtual std::string createSubClause();
+	virtual noun * getIt(int id);
 };
 
 //always use simple present
