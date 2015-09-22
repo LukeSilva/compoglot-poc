@@ -164,7 +164,10 @@ std::string en::createSentence()
 		Sentence.pop_back();
 	if (punctuation && !clause)
 	{
-		Sentence+=".";
+		if (question==0)
+			Sentence+=".";
+		else
+			Sentence+="?";
 	}
 
 	if (Capital && !clause)
