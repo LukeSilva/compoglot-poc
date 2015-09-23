@@ -5,29 +5,47 @@
 #include "fileparse.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-Language* getLanguageFromStringId(char* Id){
- Language* ret;
- if (!strcmp(Id,"en")){
-  ret = new en;
- }
- else {printf("Unkown Language: '%s'\n",Id);exit(-1);}
- return ret;
+#include <string>
+#include <iostream>
+
+Language* getLanguageFromStringID(std::string ID)
+{
+	Language* ret;
+	if (ID.compare("en")==0)
+		ret = new en;
+	else
+	{
+		std::cerr << "Unknown Language: \"" << ID << "\"" << std::endl;
+		exit(-1);
+	}
+	return ret;
 }
+
+Language* getLanguageFromStringId(char* Id){
+	return getLanguageFromStringID(std::string(Id));
+}
+
+
 int main(int argc, char *argv[])
 {
- if (argc<3){
-  printf("Usage: %s <mode> <language>\n",argv[0]);
-  return -1;
- }
- if (!strcmp(argv[1],"cmd")){
-  return cmdParse(argc,argv);
- }else if (!strcmp(argv[1],"file")){
-  return fileParse(argc,argv);
- }else{
-  printf("Unkown mode %s\n",argv[1]);
-  printf("Usage: %s <mode> <language>\n",argv[0]);
-  return -1;
- }
- return 0;
+	if (argc<3){
+		printf("Usage: %s <mode> <language>\n",argv[0]);
+		std::cerr << "Usage: " << argv[0] << "<mode> <language>" << std::endl;
+		return -1;
+	}
+	if (std::string(argv[1]).compare("cmd")==0)
+	{
+		return cmdParse(argc,argv);
+	} 
+	else if (std::string(argv[1]).compare("file")==0)
+	{
+		return fileParse(argc,argv);
+	}
+	else
+	{
+		std::cerr << "Unknown mode " << argv[1] << std::endl;
+		std::cerr << "Usage: " << argv[0] << "<mode> <language>" << std::endl;
+		return -1;
+	}
+	return 0;
 }

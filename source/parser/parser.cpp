@@ -303,7 +303,7 @@ char* Parser::parse(char* _langid,char* in){
  verb=0;
 
  //Create the language class form the langid
- lang = getLanguageFromStringId(langid);
+ lang = getLanguageFromStringID(std::string(langid));
  lang->NewSentence();
  //Setup progressive present tense for default, should be in Language.cpp
  lang->st = 1;

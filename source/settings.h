@@ -33,6 +33,7 @@ void warn(const char * message, const char * fallback);
 int nDigits(int i);
 #include "Language.h"
 Language* getLanguageFromStringId(char* Id);
+Language* getLanguageFromStringID(std::string ID);
 void printNoun(std::string name, Noun* n);
 
 
