@@ -1,4 +1,5 @@
 #include "en/en.h"
+#include "de/de.h"
 #include "Language.h"
 #include "parser/parser.h"
 #include "cmdparse.h"
@@ -13,6 +14,8 @@ Language* getLanguageFromStringID(std::string ID)
 	Language* ret;
 	if (ID.compare("en")==0)
 		ret = new en;
+	else if (ID.compare("de")==0)
+		ret = new de;
 	else
 	{
 		std::cerr << "Unknown Language: \"" << ID << "\"" << std::endl;
