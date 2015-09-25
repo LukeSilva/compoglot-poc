@@ -6,4 +6,6 @@
 
 class de : public Language
 {
+public:
+	std::string createSentence();
 };
