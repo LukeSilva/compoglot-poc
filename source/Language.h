@@ -1,7 +1,9 @@
 #pragma once
 #include <string>
 class Language;
-class Noun{
+
+class Noun
+{
 public:
 	Noun();
 	~Noun();
@@ -36,7 +38,9 @@ public:
 
 #include "settings.h"
 void clearNoun(Noun* n);
-class Language{
+
+class Language
+{
 protected:
 	int adverbs[NUM_ADVERBS];
 public:
