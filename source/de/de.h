@@ -10,6 +10,7 @@ class de : public Language
 		//Strings
 		static const std::string Und;
 		static const std::string Oder;
+		static const std::string Articles[14][4][4];
 		
 		
 		//Boilerplate
