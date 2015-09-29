@@ -5,6 +5,9 @@
 #include <iostream>
 #include <fstream>
 
+const std::string de::Und = "und";
+const std::string de::Oder = "oder";
+
 
 std::string de::GetSegment(std::ifstream& File)
 {
@@ -54,6 +57,16 @@ bool de::GotoLine(std::ifstream& File, int Line)
 std::string de::createSentence()
 {
 
-	return GetNoun(Subjects[0],0) + " " + GetNoun(Subjects[0],1) + " " + GetNoun(Subjects[0],2) + " " + GetNoun(Subjects[0],3) + "\n";
+	std::string SentenceString = "";
+	
+	for (int i = 0; i <= NumFilledSubjects; ++i)
+	{
+		
+		if (i!=0 && i < NumFilledSubjects) SentenceString +=", ";
+		if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 0) SentenceString+= " " + Und + " ";
+		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SentenceString += " " + Oder + " ";
+		SentenceString += GetNounString(Subjects[i]);
+	}
+	return SentenceString;
 
 }

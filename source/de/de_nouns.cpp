@@ -77,6 +77,8 @@ std::string de::GetNoun(Noun& n, int Case)
 
 std::string de::GetNounString(Noun& n)
 {
-	return "";
+	std::string NounString;
+	NounString += GetNoun(n,n.Data);
+	return NounString;
 }
 

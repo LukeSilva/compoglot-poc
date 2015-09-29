@@ -7,6 +7,11 @@
 class de : public Language 
 {
 	private:
+		//Strings
+		static const std::string Und;
+		static const std::string Oder;
+		
+		
 		//Boilerplate
 		bool GotoSegment(std::ifstream& is, int Segment);
     bool GotoLine(std::ifstream& is, int Line);
