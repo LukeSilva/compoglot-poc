@@ -9,7 +9,7 @@ P_sie_sie_ihnen_sich
 P_Sie_Sie_Ihnen_sich
 P____
 P_man_man_man_sich
-f_Weile
+f1000_Weile
 
 P____
 
@@ -96,335 +96,335 @@ P____
 
 
 
-f_Ersatzbatterie
-n_Deutsch_Deutsch
-n_Englisch_English
-n_Deutsch_Deutsch
-n_Morgen_Morgen
-n_Heute_Heute
-m_Montag_Montage
-m_Dienstag_Dienstage
-m_Mittwoch_Mittwoche
-m_Donnerstag_Donnerstage
-m_Freitag_Freitage
-m_Samstag_Samstage
-m_Sonntag_Sonntage
-m_Tag_Tage
-m_Urlaub_Ferien
-m_Quadcopter_Quadcopters
-m_Rotor_Rotoren
-n_Computerprogramm_Computerprogramme
-n_Projekt_Projekte
-n_Wissenschaftsprojekt_Wissenschaftsprojekte
-m_Computerchip_Computerchips
-m_Befehlszähler_Befehlszähler
-f_Batterie_Batterien
-n_Quadrat_Quadrate
-m_Park_Parks
-m_Wind_Winde
-m_Computer_Computer
-n_Bauteil_Bauteile
-n_Fahrzeug_Fahrzeuge
-n_Flugzeug_Flugzeuge
-m_Anker_Anker
-m_Bus_Busse
-f_Brücke_Brücken
-m_Waggon_Waggons
-f_Kutsche_Kutschen
-n_Tor_Tore
-m_Helikopter_Helikopter
-f_Schnellstraße_Schnellstraßen
-n_Boot_Boote
-m_Boden_Böden
-f_Landung_Landungen
-m_Hafen_Häfen
-m_Flughafen_Flughäfen
-m_Heliport_Heliports
-m_See_Seen
-f_Schiene_Schienen
-f_Straße_Straßen
-m_Fluss_Flüsse
-n_Schiff_Schiffe
-m_Zug_Züge
-m_Transport_Transporte
-m_Krieg_Kriege
-f_Wäsche_Wäschen
-m_Abfall_Abfälle
-n_Wasser_Wässer
-m_Tisch_Tische
-m_Schwanz
-f_Technologie_Technologien
-m_Test_Tests
-f_Theroie_Theroien
-n_Ding_Dinge
-f_Bedrohung_Bedrohungen
-m_Bericht_Berichte
-f_Säure_Säuren
-f_Addition_Additionen
-f_Einstellung_Einstellungen
-f_Anzeige_Anzeigen
-f_Vereinbarung_Vereinbarungen
-f_Luft_Lüfte
-m_Betrag_Beträge
-m_Winkel_Winkel
-n_Tier_Tiere
-f_Antwort_Antworten
-f_Ameise_Ameisen
-m_Apfel_Äpfel
-f_Genehmigung_Genehmigungen
-m_Bogen_Bogen
-m_Streit_Streiten
-m_Arm_Arme
-f_Armee_Armeen
-f_Kunst_Künste
-f_Achtung
-f_Einstellung_Einstellungen
-m_Alkohol_Alkohole
-f_Algebra_Algebren
-n_Aluminium
-f_Vollnarkose_Vollnarkosen
-f_Arithmetik
-f_Abwesenheit_Abwesenheits
-f_Beschleunigung_Beschleunigungen
-n_Zubehör_Zubehöre
-m_Unfall_Unfälle
-f_Adresse_Adressen
-n_Abenteuer_Abenteuer
-m_Rat_Räte
-m_Agent_Agenten
-f_Agentur_Agenturen
-m_Fußnöchel_Fußnöchel
-m_Darsteller_Darsteller
-n_Baby_Babys
-f_Rückseite_Rückseiten
-f_Tasche_Taschen
-m_Kontostand_Kontostände
-m_Ball_Balle
-m_Streifen_Streifen
-f_Kapelle_Kapellen
-f_Basis_Basen
-n_Waschbecken_Waschbecken
-m_Korb_Körbe
-n_Bad_Bäder
-n_Bett_Betten
-f_Biene_Bienen
-n_Verhalten_Verhalten
-m_Glaube_Glauben
-f_Glocke_Glocken
-f_Beere_Beeren
-m_Vogel_Vögel
-f_Geburt_Geburten
-m_Biss_Bisse
-f_Klinge_Klingen
-n_Blut_Blute
-f_Tafel_Tafeln
-f_Tafel_Tafeln
-m_Körper_Körper
-m_Knochen_Knochen
-n_Buch_Bücher
-m_Stiefel_Stiefel
-f_Flasche_Flaschen
-m_Kasten_Kästen
-m_Junge_Jungen
-n_Gehirn_Gehirne
-f_Bremse_Bremsen
-m_Zweig_Zweige
-n_Messing_Messinge
-n_Brot_Brote
-m_Ziegelstein_Ziegelsteine
-m_Bruder_Brüder
-f_Brüste_Brüsten
-m_Eimer_Eimer
-m_Bau_Baue
-m_Knopf_Knöpfe
-f_Verbrennung_Verbrennungen
-n_Geschäft_Geschäfte
-f_Butter_Buttern
-f_Bank_Banken
-m_Riegel_Riegel
-f_Stange_Stangen
-n_Fleisch_
-n_Fleisch_
-f_Biologie_
-f_Bombe_Bomben
-m_Balkon_Balkone
-f_Baumrinde_Baumrinden
-n_Fass_Fässer
-m_Schnabel_Schnäbel
-m_Bart_Bärte
-m_Gürtel_Gürtel
-f_Wette_Wetten
-f_Rechnung_Rechnungen
-f_Bettdecke_Bettdecken
-n_Frühstück_Frühstücke
-f_Brust_Brüste
-f_Blase_Blasen
-m_Finanzplan_Finanzpläne
-f_Erdbestattung_Erdbestattungen
-n_Schlafzimmer_Schlafzimmer
-m_Geburtstag_Geburtstage
-f_Broombeere_Broombeeren
-f_Tafel_Tafeln
-m_Buchhalter_Buchhalter
-m_Brenner_Brenner
-m_Kuchen_Kuchen
-f_Kamera_Kameras
-f_Leinwand_Leinwände
-f_Karte_Karten
-f_Katze_Katzen
-f_Kette_Ketten
-m_Kalk_Kalke
-f_Änderung_Änderungen
-m_Käse_Käse
-f_Brust_Brüste
-n_Kinn_Kinne
-f_Kirche_Kirchen
-m_Kreis_Kreise
-f_Uhr_Uhren
-n_Tuch_Tücher
-f_Wolke_Wolken
-f_Kohle_Kohlen
-m_Mantel_Mäntel
-f_Kälte_
-m_Kragen_Kragen
-f_Farbe_Farben
-m_Kamm_Kämme
-m_Komfort_
-m_Ausschuss_Ausschüsse
-f_Gemeinde_Gemeinden
-f_Firma_Firmen
-m_Vergleich_Vergleiche
-n_Gewinnspiel_Gewinnspiele
-f_Bedingung_Bedingungen
-m_Anschluss_Anschlüsse
-f_Kontrolle_Kontrollen
-n_Kupfer_Kupfer
-f_Kopie_Kopien
-n_Kabel_Kabel
-m_Korken_Korken
-f_Baumwolle_Baumwolle
-m_Husten_Husten
-n_Land_Länder
-f_Kuh_Kühe
-m_Riss_Risse
-n_Haben_
-n_Verbrechen_Verbrechen
-f_Tasse_Tassen
-f_Gardine_Gardinen
-f_Kurve_Kurven
-n_Kissen_Kissen
-m_Schnitt_Schnitte
-n_Café_Cafés
-m_Kalandar_Kalandar
-m_Cent_Cent
-f_Chemie_
-f_Schokolade_Schokoladen
-m_Refrain_Refrains
-f_Zigarette_Zigaretten
-m_Zirkus_Kirkusse
-m_Verein_Vereine
-m_Kaffee_Kaffees
-m_Cocktail_Cocktails
-f_Hochschule_Hochschulen
-f_Kolonie_Kolonien
-f_Berechnung_Berechnungen
-m_Anruf_Anrufe
-f_Leistung_Leistungen
-f_Hauptstadt_Hauptstadt
-f_Teppich_Teppische
-m_Behälter_Behälter
-m_Gips_Gipse
-f_Höhle_Höhlen
-n_Loch_Löcher
-f_Zelle_Zellen
-f_Zeremonie_Zeremonien
-n_Zeugnis_Zeugnisse
-m_Stuhl_Stühle
-m_Charakter_Charaktere
-n_Kind_Kinder
-m_Kamin_Kamine
-n_China_
-f_Auswahl_Auswahlen
-f_Durchblutung_
-m_Sturmkreis_Sturmkreise
-m_Umfang_Umfänge
-f_Zilivisation_Zilivisationen
-m_Ton_Töne
-f_Kralle_Krallen
-m_Kunde_Kunden
-f_Klammer_Klammern
-m_Code_Codes
-f_Spule_Spulen
-f_Kollision_Kollisionen
-f_Sammlung_Sammlungen
-f_Kolonne_Kolonnen
-f_Kombination_Kombinationen
-f_Mitteilung_Mitteilungen
-f_Beschwerde_Beschwerden
-n_Bauteil_Bauteile
-n_Konzept_Konzepte
-m_Beton_Betons
-f_Umwandlung_Umwandlungen
-f_Ecke_Ecken
-m_Preis_Preise
-m_Gerichtshof_Gerichtshöfe
-f_Ernte_Ernten
-m_Karton_Kartons
-m_Schrank_Schränke
-f_Kleidung_Kleidungen
-m_Schaden_Schäden
-m_Tanz_Tänze
-f_Gefahr_Gefahren
-f_Tochter_Töchter
-n_Liebchen_Liebchen
-m_Tod_Tode
-f_Schuld_Schulden
-f_Entscheidung_Entscheidungen
-m_Grad_Grade
-n_Diplom_Diplome
-f_Gestaltung_Gestaltungen
-m_Wunsch_Wünsche
-f_Zerstörung_Zerstörungen
-f_Einzelheit_Einzelheiten
-f_Entwicklung_Entwicklungen
-f_Richtung_Richtungen
-f_Entdeckung_Entdeckungen
-f_Diskussion_Diskussionen
-f_Krankheit_Krankheiten
-f_Entfernung_Entfernungen
-f_Verteilung_Verteilungen
-f_Division_Divisionen
-m_Hund_Hunde
-m_Dollar_Dollars
-f_Tür_Türen
-m_Abfluss_Abflusse
-f_Schublade_Schubladen
-n_Kleid_Kleider
-n_Getränk_Getränke
-m_Staub_Stäube
-n_Datum_Daten
-n_Soll_Sölle
-f_Veranda_Veranden
-m_Rückgang_Rückgänge
-m_Defekt_Defekte
-n_Defizit_Defizite
-f_Deflation_Deflationen
-f_Zustellung_Zustellungen
-f_Nachfrage_Nachfragen
-f_Abteilung_Abteilungen
-f_Wüste_Wüsten
-m_Nachtisch_Nachtische
-f_Dichte_Dichten
-f_Einzahlung_Einzahlungens
-m_Tau_Taus
-m_Durchmesser_Durchmesser
-m_Unterschied_Unterschiede
-f_Schwierigkeit_Schwierigkeiten
-f_Abweichung_Abweichungen
-n_Abendessen_Abendessen
-f_Soße_Soßen
-m_Nachlass_Nachlässe
-f_Blamage_Blamagen
+f1000_Ersatzbatterie
+n1100_Deutsch_Deutsch
+n1100_Englisch_English
+n1100_Deutsch_Deutsch
+n1100_Morgen_Morgen
+n1100_Heute_Heute
+m1100_Montag_Montage
+m1100_Dienstag_Dienstage
+m1100_Mittwoch_Mittwoche
+m1100_Donnerstag_Donnerstage
+m1100_Freitag_Freitage
+m1100_Samstag_Samstage
+m1100_Sonntag_Sonntage
+m1100_Tag_Tage
+m1100_Urlaub_Ferien
+m1100_Quadcopter_Quadcopters
+m1100_Rotor_Rotoren
+n1100_Computerprogramm_Computerprogramme
+n1100_Projekt_Projekte
+n1100_Wissenschaftsprojekt_Wissenschaftsprojekte
+m1100_Computerchip_Computerchips
+m1100_Befehlszähler_Befehlszähler
+f1000_Batterie_Batterien
+n1100_Quadrat_Quadrate
+m1100_Park_Parks
+m1100_Wind_Winde
+m1100_Computer_Computer
+n1100_Bauteil_Bauteile
+n1100_Fahrzeug_Fahrzeuge
+n1100_Flugzeug_Flugzeuge
+m1100_Anker_Anker
+m1100_Bus_Busse
+f1000_Brücke_Brücken
+m1100_Waggon_Waggons
+f1000_Kutsche_Kutschen
+n1100_Tor_Tore
+m1100_Helikopter_Helikopter
+f1000_Schnellstraße_Schnellstraßen
+n1100_Boot_Boote
+m1100_Boden_Böden
+f1000_Landung_Landungen
+m1100_Hafen_Häfen
+m1100_Flughafen_Flughäfen
+m1100_Heliport_Heliports
+m1100_See_Seen
+f1000_Schiene_Schienen
+f1000_Straße_Straßen
+m1100_Fluss_Flüsse
+n1100_Schiff_Schiffe
+m1100_Zug_Züge
+m1100_Transport_Transporte
+m1100_Krieg_Kriege
+f1000_Wäsche_Wäschen
+m1100_Abfall_Abfälle
+n1100_Wasser_Wässer
+m1100_Tisch_Tische
+m1100_Schwanz
+f1000_Technologie_Technologien
+m1100_Test_Tests
+f1000_Theroie_Theroien
+n1100_Ding_Dinge
+f1000_Bedrohung_Bedrohungen
+m1100_Bericht_Berichte
+f1000_Säure_Säuren
+f1000_Addition_Additionen
+f1000_Einstellung_Einstellungen
+f1000_Anzeige_Anzeigen
+f1000_Vereinbarung_Vereinbarungen
+f1000_Luft_Lüfte
+m1100_Betrag_Beträge
+m1100_Winkel_Winkel
+n1100_Tier_Tiere
+f1000_Antwort_Antworten
+f1000_Ameise_Ameisen
+m1100_Apfel_Äpfel
+f1000_Genehmigung_Genehmigungen
+m1100_Bogen_Bogen
+m1100_Streit_Streiten
+m1100_Arm_Arme
+f1000_Armee_Armeen
+f1000_Kunst_Künste
+f1000_Achtung
+f1000_Einstellung_Einstellungen
+m1100_Alkohol_Alkohole
+f1000_Algebra_Algebren
+n1100_Aluminium
+f1000_Vollnarkose_Vollnarkosen
+f1000_Arithmetik
+f1000_Abwesenheit_Abwesenheits
+f1000_Beschleunigung_Beschleunigungen
+n1100_Zubehör_Zubehöre
+m1100_Unfall_Unfälle
+f1000_Adresse_Adressen
+n1100_Abenteuer_Abenteuer
+m1100_Rat_Räte
+m1100_Agent_Agenten
+f1000_Agentur_Agenturen
+m1100_Fußnöchel_Fußnöchel
+m1100_Darsteller_Darsteller
+n1100_Baby_Babys
+f1000_Rückseite_Rückseiten
+f1000_Tasche_Taschen
+m1100_Kontostand_Kontostände
+m1100_Ball_Balle
+m1100_Streifen_Streifen
+f1000_Kapelle_Kapellen
+f1000_Basis_Basen
+n1100_Waschbecken_Waschbecken
+m1100_Korb_Körbe
+n1100_Bad_Bäder
+n1100_Bett_Betten
+f1000_Biene_Bienen
+n1100_Verhalten_Verhalten
+m1100_Glaube_Glauben
+f1000_Glocke_Glocken
+f1000_Beere_Beeren
+m1100_Vogel_Vögel
+f1000_Geburt_Geburten
+m1100_Biss_Bisse
+f1000_Klinge_Klingen
+n1100_Blut_Blute
+f1000_Tafel_Tafeln
+f1000_Tafel_Tafeln
+m1100_Körper_Körper
+m1100_Knochen_Knochen
+n1100_Buch_Bücher
+m1100_Stiefel_Stiefel
+f1000_Flasche_Flaschen
+m1100_Kasten_Kästen
+m1100_Junge_Jungen
+n1100_Gehirn_Gehirne
+f1000_Bremse_Bremsen
+m1100_Zweig_Zweige
+n1100_Messing_Messinge
+n1100_Brot_Brote
+m1100_Ziegelstein_Ziegelsteine
+m1100_Bruder_Brüder
+f1000_Brüste_Brüsten
+m1100_Eimer_Eimer
+m1100_Bau_Baue
+m1100_Knopf_Knöpfe
+f1000_Verbrennung_Verbrennungen
+n1100_Geschäft_Geschäfte
+f1000_Butter_Buttern
+f1000_Bank_Banken
+m1100_Riegel_Riegel
+f1000_Stange_Stangen
+n1100_Fleisch_
+n1100_Fleisch_
+f1000_Biologie_
+f1000_Bombe_Bomben
+m1100_Balkon_Balkone
+f1000_Baumrinde_Baumrinden
+n1100_Fass_Fässer
+m1100_Schnabel_Schnäbel
+m1100_Bart_Bärte
+m1100_Gürtel_Gürtel
+f1000_Wette_Wetten
+f1000_Rechnung_Rechnungen
+f1000_Bettdecke_Bettdecken
+n1100_Frühstück_Frühstücke
+f1000_Brust_Brüste
+f1000_Blase_Blasen
+m1100_Finanzplan_Finanzpläne
+f1000_Erdbestattung_Erdbestattungen
+n1100_Schlafzimmer_Schlafzimmer
+m1100_Geburtstag_Geburtstage
+f1000_Broombeere_Broombeeren
+f1000_Tafel_Tafeln
+m1100_Buchhalter_Buchhalter
+m1100_Brenner_Brenner
+m1100_Kuchen_Kuchen
+f1000_Kamera_Kameras
+f1000_Leinwand_Leinwände
+f1000_Karte_Karten
+f1000_Katze_Katzen
+f1000_Kette_Ketten
+m1100_Kalk_Kalke
+f1000_Änderung_Änderungen
+m1100_Käse_Käse
+f1000_Brust_Brüste
+n1100_Kinn_Kinne
+f1000_Kirche_Kirchen
+m1100_Kreis_Kreise
+f1000_Uhr_Uhren
+n1100_Tuch_Tücher
+f1000_Wolke_Wolken
+f1000_Kohle_Kohlen
+m1100_Mantel_Mäntel
+f1000_Kälte_
+m1100_Kragen_Kragen
+f1000_Farbe_Farben
+m1100_Kamm_Kämme
+m1100_Komfort_
+m1100_Ausschuss_Ausschüsse
+f1000_Gemeinde_Gemeinden
+f1000_Firma_Firmen
+m1100_Vergleich_Vergleiche
+n1100_Gewinnspiel_Gewinnspiele
+f1000_Bedingung_Bedingungen
+m1100_Anschluss_Anschlüsse
+f1000_Kontrolle_Kontrollen
+n1100_Kupfer_Kupfer
+f1000_Kopie_Kopien
+n1100_Kabel_Kabel
+m1100_Korken_Korken
+f1000_Baumwolle_Baumwolle
+m1100_Husten_Husten
+n1100_Land_Länder
+f1000_Kuh_Kühe
+m1100_Riss_Risse
+n1100_Haben_
+n1100_Verbrechen_Verbrechen
+f1000_Tasse_Tassen
+f1000_Gardine_Gardinen
+f1000_Kurve_Kurven
+n1100_Kissen_Kissen
+m1100_Schnitt_Schnitte
+n1100_Café_Cafés
+m1100_Kalandar_Kalandar
+m1100_Cent_Cent
+f1000_Chemie_
+f1000_Schokolade_Schokoladen
+m1100_Refrain_Refrains
+f1000_Zigarette_Zigaretten
+m1100_Zirkus_Kirkusse
+m1100_Verein_Vereine
+m1100_Kaffee_Kaffees
+m1100_Cocktail_Cocktails
+f1000_Hochschule_Hochschulen
+f1000_Kolonie_Kolonien
+f1000_Berechnung_Berechnungen
+m1100_Anruf_Anrufe
+f1000_Leistung_Leistungen
+f1000_Hauptstadt_Hauptstadt
+f1000_Teppich_Teppische
+m1100_Behälter_Behälter
+m1100_Gips_Gipse
+f1000_Höhle_Höhlen
+n1100_Loch_Löcher
+f1000_Zelle_Zellen
+f1000_Zeremonie_Zeremonien
+n1100_Zeugnis_Zeugnisse
+m1100_Stuhl_Stühle
+m1100_Charakter_Charaktere
+n1100_Kind_Kinder
+m1100_Kamin_Kamine
+n1100_China_
+f1000_Auswahl_Auswahlen
+f1000_Durchblutung_
+m1100_Sturmkreis_Sturmkreise
+m1100_Umfang_Umfänge
+f1000_Zilivisation_Zilivisationen
+m1100_Ton_Töne
+f1000_Kralle_Krallen
+m1100_Kunde_Kunden
+f1000_Klammer_Klammern
+m1100_Code_Codes
+f1000_Spule_Spulen
+f1000_Kollision_Kollisionen
+f1000_Sammlung_Sammlungen
+f1000_Kolonne_Kolonnen
+f1000_Kombination_Kombinationen
+f1000_Mitteilung_Mitteilungen
+f1000_Beschwerde_Beschwerden
+n1100_Bauteil_Bauteile
+n1100_Konzept_Konzepte
+m1100_Beton_Betons
+f1000_Umwandlung_Umwandlungen
+f1000_Ecke_Ecken
+m1100_Preis_Preise
+m1100_Gerichtshof_Gerichtshöfe
+f1000_Ernte_Ernten
+m1100_Karton_Kartons
+m1100_Schrank_Schränke
+f1000_Kleidung_Kleidungen
+m1100_Schaden_Schäden
+m1100_Tanz_Tänze
+f1000_Gefahr_Gefahren
+f1000_Tochter_Töchter
+n1100_Liebchen_Liebchen
+m1100_Tod_Tode
+f1000_Schuld_Schulden
+f1000_Entscheidung_Entscheidungen
+m1100_Grad_Grade
+n1100_Diplom_Diplome
+f1000_Gestaltung_Gestaltungen
+m1100_Wunsch_Wünsche
+f1000_Zerstörung_Zerstörungen
+f1000_Einzelheit_Einzelheiten
+f1000_Entwicklung_Entwicklungen
+f1000_Richtung_Richtungen
+f1000_Entdeckung_Entdeckungen
+f1000_Diskussion_Diskussionen
+f1000_Krankheit_Krankheiten
+f1000_Entfernung_Entfernungen
+f1000_Verteilung_Verteilungen
+f1000_Division_Divisionen
+m1100_Hund_Hunde
+m1100_Dollar_Dollars
+f1000_Tür_Türen
+m1100_Abfluss_Abflusse
+f1000_Schublade_Schubladen
+n1100_Kleid_Kleider
+n1100_Getränk_Getränke
+m1100_Staub_Stäube
+n1100_Datum_Daten
+n1100_Soll_Sölle
+f1000_Veranda_Veranden
+m1100_Rückgang_Rückgänge
+m1100_Defekt_Defekte
+n1100_Defizit_Defizite
+f1000_Deflation_Deflationen
+f1000_Zustellung_Zustellungen
+f1000_Nachfrage_Nachfragen
+f1000_Abteilung_Abteilungen
+f1000_Wüste_Wüsten
+m1100_Nachtisch_Nachtische
+f1000_Dichte_Dichten
+f1000_Einzahlung_Einzahlungens
+m1100_Tau_Taus
+m1100_Durchmesser_Durchmesser
+m1100_Unterschied_Unterschiede
+f1000_Schwierigkeit_Schwierigkeiten
+f1000_Abweichung_Abweichungen
+n1100_Abendessen_Abendessen
+f1000_Soße_Soßen
+m1100_Nachlass_Nachlässe
+f1000_Blamage_Blamagen
 
 
 
@@ -434,20 +434,20 @@ f_Blamage_Blamagen
 
 
 
-f_Erde_Erden
+f1000_Erde_Erden
 
 
 
 
-n_Ei_Eier
+n1100_Ei_Eier
 
 
 
 
 
 
-f_Veranstaltung_Veranstaltungen
-n_Beispiel_Beispiele
+f1000_Veranstaltung_Veranstaltungen
+n1100_Beispiel_Beispiele
 
 
 
@@ -458,9 +458,9 @@ n_Beispiel_Beispiele
 
 
 
-m_Ingenieur_Ingenieure
+m1100_Ingenieur_Ingenieure
 
-f_Wirtschaft_Wirtschaften
+f1000_Wirtschaft_Wirtschaften
 
 
 
@@ -473,9 +473,9 @@ f_Wirtschaft_Wirtschaften
 
 
 
-n_Experiment_Experimente
+n1100_Experiment_Experimente
 
-f_Erklärung_Erklärungen
+f1000_Erklärung_Erklärungen
 
 
 
@@ -483,27 +483,27 @@ f_Erklärung_Erklärungen
 
 
 
-m_Fakt_Fakten
+m1100_Fakt_Fakten
 
 
 
-m_Vater_Väter
+m1100_Vater_Väter
 
 
 
 
-m_Kampf_Kämpfe
+m1100_Kampf_Kämpfe
 
-n_Feuer_Feuer
-m_Fisch_Fische
+n1100_Feuer_Feuer
+m1100_Fisch_Fische
 
 
 
 
-f_Blume_Blumen
-n_Essen_Essen
+f1000_Blume_Blumen
+n1100_Essen_Essen
 
-f_Kraft_Kräfte
+f1000_Kraft_Kräfte
 
 
 
@@ -542,25 +542,25 @@ f_Kraft_Kräfte
 
 
 
-m_Fußball_Fußballs
+m1100_Fußball_Fußballs
 
 
 
 
 
-n_Mädchen_Mädchen
-n_Glas_Gläser
+n1100_Mädchen_Mädchen
+n1100_Glas_Gläser
 
 
 
-f_Regierung_Regierungen
+f1000_Regierung_Regierungen
 
 
 
 
 
 
-f_Pistole_Pistolen
+f1000_Pistole_Pistolen
 
 
 
@@ -583,8 +583,8 @@ f_Pistole_Pistolen
 
 
 
-f_Haare_Haare
-m_Hammer_Hämmer
+f1000_Haare_Haare
+m1100_Hammer_Hämmer
 
 
 
@@ -594,13 +594,13 @@ m_Hammer_Hämmer
 
 
 
-n_Loch_Löcher
+n1100_Loch_Löcher
 
 
-n_Pferd_Pferde
+n1100_Pferd_Pferde
 
 
-n_Haus_Häuser
+n1100_Haus_Häuser
 
 
 
@@ -615,24 +615,24 @@ n_Haus_Häuser
 
 
 
-m_Mensch_Menschen
+m1100_Mensch_Menschen
 
 
 
 
 
 
-n_Eis_Eis
-f_Idee_Ideen
+n1100_Eis_Eis
+f1000_Idee_Ideen
 
 
 
-f_Tinte_Tinten
+f1000_Tinte_Tinten
 
 
-n_Insekt_Insekten
+n1100_Insekt_Insekten
 
-n_Eisen_Eisen
+n1100_Eisen_Eisen
 
 
 
@@ -671,7 +671,7 @@ n_Eisen_Eisen
 
 
 
-n_Wissen_
+n1100_Wissen_
 
 
 
@@ -681,8 +681,8 @@ n_Wissen_
 
 
 
-n_Bein_Beine
-m_Brief_Briefe
+n1100_Bein_Beine
+m1100_Brief_Briefe
 
 
 
@@ -691,8 +691,8 @@ m_Brief_Briefe
 
 
 
-f_Flüssigkeit_Flüssigkeiten
-f_Liste_Listen
+f1000_Flüssigkeit_Flüssigkeiten
+f1000_Liste_Listen
 
 
 
@@ -701,7 +701,7 @@ f_Liste_Listen
 
 
 
-m_Rechtsanwalt_Rechtsanwälte
+m1100_Rechtsanwalt_Rechtsanwälte
 
 
 
@@ -711,7 +711,7 @@ m_Rechtsanwalt_Rechtsanwälte
 
 
 
-f_Limone_Limonen
+f1000_Limone_Limonen
 
 
 
@@ -720,9 +720,9 @@ f_Limone_Limonen
 
 
 
-f_Maschine_Maschinen
-m_Mann_Männer
-m_Geschäftsführer_Geschäftsführer
+f1000_Maschine_Maschinen
+m1100_Mann_Männer
+m1100_Geschäftsführer_Geschäftsführer
 
 
 
@@ -732,7 +732,7 @@ m_Geschäftsführer_Geschäftsführer
 
 
 
-n_Fleisch_Fleisch
+n1100_Fleisch_Fleisch
 
 
 
@@ -741,22 +741,22 @@ n_Fleisch_Fleisch
 
 
 
-n_Geld_Geld
+n1100_Geld_Geld
 
 
 
 
-f_Mutter_Mütter
+f1000_Mutter_Mütter
 
 
 
 
-f_Musik_Musiken
+f1000_Musik_Musiken
 
 
 
 
-n_Museum_Museen
+n1100_Museum_Museen
 
 
 
@@ -780,8 +780,8 @@ n_Museum_Museen
 
 
 
-m_Mord_Morde
-m_Nagel_Nägel
+m1100_Mord_Morde
+m1100_Nagel_Nägel
 
 
 
@@ -789,13 +789,13 @@ m_Nagel_Nägel
 
 
 
-f_Nacht_Nachten
+f1000_Nacht_Nachten
 
 
 
-f_Notiz_Notizen
+f1000_Notiz_Notizen
 
-f_Nuss_Nüsse
+f1000_Nuss_Nüsse
 
 
 
@@ -805,9 +805,9 @@ f_Nuss_Nüsse
 
 
 
-f_Krankenschwester_Krankenschwestern
+f1000_Krankenschwester_Krankenschwestern
 
-f_Zeitung_Zeitungen
+f1000_Zeitung_Zeitungen
 
 
 
@@ -817,7 +817,7 @@ f_Zeitung_Zeitungen
 
 
 
-f_Organisation_Orangisationen
+f1000_Organisation_Orangisationen
 
 
 
@@ -839,26 +839,26 @@ f_Organisation_Orangisationen
 
 
 
-n_Papier_Papiere
-n_Paket_Pakete
-m_Teil_Teile
+n1100_Papier_Papiere
+n1100_Paket_Pakete
+m1100_Teil_Teile
 
 
 
 
 
 
-f_Person_Personen
-n_Bild_Bilder
+f1000_Person_Personen
+n1100_Bild_Bilder
 
 
 
-m_Ort_Orter
-n_Flugzeug_Flugzeuge
+m1100_Ort_Orter
+n1100_Flugzeug_Flugzeuge
 
 
 
-m_Punkt_Punkte
+m1100_Punkt_Punkte
 
 
 
@@ -866,10 +866,10 @@ m_Punkt_Punkte
 
 
 
-m_Preis_Preise
+m1100_Preis_Preise
 
 
-m_Vorgang_Vorgänge
+m1100_Vorgang_Vorgänge
 
 
 
@@ -895,14 +895,14 @@ m_Vorgang_Vorgänge
 
 
 
-m_Präsident_Präsidenten
-m_Prinz_Prinzen
+m1100_Präsident_Präsidenten
+m1100_Prinz_Prinzen
 
 
 
 
 
-f_Pfanne_Pfannen
+f1000_Pfanne_Pfannen
 
 
 
@@ -910,11 +910,11 @@ f_Pfanne_Pfannen
 
 
 
-f_Geduld_
+f1000_Geduld_
 
 
 
-n_Blumenblatt_Blumenblätter
+n1100_Blumenblatt_Blumenblätter
 
 
 
@@ -926,7 +926,7 @@ n_Blumenblatt_Blumenblätter
 
 
 
-m_Druck_Drucke
+m1100_Druck_Drucke
 
 
 
@@ -939,12 +939,12 @@ m_Druck_Drucke
 
 
 
-m_Polizist_Polizisten
+m1100_Polizist_Polizisten
 
 
 
-m_Gefangener_Gefangenen
-f_Frage_Fragen
+m1100_Gefangener_Gefangenen
+f1000_Frage_Fragen
 
 
 
@@ -968,12 +968,12 @@ f_Frage_Fragen
 
 
 
-n_Dach_Dächer
+n1100_Dach_Dächer
 
 
 
 
-n_Restaurant_Restaurants
+n1100_Restaurant_Restaurants
 
 
 
@@ -988,22 +988,22 @@ n_Restaurant_Restaurants
 
 
 
-f_Schule_Schulen
+f1000_Schule_Schulen
 
 
-f_Schraube_Schrauben
-n_Meer_Meere
+f1000_Schraube_Schrauben
+n1100_Meer_Meere
 
 
 
-f_Sekretärin_Sekretärinnnen
+f1000_Sekretärin_Sekretärinnnen
 
 
 
 
 
 
-n_Hemd_Hemden
+n1100_Hemd_Hemden
 
 
 
@@ -1018,26 +1018,26 @@ n_Hemd_Hemden
 
 
 
-f_Schlange_Schlangen
+f1000_Schlange_Schlangen
 
 
 
 
-m_Sohn_Söhne
+m1100_Sohn_Söhne
 
 
 
 
 
 
-m_Schwamm_Schwämme
+m1100_Schwamm_Schwämme
 
 
 
 
 
 
-f_Aussage_Aussagen
+f1000_Aussage_Aussagen
 
 
 
@@ -1047,13 +1047,13 @@ f_Aussage_Aussagen
 
 
 
-m_Stein_Steine
+m1100_Stein_Steine
 
 
 
 
 
-m_Zucker_Zucker
+m1100_Zucker_Zucker
 
 
 
@@ -1074,19 +1074,19 @@ m_Zucker_Zucker
 
 
 
-m_Satz_Sätze
+m1100_Satz_Sätze
 
 
 
 
-f_Küste_Küsten
+f1000_Küste_Küsten
 
 
 
 
 
 
-f_Erde_Erden
+f1000_Erde_Erden
 
 
 
@@ -1098,7 +1098,7 @@ f_Erde_Erden
 
 
 
-f_Schnur_Schnüre
+f1000_Schnur_Schnüre
 
 
 
@@ -1114,15 +1114,15 @@ f_Schnur_Schnüre
 
 
 
-f_Zunge_Zungen
-m_Zahn_Zähne
+f1000_Zunge_Zungen
+m1100_Zahn_Zähne
 
 
-m_Baum_Bäume
+m1100_Baum_Bäume
 
 
 
-n_Telefon_Telefone
+n1100_Telefon_Telefone
 
 
 
@@ -1151,7 +1151,7 @@ n_Telefon_Telefone
 
 
 
-m_Tunnel_Tunnel
+m1100_Tunnel_Tunnel
 
 
 
@@ -1160,7 +1160,7 @@ m_Tunnel_Tunnel
 
 
 
-f_Geige_Geigen
+f1000_Geige_Geigen
 
 
 
@@ -1170,28 +1170,28 @@ f_Geige_Geigen
 
 
 
-m_Opfer_Opfer
+m1100_Opfer_Opfer
 
 
 
 
-f_Wand_Wände
+f1000_Wand_Wände
 
-n_Wasser_Wässer
+n1100_Wasser_Wässer
 
 
 
 
-n_Gewicht_Gewichte
+n1100_Gewicht_Gewichte
 
 
 
-n_Fenster_Fenster
+n1100_Fenster_Fenster
 
 
 
 
-f_Frau_Frauen
+f1000_Frau_Frauen
 
 
 
@@ -1205,42 +1205,42 @@ f_Frau_Frauen
 
 
 
-f_Kennung_Kennungen
-n_Fahrzeug_Fahrzeuge
-n_Verb_Verben
-f_Handeln_
-n_etwas_etwas
-f_Verantwortung_Verantwortungen
-f_Wahrscheinlichkeit_Wahrscheinlichkeiten
+f1000_Kennung_Kennungen
+n1100_Fahrzeug_Fahrzeuge
+n1100_Verb_Verben
+f1000_Handeln_
+n1100_etwas_etwas
+f1000_Verantwortung_Verantwortungen
+f1000_Wahrscheinlichkeit_Wahrscheinlichkeiten
 
-n_nichts_nichts
+n1100_nichts_nichts
 
-m_Ballon_Ballons
-f_Trennung_Trennungen
-n_Werkzeug_Werkzeuge
-f_Datei_Dateien
-n_Mehl_Mehle
-m_Lehrer_Lehrer
-f_Lehrerin_Lerherinnen
-n_Geschenk_Geschenke
-f_Stadt_Städte
-f_Dokument_Dokumente
-m_Beweis_Beweise
-f_Erdbeere_Erdbeeren
-n_Spiel_Spiele
-m_Bauer_Bauern
-f_Bäuerin_Bäuerinnen
-f_Spinne_Spinnen
-f_Angst_Ängste
-m_Sinn_Sinne
-f_Traube_Trauben
-f_Hausaufgaben_Hausaufgaben
-m_Student_Studenten
-f_Studentin_Studentinnen
-m_Bürgermeister_Bürgermeister
-f_Bürgermeisterin_Bürgermeisterinnen
-n_Passwort_passwörter
-f_Schwester_Schwestern
-n__Daten
-n_Gespräch_Gespräche
-n_Kaninchen_Kaninchen
+m1100_Ballon_Ballons
+f1000_Trennung_Trennungen
+n1100_Werkzeug_Werkzeuge
+f1000_Datei_Dateien
+n1100_Mehl_Mehle
+m1100_Lehrer_Lehrer
+f1000_Lehrerin_Lerherinnen
+n1100_Geschenk_Geschenke
+f1000_Stadt_Städte
+f1000_Dokument_Dokumente
+m1100_Beweis_Beweise
+f1000_Erdbeere_Erdbeeren
+n1100_Spiel_Spiele
+m1100_Bauer_Bauern
+f1000_Bäuerin_Bäuerinnen
+f1000_Spinne_Spinnen
+f1000_Angst_Ängste
+m1100_Sinn_Sinne
+f1000_Traube_Trauben
+f1000_Hausaufgaben_Hausaufgaben
+m1100_Student_Studenten
+f1000_Studentin_Studentinnen
+m1100_Bürgermeister_Bürgermeister
+f1000_Bürgermeisterin_Bürgermeisterinnen
+n1100_Passwort_passwörter
+f1000_Schwester_Schwestern
+n1100__Daten
+n1100_Gespräch_Gespräche
+n1100_Kaninchen_Kaninchen

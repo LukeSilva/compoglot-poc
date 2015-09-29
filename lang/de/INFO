@@ -10,3 +10,24 @@ Third number - Prepend zu to second verb
 
 Pastperfekt:
 First number - use sein / haben
+
+
+NOUNInfo:
+
+First Letter:
+  Gender
+Second Number:
+	0 : Add nothing in dative plural
+	1 : Add 'n' in dative plural
+	2 : Add 'en' in dative plural
+Third Number:
+	0 : Add nothing in genitive singular
+	1 : Add 's' in genitive singular
+	2 : Add 'es' in genitive singular
+Fourth Number:
+	0 : Don't add 'n' on every declension except for nom. sing.
+	1 : Add 'n' on every declension except for nom. sing.
+Fifth Number:
+	0 : Add nothing in dative singular.
+	1 : Add 'e' in dative singular.
+	
