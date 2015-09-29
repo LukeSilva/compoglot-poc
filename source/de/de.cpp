@@ -54,6 +54,6 @@ bool de::GotoLine(std::ifstream& File, int Line)
 std::string de::createSentence()
 {
 
-	return " ";
+	return GetNoun(Subjects[0],0) + " " + GetNoun(Subjects[0],1) + " " + GetNoun(Subjects[0],2) + " " + GetNoun(Subjects[0],3) + "\n";
 
 }
