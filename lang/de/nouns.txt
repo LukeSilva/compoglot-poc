@@ -109,7 +109,7 @@ m1100_Donnerstag_Donnerstage
 m1100_Freitag_Freitage
 m1100_Samstag_Samstage
 m1100_Sonntag_Sonntage
-m1100_Tag_Tage
+m1201_Tag_Tage
 m1100_Urlaub_Ferien
 m1100_Quadcopter_Quadcopters
 m1100_Rotor_Rotoren
@@ -500,7 +500,7 @@ m1100_Fisch_Fische
 
 
 
-f1000_Blume_Blumen
+f0000_Blume_Blumen
 n1100_Essen_Essen
 
 f1000_Kraft_Kräfte
