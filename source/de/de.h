@@ -18,8 +18,14 @@ class de : public Language
     bool GotoLine(std::ifstream& is, int Line);
     std::string GetSegment(std::ifstream& File);
 		
+		//Nouns
 		std::string GetNounString(Noun& n);
     std::string GetNoun(Noun& n, int Case);
+		int GetNounType(Noun& n);
+		
+		//Articles
+		std::string GetArticle(Noun& n);
+		
 	public:
     std::string createSentence();
 };

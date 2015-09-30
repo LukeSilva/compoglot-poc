@@ -4,6 +4,20 @@
 #include <iostream>
 #include <fstream>
 
+int de::GetNounType(Noun& n)
+{
+	std::ifstream is(DICTIONARY	DE_FOLDER "nouns.txt");
+	if (GotoLine(is, n.ID))
+	{
+		is.close();
+		return 'P';
+	}
+	int NounType = is.get();
+	is.close();
+	return NounType;
+}
+
+
 std::string de::GetNoun(Noun& n, int Case)
 {
 	std::ifstream is(DICTIONARY DE_FOLDER "nouns.txt");
@@ -78,6 +92,8 @@ std::string de::GetNoun(Noun& n, int Case)
 std::string de::GetNounString(Noun& n)
 {
 	std::string NounString;
+	NounString += GetArticle(n);
+	if (NounString != "") NounString += " ";
 	NounString += GetNoun(n,n.Data);
 	return NounString;
 }

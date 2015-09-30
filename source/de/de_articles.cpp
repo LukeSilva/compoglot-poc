@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 
-const std::string Articles[14][4][4] = 
+const std::string de::Articles[14][4][4] = 
 {
 	{	//Indefinite
 		{ "ein"			,"eine"			,"ein"			,"" 				},
@@ -17,6 +17,12 @@ const std::string Articles[14][4][4] =
 		{	"den"			,"die"			,"das"			,"die"			},
 		{	"dem"			,"der"			,"dem"			,"den" 			},
 		{ "des"			,"der"			,"des"			,"der"			}
+	},
+	{ //No article
+		{	""				,""					,""					,""					},
+		{	""				,""					,""					,""					},
+		{	""				,""					,""					,""					},
+		{	""				,""					,""					,""					}
 	},
 	{	//1st person possessive
 		{ "mein"		,"meine"		,"mein"			,"meine"		},
@@ -85,3 +91,13 @@ const std::string Articles[14][4][4] =
 		{	"dieses"	,"dieser"		,"dieses"		,"dieser"		}
 	}
 };
+
+std::string de::GetArticle(Noun& n)
+{
+	if (n.ArticleType < -2 || n.ArticleType > 11) return "";
+	int GenderID = 0;
+	if (GetNounType(n)=='n') GenderID = 2;
+	else if (GetNounType(n)=='f') GenderID = 1;
+	if (n.IsPlural) GenderID = 3;
+	return Articles[n.ArticleType+2][GenderID][n.Data];
+}
