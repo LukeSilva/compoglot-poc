@@ -54,9 +54,37 @@ bool de::GotoLine(std::ifstream& File, int Line)
 	return false;
 }
 
+void de::ParseVerb(int verb,int n)
+{
+	std::ifstream is(DICTIONARY DE_FOLDER "extverbs.txt");
+	if (GotoLine(is,n)) return;
+	std::string Line;
+	std::getline(is,Line);
+	is.close();
+	Parser* p=new Parser; 
+	p->string=(char*)Line.c_str();
+	p->ptr=0;
+	p->lookptr=0;
+	p->look=Line[0];
+	p->verb=verb;
+	p->expect('(',__FILE__,__LINE__);
+	p->_parse(this);
+ 
+}
+
 std::string de::createSentence()
 {
 
+	//First of all, parse the ExtVerb files
+	if(ExtVerb1!=0){
+		ParseVerb(0,ExtVerb1);
+		ExtVerb1=0;
+	}
+	if (ExtVerb2!=0){
+		ParseVerb(1,ExtVerb2);
+		ExtVerb2=0;
+	}
+	
 	std::string SentenceString = "";
 	
 	for (int i = 0; i <= NumFilledSubjects; ++i)

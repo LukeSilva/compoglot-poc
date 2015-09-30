@@ -17,6 +17,7 @@ class de : public Language
 		bool GotoSegment(std::ifstream& is, int Segment);
     bool GotoLine(std::ifstream& is, int Line);
     std::string GetSegment(std::ifstream& File);
+		void ParseVerb(int verb,int n);
 		
 		//Nouns
 		std::string GetNounString(Noun& n);
