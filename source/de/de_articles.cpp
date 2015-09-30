@@ -99,5 +99,5 @@ std::string de::GetArticle(Noun& n)
 	if (GetNounType(n)=='n') GenderID = 2;
 	else if (GetNounType(n)=='f') GenderID = 1;
 	if (n.IsPlural) GenderID = 3;
-	return Articles[n.ArticleType+2][GenderID][n.Data];
+	return Articles[n.ArticleType+2][n.Data][GenderID];
 }
