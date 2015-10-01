@@ -103,6 +103,13 @@ void de::FillVerbFuture(int VerbForm, int VerbNum)
 	EndVerbs += GetVerbPresentSimple(0,VerbNum);
 }
 
+void de::FillVerbFuturePerfekt(int VerbForm, int VerbNum)
+{
+	FillVerbPastPerfekt(0,VerbNum);
+	EndVerbs += " " + StartVerb;
+	StartVerb = GetVerbPresentSimple(VerbForm,14);
+}
+
 void de::FillVerbs(Noun& Subject, int VerbNum)
 {
 	
@@ -123,6 +130,7 @@ void de::FillVerbs(Noun& Subject, int VerbNum)
 	
 	//StartVerb = GetVerbPresentSimple(VerbForm,VerbNum);
 	//StartVerb = GetVerbPastSimple(VerbForm,VerbNum);
-	FillVerbFuture(VerbForm,VerbNum);
+	//FillVerbFuture(VerbForm,VerbNum);
+	FillVerbFuturePerfekt(VerbForm,VerbNum);
 	
 }
