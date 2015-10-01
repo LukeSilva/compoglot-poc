@@ -2,7 +2,7 @@ Verbs:
 First number - definition type
   0 : All forms defined
   1 : Standard conjugation
-  2 : Seperatable verb
+  2 : Seperatable verb (obsolete)
 Second number - Obsolete
 Third number - Prepend zu to second verb
   0 : Do not prepend zu
