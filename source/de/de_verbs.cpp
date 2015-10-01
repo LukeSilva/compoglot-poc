@@ -147,10 +147,36 @@ void de::FillVerbs(Noun& Subject, int VerbNum)
 	//Wenn es kein Subjekt gibt, nutzte die Infinitivverbform.
 	if (NumFilledSubjects < 0) VerbForm = 0;
 	
-	//StartVerb = GetVerbPresentSimple(VerbForm,VerbNum);
-	//StartVerb = GetVerbPastSimple(VerbForm,VerbNum);
-	//FillVerbFuture(VerbForm,VerbNum);
-	//FillVerbFuturePerfekt(VerbForm,VerbNum);
-	FillVerbPassiveFuture(VerbForm,VerbNum);
+	if (st < 2)
+	{
+		StartVerb = GetVerbPresentSimple(VerbForm,VerbNum);
+	}
+	else if (st < 10)
+	{
+		if (VerbNum < 3)
+			StartVerb = GetVerbPastSimple(VerbForm,VerbNum);
+		else
+			FillVerbPastPerfekt(VerbForm,VerbNum);
+	}
+	else if (st < 14)
+	{
+		FillVerbFuture(VerbForm,VerbNum);
+	}
+	else if (st < 16)
+	{
+		FillVerbFuturePerfekt(VerbForm,VerbNum);
+	}
+	else if (st < 18)
+	{
+		FillVerbPassivePresent(VerbForm,VerbNum);
+	}
+	else if (st < 26)
+	{
+		FillVerbPassivePast(VerbForm,VerbNum);
+	}
+	else if (st < 32)
+	{
+		FillVerbPassiveFuture(VerbForm,VerbNum);
+	}
 	
 }
