@@ -46,6 +46,29 @@ std::string de::GetVerbPresentSimple(int VerbForm, int VerbNum)
 	
 }
 
+std::string de::GetVerbPastParticiple(int VerbNum)
+{
+	std::ifstream is(DICTIONARY DE_FOLDER "verb_pastperfekt.txt");
+	if (GotoLine(is,VerbNum)) return "";
+	if (GotoSegment(is,1)) return "";
+	std::string Segment = GetSegment(is);
+	return Segment;
+}
+
+void de::FillVerbPastPerfekt(int VerbForm, int VerbNum)
+{
+	std::ifstream is (DICTIONARY DE_FOLDER "verb_pastperfekt.txt");
+	if (GotoLine(is,VerbNum)) return;
+	int Data = is.get();
+	is.close();
+	if (Data == '0')
+		StartVerb = GetVerbPresentSimple(VerbForm,2);
+	else if (Data == '1')
+		StartVerb = GetVerbPresentSimple(VerbForm,1);
+	
+	EndVerbs += GetVerbPastParticiple(VerbNum);	
+}
+
 void de::FillVerbs(Noun& Subject, int VerbNum)
 {
 	
@@ -64,6 +87,7 @@ void de::FillVerbs(Noun& Subject, int VerbNum)
 	//Wenn es kein Subjekt gibt, nutzte die Infinitivverbform.
 	if (NumFilledSubjects < 0) VerbForm = 0;
 	
-	StartVerb = GetVerbPresentSimple(VerbForm,VerbNum);
+	//StartVerb = GetVerbPresentSimple(VerbForm,VerbNum);
+	FillVerbPastPerfekt(VerbForm,VerbNum);
 	
 }

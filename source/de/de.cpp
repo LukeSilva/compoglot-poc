@@ -74,7 +74,8 @@ void de::ParseVerb(int verb,int n)
 
 std::string de::createSentence()
 {
-
+	StartVerb = "";
+	EndVerbs = "";
 	//First of all, parse the ExtVerb files
 	if(ExtVerb1!=0){
 		ParseVerb(0,ExtVerb1);
@@ -85,9 +86,10 @@ std::string de::createSentence()
 		ExtVerb2=0;
 	}
 	
+	FillVerbs(Subjects[0],Verb1);
+	
 	std::string SentenceString = "";
 	
-	FillVerbs(Subjects[0],Verb1);
 	
 	for (int i = 0; i <= NumFilledSubjects; ++i)
 	{
@@ -100,8 +102,10 @@ std::string de::createSentence()
 	
 	if (NumFilledSubjects >= 0) SentenceString += " ";
 	
-	SentenceString += StartVerb;
+	SentenceString += StartVerb + " ";
 	
+	
+	SentenceString += EndVerbs;
 	
 	return SentenceString;
 
