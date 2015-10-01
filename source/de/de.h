@@ -27,6 +27,13 @@ class de : public Language
 		//Articles
 		std::string GetArticle(Noun& n);
 		
+		//Verbs
+		std::string GetVerbPresentSimple(int VerbForm, int VerbNum);
+		void FillVerbs(Noun& Subject, int VerbNum);
+		
+		std::string StartVerb;
+		std::string EndVerbs;
+		
 	public:
     std::string createSentence();
 };

@@ -87,6 +87,8 @@ std::string de::createSentence()
 	
 	std::string SentenceString = "";
 	
+	FillVerbs(Subjects[0],Verb1);
+	
 	for (int i = 0; i <= NumFilledSubjects; ++i)
 	{
 		
@@ -95,6 +97,12 @@ std::string de::createSentence()
 		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SentenceString += " " + Oder + " ";
 		SentenceString += GetNounString(Subjects[i]);
 	}
+	
+	if (NumFilledSubjects >= 0) SentenceString += " ";
+	
+	SentenceString += StartVerb;
+	
+	
 	return SentenceString;
 
 }
