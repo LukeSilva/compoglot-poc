@@ -92,9 +92,12 @@ std::string de::GetNoun(Noun& n, int Case)
 std::string de::GetNounString(Noun& n)
 {
 	std::string NounString;
-	NounString += GetArticle(n);
-	if (NounString != "") NounString += " ";
+	std::string Article = GetArticle(n);
+	if (Article != "") NounString += Article + " ";
 	NounString += GetNoun(n,n.Data);
+	
+	
+	
 	return NounString;
 }
 
