@@ -57,7 +57,7 @@ std::string de::GetVerbPastParticiple(int VerbNum)
 
 void de::FillVerbPastPerfekt(int VerbForm, int VerbNum)
 {
-	std::ifstream is (DICTIONARY DE_FOLDER "verb_pastperfekt.txt");
+	std::ifstream is(DICTIONARY DE_FOLDER "verb_pastperfekt.txt");
 	if (GotoLine(is,VerbNum)) return;
 	int Data = is.get();
 	is.close();
@@ -67,6 +67,34 @@ void de::FillVerbPastPerfekt(int VerbForm, int VerbNum)
 		StartVerb = GetVerbPresentSimple(VerbForm,1);
 	
 	EndVerbs += GetVerbPastParticiple(VerbNum);	
+}
+
+std::string de::GetVerbPastSimple(int VerbForm, int VerbNum)
+{
+	std::ifstream is(DICTIONARY DE_FOLDER "verb_simple.txt");
+	if (GotoLine(is,VerbNum)) return "";
+	int Data = is.get();
+	if (Data == '1')
+	{
+		is.close();
+		FillVerbPastPerfekt(VerbForm,VerbNum);
+		return StartVerb;
+	}
+	if (GotoSegment(is,1)) return "";
+	std::string Segment = GetSegment(is);
+	is.close();
+	if (VerbForm == 2)
+		Segment += "st";
+	else if (VerbForm == 6 || VerbForm == 8 || VerbForm == 9)
+	{
+		if (Segment[Segment.length()-1]!='e')
+			Segment += "e";
+		Segment += "n";
+	}
+	else if (VerbForm == 7)
+		Segment += "t";
+	
+	return Segment;
 }
 
 void de::FillVerbs(Noun& Subject, int VerbNum)
@@ -88,6 +116,6 @@ void de::FillVerbs(Noun& Subject, int VerbNum)
 	if (NumFilledSubjects < 0) VerbForm = 0;
 	
 	//StartVerb = GetVerbPresentSimple(VerbForm,VerbNum);
-	FillVerbPastPerfekt(VerbForm,VerbNum);
+	StartVerb = GetVerbPastSimple(VerbForm,VerbNum);
 	
 }
