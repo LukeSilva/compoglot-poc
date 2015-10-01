@@ -31,6 +31,7 @@ class de : public Language
 		std::string GetVerbPresentSimple(int VerbForm, int VerbNum);
 		std::string GetVerbPastParticiple(int VerbNum);
 		std::string GetVerbPastSimple(int VerbForm, int VerbNum);
+		void FillVerbFuture(int VerbForm, int VerbNum);
 		void FillVerbPastPerfekt(int VerbForm, int VerbNum);
 		void FillVerbs(Noun& Subject, int VerbNum);
 		

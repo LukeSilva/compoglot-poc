@@ -97,6 +97,12 @@ std::string de::GetVerbPastSimple(int VerbForm, int VerbNum)
 	return Segment;
 }
 
+void de::FillVerbFuture(int VerbForm, int VerbNum)
+{
+	StartVerb = GetVerbPresentSimple(VerbForm,14);
+	EndVerbs += GetVerbPresentSimple(0,VerbNum);
+}
+
 void de::FillVerbs(Noun& Subject, int VerbNum)
 {
 	
@@ -116,6 +122,7 @@ void de::FillVerbs(Noun& Subject, int VerbNum)
 	if (NumFilledSubjects < 0) VerbForm = 0;
 	
 	//StartVerb = GetVerbPresentSimple(VerbForm,VerbNum);
-	StartVerb = GetVerbPastSimple(VerbForm,VerbNum);
+	//StartVerb = GetVerbPastSimple(VerbForm,VerbNum);
+	FillVerbFuture(VerbForm,VerbNum);
 	
 }
