@@ -36,6 +36,7 @@ class de : public Language
 		void FillVerbPastPerfekt(int VerbForm, int VerbNum);
 		void FillVerbPassivePresent(int VerbForm,int VerbNum);
 		void FillVerbPassivePast(int VerbForm, int VerbNum);
+		void FillVerbPassiveFuture(int VerbForm, int VerbNum);
 		void FillVerbs(Noun& Subject, int VerbNum);
 		
 		std::string StartVerb;
