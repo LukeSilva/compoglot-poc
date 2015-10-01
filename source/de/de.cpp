@@ -90,19 +90,37 @@ std::string de::createSentence()
 	
 	std::string SentenceString = "";
 	
-	
+	std::string SubjectString = "";
 	for (int i = 0; i <= NumFilledSubjects; ++i)
 	{
 		
-		if (i!=0 && i < NumFilledSubjects) SentenceString +=", ";
-		if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 0) SentenceString+= " " + Und + " ";
-		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SentenceString += " " + Oder + " ";
-		SentenceString += GetNounString(Subjects[i]);
+		if (i!=0 && i < NumFilledSubjects) SubjectString +=", ";
+		if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 0) SubjectString+= " " + Und + " ";
+		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SubjectString += " " + Oder + " ";
+		SubjectString += GetNounString(Subjects[i]);
 	}
 	
-	if (NumFilledSubjects >= 0) SentenceString += " ";
+	if (SubjectString.compare("")!=0)
+		SentenceString += SubjectString + " ";
 	
 	SentenceString += StartVerb + " ";
+	
+	std::string ObjectsString = "";
+	
+	for (int objid = 0; objid < 8; ++objid)
+	{
+		for (int i = 0; i <= NumFilledObjects[objid]; ++i)
+		{
+				if (i != 0 && i < NumFilledObjects[objid]) ObjectsString += ", ";
+				if (i == NumFilledObjects[objid] && NumFilledObjects[objid] > 0 && ObjConjunctionType[objid] == 0) ObjectsString += " " + Und + " ";
+				else if (i == NumFilledObjects[objid] && NumFilledObjects[objid] > 0 && ObjConjunctionType[objid] == 1) ObjectsString += " " + Oder + " ";
+				ObjectsString += GetNounString(Objects[objid][i]);
+		}		
+		if (NumFilledObjects[objid] >= 0) ObjectsString += " ";
+	}
+	
+	SentenceString += ObjectsString;
+	
 	
 	
 	SentenceString += EndVerbs;
