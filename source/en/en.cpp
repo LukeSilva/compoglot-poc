@@ -89,11 +89,6 @@ std::string en::createSentence()
 		ExtVerb2=0;
 	}
 
-	//Print debugging information, if enabled
-#ifdef DEBUG
-	std::cout << "[EN] createSentence()" << std::endl;
-#endif
-
 	//Create blank sentence
 	std::string Sentence = "";
 
@@ -108,9 +103,6 @@ std::string en::createSentence()
 	//Loop through the subjects, adding them
 	for (int i = 0; i < 16; ++i)
 	{
-#ifdef SUPER_DEBUG
-		std::cout << "[EN] Noun: " << i << std::endl;
-#endif
 		if (i!=0 && i < NumFilledSubjects) SubjectString +=", ";
 		if (i==NumFilledSubjects && NumFilledSubjects > 0) SubjectString += " and ";
 		SubjectString +=	GetNounString(&Subjects[i],false);
@@ -144,9 +136,6 @@ std::string en::createSentence()
 	{
 		for (int i = 0; i < 16; ++i)
 		{
-#ifdef SUPER_DEBUG
-			std::cout << "[EN] Obj " << objid << " Noun: " << i << std::endl;
-#endif
 			if (i != 0 && i < NumFilledObjects[objid]) Sentence += ", ";
 			if (NumFilledObjects[objid] > 0 && i == NumFilledObjects[objid]) Sentence += " and ";
 			Sentence += GetNounString(&Objects[objid][i],true);
