@@ -16,6 +16,30 @@ std::string de::GetVerbPresentSimple(int VerbForm, int VerbNum)
 		is.close();
 		return Segment;
 	}
+	else
+	{
+		if (GotoSegment(is,1)) return "";
+		std::string RootVerb = GetSegment(is);
+		is.close();
+		
+		if (!(VerbForm == 0 || VerbForm == 6 || VerbForm == 8 || VerbForm == 9))
+		{
+			if (RootVerb[RootVerb.length()-1]=='n')
+				RootVerb.pop_back();
+			if (RootVerb[RootVerb.length()-1]=='e')
+				RootVerb.pop_back();
+		}
+		
+		std::string ConjVerb = RootVerb;
+		if (VerbForm == 1) //Ich
+			ConjVerb += "e";
+		else if (VerbForm == 2) //Du
+			ConjVerb += "st";
+		else if (VerbForm == 3 || VerbForm == 4 || VerbForm == 5 || VerbForm == 7) // er/sie/es/ihr
+			ConjVerb += "t";
+		
+		return ConjVerb;
+	}
 	
 	is.close();
 	return "";
