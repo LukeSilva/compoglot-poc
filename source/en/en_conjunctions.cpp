@@ -7,11 +7,6 @@
 std::string en::GetConjunction(int ConjunctionNum)
 {
 	if (ConjunctionNum < 0) return "";
-
-#ifdef DEBUG
-	std::cout << "[EN] GetConjunction(int ConjunctionNum = " << ConjunctionNum << " )" << std::endl;
-#endif
-	
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "conjunctions");
 	if(GotoLine(is,ConjunctionNum)) return "";
 	std::string Conjunction = GetSegment(is);
@@ -22,9 +17,6 @@ std::string en::GetConjunction(int ConjunctionNum)
 
 std::string en::GetSubClause()
 {
-#ifdef DEBUG
-	std::cout << "[EN] GetSubClause()" << std::endl;
-#endif
 	std::string SubClauseString = GetConjunction(Conjunction);
 	SubClauseString += " ";
 	SubClause->IsClause = true;
