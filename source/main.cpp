@@ -32,8 +32,7 @@ Language* getLanguageFromStringId(char* Id){
 int main(int argc, char *argv[])
 {
 	if (argc<3){
-		printf("Usage: %s <mode> <language>\n",argv[0]);
-		std::cerr << "Usage: " << argv[0] << "<mode> <language>" << std::endl;
+		std::cerr << "Usage: " << argv[0] << " <mode> <language>" << std::endl;
 		return -1;
 	}
 	if (std::string(argv[1]).compare("cmd")==0)
@@ -47,7 +46,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		std::cerr << "Unknown mode " << argv[1] << std::endl;
-		std::cerr << "Usage: " << argv[0] << "<mode> <language>" << std::endl;
+		std::cerr << "Usage: " << argv[0] << " <mode> <language>" << std::endl;
 		return -1;
 	}
 	return 0;
