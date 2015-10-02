@@ -80,6 +80,6 @@ then
 	echo
 	echo "Linking..."
 	echo
-	g++ -o lang *.o
-	cp lang ../examples/
+	g++ -o compoglot *.o
+	cp compoglot ../examples/
 fi
