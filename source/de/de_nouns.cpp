@@ -93,7 +93,9 @@ std::string de::GetNounString(Noun& n)
 {
 	std::string NounString;
 	std::string Article = GetArticle(n);
+	std::string Numeral = GetNumeral(n);
 	if (Article != "") NounString += Article + " ";
+	if (Numeral.compare("")!=0) NounString += Numeral + " ";
 	NounString += GetNoun(n,n.Data);
 	
 	

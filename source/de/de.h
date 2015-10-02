@@ -11,6 +11,7 @@ class de : public Language
 		static const std::string Und;
 		static const std::string Oder;
 		static const std::string Articles[14][4][4];
+		static const std::string Numerals[12];
 		
 		
 		//Boilerplate
@@ -18,6 +19,9 @@ class de : public Language
     bool GotoLine(std::ifstream& is, int Line);
     std::string GetSegment(std::ifstream& File);
 		void ParseVerb(int verb,int n);
+		
+		//Numerals
+		std::string GetNumeral(Noun& n);
 		
 		//Nouns
 		std::string GetNounString(Noun& n);
