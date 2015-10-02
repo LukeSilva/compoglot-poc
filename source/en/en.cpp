@@ -101,7 +101,7 @@ std::string en::createSentence()
 	std::string SubjectString = "";
 
 	//Loop through the subjects, adding them
-	for (int i = 0; i < 16; ++i)
+	for (int i = 0; i <= NumFilledSubjects; ++i)
 	{
 		if (i!=0 && i < NumFilledSubjects) SubjectString +=", ";
 		if (i==NumFilledSubjects && NumFilledSubjects > 0) SubjectString += " and ";
@@ -134,7 +134,7 @@ std::string en::createSentence()
 	//Loop through the objects, adding them to the sentence
 	for (int objid = 0; objid < 8; ++objid)
 	{
-		for (int i = 0; i < 16; ++i)
+		for (int i = 0; i <= NumFilledObjects[objid]; ++i)
 		{
 			if (i != 0 && i < NumFilledObjects[objid]) Sentence += ", ";
 			if (NumFilledObjects[objid] > 0 && i == NumFilledObjects[objid]) Sentence += " and ";

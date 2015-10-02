@@ -9,9 +9,6 @@ std::string en_Numerals[] = {"", "zero", "one", "two", "three", "four", "five", 
 
 std::string en::GetNumeral(Noun* NounObj,bool ForceN)
 {
-#ifdef DEBUG
-	std::cout << "[EN] GetNumeral(Noun* NounObj, bool ForceN = " << ForceN << " )" << std::endl;
-#endif
 	if (!ForceN && NounObj->Numeral <= 10 && NounObj->Numeral >= -10)
 	{
 		int ID = NounObj->Numeral < 0 ? -NounObj->Numeral : NounObj->Numeral;
@@ -22,7 +19,7 @@ std::string en::GetNumeral(Noun* NounObj,bool ForceN)
 	else
 	{
 		std::ostringstream Stream;
-		Stream << NounObj->Numeral;
+		Stream << NounObj->Numeral + ((NounObj->Numeral < 0) ? 1 : -1);
 		return Stream.str();
 	}
 	return "";
