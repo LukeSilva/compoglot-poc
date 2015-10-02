@@ -117,6 +117,22 @@ std::string de::GetNounString(Noun& n)
 		NounString += " " + GetNounString(*n.GenitiveNoun);
 	}
 	
+	if (n.ShouldUseRelativeClause)
+	{
+		int CaseRMarker = 0;
+		if (n.RelativeClauseObj != 0)
+			CaseRMarker = n.RelativeClause->Objects[n.RelativeClauseObj-1][0].Data;
+		else
+			CaseRMarker = n.RelativeClause->Subjects[0].Data;
+		std::string RelativeClauseString = "";
+		Noun a = n;
+		a.Data = CaseRMarker;
+		n.RelativeClause->IsClause = true;
+		RelativeClauseString += GetArticle(a);
+		RelativeClauseString += " " + n.RelativeClause->createSentence();
+		NounString += ", " + RelativeClauseString;
+	}
+	
 	return NounString;
 }
 

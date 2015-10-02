@@ -65,6 +65,7 @@ void clearNoun(Noun* n)
 
 }
 void Language::NewSentence(){
+	Data = 0;
 	Capital = true;
 	Punctuation = true;
 	Question = 0;

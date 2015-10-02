@@ -130,7 +130,7 @@ std::string de::createSentence()
 		}		
 		if (NumFilledObjects[objid] >= 0) ObjectsString += " ";
 	}
-	while (ObjectsString[ObjectsString.length()-1]==' ') ObjectsString.pop_back();
+	
 	SentenceString += ObjectsString;
 	
 	if (Negate)
