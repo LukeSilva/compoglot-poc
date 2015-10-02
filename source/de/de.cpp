@@ -140,10 +140,23 @@ std::string de::createSentence()
 	if (IsClause && !VerbFirst)
 		SentenceString += " " + StartVerb;
 	
+	while (SentenceString[SentenceString.length()-1]==' ')
+		SentenceString.pop_back();
 	
 	if (Conjunction && SubClause != NULL)
 	{
 		SentenceString += GetSubClause();
+	}
+	
+	while (SentenceString[SentenceString.length()-1]==' ')
+		SentenceString.pop_back();
+	
+	if	(Punctuation && !IsClause)
+	{
+		if (Question==0)
+			SentenceString+=".";
+		else
+			SentenceString+="?";
 	}
 	
 	return SentenceString;
