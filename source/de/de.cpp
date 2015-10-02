@@ -159,6 +159,26 @@ std::string de::createSentence()
 			SentenceString+="?";
 	}
 	
+	if (Capital && !IsClause)
+	{
+		char FirstLetter = SentenceString.at(0);
+		
+		if (FirstLetter >= 'a' && FirstLetter <= 'z')
+		{
+			FirstLetter -= ('a' - 'A');
+			SentenceString[0] = FirstLetter;
+		}
+		else if (FirstLetter == 0xc3)
+		{
+			if (SentenceString.at(1)==0xbc) // ü
+				SentenceString[1] = 0x9c; // Ü
+			else if (SentenceString.at(1) == 0xa4) // ä
+				SentenceString[1] = 0x84; // Ä
+			else if (SentenceString.at(1) == 0xb6)
+				SentenceString[1] = 0x96; // Ö
+		}
+	}
+	
 	return SentenceString;
 
 }
