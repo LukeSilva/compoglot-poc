@@ -30,6 +30,9 @@ class de : public Language
 		
 		//Articles
 		std::string GetArticle(Noun& n);
+	
+		//Prepositions
+		std::string GetPrepos(Noun& n);
 		
 		//Verbs
 		std::string GetVerbPresentSimple(int VerbForm, int VerbNum);

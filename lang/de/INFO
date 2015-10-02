@@ -31,3 +31,14 @@ Fifth Number:
 	0 : Add nothing in dative singular.
 	1 : Add 'e' in dative singular.
 	
+
+Prepositions:
+First Numer:
+	0: Don't care about case
+	1: Set the following case
+Second Number:
+	0: Nominative
+	1: Accusative
+	2: Dative
+	3: Genitive
+

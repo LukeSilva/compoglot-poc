@@ -92,9 +92,11 @@ std::string de::GetNoun(Noun& n, int Case)
 std::string de::GetNounString(Noun& n)
 {
 	std::string NounString;
+	std::string Preposition = GetPrepos(n);
 	std::string Article = GetArticle(n);
 	std::string Numeral = GetNumeral(n);
-	if (Article != "") NounString += Article + " ";
+	if (Preposition.compare("")!=0) NounString += Preposition + " ";
+	if (Article.compare("")!=0) NounString += Article + " ";
 	if (Numeral.compare("")!=0) NounString += Numeral + " ";
 	NounString += GetNoun(n,n.Data);
 	
