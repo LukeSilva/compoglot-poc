@@ -7,7 +7,7 @@
 
 const std::string de::Und = "und";
 const std::string de::Oder = "oder";
-
+const std::string de::QuestionMarkers[6] = {"wer","was","wann","wo","warum","wie"};
 
 std::string de::GetSegment(std::ifstream& File)
 {
@@ -74,7 +74,14 @@ void de::ParseVerb(int verb,int n)
 
 std::string de::createSentence()
 {
+	std::string SentenceString = "";
+	
 	bool VerbFirst = Data&0x01;
+	if (Question != 0) VerbFirst = true;
+	if (Question > 1 && Question < 8)
+	{
+		SentenceString += QuestionMarkers[Question - 2] + " ";
+	}
 	StartVerb = "";
 	EndVerbs = "";
 	//First of all, parse the ExtVerb files
@@ -94,9 +101,6 @@ std::string de::createSentence()
 	if (VerbString.compare("")!=0)
 		EndVerbs += VerbString + " ";
 	FillVerbs(Subjects[0],Verb1);
-	
-	
-	std::string SentenceString = "";
 	
 	std::string SubjectString = "";
 	for (int i = 0; i <= NumFilledSubjects; ++i)

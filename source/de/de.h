@@ -13,6 +13,7 @@ class de : public Language
 		static const std::string Articles[14][4][4];
 		static const std::string Numerals[12];
 		static const std::string AdjectiveEndings[3][4][4];
+		static const std::string QuestionMarkers[6];
 		
 		
 		//Boilerplate
