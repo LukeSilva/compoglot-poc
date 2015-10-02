@@ -74,6 +74,7 @@ void de::ParseVerb(int verb,int n)
 
 std::string de::createSentence()
 {
+	bool VerbFirst = Data&0x01;
 	StartVerb = "";
 	EndVerbs = "";
 	//First of all, parse the ExtVerb files
@@ -107,10 +108,14 @@ std::string de::createSentence()
 		SubjectString += GetNounString(Subjects[i]);
 	}
 	
+	if (VerbFirst)
+		SentenceString += StartVerb + " ";
+	
 	if (SubjectString.compare("")!=0)
 		SentenceString += SubjectString + " ";
 	
-	SentenceString += StartVerb + " ";
+	if (!IsClause && !VerbFirst)
+		SentenceString += StartVerb + " ";
 	
 	std::string ObjectsString = "";
 	
@@ -125,13 +130,21 @@ std::string de::createSentence()
 		}		
 		if (NumFilledObjects[objid] >= 0) ObjectsString += " ";
 	}
-	
+	while (ObjectsString[ObjectsString.length()-1]==' ') ObjectsString.pop_back();
 	SentenceString += ObjectsString;
 	
 	if (Negate)
 		SentenceString += "nicht ";
 	
 	SentenceString += EndVerbs;
+	if (IsClause && !VerbFirst)
+		SentenceString += " " + StartVerb;
+	
+	
+	if (Conjunction && SubClause != NULL)
+	{
+		SentenceString += GetSubClause();
+	}
 	
 	return SentenceString;
 

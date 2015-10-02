@@ -50,6 +50,9 @@ class de : public Language
 		void FillVerbPassiveFuture(int VerbForm, int VerbNum);
 		void FillVerbs(Noun& Subject, int VerbNum);
 		
+		//SubClauses
+		std::string GetSubClause();
+		
 		std::string StartVerb;
 		std::string EndVerbs;
 		

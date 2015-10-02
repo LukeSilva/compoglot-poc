@@ -44,6 +44,7 @@ class Language
 protected:
 	int adverbs[NUM_ADVERBS];
 public:
+	int Data;
 	int st;
 	int Verb1;
 	int Verb2;

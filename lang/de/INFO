@@ -42,3 +42,6 @@ Second Number:
 	2: Dative
 	3: Genitive
 
+Sentence Data bit fields:
+	1: Verb comes before subject (questions / clauses)
+
