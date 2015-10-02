@@ -109,7 +109,13 @@ std::string de::GetNounString(Noun& n)
 	if (Adjectives.compare("")!=0) NounString += Adjectives;
 	NounString += GetNoun(n,n.Data);
 	
-	
+	if (n.ShouldUseGenitive)
+	{
+		if (n.GenitiveNoun->ArticleType == 0)
+			n.GenitiveNoun->ArticleType = -1;
+		n.GenitiveNoun->Data = 3;
+		NounString += " " + GetNounString(*n.GenitiveNoun);
+	}
 	
 	return NounString;
 }
