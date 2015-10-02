@@ -6,6 +6,7 @@
 
 std::string de::GetVerbPresentSimple(int VerbForm, int VerbNum)
 {
+	if (VerbNum == 0) return "";
 	std::ifstream is( DICTIONARY DE_FOLDER "verb_present.txt");
 	if (GotoLine(is,VerbNum)) return "";
 	int Data = is.get();

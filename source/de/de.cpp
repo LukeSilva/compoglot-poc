@@ -85,8 +85,15 @@ std::string de::createSentence()
 		ParseVerb(1,ExtVerb2);
 		ExtVerb2=0;
 	}
-	
+	std::string VerbString;
+	VerbString = GetVerbPresentSimple(0, Verb3);
+	if (VerbString.compare("")!=0)
+		EndVerbs += VerbString + " ";
+	VerbString = GetVerbPresentSimple(0, Verb2);
+	if (VerbString.compare("")!=0)
+		EndVerbs += VerbString + " ";
 	FillVerbs(Subjects[0],Verb1);
+	
 	
 	std::string SentenceString = "";
 	
