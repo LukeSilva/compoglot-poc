@@ -98,6 +98,15 @@ std::string de::GetNounString(Noun& n)
 	if (Preposition.compare("")!=0) NounString += Preposition + " ";
 	if (Article.compare("")!=0) NounString += Article + " ";
 	if (Numeral.compare("")!=0) NounString += Numeral + " ";
+	std::string Adjectives;
+	for (int i = 0; i < 16; ++i)
+	{
+		if (n.Adjectives[i]!=0)
+		{
+			Adjectives += GetAdjective(n,n.Adjectives[i]) + " ";
+		}
+	}
+	if (Adjectives.compare("")!=0) NounString += Adjectives;
 	NounString += GetNoun(n,n.Data);
 	
 	

@@ -12,6 +12,7 @@ class de : public Language
 		static const std::string Oder;
 		static const std::string Articles[14][4][4];
 		static const std::string Numerals[12];
+		static const std::string AdjectiveEndings[3][4][4];
 		
 		
 		//Boilerplate
@@ -33,6 +34,9 @@ class de : public Language
 	
 		//Prepositions
 		std::string GetPrepos(Noun& n);
+		
+		//Adjectives
+		std::string GetAdjective(Noun& n, int AdjectiveNum);
 		
 		//Verbs
 		std::string GetVerbPresentSimple(int VerbForm, int VerbNum);
