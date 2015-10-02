@@ -128,7 +128,8 @@ std::string de::createSentence()
 	
 	SentenceString += ObjectsString;
 	
-	
+	if (Negate)
+		SentenceString += "nicht ";
 	
 	SentenceString += EndVerbs;
 	
