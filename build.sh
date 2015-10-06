@@ -3,6 +3,7 @@ BASEFILES="cmdparse.cpp fileparse.cpp main.cpp Language.cpp general.cpp"
 PARSERFILES="parser.cpp parser_io.cpp parse_noun.cpp"
 DEFILES="de.cpp de_nouns.cpp de_articles.cpp de_verbs.cpp de_numerals.cpp de_prepos.cpp de_adjectives.cpp de_conjunctions.cpp"
 ENFILES="en.cpp en_nouns.cpp en_articles.cpp en_numerals.cpp en_verbs.cpp en_passiveverbs.cpp en_prepos.cpp en_adjectives.cpp en_conjunctions.cpp"
+EOFILES="eo.cpp eo_nouns.cpp"
 FILEPREFIX="../source/"
 base()
 {
@@ -25,6 +26,18 @@ parser()
 	do
 		echo $file
 		g++ $CFLAGS -c "${FILEPREFIX}parser/$file"
+	done
+}
+
+eo()
+{
+	echo
+	echo "Compiling eo..."
+	echo
+	for file in $EOFILES
+	do
+		echo $file
+		g++ $CFLAGS -c "${FILEPREFIX}eo/$file"
 	done
 }
 
@@ -70,6 +83,7 @@ then
 	parser
 	en
 	de
+	eo
 else
 	$PART
 fi
