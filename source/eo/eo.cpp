@@ -46,5 +46,5 @@ void eo::ParseVerb(int verb,int n)
 
 std::string eo::createSentence()
 {
-	return "";
+	return GetNoun(Subjects[0],false) + " " + GetNoun(Subjects[0],true);
 }

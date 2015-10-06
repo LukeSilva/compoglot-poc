@@ -10,6 +10,8 @@ private:
     bool GotoLine(std::ifstream& is, int Line);
     std::string GetSegment(std::ifstream& File);
 		void ParseVerb(int verb,int n);
+		
+		std::string GetNoun(Noun& n, bool Accusative);
 public:
 		std::string createSentence();
 };

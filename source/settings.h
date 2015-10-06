@@ -11,6 +11,8 @@
 #define EN_FOLDER "en/"
 #define EN_EN_FOLDER "en/"
 #define DE_FOLDER "de/"
+#define EO_FOLDER "eo/"
+
 #define BUFFER_SIZE 256
 #define NUM_BUF 256
 #define NUM_ADVERBS 5
