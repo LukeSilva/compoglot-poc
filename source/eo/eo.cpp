@@ -5,6 +5,9 @@
 #include <iostream>
 #include <fstream>
 
+const std::string eo::And = "kaj";
+const std::string eo::Or = "aŭ";
+
 std::string eo::GetSegment(std::ifstream& File)
 {
 	std::string Segment = "";
@@ -46,5 +49,18 @@ void eo::ParseVerb(int verb,int n)
 
 std::string eo::createSentence()
 {
-	return GetNoun(Subjects[0],false) + " " + GetNoun(Subjects[0],true);
+	//return GetNoun(Subjects[0],false) + " " + GetNoun(Subjects[0],true);
+	std::string Sentence;
+	
+	std::string SubjectString = "";
+	for (int i = 0; i <= NumFilledSubjects; ++i)
+	{
+		
+		if (i!=0 && i < NumFilledSubjects) SubjectString +=", ";
+		if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 0) SubjectString+= " " + And + " ";
+		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SubjectString += " " + Or + " ";
+		SubjectString += GetNoun(Subjects[i],false);
+	}
+	Sentence += SubjectString;
+	return Sentence;
 }
