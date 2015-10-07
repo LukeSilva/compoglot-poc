@@ -72,7 +72,8 @@ std::string eo::createSentence()
 	}
 	Sentence += SubjectString + " ";
 	
-	Sentence += GetVerb(Verb1) + " ";
+	if (Verb1 > 0)
+		Sentence += GetVerb(Verb1) + " ";
 	if (Verb2 > 0)
 		Sentence += GetVerbForm(Verb2,FORM_INFINITIVE) + " ";
 	
