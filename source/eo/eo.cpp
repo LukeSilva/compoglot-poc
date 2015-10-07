@@ -30,7 +30,7 @@ bool eo::GotoLine(std::ifstream& File, int Line)
 
 void eo::ParseVerb(int verb,int n)
 {
-	std::ifstream is(DICTIONARY DE_FOLDER "extverbs.txt");
+	std::ifstream is(DICTIONARY EO_FOLDER "extverbs.txt");
 	if (GotoLine(is,n)) return;
 	std::string Line;
 	std::getline(is,Line);
@@ -49,7 +49,16 @@ void eo::ParseVerb(int verb,int n)
 
 std::string eo::createSentence()
 {
-	//return GetNoun(Subjects[0],false) + " " + GetNoun(Subjects[0],true);
+	
+	if(ExtVerb1!=0){
+		ParseVerb(0,ExtVerb1);
+		ExtVerb1=0;
+	}
+	if (ExtVerb2!=0){
+		ParseVerb(1,ExtVerb2);
+		ExtVerb2=0;
+	}
+	
 	std::string Sentence;
 	
 	std::string SubjectString = "";
@@ -61,6 +70,11 @@ std::string eo::createSentence()
 		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SubjectString += " " + Or + " ";
 		SubjectString += GetNoun(Subjects[i],false);
 	}
-	Sentence += SubjectString;
+	Sentence += SubjectString + " ";
+	
+	Sentence += GetVerb(Verb1) + " ";
+	if (Verb2 > 0)
+		Sentence += GetVerbForm(Verb2,FORM_INFINITIVE) + " ";
+	
 	return Sentence;
 }
