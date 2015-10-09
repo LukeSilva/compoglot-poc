@@ -68,7 +68,7 @@ std::string eo::createSentence()
 		if (i!=0 && i < NumFilledSubjects) SubjectString +=", ";
 		if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 0) SubjectString+= " " + And + " ";
 		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SubjectString += " " + Or + " ";
-		SubjectString += GetNoun(Subjects[i],false);
+		SubjectString += GetNounString(Subjects[i]);
 	}
 	Sentence += SubjectString + " ";
 	

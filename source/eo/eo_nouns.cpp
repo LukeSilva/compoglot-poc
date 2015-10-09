@@ -16,3 +16,16 @@ std::string eo::GetNoun(Noun& n, bool Accusative)
 	if (Accusative) Segment += "n";
 	return Segment;
 }
+
+std::string eo::GetNounString(Noun& n)
+{
+	std::string NounString = GetNoun(n,n.Data);
+	std::string ArticleString = GetArticle(n);
+	std::string Complete;
+	
+	if (ArticleString.compare(""))
+		Complete += ArticleString + " ";
+	Complete += NounString;
+	
+	return Complete;
+}
