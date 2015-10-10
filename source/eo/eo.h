@@ -43,6 +43,8 @@ private:
 	std::string GetNumeral(Noun& n, bool ForceN);
 	
 	std::string GetPreposition(Noun& n);
+	
+	std::string GetAdjective(Noun& n, int AdjectiveNum);
 public:
 	std::string createSentence();
 };

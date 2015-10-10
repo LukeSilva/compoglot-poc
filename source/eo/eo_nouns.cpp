@@ -30,6 +30,15 @@ std::string eo::GetNounString(Noun& n)
 		Complete += ArticleString + " ";
 	if (NumeralString.compare(""))
 		Complete += NumeralString + " ";
+	
+	for (int i = 0; i < 16; ++i)
+	{
+		std::string Adjective = GetAdjective(n,n.Adjectives[i]);
+		if (Adjective.compare("")) 
+			Complete += Adjective + " ";
+	}
+	
+	
 	Complete += NounString;
 	
 	return Complete;
