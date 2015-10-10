@@ -41,6 +41,8 @@ private:
 	std::string GetArticle(Noun& n);
 	
 	std::string GetNumeral(Noun& n, bool ForceN);
+	
+	std::string GetPreposition(Noun& n);
 public:
 	std::string createSentence();
 };

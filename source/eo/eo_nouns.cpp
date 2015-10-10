@@ -23,6 +23,9 @@ std::string eo::GetNounString(Noun& n)
 	std::string ArticleString = GetArticle(n);
 	std::string Complete;
 	std::string NumeralString = GetNumeral(n,false);
+	std::string Preposition = GetPreposition(n);
+	if (Preposition.compare(""))
+		Complete += Preposition + " ";
 	if (ArticleString.compare(""))
 		Complete += ArticleString + " ";
 	if (NumeralString.compare(""))
