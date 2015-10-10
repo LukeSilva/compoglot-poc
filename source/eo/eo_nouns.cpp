@@ -38,8 +38,21 @@ std::string eo::GetNounString(Noun& n)
 			Complete += Adjective + " ";
 	}
 	
-	
 	Complete += NounString;
+	
+	if (n.ShouldUseRelativeClause)
+	{
+		int CaseRMarker = 0;
+		if (n.RelativeClauseObj != 0)
+			CaseRMarker = n.RelativeClause->Objects[n.RelativeClauseObj-1][0].Data;
+		else
+			CaseRMarker = n.RelativeClause->Subjects[0].Data;
+		
+		std::string RelativeClauseString = "";
+		RelativeClauseString += std::string("kiu") + (n.IsPlural ? "j" : "") + (CaseRMarker ? "n" : "");
+		RelativeClauseString += " " + n.RelativeClause->createSentence();
+		Complete += ", " + RelativeClauseString;
+	}
 	
 	return Complete;
 }
