@@ -77,5 +77,19 @@ std::string eo::createSentence()
 	if (Verb2 > 0)
 		Sentence += GetVerbForm(Verb2,FORM_INFINITIVE) + " ";
 	
+		//Loop through the objects, adding them to the sentence
+	for (int objid = 0; objid < 8; ++objid)
+	{
+		for (int i = 0; i <= NumFilledObjects[objid]; ++i)
+		{
+			if (i != 0 && i < NumFilledObjects[objid]) Sentence += ", ";
+			if (i==NumFilledObjects[objid] && NumFilledObjects[objid] > 0 && ObjConjunctionType[objid] == 0) Sentence+= " " + And + " ";
+			else if (i==NumFilledObjects[objid]&& NumFilledObjects[objid]> 0 && ObjConjunctionType[objid] == 1) Sentence += " " + Or + " ";
+			Sentence += GetNounString(Objects[objid][i]);
+		}
+		if (NumFilledObjects[objid]>=0) Sentence += " ";
+	}
+
+	
 	return Sentence;
 }
