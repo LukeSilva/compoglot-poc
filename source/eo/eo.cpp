@@ -108,5 +108,17 @@ std::string eo::createSentence()
 			Sentence+="?";
 	}
 	
+	if (Capital && !IsClause)
+	{
+		char FirstLetter = Sentence.at(0);
+		
+		if (FirstLetter >= 'a' && FirstLetter <= 'z')
+		{
+			FirstLetter -= ('a' - 'A');
+			Sentence[0] = FirstLetter;
+		}
+	}
+
+	
 	return Sentence;
 }
