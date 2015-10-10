@@ -97,6 +97,16 @@ std::string eo::createSentence()
 		Sentence += GetSubClause() + " ";
 	}
 
+	while (Sentence[Sentence.length()-1]==' ')
+		Sentence.pop_back();
+	
+	if	(Punctuation && !IsClause)
+	{
+		if (Question==0)
+			Sentence+=".";
+		else
+			Sentence+="?";
+	}
 	
 	return Sentence;
 }
