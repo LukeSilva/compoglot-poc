@@ -40,6 +40,13 @@ std::string eo::GetNounString(Noun& n)
 	
 	Complete += NounString;
 	
+	
+	if (n.ShouldUseGenitive)
+	{
+		Complete += " " + GenitiveMarker + " ";
+		Complete += GetNounString(*n.GenitiveNoun);
+	}
+
 	if (n.ShouldUseRelativeClause)
 	{
 		int CaseRMarker = 0;

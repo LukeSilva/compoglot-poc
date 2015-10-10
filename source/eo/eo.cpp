@@ -7,6 +7,8 @@
 
 const std::string eo::And = "kaj";
 const std::string eo::Or = "aŭ";
+const std::string eo::GenitiveMarker = "de";
+
 
 std::string eo::GetSegment(std::ifstream& File)
 {

@@ -26,7 +26,7 @@ private:
 	const static std::string VerbEndings[9];
 	const static std::string Articles[14];
 	const static std::string Numerals[12];
-	
+	const static std::string GenitiveMarker;
 	
 	bool GotoLine(std::ifstream& is, int Line);
 	std::string GetSegment(std::ifstream& File);
