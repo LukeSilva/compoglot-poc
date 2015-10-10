@@ -25,7 +25,7 @@ private:
 	const static std::string Or;
 	const static std::string VerbEndings[9];
 	const static std::string Articles[14];
-	
+	const static std::string Numerals[12];
 	
 	
 	bool GotoLine(std::ifstream& is, int Line);
@@ -39,6 +39,8 @@ private:
 	std::string GetNounString(Noun& n);
 	
 	std::string GetArticle(Noun& n);
+	
+	std::string GetNumeral(Noun& n, bool ForceN);
 public:
 	std::string createSentence();
 };

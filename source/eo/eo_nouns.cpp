@@ -22,9 +22,11 @@ std::string eo::GetNounString(Noun& n)
 	std::string NounString = GetNoun(n,n.Data);
 	std::string ArticleString = GetArticle(n);
 	std::string Complete;
-	
+	std::string NumeralString = GetNumeral(n,false);
 	if (ArticleString.compare(""))
 		Complete += ArticleString + " ";
+	if (NumeralString.compare(""))
+		Complete += NumeralString + " ";
 	Complete += NounString;
 	
 	return Complete;
