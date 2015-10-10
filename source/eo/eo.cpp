@@ -90,6 +90,11 @@ std::string eo::createSentence()
 		if (NumFilledObjects[objid]>=0) Sentence += " ";
 	}
 
+	if (SubClause!=NULL && Conjunction != 0)
+	{
+		Sentence += GetSubClause() + " ";
+	}
+
 	
 	return Sentence;
 }

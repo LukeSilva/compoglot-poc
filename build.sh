@@ -3,7 +3,7 @@ BASEFILES="cmdparse.cpp fileparse.cpp main.cpp Language.cpp general.cpp"
 PARSERFILES="parser.cpp parser_io.cpp parse_noun.cpp"
 DEFILES="de.cpp de_nouns.cpp de_articles.cpp de_numerals.cpp de_verbs.cpp de_prepos.cpp de_adjectives.cpp de_conjunctions.cpp"
 ENFILES="en.cpp en_nouns.cpp en_articles.cpp en_numerals.cpp en_verbs.cpp en_prepos.cpp en_adjectives.cpp en_conjunctions.cpp en_passiveverbs.cpp"
-EOFILES="eo.cpp eo_nouns.cpp eo_articles.cpp eo_numerals.cpp eo_verbs.cpp eo_prepos.cpp eo_adjectives.cpp"
+EOFILES="eo.cpp eo_nouns.cpp eo_articles.cpp eo_numerals.cpp eo_verbs.cpp eo_prepos.cpp eo_adjectives.cpp eo_conjunctions.cpp"
 FILEPREFIX="../source/"
 base()
 {

@@ -45,6 +45,9 @@ private:
 	std::string GetPreposition(Noun& n);
 	
 	std::string GetAdjective(Noun& n, int AdjectiveNum);
+	
+	std::string GetConjunction(int ConjunctionNum);
+	std::string GetSubClause();
 public:
 	std::string createSentence();
 };
