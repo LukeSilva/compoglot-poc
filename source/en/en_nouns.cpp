@@ -7,9 +7,6 @@
 int en::GetNounType(int NounNum)
 {
 	if (NounNum < 0) return 0;
-#ifdef DEBUG
-	std::cout << "[EN] GetNounType(int NounNum = " << NounNum << " )" << std::endl;
-#endif
 	std::ifstream is(DICTIONARY EN_EN_FOLDER "nouns");
 	GotoLine(is,NounNum);
 	int Data = is.get();
@@ -20,9 +17,6 @@ int en::GetNounType(int NounNum)
 std::string en::GetNounString(Noun* NounObj, bool ObjCase)
 {
 	if (NounObj->ID==0) return "";
-#ifdef DEBUG
-	std::cout << "[EN] GetNounString(Noun* NounObj)" << std::endl;
-#endif
 	//Create the final string that will be returned. (Empty for now).
 	std::string NounString = "";
 
