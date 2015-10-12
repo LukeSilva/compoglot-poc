@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\EN">
+      <UniqueIdentifier>{db4f2cb6-de6d-4694-88f4-6853cd363fcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DE">
+      <UniqueIdentifier>{f94fec02-aca9-495a-9772-8cf722551f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EO">
+      <UniqueIdentifier>{d1c9a84b-8ac8-46e8-bc0b-7bf62887785d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Parser">
+      <UniqueIdentifier>{9de4edad-7cbd-4164-acb6-636d3186d1f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\cmdparse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\fileparse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\general.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Language.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_adjectives.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_articles.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_conjunctions.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_nouns.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_numerals.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_passiveverbs.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_prepos.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\en\en_verbs.cpp">
+      <Filter>Source Files\EN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de_adjectives.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de_articles.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de_conjunctions.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de_nouns.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de_numerals.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de_prepos.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\de\de_verbs.cpp">
+      <Filter>Source Files\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo_adjectives.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo_articles.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo_conjunctions.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo_nouns.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo_numerals.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo_prepos.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\eo\eo_verbs.cpp">
+      <Filter>Source Files\EO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\parser\parse_noun.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\parser\parser.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\parser\parser_io.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\cmdparse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\fileparse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Language.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\settings.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\en\en.h">
+      <Filter>Source Files\EN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\de\de.h">
+      <Filter>Source Files\DE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\eo\eo.h">
+      <Filter>Source Files\EO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\parser\parser.h">
+      <Filter>Source Files\Parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

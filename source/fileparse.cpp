@@ -1,6 +1,8 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "Language.h"
 #include "parser/parser.h"
 #include "settings.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
