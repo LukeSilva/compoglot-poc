@@ -17,6 +17,8 @@ P____
 
 
 
+P_wer_wen_wem_wem
+P_was_was_was_was
 
 
 
@@ -55,9 +57,7 @@ P____
 
 
 
-
-
-
+n0000_compoglot
 
 
 

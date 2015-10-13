@@ -77,7 +77,7 @@ std::string de::createSentence()
 	std::string SentenceString = "";
 	
 	bool VerbFirst = Data&0x01;
-	if (Question != 0) VerbFirst = true;
+	if (Question > 0) VerbFirst = true;
 	if (Question > 1 && Question < 8)
 	{
 		SentenceString += QuestionMarkers[Question - 2] + " ";
