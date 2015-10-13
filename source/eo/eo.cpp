@@ -108,7 +108,7 @@ std::string eo::createSentence()
 			Sentence+="?";
 	}
 	
-	if (Capital && !IsClause)
+	if (Capital && !IsClause && Sentence.length() > 0)
 	{
 		char FirstLetter = Sentence.at(0);
 		
