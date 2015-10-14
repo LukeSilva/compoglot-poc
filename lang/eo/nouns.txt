@@ -600,7 +600,7 @@ ekzemplo
 
 
 
-
+domo
 
 
 
@@ -848,6 +848,7 @@ komentario
 
 
 
+persono
 
 
 
@@ -1203,8 +1204,7 @@ komentario
 
 
 
-
-
+nomo
 identigilo
 
 verbo
