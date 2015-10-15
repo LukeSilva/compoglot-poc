@@ -3,3 +3,7 @@ hav
 
 pov
 ŝat
+dev
+
+bezon
+vol
