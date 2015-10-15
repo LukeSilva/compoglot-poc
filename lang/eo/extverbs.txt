@@ -1,2 +1,5 @@
 (Verb(1))
 (Verb(2) datao(1,1))
+(Verb(2) obj(7(n(70,0,false,false,0,false,false,false))) datao(7,1))
+(Verb(4))
+(Verb(5))
