@@ -120,7 +120,7 @@ permeso
 
 
 
-
+parko
 
 
 
@@ -446,7 +446,7 @@ knabo
 
 
 
-
+okazaĵo
 ekzemplo
 
 
@@ -501,7 +501,7 @@ ekzemplo
 
 
 
-
+manĝaĵo
 
 
 
@@ -615,7 +615,7 @@ domo
 
 
 
-
+homo
 
 
 
