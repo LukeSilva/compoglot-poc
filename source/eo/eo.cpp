@@ -64,6 +64,10 @@ std::string eo::createSentence()
 	std::string Sentence;
 	
 	std::string SubjectString = "";
+	
+	if (Question == 1)
+		Sentence += "Cû ";
+	
 	for (int i = 0; i <= NumFilledSubjects; ++i)
 	{
 		
