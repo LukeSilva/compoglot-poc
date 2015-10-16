@@ -7,3 +7,9 @@ dev
 
 bezon
 vol
+
+
+ven
+ir
+
+surteriĝ

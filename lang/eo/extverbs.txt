@@ -8,3 +8,8 @@
 (Verb(8))
 (Verb(9))
 (Verb(5) datao(1,1))
+(Verb(8) datao(1,1))
+(Verb(12) oprepos(1,2))
+(Verb(13) oprepos(1,2))
+(Verb(9) datao(1,1))
+(Verb(15) datao(1,1))
