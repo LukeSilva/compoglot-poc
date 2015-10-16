@@ -18,3 +18,13 @@ vel
 marŝ
 atend
 lav
+naĝ
+parol
+dir
+pren
+gust
+instru
+test
+pens
+vetur
+ag
