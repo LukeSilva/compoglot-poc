@@ -170,6 +170,7 @@ aviadilo
 
 
 
+pomo
 
 
 
@@ -211,8 +212,7 @@ aviadilo
 
 
 
-
-
+birdo
 
 
 
@@ -341,9 +341,9 @@ knabo
 
 
 
+ido
 
-
-
+ĉinio
 
 
 
@@ -721,6 +721,7 @@ listo
 
 
 
+viro
 
 
 
@@ -745,8 +746,7 @@ listo
 
 
 
-
-
+patrino
 
 
 
