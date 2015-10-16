@@ -13,3 +13,8 @@
 (Verb(13) oprepos(1,2))
 (Verb(9) datao(1,1))
 (Verb(15) datao(1,1))
+(Verb(16))
+(Verb(17) oprepos(1,2))
+(Verb(18) oprepos(1,2))
+(Verb(19))
+(Verb(20) datao(1,1))

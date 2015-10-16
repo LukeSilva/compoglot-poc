@@ -13,3 +13,8 @@ ven
 ir
 
 surteriĝ
+flug
+vel
+marŝ
+atend
+lav
