@@ -125,7 +125,7 @@ parko
 
 
 
-
+aviadilo
 
 
 
@@ -597,7 +597,7 @@ manĝaĵo
 
 
 
-
+ĉevalo
 
 
 domo
@@ -988,7 +988,7 @@ persono
 
 
 
-
+lernejo
 
 
 
