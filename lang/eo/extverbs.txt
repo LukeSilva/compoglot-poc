@@ -19,7 +19,7 @@
 (Verb(19))
 (Verb(20) datao(1,1))
 (Verb(21) oprepos(1,1))
-(Verb(22) datao(1,1))
+(Verb(22) oprepos(1,3))
 (Verb(23))
 (Verb(24) datao(1,1))
 (Verb(25) datao(1,1))

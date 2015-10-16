@@ -267,7 +267,7 @@ knabo
 
 
 
-
+kuko
 
 
 
@@ -495,7 +495,7 @@ ekzemplo
 
 
 
-
+fiŝo
 
 
 
@@ -720,9 +720,9 @@ listo
 
 
 
-
+maŝino
 viro
-
+administranto
 
 
 
@@ -805,7 +805,7 @@ komentario
 
 
 
-
+vartistino
 
 
 
@@ -895,7 +895,7 @@ persono
 
 
 
-
+prezidanto
 
 
 
@@ -992,7 +992,7 @@ lernejo
 
 
 
-
+maro
 
 
 
