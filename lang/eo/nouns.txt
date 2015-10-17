@@ -124,7 +124,7 @@ parko
 
 
 
-
+aŭtomobilo
 aviadilo
 
 
@@ -173,7 +173,7 @@ aviadilo
 pomo
 
 
-
+argumento
 
 
 
@@ -394,7 +394,7 @@ ido
 
 
 
-
+hundo
 
 
 
@@ -473,7 +473,7 @@ ekzemplo
 
 
 
-
+eksperimento
 
 
 
@@ -732,7 +732,7 @@ administranto
 
 
 
-
+viando
 
 
 
@@ -914,6 +914,7 @@ prezidanto
 
 
 
+petalo
 
 
 
@@ -938,12 +939,11 @@ prezidanto
 
 
 
+policano
 
 
 
-
-
-
+kaptito
 
 
 
@@ -1118,6 +1118,7 @@ maro
 
 
 
+arbo
 
 
 
@@ -1176,8 +1177,7 @@ maro
 
 
 
-
-
+akvo
 
 
 
