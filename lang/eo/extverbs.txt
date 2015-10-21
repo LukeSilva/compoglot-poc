@@ -58,3 +58,13 @@
 (Verb(58))
 (Verb(59) datao(1,1))
 
+(Verb(61) datao(1,1))
+(Verb(62) oprepos(1,6))
+(Verb(63))
+(Verb(64) datao(1,1))
+(Verb(65) datao(1,1))
+
+(Verb(67) datao(1,1))
+(Verb(68))
+(Verb(69) datao(1,1))
+(Verb(70) datao(1,1))
