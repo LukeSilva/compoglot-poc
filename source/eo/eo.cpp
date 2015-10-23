@@ -15,6 +15,11 @@ std::string eo::GetSegment(std::ifstream& File)
 	std::string Segment = "";
 	if (File.good())
 		std::getline(File,Segment);
+	size_t pos;
+	pos = Segment.find("_");
+	if (pos != std::string::npos)
+		Segment = Segment.substr(0,pos);
+
 	return Segment;
 }
 
@@ -100,7 +105,7 @@ std::string eo::createSentence()
 	{
 		Sentence += GetSubClause() + " ";
 	}
-
+	
 	while (Sentence[Sentence.length()-1]==' ')
 		Sentence.pop_back();
 	
@@ -123,6 +128,5 @@ std::string eo::createSentence()
 		}
 	}
 
-	
 	return Sentence;
 }

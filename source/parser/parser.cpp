@@ -311,7 +311,7 @@ void Parser::_parse(Language* lang){
 		}
 	} 
 }
-char* Parser::parse(char* _langid,char* in){
+std::string Parser::parse(char* _langid,char* in){
 	//Setup internals
 	ptr=0;
 	lookptr=0;
@@ -330,5 +330,5 @@ char* Parser::parse(char* _langid,char* in){
 	expect('(',__FILE__,__LINE__);
 	//Now do the parsing on lang
 	_parse(lang);
-	return (char*)lang->createSentence().c_str();
+	return lang->createSentence();
 }

@@ -32,20 +32,20 @@ int fileParse(int argc,char* argv[]){
            if ((c = fgetc(rFile)) == 'G')
            {
 	     //Allocate 1kB for the input buffer
-             char* in = (char*)malloc(1024);
+             char* in = (char*)malloc(4096);
              int i=0;
-  	     while (i<1024)
+  	     while (i<4096)
   	     {
 		c = fgetc(rFile);   
                 if (c==EOF){ return -1;	}
-                if (c=='}') i=1024;
+                if (c=='}') i=4096;
                 in[i++]=c;
  	     }
              in[i]=0;
              Parser parser;
-             char* string;
+             std::string string;
              string = parser.parse(argv[2],in);
-             fputs(string,wFile);
+             fputs(string.c_str(),wFile);
              //free(in);
   		
            }else{fputs("${LAN",wFile);fputc(c,wFile);}

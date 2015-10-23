@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include "../settings.h"
 #include "../Language.h"
 class Parser{
@@ -8,7 +9,7 @@ class Parser{
   char* string;
   int ptr;
   int lookptr;
-  char* parse(char* language,char* in);
+  std::string parse(char* language,char* in);
   void _parse(Language* lang);
   void _parseSubject(Language* lang);
   void __parseObject(Language* lang,int obj);
