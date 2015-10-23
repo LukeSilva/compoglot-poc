@@ -37,8 +37,8 @@ std::string eo::GetNounString(Noun& n)
 		if (Adjective.compare("")) 
 			Complete += Adjective + " ";
 	}
-	
-	Complete += NounString;
+	if (NounString.compare(""))
+		Complete += NounString;
 	
 	
 	if (n.ShouldUseGenitive)

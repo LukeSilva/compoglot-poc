@@ -150,7 +150,7 @@ aviadilo
 
 
 
-
+akvo
 
 
 
@@ -386,7 +386,7 @@ ido
 
 
 
-
+disvolvado
 
 
 
@@ -460,7 +460,7 @@ ekzemplo
 
 
 
-
+ekonomio
 
 
 
@@ -524,7 +524,7 @@ manĝaĵo
 
 
 
-
+faruno
 
 
 
@@ -623,7 +623,7 @@ homo
 
 
 glaciaĵo
-
+ideo
 
 
 
@@ -741,7 +741,7 @@ viando
 
 
 
-
+mono
 
 
 
@@ -910,7 +910,7 @@ prezidanto
 
 
 
-
+pacienco
 
 
 
@@ -1053,7 +1053,7 @@ maro
 
 
 
-
+sukero
 
 
 
@@ -1219,57 +1219,9 @@ aerostato
 
 
 dosiero
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+faruno
+instruisto_
+instruistino
+donaco
+urbo
+dokumento
