@@ -78,3 +78,13 @@
 (Verb(78))
 (Verb(79) datao(1,1))
 (Verb(80))
+(Verb(81) datao(1,1) oprepos(1,7))
+
+(Verb(83) oprepos(1,7))
+(Verb(84))
+
+(Verb(73) datao(1,1))
+(Verb(87) datao(1,1))
+(Verb(88) datao(1,1))
+(Verb(89) datao(1,1) oprepos(2,5))
+(Verb(90))
