@@ -305,6 +305,7 @@ kuko
 
 
 
+bovino
 
 
 
@@ -317,8 +318,7 @@ kuko
 
 
 
-
-
+ĉokolado
 
 
 
@@ -549,11 +549,11 @@ faruno
 
 
 
+glaso
 
 
 
-
-
+registaro
 
 
 
@@ -789,7 +789,7 @@ murdo
 
 
 
-
+nokto
 
 
 
@@ -1226,3 +1226,5 @@ donaco
 urbo
 dokumento
 pruvo
+frago
+ludo
