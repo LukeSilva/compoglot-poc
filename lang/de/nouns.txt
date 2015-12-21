@@ -552,10 +552,10 @@ n1100_Mädchen_Mädchen
 n1100_Glas_Gläser
 
 
-
+n1100_Gold_
 f1000_Regierung_Regierungen
 
-
+n1100_Gras_Gräser
 
 
 
@@ -679,7 +679,7 @@ n1100_Wissen_
 
 
 
-
+n1100_Blatt_Blätter
 
 n1100_Bein_Beine
 m1100_Brief_Briefe
@@ -986,7 +986,7 @@ n1100_Restaurant_Restaurants
 
 
 
-
+m1100_Sand_Sande
 
 f1000_Schule_Schulen
 
@@ -1019,7 +1019,7 @@ n1100_Hemd_Hemden
 
 
 f1000_Schlange_Schlangen
-
+m1100_Schnee_
 
 
 
@@ -1192,7 +1192,7 @@ n1100_Fenster_Fenster
 
 
 f1000_Frau_Frauen
-
+n1100_Holz_Hölzer
 
 
 
@@ -1244,3 +1244,8 @@ f1000_Schwester_Schwestern
 n1100__Daten
 n1100_Gespräch_Gespräche
 n1100_Kaninchen_Kaninchen
+n1100_Einzelspieler
+f1000_Erde_Erden
+f1000_Fackel_Fackeln
+m1100_Kaktus_Kakteen
+m1100_Diamant_Diamanten
