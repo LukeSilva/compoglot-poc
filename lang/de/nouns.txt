@@ -243,8 +243,8 @@ f1000_Butter_Buttern
 f1000_Bank_Banken
 m1100_Riegel_Riegel
 f1000_Stange_Stangen
-n1100_Fleisch_
-n1100_Fleisch_
+n1100_Rindfleisch_
+
 f1000_Biologie_
 f1000_Bombe_Bomben
 m1100_Balkon_Balkone
@@ -522,7 +522,7 @@ f1000_Kraft_Kräfte
 
 
 
-
+n1100_Fleisch_
 
 
 
@@ -680,7 +680,7 @@ n1100_Wissen_
 
 
 n1100_Blatt_Blätter
-
+n1100_Leder_Leder
 n1100_Bein_Beine
 m1100_Brief_Briefe
 
@@ -1043,7 +1043,7 @@ f1000_Aussage_Aussagen
 
 
 
-
+m1100_Stock_Stöcke
 
 
 
@@ -1193,7 +1193,7 @@ n1100_Fenster_Fenster
 
 f1000_Frau_Frauen
 n1100_Holz_Hölzer
-
+f1000_Wolle_Wollen
 
 
 
@@ -1249,3 +1249,18 @@ f1000_Erde_Erden
 f1000_Fackel_Fackeln
 m1100_Kaktus_Kakteen
 m1100_Diamant_Diamanten
+f1000_Leiter_Leitern
+m1100_Busch_Büsche
+n1100_Schweinefleisch_
+n1100_Steinkohle_Kohlen
+n1100_Eisenerz_Eisenerze
+n1100_Golderz_Golderze
+n1100_Diamanterz_Diamanterze
+f1000_Holzspitzhacke_Holzspitzhacken
+f1000_Steinspitzhacke_Steinspitzhacken
+f1000_Eisenspitzhacke_Eisenspitzhacken
+f1000_Goldspitzhacke_Goldspitzhacken
+f1000_Diamantspitzhacke_Diamantspitzhacken
+n1100_Erz_Erze
+f1000_Spitzhacke_Spitzhacken
+n1100_Hähnchen_Hähnchen

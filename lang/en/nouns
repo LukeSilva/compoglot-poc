@@ -1249,3 +1249,18 @@ n_dirt
 n_torch
 n_cactus
 n_diamond
+n_ladder
+n_bush
+n_pork
+n_coal ore
+n_iron ore
+n_gold ore
+n_diamond ore
+n_wooden pickaxe
+n_stone pickaxe
+n_iron pickaxe
+n_gold pickaxe
+n_diamond pickaxe
+n_ore
+n_pickaxe
+n_chicken

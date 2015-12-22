@@ -19,10 +19,10 @@
 
 
 
-
+0_schwarz
 0_blau
 
-
+0_braun
 
 
 
@@ -84,8 +84,8 @@
 
 0_gut
 
-
-
+0_grün
+0_grau
 
 
 
@@ -194,7 +194,7 @@
 
 
 0_nass
-
+0_weiß
 
 
 
@@ -208,16 +208,16 @@
 0_fähig
 0_krank
 0_veraltet
-
-
-
-
-
-
-
-
-
-
+0_dunkelgrün
+0_violett
+0_türkis
+0_dunkengrau
+0_rosa
+0_helgrün
+0_helblau
+0_magenta
+0_orange
+0_roh
 
 
 
@@ -301,7 +301,7 @@
 0_möglich
 
 
-
+0_gekocht
 
 
 
