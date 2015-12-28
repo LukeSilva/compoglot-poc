@@ -254,3 +254,7 @@
 (Verb(254) datao(1,1))
 (Verb(1) oprepos(1,26) datao(1,2) )
 (Verb(256))
+(Verb(257) datao(1,1))
+(Verb(258) datao(1,1))
+(Verb(259) datao(1,1))
+(Verb(260))

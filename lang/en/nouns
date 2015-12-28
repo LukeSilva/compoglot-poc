@@ -1264,3 +1264,39 @@ n_diamond pickaxe
 n_ore
 n_pickaxe
 n_chicken
+n_cobblestone
+n_workbench
+n_chest
+n_shovel
+n_diamond shovel
+n_wooden shovel
+n_stone shovel
+n_iron shovel
+n_gold shovel
+n_axe
+n_diamond axe
+n_wooden axe
+n_stone axe
+n_iron axe
+n_gold axe
+n_sword
+n_diamond sword
+n_wooden sword
+n_stone sword
+n_iron sword
+n_gold sword
+n_mushroom
+n_pumpkin
+n_seed
+n_sapling
+n_setting
+n_credits
+n_back
+n_survival
+n_creative
+o_audio_audio
+o_controls_
+n_option
+n_volume
+n_main menu
+n_block

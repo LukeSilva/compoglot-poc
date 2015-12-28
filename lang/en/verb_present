@@ -254,4 +254,7 @@
 20_protect
 
 20_function
-
+20_quit
+20_edit
+20_view
+20_die

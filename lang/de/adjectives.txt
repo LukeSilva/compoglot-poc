@@ -211,12 +211,12 @@
 0_dunkelgrün
 0_violett
 0_türkis
-0_dunkengrau
-0_rosa
+0_dunkelgrau
+1_rosa
 0_helgrün
 0_helblau
-0_magenta
-0_orange
+1_magenta
+1_orange
 0_roh
 
 

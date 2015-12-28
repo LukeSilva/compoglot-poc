@@ -254,10 +254,10 @@
 0_geschützt
 
 0_funktioniert
-
-
-
-
+0_beendet
+0_bearbeitet
+0_angesehen
+1_gestorben
 
 
 
