@@ -2,6 +2,8 @@
 
 import sys
 
+print("Creating localisation files...\n\n")
+
 for arg in sys.argv[1:]:
 	print("Reading file \"" + arg + "\"")
 	f = open(arg,'r')

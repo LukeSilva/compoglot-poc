@@ -179,5 +179,9 @@ void de::FillVerbs(Noun& Subject, int VerbNum)
 	{
 		FillVerbPassiveFuture(VerbForm,VerbNum);
 	}
+	else if (st == BUTTON_TEXT)
+	{
+		StartVerb = GetVerbPresentSimple(0,VerbNum);
+	}
 	
 }

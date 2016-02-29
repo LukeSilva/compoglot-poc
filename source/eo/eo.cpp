@@ -70,6 +70,14 @@ std::string eo::createSentence()
 	
 	std::string SubjectString = "";
 	
+	std::string Verbs;
+	
+	
+	if (Verb1 > 0)
+		Verbs += GetVerb(Verb1) + " ";
+	if (Verb2 > 0)
+		Verbs += GetVerbForm(Verb2,FORM_INFINITIVE) + " ";
+	
 	if (Question == 1)
 		Sentence += "Cû ";
 	
@@ -81,12 +89,13 @@ std::string eo::createSentence()
 		else if (i==NumFilledSubjects && NumFilledSubjects > 0 && SubConjunctionType == 1) SubjectString += " " + Or + " ";
 		SubjectString += GetNounString(Subjects[i]);
 	}
-	Sentence += SubjectString + " ";
+	if (SubjectString.compare("")!=0)
+		Sentence += SubjectString + " ";
 	
-	if (Verb1 > 0)
-		Sentence += GetVerb(Verb1) + " ";
-	if (Verb2 > 0)
-		Sentence += GetVerbForm(Verb2,FORM_INFINITIVE) + " ";
+	if (st != BUTTON_TEXT)
+		Sentence += Verbs;
+	else
+		Sentence += GetVerbForm(Verb1,FORM_INFINITIVE) + " ";
 	
 		//Loop through the objects, adding them to the sentence
 	for (int objid = 0; objid < 8; ++objid)
@@ -100,7 +109,7 @@ std::string eo::createSentence()
 		}
 		if (NumFilledObjects[objid]>=0) Sentence += " ";
 	}
-
+	
 	if (SubClause!=NULL && Conjunction != 0)
 	{
 		Sentence += GetSubClause() + " ";

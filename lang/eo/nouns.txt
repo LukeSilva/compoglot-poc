@@ -97,9 +97,9 @@ permeso
 
 
 
-
-
-
+esperanto
+english
+german
 
 
 
@@ -234,6 +234,7 @@ knabo
 
 
 
+sitelo
 
 
 
@@ -242,8 +243,7 @@ knabo
 
 
 
-
-
+buvaĵo
 
 
 
@@ -283,7 +283,7 @@ kuko
 
 
 
-
+karbo
 
 
 
@@ -396,7 +396,7 @@ disvolvado
 
 hundo
 
-
+pordo
 
 
 
@@ -500,7 +500,7 @@ fiŝo
 
 
 
-
+floro
 manĝaĵo
 
 
@@ -522,7 +522,7 @@ manĝaĵo
 
 
 
-
+karno
 
 faruno
 
@@ -537,7 +537,7 @@ faruno
 
 
 
-
+forno
 
 
 
@@ -552,9 +552,10 @@ faruno
 glaso
 
 
-
+oro
 registaro
 
+herbo
 
 
 
@@ -571,8 +572,7 @@ registaro
 
 
 
-
-
+gruzo
 
 
 
@@ -632,6 +632,7 @@ ideo
 
 
 
+fero
 
 
 
@@ -675,12 +676,11 @@ ideo
 
 
 
+lingvo
 
 
-
-
-
-
+folio
+ledo
 
 
 
@@ -751,7 +751,7 @@ patrino
 
 
 
-
+muziko
 
 
 
@@ -836,7 +836,7 @@ organizaĵo
 
 
 
-
+paĝo
 
 
 
@@ -855,7 +855,7 @@ persono
 
 
 
-
+planto
 
 
 
@@ -986,7 +986,7 @@ kaptito
 
 
 
-
+sablo
 
 lernejo
 
@@ -1019,6 +1019,13 @@ maro
 
 
 
+neĝo
+
+
+
+
+
+sono
 
 
 
@@ -1036,18 +1043,11 @@ maro
 
 
 
+bastono
 
 
 
-
-
-
-
-
-
-
-
-
+ŝtono
 
 
 
@@ -1192,8 +1192,8 @@ akvo
 
 
 virino
-
-
+ligno
+lano
 
 
 
@@ -1217,7 +1217,7 @@ verbo
 
 aerostato
 
-
+ilo
 dosiero
 faruno
 instruisto_
@@ -1228,3 +1228,79 @@ dokumento
 pruvo
 frago
 ludo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+unu ludanto
+grundo
+torĉo
+kakto
+diamanto
+ŝtupetaro
+arbeto
+porkaĵo
+karba erco
+fera erco
+ora erco
+diamanta erco
+ligna pioĉio
+ŝtona pioĉio
+fera pioĉio
+ora pioĉio
+diamanta pioĉio
+erco
+pioĉio
+kokaĵo
+pavimŝtono
+labortablo
+kesto
+fosilo
+diamanta fosilo
+ligna fosilo
+ŝtona fosilo
+fera fosilo
+ora fosilo
+hakilo
+diamanta hakilo
+ligna hakilo
+ŝtona hakilo
+fera hakilo
+ora hakilo
+glavo
+diamanta glavo
+ligna glavo
+ŝtona glavo
+fera glavo
+ora glavo
+fungo
+kukurbo
+semo
+juna arbo
+agordo
+kredito
+reen
+traviva
+krea
+sono
+regilo
+opcio
+laŭteco
+ĉefa menuo
+blocko
+vitro
+
+
+

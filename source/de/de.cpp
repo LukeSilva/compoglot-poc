@@ -118,7 +118,7 @@ std::string de::createSentence()
 	if (SubjectString.compare("")!=0)
 		SentenceString += SubjectString + " ";
 	
-	if (!IsClause && !VerbFirst)
+	if (!IsClause && !VerbFirst && st != BUTTON_TEXT)
 		SentenceString += StartVerb + " ";
 	
 	std::string ObjectsString = "";
@@ -136,6 +136,9 @@ std::string de::createSentence()
 	}
 	
 	SentenceString += ObjectsString;
+	
+	if (st == BUTTON_TEXT)
+		SentenceString += StartVerb + " ";
 	
 	if (Negate)
 		SentenceString += "nicht ";

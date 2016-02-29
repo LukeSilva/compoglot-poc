@@ -288,6 +288,8 @@ std::string en::GetVerb(Noun& NounObj, int snum, int VerbNum, int SentenceType, 
 			return GetVerbPassiveFuturePast(VerbForm,VerbNum,Mid);
 		case PASSIVE_FUTURE_PAST_PROGRESSIVE:
 			return GetVerbPassiveFuturePastProgressive(VerbForm,VerbNum,Mid);	
+		case BUTTON_TEXT:
+			return GetVerbPresentSimple(VerbForm,VerbNum,Mid);
 	}
 	return "";
 }

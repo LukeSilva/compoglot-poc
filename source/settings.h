@@ -7,7 +7,7 @@
 #define DEBUG
 #endif
 
-#define DICTIONARY "../lang/"
+#define DICTIONARY "/home/coolas/compoglot/lang/"
 #define EN_FOLDER "en/"
 #define EN_EN_FOLDER "en/"
 #define DE_FOLDER "de/"
