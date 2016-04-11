@@ -122,7 +122,7 @@ programo
 
 parko
 
-
+komputilo
 
 aŭtomobilo
 aviadilo
@@ -199,7 +199,7 @@ argumento
 
 
 
-
+balo
 
 
 
@@ -246,7 +246,7 @@ sitelo
 buvaĵo
 
 
-
+bombo
 
 
 
@@ -560,7 +560,7 @@ herbo
 
 
 
-
+pafilo
 
 
 
@@ -807,7 +807,7 @@ nukso
 
 vartistino
 
-
+ĵurnalo
 
 
 
@@ -1198,7 +1198,7 @@ lano
 
 
 
-
+mondo
 
 
 
@@ -1230,8 +1230,8 @@ frago
 ludo
 
 
-
-
+araneo
+timo
 
 
 

@@ -88,16 +88,16 @@ influ
 fin
 interŝanĝ
 ekzist
-
-
-
-
-
-
-
-
-
-
+dung
+envi
+eksplod
+export
+alfront
+fal
+tim
+batal
+paf
+fald
 
 
 
