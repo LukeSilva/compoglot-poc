@@ -119,7 +119,7 @@ programo
 
 
 
-
+kvadrato
 parko
 
 komputilo
@@ -143,7 +143,7 @@ boato
 
 
 
-
+rivero
 
 
 
@@ -224,7 +224,7 @@ birdo
 libro
 
 
-
+kesto
 knabo
 
 
@@ -594,7 +594,7 @@ gruzo
 
 
 
-
+truo
 
 
 ĉevalo
@@ -681,7 +681,7 @@ lingvo
 
 folio
 ledo
-
+kruro
 
 
 
@@ -858,7 +858,7 @@ persono
 planto
 
 
-
+punkto
 
 
 
@@ -1086,7 +1086,7 @@ sukero
 
 
 
-
+grundo
 
 
 
@@ -1228,13 +1228,13 @@ dokumento
 pruvo
 frago
 ludo
-
-
+farmisto
+farmistino
 araneo
 timo
 
-
-
+vinbero
+hejmtasko
 
 
 
