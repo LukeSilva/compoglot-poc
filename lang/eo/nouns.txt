@@ -548,7 +548,7 @@ forno
 
 
 
-
+knabino
 glaso
 
 
@@ -584,7 +584,7 @@ gruzo
 
 
 
-
+martelo
 
 
 
@@ -991,7 +991,7 @@ sablo
 lernejo
 
 
-
+ŝraŭbo
 maro
 
 
@@ -1235,8 +1235,8 @@ timo
 
 vinbero
 hejmtasko
-
-
+studento
+studentino
 
 
 
