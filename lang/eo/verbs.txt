@@ -118,11 +118,11 @@ supoz
 pend
 malam
 aŭd
-
-
-
-
-
+hejt
+help
+esper
+sibl
+dung
 
 
 

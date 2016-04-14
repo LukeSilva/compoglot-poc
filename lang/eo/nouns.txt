@@ -494,7 +494,7 @@ patro
 
 
 
-
+fajro
 fiŝo
 
 
@@ -849,7 +849,7 @@ paĝo
 
 
 persono
-
+bildo
 
 
 
@@ -926,7 +926,7 @@ petalo
 
 
 
-
+premo
 
 
 
@@ -996,6 +996,7 @@ maro
 
 
 
+sekretariino
 
 
 
@@ -1017,8 +1018,7 @@ maro
 
 
 
-
-
+serpento
 neĝo
 
 
@@ -1175,7 +1175,7 @@ viktimo
 
 
 
-
+muro
 
 akvo
 
