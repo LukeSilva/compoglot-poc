@@ -123,11 +123,11 @@ help
 esper
 sibl
 dung
-
-
-
-
-
+ten
+ĉas
+rapid
+imag
+import
 
 
 
