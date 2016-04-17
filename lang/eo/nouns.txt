@@ -322,7 +322,7 @@ bovino
 
 
 
-
+klubo
 
 
 
@@ -542,7 +542,7 @@ forno
 
 
 
-
+futbalo
 
 
 
@@ -1239,7 +1239,7 @@ studento
 studentino
 
 
-
+pasvorto
 
 
 
