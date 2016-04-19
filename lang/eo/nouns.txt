@@ -98,7 +98,7 @@ permeso
 
 
 esperanto
-english
+la angla
 german
 
 
@@ -197,7 +197,7 @@ argumento
 
 
 
-
+sako
 
 balo
 
@@ -255,7 +255,7 @@ bombo
 
 
 
-
+litkovrilo
 
 
 
@@ -287,7 +287,7 @@ karbo
 
 
 
-
+koloro
 
 
 
