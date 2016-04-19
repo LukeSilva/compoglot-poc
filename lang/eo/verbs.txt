@@ -148,11 +148,11 @@ far
 geedziĝ
 kompar
 mov
-
-
-
-
-
+fand
+emfazi
+neglekt
+not
+ofer
 
 
 

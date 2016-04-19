@@ -1030,7 +1030,7 @@ sono
 
 
 
-
+spongo
 
 
 
@@ -1074,7 +1074,7 @@ sukero
 
 
 
-
+frazo
 
 
 
@@ -1240,7 +1240,7 @@ studentino
 
 
 pasvorto
-
+fratino
 
 
 
