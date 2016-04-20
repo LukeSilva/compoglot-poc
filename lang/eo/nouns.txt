@@ -270,6 +270,7 @@ litkovrilo
 kuko
 
 
+karto
 
 
 
@@ -280,8 +281,7 @@ kuko
 
 
 
-
-
+ŝtofo
 
 karbo
 
@@ -968,7 +968,7 @@ kaptito
 
 
 
-
+tegmento
 
 
 
