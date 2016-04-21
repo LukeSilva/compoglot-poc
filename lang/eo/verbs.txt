@@ -158,21 +158,21 @@ interkovriĝ
 elig
 farb
 lud
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+polur
+plant
+proced
+prilabor
+protest
+tir
+pump
+pun
+puŝ
+met
+program
+praktik
+laŭd
+promes
+aĉet
 
 
 

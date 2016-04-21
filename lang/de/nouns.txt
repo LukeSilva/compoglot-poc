@@ -1005,7 +1005,7 @@ f1000_Sekretärin_Sekretärinnnen
 
 n1100_Hemd_Hemden
 
-
+m1100_Schuh_Schuhe
 
 
 
@@ -1168,7 +1168,7 @@ f1000_Geige_Geigen
 
 
 
-
+n1100_Gemüse_Gemüse
 
 m1100_Opfer_Opfer
 
@@ -1241,7 +1241,7 @@ m1100_Bürgermeister_Bürgermeister
 f1000_Bürgermeisterin_Bürgermeisterinnen
 n1100_Passwort_passwörter
 f1000_Schwester_Schwestern
-n1100__Daten
+n1100_Daten_Daten
 n1100_Gespräch_Gespräche
 n1100_Kaninchen_Kaninchen
 n1100_Einzelspieler
