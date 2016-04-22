@@ -583,7 +583,7 @@ gruzo
 
 
 
-
+hararo
 martelo
 
 
@@ -944,7 +944,7 @@ policano
 
 
 kaptito
-
+demando
 
 
 
@@ -973,7 +973,7 @@ tegmento
 
 
 
-
+restoracio
 
 
 
@@ -1242,7 +1242,7 @@ studentino
 pasvorto
 fratino
 datumo
-
+interparolado
 
 unu ludanto
 grundo
