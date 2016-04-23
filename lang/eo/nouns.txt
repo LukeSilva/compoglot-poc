@@ -195,7 +195,7 @@ brako
 
 
 
-
+bebo
 
 sako
 
@@ -223,7 +223,7 @@ birdo
 
 libro
 
-
+botelo
 kesto
 knabo
 
@@ -630,7 +630,7 @@ ideo
 
 
 
-
+insekto
 
 fero
 
