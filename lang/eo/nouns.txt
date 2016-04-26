@@ -682,7 +682,7 @@ lingvo
 folio
 ledo
 kruro
-
+letero
 
 
 
@@ -869,7 +869,7 @@ punkto
 prezo
 
 
-
+procedo
 
 
 
@@ -1186,7 +1186,7 @@ akvo
 
 
 
-
+fenestro
 
 
 

@@ -198,15 +198,15 @@ send
 sku
 ferm
 dorm
-
-
-
-
-
-
-
-
-
+ekglit
+frakas
+flar
+ridet
+tern
+neĝ
+stamp
+ek
+halt
 konserv
 
 
