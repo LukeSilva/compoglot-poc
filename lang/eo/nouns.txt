@@ -399,7 +399,7 @@ hundo
 pordo
 
 
-
+robo
 
 
 
@@ -941,7 +941,7 @@ premo
 
 policano
 
-
+pentraĵo
 
 kaptito
 demando
@@ -1003,7 +1003,7 @@ sekretariino
 
 
 
-
+ĉemizo
 
 ŝuo
 
@@ -1301,6 +1301,6 @@ laŭteco
 ĉefa menuo
 blocko
 vitro
-
+flako
 
 

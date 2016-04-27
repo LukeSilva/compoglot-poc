@@ -208,16 +208,16 @@ stamp
 ek
 halt
 konserv
-
-
-
-
-
-
-
-
-
-
+serĉ
+divid
+raz
+vidig
+kraĉ
+plaŭd
+makul
+lern
+interŝanĝ
+tuŝ
 
 
 
