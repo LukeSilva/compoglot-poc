@@ -232,7 +232,7 @@ knabo
 
 
 
-
+frato
 
 sitelo
 
@@ -1160,7 +1160,7 @@ arbo
 
 
 
-
+violono
 
 
 
@@ -1302,5 +1302,5 @@ laŭteco
 blocko
 vitro
 flako
-
+eraro
 
