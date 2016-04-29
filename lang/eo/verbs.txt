@@ -248,12 +248,12 @@ rest
 parol
 forig
 sent
+pen
+establ
+bat
+protekt
 
-
-
-
-
-
+funkci
 forlas
 redakt
 vidig
