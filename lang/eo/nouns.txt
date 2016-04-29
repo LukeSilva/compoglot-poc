@@ -284,7 +284,7 @@ fromaĝo
 ŝtofo
 
 karbo
-
+palto
 
 
 koloro
@@ -374,7 +374,7 @@ ido
 
 
 
-
+danĝero
 
 
 
@@ -627,7 +627,7 @@ ideo
 
 
 
-
+inko
 
 
 insekto
@@ -839,7 +839,7 @@ organizaĵo
 paĝo
 
 
-
+dokumento
 paketo
 
 
@@ -1151,7 +1151,7 @@ telefono
 
 
 
-
+tunelo
 
 
 
