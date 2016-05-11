@@ -1291,11 +1291,11 @@ m1100_Samen_Samen
 m1100_Setzling_Setzlinge
 f1000_Einstellung_Einstellungen
 m1100_Abspann_Abspanne
-n0000_zurück_
-n1100_Überleben_
-n1100_Kreativ_
+n0000_zurück_zurück
+n1100_Überleben_Überleben
+n1100_Kreativ_Kreativ
 m1100_Ton_Töne
-f1000_Steuerung_
+f1000_Steuerung_Steuerung
 f1000_Option_Optionen
 f1000_Lautstärke_Lautstärken
 n1100_Hauptmenü_Hauptmenüs
