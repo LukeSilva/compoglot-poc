@@ -168,6 +168,18 @@ void Parser::_parse(Language* lang){
 			{
 				lang->Objects[id][i].ArticleType = article;
 			}
+			expect(')',__FILE__,__LINE__);
+		}
+		else if (rstLook() && check("sarticle"))
+		{
+			rstPtr();
+			expect('(',__FILE__,__LINE__);
+			int article = getInt();
+			for (int i = 0; i < 16; ++i)
+			{
+				lang->Subjects[i].ArticleType = article;
+			}
+			expect(')',__FILE__,__LINE__);
 		}
 		else if (rstLook() && check("datao"))
 		{
