@@ -1,1 +1,0 @@
-#Kiu estas compogloto?
