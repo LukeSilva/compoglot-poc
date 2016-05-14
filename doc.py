@@ -23,6 +23,30 @@ NounHTML.write("\n".join(NounObj["footer"]))
 
 NounHTML.close()
 
+# Build the verb list documentation
+
+VerbJson = open(os.path.join("documentation","verblist.json"),"r")
+VerbObj = json.load(VerbJson)
+VerbHTML = open(os.path.join("documentation","verblist.compoglot.html"),"w")
+VerbHTML.write("\n".join(VerbObj["header"]))
+VerbHTML.write("\n\n\n")
+
+for Verb in VerbObj["verbs"]:
+	VerbHTML.write("<tr>\n")
+	VerbHTML.write("<td>"+str(Verb["id"])+"</td>\n")
+	VerbHTML.write("<td>${LANG( Verb"+str(Verb["type"])+"("+str(Verb["id"])+") punc 0 )}</td>\n<td>")
+	for example in Verb["examples"]:
+		VerbHTML.write(example + "<br/>")
+	VerbHTML.write("</td>\n<td></td>\n</tr>\n\n")
+
+VerbHTML.write("\n\n\n")
+VerbHTML.write("\n".join(VerbObj["footer"]))
+
+VerbHTML.close()
+
+
 for lang in languages:
 	subprocess.call(["compoglot","file",lang,os.path.join("documentation","nounlist.compoglot.html"),os.path.join("documentation","nounlist."+lang+".html")])
+	subprocess.call(["compoglot","file",lang,os.path.join("documentation","verblist.compoglot.html"),os.path.join("documentation","verblist."+lang+".html")])
+
 

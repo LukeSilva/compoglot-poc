@@ -1,4 +1,19 @@
 {
+   "header": [	"<!DOCTYPE html><head><meta charset=\"UTF-8\">",
+		"<title>${LANG(sub(n(695,0,false,false,0,true,n(1210,0,false,true,0,false,false,false),false,false)) punc 0 )}</title>",
+		"<head><body>",
+		"<h1>${LANG(sub(n(695,0,false,false,0,true,n(1210,0,false,true,0,false,false,false),false,false)) punc 0 )}</h1>",
+		"<table border=\"1\">",
+		"<tr><th>${LANG(sub(n(1208,0,false,false,0,false,false,false)) punc 0 )}</th>",
+		"<th>${LANG(sub(n(1210,0,false,false,0,false,false,false)) punc 0 )}</th>",
+		"<th>${LANG(sub(n(450,0,false,false,0,false,false,false)) punc 0 )}</th>",
+		"<th>${LANG(sub(n(796,0,false,true,0,false,false,false)) punc 0 )}</th></tr>"
+	  ],
+
+   "footer": [	"</table><br/>Documentation is part of the <a href=\"https://github.com/CoolAs/compoglot\">Compoglot</a> project.",
+		"<br/>Copyright © Luke Silva 2016<br/>",
+		"</body></html>"
+	  ],
    "verbs":[
       {
          "id":1,
@@ -257,7 +272,7 @@
          "id":37,
          "type":2,
          "examples":[
-            "{LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(37) st 2 obj(1(n(1180,0,false,false,-1,false,false,false))) )}"
+            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(37) st 2 obj(1(n(1180,0,false,false,-1,false,false,false))) )}"
          ]
       },
       {
@@ -856,7 +871,7 @@
          ]
       },
       {
-         "id":128,
+         "id":129,
          "type":2,
          "examples":[
             "${LANG( sub(n(851,0,false,false,-2,false,false,false)) Verb1(129) obj(2(n(843,0,false,false,-2,false,false,true,true,0,(Verb1(12) obj(1(n(991,0,false,false,-2,false,false,false))) ) ))) )}"
