@@ -1,1776 +1,1776 @@
 {
-   "header": [	"<!DOCTYPE html><head><meta charset=\"UTF-8\">",
-		"<title>${LANG(sub(n(695,0,false,false,0,true,n(1210,0,false,true,0,false,false,false),false,false)) punc 0 )}</title>",
+  "header": [	"<!DOCTYPE html><head><meta charset=\"UTF-8\">",
+		"<title>${LANG(sub(n(695,0,false,false,0,true,n(1210,0,false,true,0,false,false,false),false,false)) punc 0 )} </title>",
 		"<head><body>",
 		"<h1>${LANG(sub(n(695,0,false,false,0,true,n(1210,0,false,true,0,false,false,false),false,false)) punc 0 )}</h1>",
 		"<table border=\"1\">",
 		"<tr><th>${LANG(sub(n(1208,0,false,false,0,false,false,false)) punc 0 )}</th>",
-		"<th>${LANG(sub(n(1210,0,false,false,0,false,false,false)) punc 0 )}</th>",
+		"<th${LANG(sub(n(1210,0,false,false,0,false,false,false)) punc 0 )}</th>",
 		"<th>${LANG(sub(n(450,0,false,false,0,false,false,false)) punc 0 )}</th>",
 		"<th>${LANG(sub(n(796,0,false,true,0,false,false,false)) punc 0 )}</th></tr>"
 	  ],
 
-   "footer": [	"</table><br/>Documentation is part of the <a href=\"https://github.com/CoolAs/compoglot\">Compoglot</a> project.",
+  "footer": [	"</table><br/>Documentation is part of the <a href=\"https://github.com/CoolAs/compoglot\">Compoglot</a> project.",
 		"<br/>Copyright © Luke Silva 2016<br/>",
 		"</body></html>"
 	  ],
-   "verbs":[
+  "verbs":[
       {
          "id":1,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(1) obj(1(n(228,0,false,false,-2,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(1) obj(1(n(228,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":2,
          "type":2,
          "examples":[
-            "${LANG( sub(n(851,0,false,false,-1,false,false,false)) Verb1(2) obj(1(n(603,0,false,false,-2,false,false,false))) )}"
+           "sub(n(851,0,false,false,-1,false,false,false)) Verb1(2) obj(1(n(603,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":3,
          "type":1,
          "examples":[
-            "${LANG( question(1) Verb1(3) Verb2(13) sub(n(1,0,false,false,0,false,false,false)) )}"
+           "question(1) Verb1(3) Verb2(13) sub(n(1,0,false,false,0,false,false,false))"
          ]
       },
       {
          "id":4,
          "type":1,
          "examples":[
-            "${LANG( sub(n(228,0,false,false,-1,false,false,false)) Verb1(4) Verb2(22) )}"
+           "sub(n(228,0,false,false,-1,false,false,false)) Verb1(4) Verb2(22)"
          ]
       },
       {
          "id":5,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(5) Verb2(22) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(5) Verb2(22)"
          ]
       },
       {
          "id":6,
          "type":1,
          "examples":[
-            "${LANG( sub(n(504,0,false,false,-1,false,false,false)) Verb1(6) Verb2(1) st 1 obj(1(adj(136))) )}"
+           "sub(n(504,0,false,false,-1,false,false,false)) Verb1(6) Verb2(1) st 1 obj(1(adj(136)))"
          ]
       },
       {
          "id":7,
          "type":1,
          "examples":[
-            "${LANG( sub(n(6,0,false,false,0,false,false,false)) Verb1(7) Verb2(218) )}",
-            "${LANG( sub(n(449,0,false,false,-1,false,false,false)) Verb1(7) Verb2(208) adverb(40) )}"
+           "sub(n(6,0,false,false,0,false,false,false)) Verb1(7) Verb2(218)",
+           "sub(n(449,0,false,false,-1,false,false,false)) Verb1(7) Verb2(208) adverb(40)"
          ]
       },
       {
          "id":8,
          "type":2,
          "examples":[
-            "${LANG( sub(n(618,0,false,true,0,false,false,false)) Verb1(8) obj(1(n(504,0,false,true,0,false,false,false))) )}"
+           "sub(n(618,0,false,true,0,false,false,false)) Verb1(8) obj(1(n(504,0,false,true,0,false,false,false)))"
          ]
       },
       {
          "id":9,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(9) Verb2(238) obj(1(n(504,0,false,false,0,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(9) Verb2(238) obj(1(n(504,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":10,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(5) obj(1(n(123,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(5) obj(1(n(123,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":11,
          "type":2,
          "examples":[
-            "${LANG( sub(n(504,0,false,false,-1,false,false,false)) Verb1(11) Verb2(1) st 1 obj(1(adj(136))) )}"
+           "sub(n(504,0,false,false,-1,false,false,false)) Verb1(11) Verb2(1) st 1 obj(1(adj(136)))"
          ]
       },
       {
          "id":12,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(12) obj(1(n(991,0,false,false,1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(12) obj(1(n(991,0,false,false,1,false,false,false)))"
          ]
       },
       {
          "id":13,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(13) obj(1(n(991,0,false,false,1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(13) obj(1(n(991,0,false,false,1,false,false,false)))"
          ]
       },
       {
          "id":14,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(14) obj(1(n(600,0,false,false,-2,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(14) obj(1(n(600,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":15,
          "type":2,
          "examples":[
-            "${LANG( sub(n(128,0,false,false,-1,false,false,false)) Verb1(15) st 2 )}"
+           "sub(n(128,0,false,false,-1,false,false,false)) Verb1(15) st 2"
          ]
       },
       {
          "id":16,
          "type":2,
          "examples":[
-            "${LANG( sub(n(215,0,false,false,-1,false,false,false)) Verb1(16) )}"
+           "sub(n(215,0,false,false,-1,false,false,false)) Verb1(16)"
          ]
       },
       {
          "id":17,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(17) obj(1(n(346,0,false,false,0,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(17) obj(1(n(346,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":18,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(18) st 2 obj(1(n(123,0,false,false,-1,false,false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(18) st 2 obj(1(n(123,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":19,
          "type":2,
          "examples":[
-            "${LANG( sub(n(344,0,false,true,-1,false,false,false)) Verb1(19) st 2 obj(1(n(749,0,false,false,8,false,false,false))) )}"
+           "sub(n(344,0,false,true,-1,false,false,false)) Verb1(19) st 2 obj(1(n(749,0,false,false,8,false,false,false)))"
          ]
       },
       {
          "id":20,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 0 Verb1(20) obj(1(n(173,0,false,true,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 0 Verb1(20) obj(1(n(173,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":21,
          "type":2,
          "examples":[
-            "${LANG( sub(n(498,0,false,true,-1,false,false,false)) st 0 Verb1(21) obj(1(n(995,0,false,false,-1,false,false,false))) )}"
+           "sub(n(498,0,false,true,-1,false,false,false)) st 0 Verb1(21) obj(1(n(995,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":22,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(22) obj(1(n(490,0,false,false,3,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(22) obj(1(n(490,0,false,false,3,false,false,false)))"
          ]
       },
       {
          "id":23,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(23) obj(1(n(749,0,false,false,4,false,false,false))) clause(19,sub(n(498,0,false,true,0,false,false,false)) Verb1(21) st 0 ) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(23) obj(1(n(749,0,false,false,4,false,false,false))) clause(19,sub(n(498,0,false,true,0,false,false,false)) Verb1(21) st 0 )"
          ]
       },
       {
          "id":24,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(24) st 2 obj(1(n(173,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(24) st 2 obj(1(n(173,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":25,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(25) st 1 obj(1(n(270,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(25) st 1 obj(1(n(270,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":26,
          "type":2,
          "examples":[
-            "${LANG( sub(n(808,0,false,false,-1,false,false,false)) Verb1(26) obj(1(n(851,0,false,false,-2,false,false,false) adj(209))) )}"
+           "sub(n(808,0,false,false,-1,false,false,false)) Verb1(26) obj(1(n(851,0,false,false,-2,false,false,false) adj(209)))"
          ]
       },
       {
          "id":27,
          "type":2,
          "examples":[
-            "${LANG( sub(n(725,0,false,false,-1,false,false,false)) Verb1(27) obj(1(n(723,0,false,false,-1,false,false,false))) )}"
+           "sub(n(725,0,false,false,-1,false,false,false)) Verb1(27) obj(1(n(723,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":28,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(28) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(28)"
          ]
       },
       {
          "id":29,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(29) st 2 obj(1(n(346,0,false,false,0,false,false,false)) 3(n(857,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(29) st 2 obj(1(n(346,0,false,false,0,false,false,false)) 3(n(857,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":30,
          "type":2,
          "examples":[
-            "${LANG( sub(n(898,0,false,false,-1,false,false,false)) Verb1(30) )}"
+           "sub(n(898,0,false,false,-1,false,false,false)) Verb1(30)"
          ]
       },
       {
          "id":31,
          "type":2,
          "examples":[
-            "${LANG( sub(n(946,0,false,false,-1,false,false,false)) Verb1(31) st 2 obj(1(n(942,0,false,false,-2,false,false,false))) )}"
+           "sub(n(946,0,false,false,-1,false,false,false)) Verb1(31) st 2 obj(1(n(942,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":32,
          "type":2,
          "examples":[
-            "${LANG( sub(n(942,0,false,false,-1,false,false,false)) Verb1(32) st 18 )}"
+           "sub(n(942,0,false,false,-1,false,false,false)) Verb1(32) st 18"
          ]
       },
       {
          "id":33,
          "type":2,
          "examples":[
-            "${LANG( Verb1(33) sub(n(4,0,false,false,0,false,false,false)) st 2 Verb2(20) obj(1(n(127,0,false,false,-1,false,false,false))) )}"
+           "Verb1(33) sub(n(4,0,false,false,0,false,false,false)) st 2 Verb2(20) obj(1(n(127,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":34,
          "type":2,
          "examples":[
-            "${LANG( sub(n(176,0,false,false,4,false,false,false)) Verb1(34) st 18 obj(1(n(476,0,false,true,0,false,false,false))) )}"
+           "sub(n(176,0,false,false,4,false,false,false)) Verb1(34) st 18 obj(1(n(476,0,false,true,0,false,false,false)))"
          ]
       },
       {
          "id":35,
          "type":2,
          "examples":[
-            "${LANG( sub(n(397,0,false,false,-1,false,false,false)) Verb1(35) st 2 obj(1(n(735,0,false,false,-1,false,false,false))) )}"
+           "sub(n(397,0,false,false,-1,false,false,false)) Verb1(35) st 2 obj(1(n(735,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":36,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(36) st 1 obj(1(n(917,0,false,true,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(36) st 1 obj(1(n(917,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":37,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(37) st 2 obj(1(n(1180,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(37) st 2 obj(1(n(1180,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":38,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(38) st 2 )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(38) st 2"
          ]
       },
       {
          "id":39,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(39) st 2 obj(1(n(723,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(39) st 2 obj(1(n(723,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":40,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(40) st 2 obj(1(n(1121,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(40) st 2 obj(1(n(1121,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":41,
          "type":2,
          "examples":[
-            "${LANG( Verb1(41) st 2 sub(n(1218,0,false,false,-2,false,false,false)) )}"
+           "Verb1(41) st 2 sub(n(1218,0,false,false,-2,false,false,false))"
          ]
       },
       {
          "id":42,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(42) obj(1(n(1173,0,false,false,-1,false,false,false))) )} "
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(42) obj(1(n(1173,0,false,false,-1,false,false,false))) "
          ]
       },
       {
          "id":43,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(43) obj(1(adj(10))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(43) obj(1(adj(10)))"
          ]
       },
       {
          "id":44,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(44) st 2 obj(1(n(714,0,false,false,-2,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(44) st 2 obj(1(n(714,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":45,
          "type":2,
          "examples":[
-            "${LANG( sub(n(749,0,false,false,-1,false,false,false)) Verb1(45) obj(1(n(344,0,false,true,4,false,false,false))) )} "
+           "sub(n(749,0,false,false,-1,false,false,false)) Verb1(45) obj(1(n(344,0,false,true,4,false,false,false))) "
          ]
       },
       {
          "id":46,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(46) st 2 obj(1(n(504,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(46) st 2 obj(1(n(504,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":47,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(47) st 2 obj(1(n(224,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(47) st 2 obj(1(n(224,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":48,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(48) st 2 )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(48) st 2"
          ]
       },
       {
          "id":49,
          "type":2,
          "examples":[
-            "${LANG( sub(n(625,0,false,false,-1,false,false,false)) Verb1(49) st 2 )}"
+           "sub(n(625,0,false,false,-1,false,false,false)) Verb1(49) st 2"
          ]
       },
       {
          "id":50,
          "type":2,
          "examples":[
-            "${LANG( sub(n(723,0,false,false,-1,false,false,false)) Verb1(50) obj(1(n(798,0,false,true,-1,false,false,false))) )}"
+           "sub(n(723,0,false,false,-1,false,false,false)) Verb1(50) obj(1(n(798,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":51,
          "type":2,
          "examples":[
-            "${LANG( sub(n(490,0,false,false,-1,false,false,false)) Verb1(51) st 2 )}"
+           "sub(n(490,0,false,false,-1,false,false,false)) Verb1(51) st 2"
          ]
       },
       {
          "id":52,
          "type":2,
          "examples":[
-            "${LANG( sub(n(228,0,false,false,-1,false,false,false)) Verb1(52) st 2 obj(1(n(270,0,false,false,-1,false,false,false))) )}"
+           "sub(n(228,0,false,false,-1,false,false,false)) Verb1(52) st 2 obj(1(n(270,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":53,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(53) st 2 clause(19, sub(n(215,0,false,false,-1,false,false,false)) Verb1(1) st 2 obj(1(adj(23))) ) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(53) st 2 clause(19, sub(n(215,0,false,false,-1,false,false,false)) Verb1(1) st 2 obj(1(adj(23))) )"
          ]
       },
       {
          "id":54,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(54) st 2 obj(1(n(4,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(54) st 2 obj(1(n(4,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":55,
          "type":2,
          "examples":[
-            "${LANG( sub(n(704,0,false,false,-1,false,false,false)) Verb1(55) st 2 obj(1(n(3,0,false,false,0,false,false,false)) 2(n(783,0,false,false,0,false,false,false)) ) )}"
+           "sub(n(704,0,false,false,-1,false,false,false)) Verb1(55) st 2 obj(1(n(3,0,false,false,0,false,false,false)) 2(n(783,0,false,false,0,false,false,false)) )"
          ]
       },
       {
          "id":56,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(56) st 2 obj(1(n(1221,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(56) st 2 obj(1(n(1221,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":57,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(57) obj(1(n(504,0,false,false,-1,false,false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(57) obj(1(n(504,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":58,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1173,0,false,false,-1,false,false,false)) Verb1(58) clause(19, sub(n(1194,0,false,false,-1,false,false,false)) Verb1(42) obj(1(n(3,0,false,false,0,false,false,false))) st 2 ) )}"
+           "sub(n(1173,0,false,false,-1,false,false,false)) Verb1(58) clause(19, sub(n(1194,0,false,false,-1,false,false,false)) Verb1(42) obj(1(n(3,0,false,false,0,false,false,false))) st 2 )"
          ]
       },
       {
          "id":59,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(59) st 2 obj(1(n(116,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(59) st 2 obj(1(n(116,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":61,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(61) st 2 obj(1(n(1222,0,false,false,-1,false,false,false),n(1056,0,false,false,-1,false,false,false))) octype(1,0) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(61) st 2 obj(1(n(1222,0,false,false,-1,false,false,false),n(1056,0,false,false,-1,false,false,false))) octype(1,0)"
          ]
       },
       {
          "id":62,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(62) st 2 obj(1(n(913,0,false,false,-1,true,n(1223,0,false,false,-1,false,false,false),false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(62) st 2 obj(1(n(913,0,false,false,-1,true,n(1223,0,false,false,-1,false,false,false),false,false)))"
          ]
       },
       {
          "id":63,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1225,0,false,false,-1,false,false,false)) Verb1(63) obj(1(n(744,0,false,false,10,false,false,false))) )}"
+           "sub(n(1225,0,false,false,-1,false,false,false)) Verb1(63) obj(1(n(744,0,false,false,10,false,false,false)))"
          ]
       },
       {
          "id":64,
          "type":2,
          "examples":[
-            "${LANG( sub(n(2,0,false,false,0,false,false,false)) Verb1(4) Verb2(64) question(1) obj(1(n(270,0,false,false,-2,false,false,false))) )}"
+           "sub(n(2,0,false,false,0,false,false,false)) Verb1(4) Verb2(64) question(1) obj(1(n(270,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":65,
          "type":2,
          "examples":[
-            "${LANG( sub(n(389,0,false,false,-1,true,n(1226,0,false,false,-1,false,false,false),false,false)) Verb1(65) obj(1(n(463,0,false,false,-1,false,false,false))) st 0 )}"
+           "sub(n(389,0,false,false,-1,true,n(1226,0,false,false,-1,false,false,false),false,false)) Verb1(65) obj(1(n(463,0,false,false,-1,false,false,false))) st 0"
          ]
       },
       {
          "id":67,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(67) st 2 obj(1(n(626,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(67) st 2 obj(1(n(626,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":68,
          "type":2,
          "examples":[
-            "${LANG( question(3) Verb1(68) sub(n(2,0,false,false,0,false,false,false)) st 0 )}"
+           "question(3) Verb1(68) sub(n(2,0,false,false,0,false,false,false)) st 0"
          ]
       },
       {
          "id":69,
          "type":2,
          "examples":[
-            "${LANG( sub(n(942,0,false,false,-1,false,false,false)) Verb1(69) st 2 obj(1(n(1227,0,false,true,-1,false,false,false))) )}"
+           "sub(n(942,0,false,false,-1,false,false,false)) Verb1(69) st 2 obj(1(n(1227,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":70,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(70) obj(1(n(153,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(70) obj(1(n(153,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":71,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 1 Verb1(71) obj(1(n(1180,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 1 Verb1(71) obj(1(n(1180,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":72,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 1 Verb1(72) obj(1(n(820,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 1 Verb1(72) obj(1(n(820,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":73,
          "type":2,
          "examples":[
-            "${LANG( sub(n(215,0,false,false,-1,false,false,false)) st 2 Verb1(73) obj(1(n(442,0,false,false,-1,false,false,false))) )}"
+           "sub(n(215,0,false,false,-1,false,false,false)) st 2 Verb1(73) obj(1(n(442,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":74,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(74) obj(1(n(905,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(74) obj(1(n(905,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":75,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(75) obj(1(n(603,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(75) obj(1(n(603,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":76,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(76) obj(1(n(4,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(76) obj(1(n(4,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":77,
          "type":2,
          "examples":[
-            "${LANG( sub(n(869,0,false,false,-1,false,false,false)) Verb1(77) st 2 )}"
+           "sub(n(869,0,false,false,-1,false,false,false)) Verb1(77) st 2"
          ]
       },
       {
          "id":78,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1,0,false,false,0,false,false,false)) st 1 Verb1(78) Verb2(196) obj(1(n(1228,0,false,false,-1,false,false,false))) )}"
+           "sub(n(1,0,false,false,0,false,false,false)) st 1 Verb1(78) Verb2(196) obj(1(n(1228,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":79,
          "type":2,
          "examples":[
-            "${LANG( sub(n(725,0,false,false,-1,false,false,false)) st 4 Verb1(79) obj(1(n(744,0,false,false,-1,false,false,false))) )}"
+           "sub(n(725,0,false,false,-1,false,false,false)) st 4 Verb1(79) obj(1(n(744,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":80,
          "type":2,
          "examples":[
-            "${LANG( sub(n(137,0,false,false,-1,false,false,false)) st 1 Verb1(208) Verb2(80) )}"
+           "sub(n(137,0,false,false,-1,false,false,false)) st 1 Verb1(208) Verb2(80)"
          ]
       },
       {
          "id":81,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(81) obj(1(n(1229,0,false,true,-1,false,false,false)) 2(n(321,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 2 Verb1(81) obj(1(n(1229,0,false,true,-1,false,false,false)) 2(n(321,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":83,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(83) st 2 obj(1(n(153,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(83) st 2 obj(1(n(153,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":84,
          "type":2,
          "examples":[
-            "${LANG( Verb1(84) sub(n(3,0,false,false,0,false,false,false)) st 4 obj(1(n(792,0,false,false,-1,false,true,100,false))) )}"
+           "Verb1(84) sub(n(3,0,false,false,0,false,false,false)) st 4 obj(1(n(792,0,false,false,-1,false,true,100,false)))"
          ]
       },
       {
          "id":86,
          "type":2,
          "examples":[
-            "${LANG( sub(n(899,0,false,false,-1,false,false,false)) Verb1(86) st 2 obj(1(n(552,0,false,false,-1,true,n(153,0,false,false,0,false,false,false),false,false))) )} "
+           "sub(n(899,0,false,false,-1,false,false,false)) Verb1(86) st 2 obj(1(n(552,0,false,false,-1,true,n(153,0,false,false,0,false,false,false),false,false))) "
          ]
       },
       {
          "id":87,
          "type":2,
          "examples":[
-            "${LANG( sub(n(556,0,false,false,-1,false,false,false)) Verb1(87) st 1 obj(1(n(463,0,false,false,-1,false,false,false))) )}"
+           "sub(n(556,0,false,false,-1,false,false,false)) Verb1(87) st 1 obj(1(n(463,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":88,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(88) st 2 obj(1(n(1230,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(88) st 2 obj(1(n(1230,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":89,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1231,0,false,false,-1,false,false,false)) Verb1(89) st 2 obj(1(n(600,0,false,false,3,false,false,false)) 2(n(308,0,false,false,-2,false,false,false))) )}"
+           "sub(n(1231,0,false,false,-1,false,false,false)) Verb1(89) st 2 obj(1(n(600,0,false,false,3,false,false,false)) 2(n(308,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":90,
          "type":2,
          "examples":[
-            "${LANG( sub(n(556,0,false,false,-2,false,false,false)) Verb1(28) clause(19,sub(n(346,0,false,false,0,false,false,false)) st 1 neg Verb1(90) ) )}"
+           "sub(n(556,0,false,false,-2,false,false,false)) Verb1(28) clause(19,sub(n(346,0,false,false,0,false,false,false)) st 1 neg Verb1(90) )"
          ]
       },
       {
          "id":91,
          "type":2,
          "examples":[
-            "${LANG( sub(n(725,0,false,false,-1,false,false,false)) Verb1(91) st 2 obj(1(n(851,0,false,false,-1,false,false,false))) )}"
+           "sub(n(725,0,false,false,-1,false,false,false)) Verb1(91) st 2 obj(1(n(851,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":92,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(92) st 1 obj(1(n(851,0,false,true,-1,false,false,true,false,0,(Verb1(59) st 1 )))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(92) st 1 obj(1(n(851,0,false,true,-1,false,false,true,false,0,(Verb1(59) st 1 ))))"
          ]
       },
       {
          "id":93,
          "type":2,
          "examples":[
-            "${LANG( sub(n(249,0,false,false,-1,false,false,false)) Verb1(93) )}"
+           "sub(n(249,0,false,false,-1,false,false,false)) Verb1(93)"
          ]
       },
       {
          "id":94,
          "type":2,
          "examples":[
-            "${LANG( sub(n(346,0,false,false,0,false,false,false)) Verb1(94) st 1 obj(1(n(125,0,false,true,0,false,false,false))) )}"
+           "sub(n(346,0,false,false,0,false,false,false)) Verb1(94) st 1 obj(1(n(125,0,false,true,0,false,false,false)))"
          ]
       },
       {
          "id":95,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(95) obj(1(n(1234,0,false,true,3,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(95) obj(1(n(1234,0,false,true,3,false,false,false)))"
          ]
       },
       {
          "id":96,
          "type":2,
          "examples":[
-            "${LANG( sub(n(202,0,false,false,-1,false,false,false)) Verb1(96) )}"
+           "sub(n(202,0,false,false,-1,false,false,false)) Verb1(96)"
          ]
       },
       {
          "id":97,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(97) obj(2(n(1233,0,false,true,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(97) obj(2(n(1233,0,false,true,0,false,false,false)))"
          ]
       },
       {
          "id":98,
          "type":2,
          "examples":[
-            "${LANG( sub(n(228,0,false,true,-1,false,false,false)) Verb1(98) st 2 )}"
+           "sub(n(228,0,false,true,-1,false,false,false)) Verb1(98) st 2"
          ]
       },
       {
          "id":99,
          "type":2,
          "examples":[
-            "${LANG( sub(n(8,0,false,false,0,false,false,false)) Verb1(99) st 2 obj(1(n(563,0,false,true,8,false,false,false))) )}"
+           "sub(n(8,0,false,false,0,false,false,false)) Verb1(99) st 2 obj(1(n(563,0,false,true,8,false,false,false)))"
          ]
       },
       {
          "id":100,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(100) st 1 obj(1(n(810,0,false,false,-1,false,false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(100) st 1 obj(1(n(810,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":102,
          "type":2,
          "examples":[
-            "${LANG( sub(n(861,5,false,false,-1,false,false,false)) Verb1(102) obj(1(n(122,0,false,false,-2,false,false,false))) )}"
+           "sub(n(861,5,false,false,-1,false,false,false)) Verb1(102) obj(1(n(122,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":103,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1236,0,false,true,-1,false,false,false)) Verb1(103) st 6 )}"
+           "sub(n(1236,0,false,true,-1,false,false,false)) Verb1(103) st 6"
          ]
       },
       {
          "id":104,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1232,0,false,false,-1,false,false,false)) Verb1(104) st 2 obj(1(n(1089,0,false,false,-1,false,false,false))) )}"
+           "sub(n(1232,0,false,false,-1,false,false,false)) Verb1(104) st 2 obj(1(n(1089,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":106,
          "type":2,
          "examples":[
-            "${LANG( sub(n(603,0,false,false,-1,false,false,false)) st 19 Verb1(106) )}"
+           "sub(n(603,0,false,false,-1,false,false,false)) st 19 Verb1(106)"
          ]
       },
       {
          "id":107,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1,0,false,false,0,false,false,false)) obj(2(n(1237,0,false,false,1,false,false,false))) Verb1(107) )}"
+           "sub(n(1,0,false,false,0,false,false,false)) obj(2(n(1237,0,false,false,1,false,false,false))) Verb1(107)"
          ]
       },
       {
          "id":108,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1173,0,false,false,-1,false,false,false)) Verb1(108) st 2 obj(1(n(724,0,false,false,-1,false,false,false))) )}"
+           "sub(n(1173,0,false,false,-1,false,false,false)) Verb1(108) st 2 obj(1(n(724,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":109,
          "type":2,
          "examples":[
-            "${LANG( sub(n(684,0,false,false,3,false,false,false)) Verb1(109) st 2 )}"
+           "sub(n(684,0,false,false,3,false,false,false)) Verb1(109) st 2"
          ]
       },
       {
          "id":110,
          "type":2,
          "examples":[
-            "${LANG( sub(n(146,0,false,false,-1,false,false,false)) Verb1(110) )}"
+           "sub(n(146,0,false,false,-1,false,false,false)) Verb1(110)"
          ]
       },
       {
          "id":111,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1180,0,false,false,-1,false,false,false)) st 2 Verb1(111) )}"
+           "sub(n(1180,0,false,false,-1,false,false,false)) st 2 Verb1(111)"
          ]
       },
       {
          "id":112,
          "type":2,
          "examples":[
-            "${LANG( sub(n(228,0,false,false,-1,false,false,false)) Verb1(112) obj(1(n(551,0,false,false,-1,false,false,false)) 2(n(503,3,false,true,0,false,false,false)) ) )}"
+           "sub(n(228,0,false,false,-1,false,false,false)) Verb1(112) obj(1(n(551,0,false,false,-1,false,false,false)) 2(n(503,3,false,true,0,false,false,false)) )"
          ]
       },
       {
          "id":113,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(113) obj(1(n(587,0,false,false,-2,false,false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(113) obj(1(n(587,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":114,
          "type":2,
          "examples":[
-            "${LANG( sub(n(344,0,false,true,-1,false,false,false)) Verb1(114) )}"
+           "sub(n(344,0,false,true,-1,false,false,false)) Verb1(114)"
          ]
       },
       {
          "id":115,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(115) obj(1(n(994,0,false,false,-1,false,false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(115) obj(1(n(994,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":116,
          "type":2,
          "examples":[
-            "${LANG( sub(n(725,0,false,false,-1,false,false,false)) Verb1(116) clause(19,sub(n(723,0,false,false,-1,false,false,false)) st 12 Verb1(256)) )}"
+           "sub(n(725,0,false,false,-1,false,false,false)) Verb1(116) clause(19,sub(n(723,0,false,false,-1,false,false,false)) st 12 Verb1(256))"
          ]
       },
       {
          "id":117,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1238,0,false,false,-1,false,false,false)) Verb1(117) )}"
+           "sub(n(1238,0,false,false,-1,false,false,false)) Verb1(117)"
          ]
       },
       {
          "id":118,
          "type":2,
          "examples":[
-            "${LANG( sub(n(852,0,false,false,-1,false,false,false)) Verb1(118) obj(1(n(1178,0,false,false,-1,false,false,false))) )}"
+           "sub(n(852,0,false,false,-1,false,false,false)) Verb1(118) obj(1(n(1178,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":119,
          "type":2,
          "examples":[
-            "${LANG( sub(n(999,0,false,false,-1,false,false,false)) Verb1(119) obj(1(n(929,0,false,false,0,false,false,false))) )}"
+           "sub(n(999,0,false,false,-1,false,false,false)) Verb1(119) obj(1(n(929,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":120,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1194,0,false,false,-1,false,false,false)) Verb1(120) obj(1(n(754,0,false,false,-1,false,false,false))) )}"
+           "sub(n(1194,0,false,false,-1,false,false,false)) Verb1(120) obj(1(n(754,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":121,
          "type":2,
          "examples":[
-            "${LANG( sub(n(497,0,false,false,-1,false,false,false)) Verb1(121) obj(1(n(724,0,false,false,-1,false,false,false))) )}"
+           "sub(n(497,0,false,false,-1,false,false,false)) Verb1(121) obj(1(n(724,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":122,
          "type":2,
          "examples":[
-            "${LANG( sub(n(999,0,false,false,-1,false,false,false)) Verb1(122) obj(1(n(898,0,false,false,-1,false,false,false))) )}"
+           "sub(n(999,0,false,false,-1,false,false,false)) Verb1(122) obj(1(n(898,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":123,
          "type":2,
          "examples":[
-            "${LANG( sub(n(725,0,false,false,-1,false,false,false)) Verb1(123) clause(19,sub(n(851,0,false,true,0,false,false,false)) st 1 Verb1(234) ) )}"
+           "sub(n(725,0,false,false,-1,false,false,false)) Verb1(123) clause(19,sub(n(851,0,false,true,0,false,false,false)) st 1 Verb1(234) )"
          ]
       },
       {
          "id":124,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1021,0,false,false,-1,false,false,false)) Verb1(124) )}"
+           "sub(n(1021,0,false,false,-1,false,false,false)) Verb1(124)"
          ]
       },
       {
          "id":125,
          "type":2,
          "examples":[
-            "${LANG( sub(n(725,0,false,false,-1,false,false,false)) Verb1(125) obj(1(n(851,0,false,true,0,false,false,false))) )}"
+           "sub(n(725,0,false,false,-1,false,false,false)) Verb1(125) obj(1(n(851,0,false,true,0,false,false,false)))"
          ]
       },
       {
          "id":126,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(126) obj(1(n(215,0,false,false,-2,false,false,false))) st 2 )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(126) obj(1(n(215,0,false,false,-2,false,false,false))) st 2"
          ]
       },
       {
          "id":127,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(127) obj(1(n(170,0,false,false,-1,false,false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(127) obj(1(n(170,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":128,
          "type":2,
          "examples":[
-            "${LANG( sub(n(461,0,false,false,-1,false,false,false)) Verb1(128) )}"
+           "sub(n(461,0,false,false,-1,false,false,false)) Verb1(128)"
          ]
       },
       {
          "id":129,
          "type":2,
          "examples":[
-            "${LANG( sub(n(851,0,false,false,-2,false,false,false)) Verb1(129) obj(2(n(843,0,false,false,-2,false,false,true,true,0,(Verb1(12) obj(1(n(991,0,false,false,-2,false,false,false))) ) ))) )}"
+           "sub(n(851,0,false,false,-2,false,false,false)) Verb1(129) obj(2(n(843,0,false,false,-2,false,false,true,true,0,(Verb1(12) obj(1(n(991,0,false,false,-2,false,false,false))) ) )))"
          ]
       },
       {
          "id":130,
          "type":2,
          "examples":[
-            "${LANG( sub(n(6,0,false,false,0,false,false,false)) Verb1(130) obj(1(n(125,0,false,true,0,false,false,false))) )}"
+           "sub(n(6,0,false,false,0,false,false,false)) Verb1(130) obj(1(n(125,0,false,true,0,false,false,false)))"
          ]
       },
       {
          "id":131,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1240,0,false,false,-1,false,false,false)) Verb1(131) obj(1(n(851,0,false,true,-1,false,false,false)) 2(n(351,0,false,false,0,false,false,false))) )}"
+           "sub(n(1240,0,false,false,-1,false,false,false)) Verb1(131) obj(1(n(851,0,false,true,-1,false,false,false)) 2(n(351,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":132,
          "type":2,
          "examples":[
-            "${LANG( sub(n(942,0,false,false,-1,false,false,false)) Verb1(132) st 2 obj(1(n(843,0,false,false,-1,false,false,false))) )}"
+           "sub(n(942,0,false,false,-1,false,false,false)) Verb1(132) st 2 obj(1(n(843,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":133,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1,0,false,false,0,false,false,false)) Verb1(133) st 1 obj(1(n(1242,0,false,false,1,false,false,false))) )}"
+           "sub(n(1,0,false,false,0,false,false,false)) Verb1(133) st 1 obj(1(n(1242,0,false,false,1,false,false,false)))"
          ]
       },
       {
          "id":134,
          "type":2,
          "examples":[
-            "${LANG( sub(n(2,0,false,false,0,false,false,false)) Verb1(134) st 1 obj(1(n(325,0,false,false,-1,false,false,false))) )}"
+           "sub(n(2,0,false,false,0,false,false,false)) Verb1(134) st 1 obj(1(n(325,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":135,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(135) st 2 obj(1(n(4,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(135) st 2 obj(1(n(4,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":136,
          "type":2,
          "examples":[
-            "${LANG( sub(n(851,0,false,false,-1,false,false,false)) Verb1(136) st 2 )}"
+           "sub(n(851,0,false,false,-1,false,false,false)) Verb1(136) st 2"
          ]
       },
       {
          "id":137,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(137) st 2 obj(1(n(224,0,false,true,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(137) st 2 obj(1(n(224,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":138,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(138) st 2 obj(1(n(545,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(138) st 2 obj(1(n(545,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":139,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(139) obj(1(n(4,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(139) obj(1(n(4,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":140,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1,0,false,false,0,false,false,false)) Verb1(140) )}"
+           "sub(n(1,0,false,false,0,false,false,false)) Verb1(140)"
          ]
       },
       {
          "id":141,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(141) obj(1(n(101,0,false,false,0,false,false,false))) st 0 )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(141) obj(1(n(101,0,false,false,0,false,false,false))) st 0"
          ]
       },
       {
          "id":142,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(142) obj(1(n(200,0,false,true,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(142) obj(1(n(200,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":143,
          "type":2,
          "examples":[
-            "${LANG( sub(n(170,0,false,false,-1,false,false,false)) Verb1(143) )}"
+           "sub(n(170,0,false,false,-1,false,false,false)) Verb1(143)"
          ]
       },
       {
          "id":144,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(144) obj(1(n(3,0,false,false,0,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(144) obj(1(n(3,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":145,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1230,0,false,false,-1,false,false,false)) Verb1(145) st 0 )}"
+           "sub(n(1230,0,false,false,-1,false,false,false)) Verb1(145) st 0"
          ]
       },
       {
          "id":146,
          "type":2,
          "examples":[
-            "${LANG( sub(n(270,0,false,false,-1,false,false,false)) Verb1(146) obj(1(adj(134))) )}"
+           "sub(n(270,0,false,false,-1,false,false,false)) Verb1(146) obj(1(adj(134)))"
          ]
       },
       {
          "id":147,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(147) obj(1(n(258,0,false,false,-2,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(147) obj(1(n(258,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":148,
          "type":2,
          "examples":[
-            "${LANG( sub(n(8,0,false,false,0,false,false,false)) Verb1(148) st 18 )}"
+           "sub(n(8,0,false,false,0,false,false,false)) Verb1(148) st 18"
          ]
       },
       {
          "id":149,
          "type":2,
          "examples":[
-            "${LANG( sub(n(344,0,false,false,-1,false,false,false)) Verb1(149) obj(1(n(290,0,false,true,-1,false,false,false))) )}"
+           "sub(n(344,0,false,false,-1,false,false,false)) Verb1(149) obj(1(n(290,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":150,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(150) obj(1(n(227,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(150) obj(1(n(227,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":151,
          "type":2,
          "examples":[
-            "${LANG( sub(n(497,0,false,false,-1,false,false,false)) Verb1(151) obj(1(n(625,0,false,false,-1,false,false,false))) )}"
+           "sub(n(497,0,false,false,-1,false,false,false)) Verb1(151) obj(1(n(625,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":152,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(152) obj(1(n(1077,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(152) obj(1(n(1077,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":153,
          "type":2,
          "examples":[
-            "${LANG( sub(n(228,0,false,false,-1,false,false,false)) Verb1(153) obj(1(n(1243,0,false,false,3,false,false,false))) )}"
+           "sub(n(228,0,false,false,-1,false,false,false)) Verb1(153) obj(1(n(1243,0,false,false,3,false,false,false)))"
          ]
       },
       {
          "id":154,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(154) st 2 clause(19, sub(n(1033,0,false,false,-1,false,false,false)) Verb1(1) st 1 obj(1(adj(196))) ) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(154) st 2 clause(19, sub(n(1033,0,false,false,-1,false,false,false)) Verb1(1) st 1 obj(1(adj(196))) )"
          ]
       },
       {
          "id":155,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(155) st 2 obj(1(n(504,0,false,false,3,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(155) st 2 obj(1(n(504,0,false,false,3,false,false,false)))"
          ]
       },
       {
          "id":156,
          "type":2,
          "examples":[
-            "${LANG( sub(n(490,0,false,false,-1,false,false,false)) Verb1(156) obj(1(n(399,0,false,false,-1,false,false,false))) )}"
+           "sub(n(490,0,false,false,-1,false,false,false)) Verb1(156) obj(1(n(399,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":157,
          "type":2,
          "examples":[
-            "${LANG( sub(n(273,0,false,true,-1,false,false,false)) Verb1(157) )}"
+           "sub(n(273,0,false,true,-1,false,false,false)) Verb1(157)"
          ]
       },
       {
          "id":158,
          "type":2,
          "examples":[
-            "${LANG( sub(n(723,0,false,false,-1,false,false,false)) Verb1(158) obj(1(n(284,0,false,false,0,false,false,false))) )}"
+           "sub(n(723,0,false,false,-1,false,false,false)) Verb1(158) obj(1(n(284,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":159,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,0,false,false,-1,false,false,false)) Verb1(159) obj(1(n(971,0,false,false,-1,false,false,false))) )}"
+           "sub(n(724,0,false,false,-1,false,false,false)) Verb1(159) obj(1(n(971,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":160,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(160) obj(1(n(1230,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(160) obj(1(n(1230,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":161,
          "type":2,
          "examples":[
-            "${LANG( sub(n(551,0,false,false,-1,false,false,false)) Verb1(161) obj(1(n(1008,3,false,true,4,false,false,false))) )}"
+           "sub(n(551,0,false,false,-1,false,false,false)) Verb1(161) obj(1(n(1008,3,false,true,4,false,false,false)))"
          ]
       },
       {
          "id":162,
          "type":2,
          "examples":[
-            "${LANG( sub(n(724,6,false,true,-1,false,false,false)) Verb1(162) st 2 obj(1(n(1171,0,false,true,-1,false,false,false))) )}"
+           "sub(n(724,6,false,true,-1,false,false,false)) Verb1(162) st 2 obj(1(n(1171,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":163,
          "type":2,
          "examples":[
-            "${LANG( sub(n(116,0,false,false,-1,false,false,false)) Verb1(163) st 12 obj(1(n(1244,0,false,true,-1,false,false,false))) )}"
+           "sub(n(116,0,false,false,-1,false,false,false)) Verb1(163) st 12 obj(1(n(1244,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":164,
          "type":2,
          "examples":[
-            "${LANG( sub(n(723,0,false,false,-1,false,false,false)) Verb1(164) st 2 obj(1(n(784,0,false,true,0,false,false,false))) )}"
+           "sub(n(723,0,false,false,-1,false,false,false)) Verb1(164) st 2 obj(1(n(784,0,false,true,0,false,false,false)))"
          ]
       },
       {
          "id":165,
          "type":2,
          "examples":[
-            "${LANG( sub(n(851,0,false,true,-1,false,false,false)) Verb1(165) )}"
+           "sub(n(851,0,false,true,-1,false,false,false)) Verb1(165)"
          ]
       },
       {
          "id":166,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(166) st 2 obj(1(n(1101,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(166) st 2 obj(1(n(1101,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":167,
          "type":2,
          "examples":[
-            "${LANG( sub(n(723,0,false,false,-1,false,false,false)) Verb1(167) st 2 obj(1(n(1180,0,false,false,-1,false,false,false))) )}"
+           "sub(n(723,0,false,false,-1,false,false,false)) Verb1(167) st 2 obj(1(n(1180,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":168,
          "type":2,
          "examples":[
-            "${LANG( sub(n(490,0,false,false,-1,false,false,false)) Verb1(168) st 1 obj(1(n(1026,0,false,false,3,false,false,false))) )}"
+           "sub(n(490,0,false,false,-1,false,false,false)) Verb1(168) st 1 obj(1(n(1026,0,false,false,3,false,false,false)))"
          ]
       },
       {
          "id":169,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(169) st 2 obj(1(n(239,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(169) st 2 obj(1(n(239,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":170,
          "type":2,
          "examples":[
-            "${LANG( sub(n(704,0,false,false,-1,false,false,false)) Verb1(170) st 2 obj(1(n(810,0,false,false,-1,false,false,false)) 2(n(154,0,false,false,-1,false,true,23,false))) datao(2,1) )}"
+           "sub(n(704,0,false,false,-1,false,false,false)) Verb1(170) st 2 obj(1(n(810,0,false,false,-1,false,false,false)) 2(n(154,0,false,false,-1,false,true,23,false))) datao(2,1)"
          ]
       },
       {
          "id":171,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(171) st 0 obj(1(n(116,0,false,false,-2,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(171) st 0 obj(1(n(116,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":172,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(172) st 2 )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(172) st 2"
          ]
       },
       {
          "id":173,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(173) st 2 obj(1(n(4,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(173) st 2 obj(1(n(4,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":174,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(174) st 1 clause(19, sub(n(4,0,false,false,0,false,false,false)) Verb1(68) st 1 obj(1(n(1237,0,false,false,4,false,false,false))) ) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(174) st 1 clause(19, sub(n(4,0,false,false,0,false,false,false)) Verb1(68) st 1 obj(1(n(1237,0,false,false,4,false,false,false))) )"
          ]
       },
       {
          "id":175,
          "type":2,
          "examples":[
-            "${LANG( sub(n(725,0,false,false,-1,false,false,false)) Verb1(175) st 2 obj(1(n(857,0,false,false,-1,false,false,false))) )}"
+           "sub(n(725,0,false,false,-1,false,false,false)) Verb1(175) st 2 obj(1(n(857,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":177,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(177) st 2 obj(1(n(586,0,false,false,4,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(177) st 2 obj(1(n(586,0,false,false,4,false,false,false)))"
          ]
       },
       {
          "id":178,
          "type":2,
          "examples":[
-            "${LANG( sub(n(942,0,false,false,-1,false,false,false)) Verb1(178) st 2 obj(1(n(724,0,false,true,-1,false,false,false))) )}"
+           "sub(n(942,0,false,false,-1,false,false,false)) Verb1(178) st 2 obj(1(n(724,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":179,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(179) st 2 obj(1(n(947,0,false,false,-2,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(179) st 2 obj(1(n(947,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":180,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(180) st 1 obj(1(n(224,0,false,false,-2,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(180) st 1 obj(1(n(224,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":181,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(181) st 2 obj(1(n(1245,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(181) st 2 obj(1(n(1245,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":182,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(182) st 2 clause(19,sub(n(4,0,false,false,0,false,false,false)) obj(1(n(5,0,false,false,0,false,false,false))) Verb1(57) st 2 ) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(182) st 2 clause(19,sub(n(4,0,false,false,0,false,false,false)) obj(1(n(5,0,false,false,0,false,false,false))) Verb1(57) st 2 )"
          ]
       },
       {
          "id":183,
          "type":2,
          "examples":[
-            "${LANG( sub(n(6,0,false,false,0,false,false,false)) Verb1(183) st 1 clause(19,sub(n(9,0,false,false,0,false,false,false)) Verb1(13) obj(1(n(976,0,false,false,-1,false,false,false)))) )}"
+           "sub(n(6,0,false,false,0,false,false,false)) Verb1(183) st 1 clause(19,sub(n(9,0,false,false,0,false,false,false)) Verb1(13) obj(1(n(976,0,false,false,-1,false,false,false))))"
          ]
       },
       {
          "id":184,
          "type":2,
          "examples":[
-            "${LANG( sub(n(228,0,false,false,0,false,false,false)) Verb1(184) st 1 obj(1(n(490,0,false,false,3,false,false,false))) )}"
+           "sub(n(228,0,false,false,0,false,false,false)) Verb1(184) st 1 obj(1(n(490,0,false,false,3,false,false,false)))"
          ]
       },
       {
          "id":185,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(185) st 1 )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(185) st 1"
          ]
       },
       {
          "id":186,
          "type":2,
          "examples":[
-            "${LANG( sub(n(202,0,false,false,-1,false,false,false)) Verb1(186) )}"
+           "sub(n(202,0,false,false,-1,false,false,false)) Verb1(186)"
          ]
       },
       {
          "id":187,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(187) obj(1(n(177,0,false,true,3,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(187) obj(1(n(177,0,false,true,3,false,false,false)))"
          ]
       },
       {
          "id":188,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(188) st 2 obj(1(n(759,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(188) st 2 obj(1(n(759,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":189,
          "type":2,
          "examples":[
-            "${LANG( sub(n(14,0,false,false,0,false,false,false) adj(210)) )}"
+           "sub(n(14,0,false,false,0,false,false,false) adj(210))"
          ]
       },
       {
          "id":190,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(190) st 2 obj(1(n(744,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(190) st 2 obj(1(n(744,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":191,
          "type":2,
          "examples":[
-            "${LANG( sub(n(7,0,false,false,0,false,false,false)) Verb1(191) st 2 obj(1(n(127,0,false,false,-2,false,false,false))) )}"
+           "sub(n(7,0,false,false,0,false,false,false)) Verb1(191) st 2 obj(1(n(127,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":192,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(192) st 2 obj(1(n(723,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(192) st 2 obj(1(n(723,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":193,
          "type":2,
          "examples":[
-            "${LANG( sub(n(635,0,false,false,-1,false,false,false)) Verb1(193) st 2 )}"
+           "sub(n(635,0,false,false,-1,false,false,false)) Verb1(193) st 2"
          ]
       },
       {
          "id":194,
          "type":2,
          "examples":[
-            "${LANG( sub(n(5,0,false,false,0,false,false,false)) Verb1(194) st 0 )}"
+           "sub(n(5,0,false,false,0,false,false,false)) Verb1(194) st 0"
          ]
       },
       {
          "id":195,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(195) st 2 clause(19, sub(n(633,0,false,false,-1,false,false,false)) Verb1(1) obj(1(adj(153))) ) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(195) st 2 clause(19, sub(n(633,0,false,false,-1,false,false,false)) Verb1(1) obj(1(adj(153))) )"
          ]
       },
       {
          "id":196,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(196) st 2 obj(1(n(633,0,false,false,-1,false,false,false) adj(153))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(196) st 2 obj(1(n(633,0,false,false,-1,false,false,false) adj(153)))"
          ]
       },
       {
          "id":197,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(197) st 2 obj(1(n(843,0,false,false,-1,false,false,false) adj(85))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(197) st 2 obj(1(n(843,0,false,false,-1,false,false,false) adj(85)))"
          ]
       },
       {
          "id":198,
          "type":2,
          "examples":[
-            "${LANG( sub(n(198,0,false,false,-1,false,false,false)) Verb1(198) st 2 obj(1(n(226,0,false,false,-1,false,false,false))) )}"
+           "sub(n(198,0,false,false,-1,false,false,false)) Verb1(198) st 2 obj(1(n(226,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":199,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1194,0,false,false,-1,false,false,false)) Verb1(199) st 2 obj(1(n(399,0,false,false,-1,false,false,false))) )}"
+           "sub(n(1194,0,false,false,-1,false,false,false)) Verb1(199) st 2 obj(1(n(399,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":200,
          "type":2,
          "examples":[
-            "${LANG( sub(n(198,0,false,false,-1,false,false,false)) Verb1(200) st 0 )}"
+           "sub(n(198,0,false,false,-1,false,false,false)) Verb1(200) st 0"
          ]
       },
       {
          "id":201,
          "type":2,
          "examples":[
-            "${LANG( sub(n(274,0,false,false,-1,false,false,false)) Verb1(201) clause(3, sub(it(274)) Verb1(96) ) )}"
+           "sub(n(274,0,false,false,-1,false,false,false)) Verb1(201) clause(3, sub(it(274)) Verb1(96) )"
          ]
       },
       {
          "id":202,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) st 2 obj(1(n(1189,0,false,false,-1,false,false,false))) Verb1(202) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) st 2 obj(1(n(1189,0,false,false,-1,false,false,false))) Verb1(202)"
          ]
       },
       {
          "id":203,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) st 1 Verb1(203) obj(1(n(503,0,false,true,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) st 1 Verb1(203) obj(1(n(503,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":204,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(204) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(204)"
          ]
       },
       {
          "id":205,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(205) st 2 )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(205) st 2"
          ]
       },
       {
          "id":206,
          "type":2,
          "examples":[
-            "${LANG( sub(n(5,0,false,false,0,false,false,false)) st 0 Verb1(206) )}"
+           "sub(n(5,0,false,false,0,false,false,false)) st 0 Verb1(206)"
          ]
       },
       {
          "id":207,
          "type":2,
          "examples":[
-            "${LANG( obj(1(n(685,0,false,false,-1,false,false,false))) sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(207) )}"
+           "obj(1(n(685,0,false,false,-1,false,false,false))) sub(n(4,0,false,false,0,false,false,false)) st 2 Verb1(207)"
          ]
       },
       {
          "id":208,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(208) st 2 obj(1(n(872,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(208) st 2 obj(1(n(872,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":209,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(209) st 10 obj(1(n(872,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(209) st 10 obj(1(n(872,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":210,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1221,0,false,false,-1,false,false,false)) Verb1(210) st 18 )}"
+           "sub(n(1221,0,false,false,-1,false,false,false)) Verb1(210) st 18"
          ]
       },
       {
          "id":211,
          "type":2,
          "examples":[
-            "${LANG( sub(n(6,0,false,false,0,false,false,false)) Verb1(211) st 0 obj(1(n(1227,0,false,false,-1,false,false,false))) )}"
+           "sub(n(6,0,false,false,0,false,false,false)) Verb1(211) st 0 obj(1(n(1227,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":212,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(212) st 1 obj(1(n(504,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(212) st 1 obj(1(n(504,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":213,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(213) st 1 )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(213) st 1"
          ]
       },
       {
          "id":214,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(214) obj(1(n(4,0,false,false,0,false,false,false)) 2(n(944,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(214) obj(1(n(4,0,false,false,0,false,false,false)) 2(n(944,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":215,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(215) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(215)"
          ]
       },
       {
          "id":216,
          "type":2,
          "examples":[
-            "${LANG( sub(n(344,0,false,true,-1,false,false,false)) Verb1(216) st 4 obj(1(n(1304,0,true,true,0,false,false,false))) )}"
+           "sub(n(344,0,false,true,-1,false,false,false)) Verb1(216) st 4 obj(1(n(1304,0,true,true,0,false,false,false)))"
          ]
       },
       {
          "id":217,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(217) st 2 obj(1(n(402,0,false,false,4,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(217) st 2 obj(1(n(402,0,false,false,4,false,false,false)))"
          ]
       },
       {
          "id":218,
          "type":2,
          "examples":[
-            "${LANG( sub(n(6,0,false,false,0,false,false,false)) Verb1(218) st 0 )}"
+           "sub(n(6,0,false,false,0,false,false,false)) Verb1(218) st 0"
          ]
       },
       {
          "id":219,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(219) st 2 obj(1(n(1006,0,false,false,3,false,false,false) adj(52)) 2(n(1006,0,false,false,-2,false,false,false) adj(29) )) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(219) st 2 obj(1(n(1006,0,false,false,3,false,false,false) adj(52)) 2(n(1006,0,false,false,-2,false,false,false) adj(29) ))"
          ]
       },
       {
          "id":220,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(220) st 2 obj(1(n(1050,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(220) st 2 obj(1(n(1050,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":221,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(221) st 2 obj(1(n(1006,0,false,false,3,false,false,false) adj(153)) 2(n(1006,0,false,false,-2,false,false,false) adj(23) )) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(221) st 2 obj(1(n(1006,0,false,false,3,false,false,false) adj(153)) 2(n(1006,0,false,false,-2,false,false,false) adj(23) ))"
          ]
       },
       {
          "id":222,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1,0,false,false,0,false,false,false)) Verb1(222) st 2 obj(1(n(235,0,false,false,1,false,false,false))) )}"
+           "sub(n(1,0,false,false,0,false,false,false)) Verb1(222) st 2 obj(1(n(235,0,false,false,1,false,false,false)))"
          ]
       },
       {
          "id":223,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(223) st 0 obj(1(n(994,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(223) st 0 obj(1(n(994,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":224,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(224) st 0 obj(1(n(994,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(224) st 0 obj(1(n(994,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":225,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(225) st 2 obj(1(n(1101,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(225) st 2 obj(1(n(1101,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":226,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(226) st 2 obj(1(n(1163,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(226) st 2 obj(1(n(1163,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":227,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(227) st 2 obj(1(n(4,0,false,false,0,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(227) st 2 obj(1(n(4,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":228,
          "type":2,
          "examples":[
-            "${LANG( sub(n(2,0,false,false,0,false,false,false)) Verb1(228) st 0 obj(1(n(125,0,false,false,-2,false,false,false))) )}"
+           "sub(n(2,0,false,false,0,false,false,false)) Verb1(228) st 0 obj(1(n(125,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":229,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(229) st 2 obj(1(n(1305,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(229) st 2 obj(1(n(1305,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":230,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(230) st 2 obj(1(n(898,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(230) st 2 obj(1(n(898,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":232,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(232) st 2 obj(1(n(215,0,false,true,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(232) st 2 obj(1(n(215,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":233,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(233) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(233)"
          ]
       },
       {
          "id":234,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1,0,false,false,0,false,false,false)) Verb1(234) st 0 )}"
+           "sub(n(1,0,false,false,0,false,false,false)) Verb1(234) st 0"
          ]
       },
       {
          "id":235,
          "type":2,
          "examples":[
-            "${LANG( sub(n(344,0,false,false,-1,false,false,false)) Verb1(235) )}"
+           "sub(n(344,0,false,false,-1,false,false,false)) Verb1(235)"
          ]
       },
       {
          "id":236,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(236) st 2 )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(236) st 2"
          ]
       },
       {
          "id":237,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(237) st 2 obj(1(n(857,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(237) st 2 obj(1(n(857,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":238,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(238) st 2 obj(1(n(278,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(238) st 2 obj(1(n(278,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":239,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(239) st 2 obj(1(n(227,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(239) st 2 obj(1(n(227,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":240,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(240) st 2 obj(1(n(1125,0,false,false,-2,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(240) st 2 obj(1(n(1125,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":241,
          "type":2,
          "examples":[
-            "${LANG( sub(n(5,0,false,false,0,false,false,false)) Verb1(241) st 1 obj(1(n(1154,0,false,false,0,false,false,false))) )}"
+           "sub(n(5,0,false,false,0,false,false,false)) Verb1(241) st 1 obj(1(n(1154,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":243,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(243) st 2 obj(1(n(1230,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(243) st 2 obj(1(n(1230,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":244,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(244) st 2 obj(1(n(287,0,false,false,4,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(244) st 2 obj(1(n(287,0,false,false,4,false,false,false)))"
          ]
       },
       {
          "id":245,
          "type":2,
          "examples":[
-            "${LANG( sub(n(14,0,false,false,0,false,false,false) adj(210)) )}"
+           "sub(n(14,0,false,false,0,false,false,false) adj(210))"
          ]
       },
       {
          "id":246,
          "type":2,
          "examples":[
-            "${LANG( sub(n(170,0,false,true,0,false,false,false)) Verb1(246) st 1 obj(1(n(504,0,false,false,0,false,false,false))) )}"
+           "sub(n(170,0,false,true,0,false,false,false)) Verb1(246) st 1 obj(1(n(504,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":247,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(247) st 1 obj(1(n(346,0,false,false,0,false,true,26,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(247) st 1 obj(1(n(346,0,false,false,0,false,true,26,false)))"
          ]
       },
       {
          "id":248,
          "type":2,
          "examples":[
-            "${LANG( sub(n(1,0,false,false,0,false,false,false)) Verb1(248) st 1 obj(1(n(100,0,false,false,0,false,false,false))) )}"
+           "sub(n(1,0,false,false,0,false,false,false)) Verb1(248) st 1 obj(1(n(100,0,false,false,0,false,false,false)))"
          ]
       },
       {
          "id":249,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(249) st 2 obj(1(n(630,0,false,false,-1,false,false,false)) 2(n(842,0,false,false,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(249) st 2 obj(1(n(630,0,false,false,-1,false,false,false)) 2(n(842,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":250,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(250) st 2 obj(2(n(377,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(250) st 2 obj(2(n(377,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":251,
          "type":2,
          "examples":[
-            "${LANG( Verb1(251) sub(n(4,0,false,false,0,false,false,false)) st 2 Verb2(20) obj(1(n(127,0,false,false,-1,false,false,false))) )}"
+           "Verb1(251) sub(n(4,0,false,false,0,false,false,false)) st 2 Verb2(20) obj(1(n(127,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":252,
          "type":2,
          "examples":[
-            "${LANG( Verb1(252) sub(n(6,0,false,false,0,false,false,false)) st 2 obj(1(n(241,0,false,false,-2,false,false,false))) )}"
+           "Verb1(252) sub(n(6,0,false,false,0,false,false,false)) st 2 obj(1(n(241,0,false,false,-2,false,false,false)))"
          ]
       },
       {
          "id":253,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) obj(1(n(154,0,false,false,-1,false,false,false))) st 2 Verb1(253) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) obj(1(n(154,0,false,false,-1,false,false,false))) st 2 Verb1(253)"
          ]
       },
       {
          "id":254,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(254) obj(1(n(3,0,false,false,0,false,false,false))) st 2 )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(254) obj(1(n(3,0,false,false,0,false,false,false))) st 2"
          ]
       },
       {
          "id":255,
          "type":2,
          "examples":[
-            "${LANG( sub(n(14,0,false,false,0,false,false,false) adj(210)) )}"
+           "sub(n(14,0,false,false,0,false,false,false) adj(210))"
          ]
       },
       {
          "id":256,
          "type":2,
          "examples":[
-            "${LANG( sub(n(5,0,false,false,0,false,false,false)) Verb1(256) st 1 )}"
+           "sub(n(5,0,false,false,0,false,false,false)) Verb1(256) st 1"
          ]
       },
       {
          "id":257,
          "type":2,
          "examples":[
-            "${LANG( sub(n(3,0,false,false,0,false,false,false)) Verb1(257) st 2 obj(1(n(1230,0,false,false,-1,false,false,false))) )}"
+           "sub(n(3,0,false,false,0,false,false,false)) Verb1(257) st 2 obj(1(n(1230,0,false,false,-1,false,false,false)))"
          ]
       },
       {
          "id":258,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(258) st 0 obj(1(n(1298,0,false,true,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(258) st 0 obj(1(n(1298,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":259,
          "type":2,
          "examples":[
-            "${LANG( sub(n(4,0,false,false,0,false,false,false)) Verb1(259) st 2 obj(1(n(1298,0,false,true,-1,false,false,false))) )}"
+           "sub(n(4,0,false,false,0,false,false,false)) Verb1(259) st 2 obj(1(n(1298,0,false,true,-1,false,false,false)))"
          ]
       },
       {
          "id":260,
          "type":2,
          "examples":[
-            "${LANG( sub(n(170,0,false,false,-1,false,false,false)) Verb1(260) st 2 )}"
+           "sub(n(170,0,false,false,-1,false,false,false)) Verb1(260) st 2"
          ]
       }
    ]

@@ -36,7 +36,7 @@ for Verb in VerbObj["verbs"]:
 	VerbHTML.write("<td>"+str(Verb["id"])+"</td>\n")
 	VerbHTML.write("<td>${LANG( Verb"+str(Verb["type"])+"("+str(Verb["id"])+") punc 0 )}</td>\n<td>")
 	for example in Verb["examples"]:
-		VerbHTML.write(example + "<br/>")
+		VerbHTML.write("${LANG( " + example + " )}<br/>")
 	VerbHTML.write("</td>\n<td></td>\n</tr>\n\n")
 
 VerbHTML.write("\n\n\n")
