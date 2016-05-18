@@ -18,7 +18,7 @@ char Parser::LookAHead(){
 	//Skip over whitespace
 	if (look==' ' || look=='\n' || look=='\t')
 		LookAHead();
-		return look;
+	return look;
 }
 bool Parser::check(const char* _string){
 	int _ptr=0;

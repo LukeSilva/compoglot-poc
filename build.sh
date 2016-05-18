@@ -10,6 +10,7 @@ base()
 	echo
 	echo "Compiling base..."
 	echo
+
 	for file in $BASEFILES
 	do
 		echo $file
@@ -72,6 +73,11 @@ clean()
 	echo
 	rm *.o
 }
+
+echo "Creating settings.h file"
+cat source/settings.template > source/settings.h
+echo "#define DICTIONARY \"$(pwd)/lang/\"" >> source/settings.h
+
 
 mkdir -p build
 cd build
