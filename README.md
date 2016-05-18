@@ -1,7 +1,5 @@
 ## What is Compoglot?
-Compoglot allows developers to create sentences in a variety of different languages through the use of a programming language which restricts the user to a vocabulary and grammar that is common between the supported output languages.
-
-Repeated use of compoglot allows developers to create localizations in without knowing the target language. As Compoglot's input language is restictive, explicit, and without ambiguities, the localizations created by Compoglot are generally quite accurate.
+Compoglot is a tool that allows developers to easily create localizations in a variety of different languages without necessarily knowing them. Compoglot uses a programming language as it's input which restricts the user to a vocabulary and grammar that is common between the supported output languages. As this programming language is explicit and without ambiguities, the localizations created by Compoglot are generally quite accurate.
 
 
 ## Can I see an example?
@@ -11,3 +9,4 @@ Note that the compoglot code doesn't change in all of the examples, only the lan
 
 ## What languages does compoglot support?
 English, German and Esperanto
+
