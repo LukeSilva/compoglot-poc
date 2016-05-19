@@ -5,7 +5,7 @@
 		"<h1>${LANG(sub(n(695,0,false,false,0,true,n(1210,0,false,true,0,false,false,false),false,false)) punc 0 )}</h1>",
 		"<table border=\"1\">",
 		"<tr><th>${LANG(sub(n(1208,0,false,false,0,false,false,false)) punc 0 )}</th>",
-		"<th${LANG(sub(n(1210,0,false,false,0,false,false,false)) punc 0 )}</th>",
+		"<th>${LANG(sub(n(1210,0,false,false,0,false,false,false)) punc 0 )}</th>",
 		"<th>${LANG(sub(n(450,0,false,false,0,false,false,false)) punc 0 )}</th>",
 		"<th>${LANG(sub(n(796,0,false,true,0,false,false,false)) punc 0 )}</th></tr>"
 	  ],
