@@ -28,9 +28,6 @@ Noun::~Noun()
 {
 }
 
-
-
-
 std::string Language::createSentence(){
 	return "";
 }

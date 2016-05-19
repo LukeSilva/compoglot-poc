@@ -62,7 +62,7 @@
          "type":1,
          "examples":[
            "sub(n(6,0,false,false,0,false,false,false)) Verb1(7) Verb2(218)",
-           "sub(n(449,0,false,false,-1,false,false,false)) Verb1(7) Verb2(208) adverb(40)"
+           "sub(n(449,0,false,false,-1,false,false,false)) Verb1(7) Verb2(208)"
          ]
       },
       {
