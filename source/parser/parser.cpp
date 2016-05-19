@@ -272,13 +272,6 @@ void Parser::_parse(Language* lang){
 			lang->Verb2 = getInt();
 			expect(')',__FILE__,__LINE__);
 		}
-		else if (rstLook() && check("adverb"))
-		{
-			rstPtr(); 
-			expect('(',__FILE__,__LINE__);
-			lang->addAdverb(getInt());
-			expect(')',__FILE__,__LINE__);
-		}
 		else if (rstLook() && check("neg "))
 		{
 			rstPtr();

@@ -37,12 +37,11 @@ public:
 };
 
 #include "settings.h"
-void clearNoun(Noun* n);
 
 class Language
 {
 protected:
-	int adverbs[NUM_ADVERBS];
+	int adverbs[0];
 public:
 	int Data;
 	int st;
@@ -72,7 +71,6 @@ public:
 	int Conjunction;
 	bool IsClause;
 	void NewSentence();
-	void addAdverb(int adverbId);
 	virtual std::string createSentence();
 	virtual std::string createSubClause();
 	virtual Noun * getIt(int id);

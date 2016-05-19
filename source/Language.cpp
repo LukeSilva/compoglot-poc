@@ -37,14 +37,6 @@ std::string Language::createSentence(){
 std::string Language::createSubClause(){
 	return "";
 }
-void Language::addAdverb(int adverbId){
-	for (int i=0;i<3;i++){
-		if (adverbs[i]==0){
-			adverbs[i]=adverbId;
-			break;
-		}
-	}
-}
 Noun* Language::getIt(int id){
 	Noun * n = new Noun;
 	n->ID=5;
@@ -59,10 +51,6 @@ Noun* Language::getIt(int id){
 		n->Adjectives[i]=0;
 	}
 	return n;
-}
-void clearNoun(Noun* n)
-{
-
 }
 void Language::NewSentence(){
 	Data = 0;
@@ -87,6 +75,4 @@ void Language::NewSentence(){
 		ObjConjunctionType[i] = 0;
 		NumFilledObjects[i] = -1;
 	}
-	for (int i=0;i<NUM_ADVERBS;i++)
-		adverbs[i]=0;
 }
