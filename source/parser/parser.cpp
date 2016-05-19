@@ -316,7 +316,7 @@ void Parser::_parse(Language* lang){
 		}
 	} 
 }
-std::string Parser::parse(char* _langid,char* in){
+std::string Parser::parse(char* _langid,std::string in){
 	//Setup internals
 	ptr=0;
 	lookptr=0;

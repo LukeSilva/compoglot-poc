@@ -6,10 +6,10 @@ class Parser{
  public:
   char look;
   char* langid;
-  char* string;
+  std::string string;
   int ptr;
   int lookptr;
-  std::string parse(char* language,char* in);
+  std::string parse(char* language,std::string in);
   void _parse(Language* lang);
   void _parseSubject(Language* lang);
   void __parseObject(Language* lang,int obj);

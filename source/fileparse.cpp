@@ -1,62 +1,57 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include "Language.h"
 #include "parser/parser.h"
 #include "settings.h"
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <string>
+#include <fstream>
+#include <iostream>
 int fileParse(int argc,char* argv[]){
- if (argc!=5)
- {
-  printf("Usage: %s %s <language> <input-file> <output-file>\n",argv[0],argv[1]);
-  return -1;
- }
- FILE* rFile = fopen(argv[3],"r");
- FILE* wFile = fopen(argv[4],"w");
- char c = fgetc(rFile);
- while (c!=EOF){
-  if (c!='$')
-  {
-   fputc(c,wFile);
-  }else{
-   //check for ${LANG in the worst way possible
-   if ((c = fgetc(rFile)) == '{')
-   {
-     if ((c = fgetc(rFile)) == 'L')
-     {     
-       if ((c = fgetc(rFile)) == 'A')
-       {    
-         if ((c = fgetc(rFile)) == 'N')
-         {
-           if ((c = fgetc(rFile)) == 'G')
-           {
-	     //Allocate 1kB for the input buffer
-             char* in = (char*)malloc(4096);
-             int i=0;
-  	     while (i<4096)
-  	     {
-		c = fgetc(rFile);   
-                if (c==EOF){ return -1;	}
-                if (c=='}') i=4096;
-                in[i++]=c;
- 	     }
-             in[i]=0;
-             Parser parser;
-             std::string string;
-             string = parser.parse(argv[2],in);
-             fputs(string.c_str(),wFile);
-             //free(in);
-  		
-           }else{fputs("${LAN",wFile);fputc(c,wFile);}
-         }else{fputs("${LA",wFile);fputc(c,wFile);}
-       }else{fputs("${L",wFile);fputc(c,wFile);}
-     }else{fputs("${",wFile);fputc(c,wFile);}
-   }else{fputc('$',wFile);fputc(c,wFile);}
-  }
-  c = fgetc(rFile);
- }
- fclose(rFile);
- fclose(wFile);
+	if (argc!=5)
+	{
+		std::cout << "Usage: " << argv[0] << " " << argv[1] <<" <language> <input-file> <output-file>" << std::endl;
+		return -1;
+	}
+
+	std::ifstream rFile(argv[3]);
+	std::ofstream wFile(argv[4]);
+	if (!rFile.is_open())
+	{
+		std::cout << "Could not open input file" << std::endl;
+		return -1;
+	}
+	if (!wFile.is_open())
+	{
+		std::cout << "Could not open output file" << std::endl;
+		return -1;
+	}
+
+	char c = 0;
+	while (rFile.get(c))
+	{
+		if (c!= '$')
+			wFile.put(c);
+		else
+		{
+			if (rFile.get(c) && c == '{')
+				if (rFile.get(c) && c == 'L')
+					if (rFile.get(c) && c == 'A')
+						if (rFile.get(c) && c == 'N')
+							if (rFile.get(c) && c == 'G')
+							{
+								std::string input;
+								while (rFile.get(c) && c != '}')
+								{
+									input += c;
+								}
+								Parser parser;
+								std::string output;
+								output = parser.parse(argv[2],input.c_str());
+								wFile << output;
+							}else wFile << "${LAN" << c;
+						else wFile << "${LA" << c;
+					else wFile << "${L" << c;
+				else wFile << "${" << c;
+			else wFile << "$" << c;
+		}
+	}
  return 0;
 }
