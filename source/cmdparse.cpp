@@ -9,6 +9,6 @@ int cmdParse(int argc,char* argv[]){
   return -1;
  }
  Parser parser;
- std::cout << parser.parse(argv[2],argv[3]) << std::endl;;
+ std::cout << parser.parse(std::string(argv[2]),std::string(argv[3])) << std::endl;;
  return 0;
 }

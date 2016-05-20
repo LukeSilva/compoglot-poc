@@ -42,14 +42,8 @@ void eo::ParseVerb(int verb,int n)
 	std::string Line;
 	std::getline(is,Line);
 	is.close();
-	Parser* p=new Parser; 
-	p->string=(char*)Line.c_str();
-	p->ptr=0;
-	p->lookptr=0;
-	p->look=Line[0];
-	p->verb=verb;
-	p->expect('(',__FILE__,__LINE__);
-	p->_parse(this);
+	Parser p;
+	p.parseExt(Line,this);
  
 }
 

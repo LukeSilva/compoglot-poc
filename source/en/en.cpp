@@ -10,19 +10,13 @@ const std::string en::RClauseNonEssentialMarker = "which";
 const std::string en::QuestionMarkers[6] = {"who","what","when","where","why","how"};
 
 void en::ParseVerb(int verb,int n){
-	std::ifstream is(DICTIONARY EN_EN_FOLDER "general");
+	std::ifstream is(DICTIONARY EN_EN_FOLDER "extverbs.txt");
 	if (GotoLine(is,n)) return;
 	std::string Line;
 	std::getline(is,Line);
 	is.close();
-	Parser* p=new Parser; 
-	p->string=(char*)Line.c_str();
-	p->ptr=0;
-	p->lookptr=0;
-	p->look=Line[0];
-	p->verb=verb;
-	p->expect('(',__FILE__,__LINE__);
-	p->_parse(this);
+	Parser p; 
+	p.parseExt(Line,this);
  
 }
 
