@@ -61,7 +61,6 @@ int ParserIO::getInt(std::string state)
 {
 	skipWhitespace(state);
 
-
 	bool neg = false;
 	if (peek(state)=='-')
 	{
@@ -86,4 +85,16 @@ int ParserIO::getInt(std::string state)
 	if (neg) num *= -1;
 	return num;
 	
+}
+
+bool ParserIO::getBool(std::string state)
+{
+	skipWhitespace(state);
+
+	std::string name = getName(state);
+
+	if (name == "true" || name == "T") return true;
+	else if (name == "false" || name == "F") return false;
+
+	throw ParseException(std::string("Expected boolean, got \"") + name + "\", while parsing " + state,input,curPos);
 }

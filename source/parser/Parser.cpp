@@ -13,7 +13,9 @@ std::string Parser::parse(std::string langid, std::string cmd)
 		p.skipWhitespace("beginning of input");
 		p.expect('{',"beginning of input");
 
-		std::cout << p.getInt("initial int");
+		std::cout << p.getInt("initial int") << " ";
+
+		std::cout << p.getBool("initial bool");
 		
 		return ":D";
 	}
