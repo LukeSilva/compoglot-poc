@@ -1,5 +1,5 @@
 #include "../settings.h"
-#include "../parser/parser.h"
+#include "../parser/Parser.h"
 #include "de.h"
 #include <string>
 #include <iostream>

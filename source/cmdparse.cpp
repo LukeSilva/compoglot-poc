@@ -1,5 +1,5 @@
 #include "Language.h"
-#include "parser/parser.h"
+#include "parser/Parser.h"
 #include "settings.h"
 #include <iostream>
 int cmdParse(int argc,char* argv[]){

@@ -1,6 +1,6 @@
-#include "parseException.h"
+#include "ParseException.h"
 
-std::ostream& operator<<(std::ostream& os, const parseException& pe)
+std::ostream& operator<<(std::ostream& os, const ParseException& pe)
 {
 	os << "Parse Exception: " << pe.error << std::endl;
 

@@ -2,7 +2,7 @@
 #include "de/de.h"
 #include "eo/eo.h"
 #include "Language.h"
-#include "parser/parser.h"
+#include "parser/Parser.h"
 #include "cmdparse.h"
 #include "fileparse.h"
 #include <stdio.h>

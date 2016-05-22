@@ -1,8 +1,8 @@
 #pragma once
 #include <string>
 #include "../Language.h"
-#include "parserIO.h"
-#include "parseException.h"
+#include "ParserIO.h"
+#include "ParseException.h"
 
 class Parser
 {
