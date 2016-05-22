@@ -9,6 +9,9 @@ class ParserIO
 public:
 	ParserIO(std::string in) : curPos(0), input(in) {};
 	ParserIO() : curPos(0), input("") {};
+	
+	std::string getInput();
+	int getCurPos();
 
 	char peek(std::string state);		// Returns the current character, without moving forward
 	char get(std::string state); 		// Gets the current character, and moves forward by one

@@ -1,6 +1,9 @@
 #include <iostream>
 #include "Parser.h"
 
+#include "ParseGroup.h"
+#include "ParseSubject.h"
+
 void Parser::parseExt(std::string cmd, Language* lang)
 {
 }
@@ -11,11 +14,13 @@ std::string Parser::parse(std::string langid, std::string cmd)
 	{
 		ParserIO p(cmd);
 		p.skipWhitespace("beginning of input");
-		p.expect('{',"beginning of input");
-
-		std::cout << p.getInt("initial int") << " ";
-
-		std::cout << p.getBool("initial bool");
+		
+		ParseGroup g;
+		g.addElement(new ParseSubject());
+		
+		Language l;
+		
+		g.parse(p,l);
 		
 		return ":D";
 	}

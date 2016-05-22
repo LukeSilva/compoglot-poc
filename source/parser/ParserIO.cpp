@@ -4,12 +4,25 @@
 #include "ParseException.h"
 #include "ParserIO.h"
 
+
+std::string ParserIO::getInput()
+{
+	return std::string(input);
+}
+
+int ParserIO::getCurPos()
+{
+	return curPos;
+}
+
 void ParserIO::expect(char character,std::string state)
 {
-	if (get(state)!=character)
+	if (peek(state)!=character)
 	{
-		throw ParseException(std::string("Unexpected character '") + input.at(curPos) + "', expected '" + character + "', while parsing " + state, input,curPos);
+		throw ParseException(std::string("Unexpected character '") + peek(state) + "', expected '" + character + "', while parsing " + state, input,curPos);
 	}
+	else
+		get(state);
 }
 
 char ParserIO::peek(std::string state)
