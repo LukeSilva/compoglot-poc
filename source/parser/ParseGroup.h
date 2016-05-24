@@ -17,7 +17,7 @@ public:
 	ParseGroup() : ParseElement("Group") {}
 	~ParseGroup();
 
-	virtual bool match(std::string name);
+	bool match(std::string name);
 	virtual void parse(ParserIO& io, Language& lang);
 	
 };

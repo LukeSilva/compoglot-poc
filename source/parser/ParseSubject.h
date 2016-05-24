@@ -1,14 +1,15 @@
 #pragma once
 #include <string>
 #include "../Language.h"
-#include "ParseElement.h"
+#include "ParseList.h"
 
-class ParseSubject : public ParseElement
+class ParseSubject : public ParseList
 {
 public:
-	ParseSubject() : ParseElement("Subject") {}
+	ParseSubject() : ParseList("Subject") {}
 
-	virtual bool match(std::string name);
-	virtual void parse(ParserIO& io, Language& lang);
+	ParseGroup* getGroup();
+
+	bool match(std::string name);
 	
 };

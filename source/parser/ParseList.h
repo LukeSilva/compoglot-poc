@@ -2,9 +2,15 @@
 #include <string>
 #include "../Language.h"
 #include "ParseElement.h"
+#include "ParseGroup.h"
 
 class ParseList : public ParseElement
 {
+protected:
+	ParseList(std::string name) : ParseElement(name+" (List)") {}
+
+	virtual ParseGroup* getGroup();
+
 public:
 	ParseList() : ParseElement("List") {}
 

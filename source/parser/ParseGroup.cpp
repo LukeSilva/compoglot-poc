@@ -38,7 +38,7 @@ void ParseGroup::parse(ParserIO& io, Language& lang)
 		}
 
 		if (!found && elementName != "")
-			throw ParseException(std::string("Unknown token ") + elementName + ", while parsing " + name,io.getInput(),io.getCurPos());
+			throw ParseException(std::string("Unknown element ") + elementName + ", while parsing " + name,io.getInput(),io.getCurPos());
 		else if (!found && !std::isalnum(io.peek(name)))
 			throw ParseException(std::string("Unexpected character '") + io.peek(name) + "', while parsing " + name,io.getInput(),io.getCurPos());
 		
@@ -46,4 +46,6 @@ void ParseGroup::parse(ParserIO& io, Language& lang)
 	}
 
 	io.expect('}',std::string("end of ") + name);
+	
+	
 }
