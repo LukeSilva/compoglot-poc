@@ -21,6 +21,7 @@ public:
 
 
 	std::string getName(std::string state); // [a-zA-Z0-9]*
+	std::string getString(std::string state); // \".*\"
 	int  getInt(std::string state);  	// -[0-9]* | [0-9]*
 	bool getBool(std::string state); 	// "true","false","T","F"
 };

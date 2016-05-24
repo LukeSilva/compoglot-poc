@@ -70,6 +70,23 @@ std::string ParserIO::getName(std::string state)
 	return name;
 }
 
+std::string ParserIO::getString(std::string state)
+{
+	char strchar = peek(state);
+	if (peek(state)=='"')
+		expect('"',state);
+	else
+		expect('\'',state);
+
+	std::string retstr = "";
+	while(peek(state) != strchar)
+		retstr += get(state);
+
+	expect(strchar,state);
+
+	return retstr;
+}
+
 int ParserIO::getInt(std::string state)
 {
 	skipWhitespace(state);

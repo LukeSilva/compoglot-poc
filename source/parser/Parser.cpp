@@ -3,6 +3,7 @@
 
 #include "ParseGroup.h"
 #include "ParseSubject.h"
+#include "ParseDef.h"
 
 void Parser::parseExt(std::string cmd, Language* lang)
 {
@@ -17,6 +18,7 @@ std::string Parser::parse(std::string langid, std::string cmd)
 		
 		ParseGroup g;
 		g.addElement(new ParseSubject());
+		g.addElement(new ParseDef());
 		
 		Language l;
 		
