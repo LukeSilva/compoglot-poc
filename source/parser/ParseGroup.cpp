@@ -23,6 +23,8 @@ void ParseGroup::parse(ParserIO& io, Language& lang)
 {
 	io.expect('{',std::string("beginning of ") + name);
 	
+	io.skipWhitespace(std::string("beginning of ") + name);
+	
 	while (io.peek(name) != '}')
 	{
 		std::string elementName = io.getName(name);

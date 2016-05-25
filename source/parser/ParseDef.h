@@ -13,11 +13,13 @@ protected:
 
 	int parseInt(ParserIO& io);
 	bool parseBool(ParserIO& io);
-	void parseArgs(ParserIO& io);
+	void parseArgs(ParserIO& io, Language& lang);
 	
-	virtual void setInt(std::string tag, int value);
-	virtual void setBool(std::string tag, bool value);
-	virtual void setString(std::string tag, std::string value);
+	virtual void setInt(std::string tag, int value, const ParserIO& io, Language& lang);
+	virtual void setBool(std::string tag, bool value, const ParserIO& io, Language& lang);
+	virtual void setString(std::string tag, std::string value, const ParserIO& io, Language& lang);
+
+	ParseDef(std::string name) : ParseElement(name + " (Def)") {};
 public:
 	ParseDef() : ParseElement("Definition") {}
 

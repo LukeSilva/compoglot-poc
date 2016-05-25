@@ -7,5 +7,4 @@
 #define EO_FOLDER "eo/"
 
 #include "Language.h"
-Language* getLanguageFromStringId(char* Id);
 Language* getLanguageFromStringID(std::string ID);

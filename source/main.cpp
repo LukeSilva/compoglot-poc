@@ -27,10 +27,6 @@ Language* getLanguageFromStringID(std::string ID)
 	return ret;
 }
 
-Language* getLanguageFromStringId(char* Id){
-	return getLanguageFromStringID(std::string(Id));
-}
-
 
 int main(int argc, char *argv[])
 {

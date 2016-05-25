@@ -5,12 +5,12 @@
 #include "ParserIO.h"
 
 
-std::string ParserIO::getInput()
+std::string ParserIO::getInput() const
 {
 	return std::string(input);
 }
 
-int ParserIO::getCurPos()
+int ParserIO::getCurPos() const
 {
 	return curPos;
 }
