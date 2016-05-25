@@ -1,11 +1,11 @@
 #include "ParseException.h"
 #include "ParseSentenceType.h"
 
-void ParseSentenceType::setInt(std::string tag, int value, const ParserIO& io, Language& lang)
+void ParseSentenceType::setInt( const ParserIO& io, Language& lang, std::string tag, int value)
 {
-	throw ParseException(std::string("Invalid int-tag \"") + tag + "\"",io.getInput(),io.getCurPos());
+	throw ParseException(std::string("Invalid int-tag \"") + tag + "\", while parsing sentence type",io.getInput(),io.getCurPos());
 }
-void ParseSentenceType::setBool(std::string tag, bool value, const ParserIO& io, Language& lang)
+void ParseSentenceType::setBool(const ParserIO& io, Language& lang, std::string tag, bool value)
 {
 	if (tag=="neg")
 	{
@@ -16,12 +16,12 @@ void ParseSentenceType::setBool(std::string tag, bool value, const ParserIO& io,
 		lang.Question = value ? 1 : 0;
 	}
 	else
-		throw ParseException(std::string("Invalid bool-tag \"") + tag + "\"",io.getInput(),io.getCurPos());
+		throw ParseException(std::string("Invalid bool-tag \"") + tag + "\", while parsing sentence type",io.getInput(),io.getCurPos());
 }
 
-void ParseSentenceType::setString(std::string tag, std::string value, const ParserIO& io, Language& lang)
+void ParseSentenceType::setString(const ParserIO& io, Language& lang,std::string tag, std::string value)
 {
-	throw ParseException(std::string("Invalid string-tag \"") + tag + "\"",io.getInput(),io.getCurPos()-value.length()-tag.length()-3);
+	throw ParseException(std::string("Invalid string-tag \"") + tag + "\", while parsing sentence type",io.getInput(),io.getCurPos()-value.length()-tag.length()-3);
 }
 
 

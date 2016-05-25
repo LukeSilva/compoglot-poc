@@ -20,17 +20,17 @@ void ParseDef::endParse(ParserIO& io)
 	io.expect(')',name);
 }
 
-void ParseDef::setInt(std::string tag, int value, const ParserIO& io, Language& lang)
+void ParseDef::setInt(const ParserIO& io, Language& lang,std::string tag, int value)
 {
 	std::cout << "ParserIntArg " << tag << " = " << value << std::endl;
 }
 
-void ParseDef::setBool(std::string tag, bool value, const ParserIO& io, Language& lang)
+void ParseDef::setBool(const ParserIO& io, Language& lang,std::string tag, bool value)
 {
 	std::cout << "ParserBoolArg " << tag << " = " << value << std::endl;
 }
 
-void ParseDef::setString(std::string tag, std::string value, const ParserIO& io, Language& lang)
+void ParseDef::setString(const ParserIO& io, Language& lang,std::string tag, std::string value)
 {
 	std::cout << "ParserStringArg " << tag << " = " << value << std::endl;
 }
@@ -84,11 +84,11 @@ void ParseDef::parseArgs(ParserIO& io, Language& lang)
 		io.skipWhitespace(name);
 
 		if (std::isdigit(io.peek(name)))
-			setInt(tag,io.getInt(name),io,lang);
+			setInt(io,lang,tag,io.getInt(name));
 		else if (io.peek(name) == '"' || io.peek(name)=='\'')
-			setString(tag,io.getString(name),io,lang);
+			setString(io,lang,tag,io.getString(name));
 		else
-			setBool(tag,io.getBool(name),io,lang);
+			setBool(io,lang,tag,io.getBool(name));
 
 		io.skipWhitespace(name);
 
