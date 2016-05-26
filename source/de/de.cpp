@@ -62,7 +62,7 @@ void de::ParseVerb(int verb,int n)
 	std::getline(is,Line);
 	is.close();
 	Parser p;
-	p.parseExt(Line,this);
+	p.parseExt(Line,this,verb);
  
 }
 

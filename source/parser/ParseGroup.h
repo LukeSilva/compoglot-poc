@@ -9,7 +9,7 @@ class ParseGroup : public ParseElement
 private:
 	std::vector<ParseElement*> elements;
 protected:
-	ParseGroup(std::string name) : ParseElement(name) {}
+	ParseGroup(std::string name) : ParseElement(name + "(Group)") {}
 public:
 	// For testing this is public.
 	void addElement(ParseElement* newElement);

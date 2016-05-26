@@ -3,12 +3,21 @@
 #include "../Language.h"
 #include "Parser.h"
 
-#include "ParseGroup.h"
+#include "ParseBasicVerb.h"
 #include "ParseSubject.h"
 #include "ParseSentenceType.h"
+#include "ParseExtVerb.h"
 
-void Parser::parseExt(std::string cmd, Language* lang)
+Parser::Parser()
 {
+	addElement(new ParseSubject());
+	addElement(new ParseSentenceType());
+	addElement(new ParseExtVerb());
+}
+
+void Parser::parseExt(std::string cmd, Language* lang, int verbNum)
+{
+	addElement(new ParseBasicVerb(verbNum));
 }
 
 std::string Parser::parse(std::string langid, std::string cmd)
@@ -21,11 +30,8 @@ std::string Parser::parse(std::string langid, std::string cmd)
 		ParserIO p(cmd);
 		p.skipWhitespace("beginning of input");
 		
-		ParseGroup g;
-		g.addElement(new ParseSubject());
-		g.addElement(new ParseSentenceType());
-		
-		g.parse(p,*l);
+		parse(p,*l);
+
 		std::cout << "SENTENCE: \"" << l->createSentence() << "\"" << std::endl; 
 		return l->createSentence();
 	}

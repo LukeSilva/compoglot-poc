@@ -1,260 +1,261 @@
-(Verb(1))
-(Verb(2))
-(Verb(3))
-(Verb(4))
-(Verb(5))
-(Verb(6))
-(Verb(7))
-(Verb(8))
-(Verb(9))
-(Verb(10))
-(Verb(11))
-(Verb(12) oprepos(1,19) oprepos(2,18))
-(Verb(13) oprepos(1,19) oprepos(2,18))
-(Verb(14))
-(Verb(15))
-(Verb(16))
-(Verb(17) oprepos(1,19) oprepos(2,18))
-(Verb(18) oprepos(1,19) oprepos(2,18))
-(Verb(19) oprepos(1,4))
-(Verb(20))
-(Verb(21) oprepos(1,26))
-(Verb(22) oprepos(1,14))
-(Verb(23))
-(Verb(24))
-(Verb(25))
-(Verb(26))
-(Verb(27))
-(Verb(28))
-(Verb(29) oprepos(1,19) oprepos(2,18) oprepos(3,44) oarticle(3,0))
-(Verb(30))
-(Verb(31))
-(Verb(32))
-(Verb(33))
-(Verb(34) oprepos(1,20))
-(Verb(35))
-(Verb(36))
-(Verb(37))
-(Verb(38))
-(Verb(39))
-(Verb(40))
-(Verb(41))
-(Verb(42))
-(Verb(43))
-(Verb(44))
-(Verb(45) oprepos(1,4))
-(Verb(46))
-(Verb(47))
-(Verb(48))
-(Verb(49))
-(Verb(50))
-(Verb(51))
-(Verb(52))
-(Verb(53))
-(Verb(54))
-(Verb(55) oprepos(2,14))
-(Verb(56))
-(Verb(57))
-(Verb(58))
-(Verb(59))
-(Verb(60))
-(Verb(61))
-(Verb(62) oprepos(1,49))
-(Verb(63))
-(Verb(64))
-(Verb(65))
-(Verb(66) )
-(Verb(67))
-(Verb(68) )
-(Verb(69))
-(Verb(70))
-(Verb(71))
-(Verb(72) oprepos(1,19) oprepos(2,18))
-(Verb(73))
-(Verb(74))
-(Verb(75))
-(Verb(76) oprepos(1,14))
-(Verb(77))
-(Verb(78))
-(Verb(79))
-(Verb(80))
-(Verb(81) oprepos(2,26))
-(Verb(82))
-(Verb(83) oprepos(1,27))
-(Verb(84) )
-(Verb(85))
-(Verb(86))
-(Verb(87))
-(Verb(88))
-(Verb(89) oprepos(2,4))
-(Verb(90))
-(Verb(91))
-(Verb(92))
-(Verb(93))
-(Verb(94))
-(Verb(95))
-(Verb(96))
-(Verb(1) obj(1(adj(303))) oprepos(2,41) )
-(Verb(98))
-(Verb(99))
-(Verb(100))
-(Verb(101) oprepos(2,27))
-(Verb(102))
-(Verb(103))
-(Verb(104))
-(Verb(105))
-(Verb(106))
-(Verb(107) oprepos(2,22))
-(Verb(108))
-(Verb(109))
-(Verb(110))
-(Verb(111))
-(Verb(112))
-(Verb(113))
-(Verb(114))
-(Verb(115))
-(Verb(116))
-(Verb(117))
-(Verb(118) oprepos(1,22))
-(Verb(119) )
-(Verb(120))
-(Verb(121))
-(Verb(122))
-(Verb(123))
-(Verb(124))
-(Verb(125))
-(Verb(126))
-(Verb(127))
-(Verb(128))
-(Verb(129))
-(Verb(130))
-(Verb(131) oprepos(2,27))
-(Verb(132))
-(Verb(133))
-(Verb(134))
-(Verb(135))
-(Verb(136))
-(Verb(137))
-(Verb(138))
-(Verb(139))
-(Verb(140))
-(Verb(141))
-(Verb(142))
-(Verb(143))
-(Verb(144))
-(Verb(145))
-(Verb(146))
-(Verb(147))
-(Verb(148))
-(Verb(149))
-(Verb(150) oprepos(2,19) oprepos(3,18))
-(Verb(151))
-(Verb(152))
-(Verb(153))
-(Verb(154))
-(Verb(155))
-(Verb(156))
-(Verb(157))
-(Verb(158))
-(Verb(159))
-(Verb(160))
-(Verb(161))
-(Verb(162))
-(Verb(163))
-(Verb(164) )
-(Verb(165))
-(Verb(166))
-(Verb(167))
-(Verb(168))
-(Verb(169))
-(Verb(170))
-(Verb(171))
-(Verb(172))
-(Verb(173))
-(Verb(174))
-(Verb(175))
-(Verb(176))
-(Verb(177))
-(Verb(178))
-(Verb(179))
-(Verb(180))
-(Verb(181))
-(Verb(182))
-(Verb(183))
-(Verb(184))
-(Verb(185))
-(Verb(186))
-(Verb(187))
-(Verb(188) oprepos(1,19) oprepos(2,18))
-(Verb(189))
-(Verb(190))
-(Verb(191))
-(Verb(192))
-(Verb(193))
-(Verb(194))
-(Verb(195))
-(Verb(196))
-(Verb(197))
-(Verb(198))
-(Verb(199))
-(Verb(200))
-(Verb(201))
-(Verb(202))
-(Verb(203))
-(Verb(204))
-(Verb(205))
-(Verb(206))
-(Verb(207))
-(Verb(208))
-(Verb(209))
-(Verb(210))
-(Verb(211) oprepos(1,4))
-(Verb(212))
-(Verb(213))
-(Verb(214))
-(Verb(215))
-(Verb(216) oprepos(1,26))
-(Verb(217))
-(Verb(218))
-(Verb(219) oprepos(2,4))
-(Verb(220))
-(Verb(221) oprepos(2,4))
-(Verb(222))
-(Verb(223))
-(Verb(224))
-(Verb(225))
-(Verb(226))
-(Verb(227))
-(Verb(228))
-(Verb(229))
-(Verb(230) oprepos(1,4))
-(Verb(231))
-(Verb(232))
-(Verb(233))
-(Verb(234))
-(Verb(235))
-(Verb(236))
-(Verb(237))
-(Verb(238))
-(Verb(239))
-(Verb(240))
-(Verb(241))
-(Verb(242))
-(Verb(243))
-(Verb(244))
-(Verb(245))
-(Verb(246))
-(Verb(247))
-(Verb(248))
-(Verb(249) oprepos(2,18))
-(Verb(250) oprepos(1,14))
-(Verb(251))
-(Verb(252))
-(Verb(253))
-(Verb(254))
-(Verb(1) oprepos(1,26) datao(1,2) )
-(Verb(256))
-(Verb(257))
-(Verb(258))
-(Verb(259))
-(Verb(260))
+{ Verb(1) }
+{ Verb(2) }
+{ Verb(3) }
+{ Verb(4) }
+{ Verb(5) }
+{ Verb(6) }
+{ Verb(7) }
+{ Verb(8) }
+{ Verb(9) }
+{ Verb(10) }
+{ Verb(11) }
+{ Verb(12)  oprepos(1,19) oprepos(2,18)}
+{ Verb(13)  oprepos(1,19) oprepos(2,18)}
+{ Verb(14) }
+{ Verb(15) }
+{ Verb(16) }
+{ Verb(17)  oprepos(1,19) oprepos(2,18)}
+{ Verb(18)  oprepos(1,19) oprepos(2,18)}
+{ Verb(19)  oprepos(1,4)}
+{ Verb(20) }
+{ Verb(21)  oprepos(1,26)}
+{ Verb(22)  oprepos(1,14)}
+{ Verb(23) }
+{ Verb(24) }
+{ Verb(25) }
+{ Verb(26) }
+{ Verb(27) }
+{ Verb(28) }
+{ Verb(29)  oprepos(1,19) oprepos(2,18) oprepos(3,44) oarticle(3,0)}
+{ Verb(30) }
+{ Verb(31) }
+{ Verb(32) }
+{ Verb(33) }
+{ Verb(34)  oprepos(1,20)}
+{ Verb(35) }
+{ Verb(36) }
+{ Verb(37) }
+{ Verb(38) }
+{ Verb(39) }
+{ Verb(40) }
+{ Verb(41) }
+{ Verb(42) }
+{ Verb(43) }
+{ Verb(44) }
+{ Verb(45)  oprepos(1,4)}
+{ Verb(46) }
+{ Verb(47) }
+{ Verb(48) }
+{ Verb(49) }
+{ Verb(50) }
+{ Verb(51) }
+{ Verb(52) }
+{ Verb(53) }
+{ Verb(54) }
+{ Verb(55)  oprepos(2,14)}
+{ Verb(56) }
+{ Verb(57) }
+{ Verb(58) }
+{ Verb(59) }
+{ Verb(60) }
+{ Verb(61) }
+{ Verb(62)  oprepos(1,49)}
+{ Verb(63) }
+{ Verb(64) }
+{ Verb(65) }
+{ Verb(66)  }
+{ Verb(67) }
+{ Verb(68)  }
+{ Verb(69) }
+{ Verb(70) }
+{ Verb(71) }
+{ Verb(72)  oprepos(1,19) oprepos(2,18)}
+{ Verb(73) }
+{ Verb(74) }
+{ Verb(75) }
+{ Verb(76)  oprepos(1,14)}
+{ Verb(77) }
+{ Verb(78) }
+{ Verb(79) }
+{ Verb(80) }
+{ Verb(81)  oprepos(2,26)}
+{ Verb(82) }
+{ Verb(83)  oprepos(1,27)}
+{ Verb(84)  }
+{ Verb(85) }
+{ Verb(86) }
+{ Verb(87) }
+{ Verb(88) }
+{ Verb(89)  oprepos(2,4)}
+{ Verb(90) }
+{ Verb(91) }
+{ Verb(92) }
+{ Verb(93) }
+{ Verb(94) }
+{ Verb(95) }
+{ Verb(96) }
+{ Verb(1)  obj(1(adj(303))) oprepos(2,41) }
+{ Verb(98) }
+{ Verb(99) }
+{ Verb(100) }
+{ Verb(101)  oprepos(2,27)}
+{ Verb(102) }
+{ Verb(103) }
+{ Verb(104) }
+{ Verb(105) }
+{ Verb(106) }
+{ Verb(107)  oprepos(2,22)}
+{ Verb(108) }
+{ Verb(109) }
+{ Verb(110) }
+{ Verb(111) }
+{ Verb(112) }
+{ Verb(113) }
+{ Verb(114) }
+{ Verb(115) }
+{ Verb(116) }
+{ Verb(117) }
+{ Verb(118)  oprepos(1,22)}
+{ Verb(119)  }
+{ Verb(120) }
+{ Verb(121) }
+{ Verb(122) }
+{ Verb(123) }
+{ Verb(124) }
+{ Verb(125) }
+{ Verb(126) }
+{ Verb(127) }
+{ Verb(128) }
+{ Verb(129) }
+{ Verb(130) }
+{ Verb(131)  oprepos(2,27)}
+{ Verb(132) }
+{ Verb(133) }
+{ Verb(134) }
+{ Verb(135) }
+{ Verb(136) }
+{ Verb(137) }
+{ Verb(138) }
+{ Verb(139) }
+{ Verb(140) }
+{ Verb(141) }
+{ Verb(142) }
+{ Verb(143) }
+{ Verb(144) }
+{ Verb(145) }
+{ Verb(146) }
+{ Verb(147) }
+{ Verb(148) }
+{ Verb(149) }
+{ Verb(150)  oprepos(2,19) oprepos(3,18)}
+{ Verb(151) }
+{ Verb(152) }
+{ Verb(153) }
+{ Verb(154) }
+{ Verb(155) }
+{ Verb(156) }
+{ Verb(157) }
+{ Verb(158) }
+{ Verb(159) }
+{ Verb(160) }
+{ Verb(161) }
+{ Verb(162) }
+{ Verb(163) }
+{ Verb(164)  }
+{ Verb(165) }
+{ Verb(166) }
+{ Verb(167) }
+{ Verb(168) }
+{ Verb(169) }
+{ Verb(170) }
+{ Verb(171) }
+{ Verb(172) }
+{ Verb(173) }
+{ Verb(174) }
+{ Verb(175) }
+{ Verb(176) }
+{ Verb(177) }
+{ Verb(178) }
+{ Verb(179) }
+{ Verb(180) }
+{ Verb(181) }
+{ Verb(182) }
+{ Verb(183) }
+{ Verb(184) }
+{ Verb(185) }
+{ Verb(186) }
+{ Verb(187) }
+{ Verb(188)  oprepos(1,19) oprepos(2,18)}
+{ Verb(189) }
+{ Verb(190) }
+{ Verb(191) }
+{ Verb(192) }
+{ Verb(193) }
+{ Verb(194) }
+{ Verb(195) }
+{ Verb(196) }
+{ Verb(197) }
+{ Verb(198) }
+{ Verb(199) }
+{ Verb(200) }
+{ Verb(201) }
+{ Verb(202) }
+{ Verb(203) }
+{ Verb(204) }
+{ Verb(205) }
+{ Verb(206) }
+{ Verb(207) }
+{ Verb(208) }
+{ Verb(209) }
+{ Verb(210) }
+{ Verb(211)  oprepos(1,4)}
+{ Verb(212) }
+{ Verb(213) }
+{ Verb(214) }
+{ Verb(215) }
+{ Verb(216)  oprepos(1,26)}
+{ Verb(217) }
+{ Verb(218) }
+{ Verb(219)  oprepos(2,4)}
+{ Verb(220) }
+{ Verb(221)  oprepos(2,4)}
+{ Verb(222) }
+{ Verb(223) }
+{ Verb(224) }
+{ Verb(225) }
+{ Verb(226) }
+{ Verb(227) }
+{ Verb(228) }
+{ Verb(229) }
+{ Verb(230)  oprepos(1,4)}
+{ Verb(231) }
+{ Verb(232) }
+{ Verb(233) }
+{ Verb(234) }
+{ Verb(235) }
+{ Verb(236) }
+{ Verb(237) }
+{ Verb(238) }
+{ Verb(239) }
+{ Verb(240) }
+{ Verb(241) }
+{ Verb(242) }
+{ Verb(243) }
+{ Verb(244) }
+{ Verb(245) }
+{ Verb(246) }
+{ Verb(247) }
+{ Verb(248) }
+{ Verb(249)  oprepos(2,18)}
+{ Verb(250)  oprepos(1,14)}
+{ Verb(251) }
+{ Verb(252) }
+{ Verb(253) }
+{ Verb(254) }
+{ Verb(1)  oprepos(1,26) datao(1,2) }
+{ Verb(256) }
+{ Verb(257) }
+{ Verb(258) }
+{ Verb(259) }
+{ Verb(260) }
+
