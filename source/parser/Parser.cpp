@@ -18,6 +18,10 @@ Parser::Parser()
 void Parser::parseExt(std::string cmd, Language* lang, int verbNum)
 {
 	addElement(new ParseBasicVerb(verbNum));
+	ParserIO p(cmd);
+	p.skipWhitespace("beginning of input");
+	
+	parse(p, *lang);
 }
 
 std::string Parser::parse(std::string langid, std::string cmd)
