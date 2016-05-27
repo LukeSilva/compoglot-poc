@@ -8,7 +8,7 @@ class ParseSubject : public ParseList
 public:
 	ParseSubject() : ParseList("Subject") {}
 
-	ParseGroup* getGroup();
+	ParseGroup* getGroup(Language& lang);
 
 	bool match(std::string name);
 	

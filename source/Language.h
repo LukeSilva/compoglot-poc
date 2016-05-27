@@ -59,7 +59,8 @@ public:
 	//Conjunction type between objects (and / or)
 	int ObjConjunctionType[8];
 	//Conjunction type between subjects (and / or)
-	int SubConjunctionType;
+	int SubConjunctionType = 0;
+
 	int ExtVerb1;
 	int ExtVerb2;
 	int ExtVerb3;

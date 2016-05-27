@@ -18,6 +18,7 @@ protected:
 	virtual void setInt(const ParserIO& io, Language& lang,std::string tag, int value);
 	virtual void setBool(const ParserIO& io, Language& lang,std::string tag, bool value);
 	virtual void setString(const ParserIO& io, Language& lang,std::string tag, std::string value);
+	virtual void setGroup(ParserIO& io, Language& lang,std::string tag);
 
 	ParseDef(std::string name) : ParseElement(name + " (Def)") {};
 public:

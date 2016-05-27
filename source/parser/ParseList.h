@@ -9,7 +9,7 @@ class ParseList : public ParseElement
 protected:
 	ParseList(std::string name) : ParseElement(name+" (List)") {}
 
-	virtual ParseGroup* getGroup();
+	virtual ParseGroup* getGroup(Language& lang);
 
 public:
 	ParseList() : ParseElement("List") {}

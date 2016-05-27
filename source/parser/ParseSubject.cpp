@@ -1,17 +1,25 @@
 #include <iostream>
 #include "ParseSubject.h"
-#include "ParseTest.h"
 
-ParseGroup* ParseSubject::getGroup()
+// ---- Child Elements ----
+#include "ParseNoun.h"
+
+ParseGroup* ParseSubject::getGroup(Language& lang)
 {
 	ParseGroup* g = new ParseGroup();
-	g->addElement(new ParseTestElement());
+
+	lang.NumFilledSubjects += 1;
+
+	g->addElement(new ParseNoun(lang.Subjects[lang.NumFilledSubjects]));
+
+	std::cout << "NUMFILLSUB: " << lang.NumFilledSubjects << std::endl;	
+
 	return g;
 }
 
 bool ParseSubject::match(std::string name)
 {
-	if (name == "sub")
+	if (name == "sub" || name == "Subject")
 		return true;
 	return false;
 }

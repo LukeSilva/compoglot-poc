@@ -1,6 +1,6 @@
 #include "ParseList.h"
 
-ParseGroup* ParseList::getGroup()
+ParseGroup* ParseList::getGroup(Language& lang)
 {
 	return new ParseGroup();
 }
@@ -15,7 +15,7 @@ void ParseList::parse(ParserIO& io, Language& lang)
 	io.expect('[',name);
 	io.skipWhitespace(name);
 
-	ParseGroup* g = getGroup();
+	ParseGroup* g = getGroup(lang);
 	g->parse(io,lang);
 	delete g;
 
@@ -24,7 +24,7 @@ void ParseList::parse(ParserIO& io, Language& lang)
 		io.expect(',',name);
 		io.skipWhitespace(name);
 
-		g = getGroup();
+		g = getGroup(lang);
 		g->parse(io,lang);
 		delete g;
 

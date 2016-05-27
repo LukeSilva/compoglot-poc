@@ -36,6 +36,9 @@ std::string Parser::parse(std::string langid, std::string cmd)
 		
 		parse(p,*l);
 
+
+		std::cout << "NUMFILLSUB: " << l->NumFilledSubjects << std::endl;	
+
 		std::cout << "SENTENCE: \"" << l->createSentence() << "\"" << std::endl; 
 		return l->createSentence();
 	}

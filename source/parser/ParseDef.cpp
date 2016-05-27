@@ -1,11 +1,10 @@
 #include <iostream>
 #include <cctype>
+#include "ParseException.h"
 #include "ParseDef.h"
 
 bool ParseDef::match(std::string name)
 {
-	if (name == "def")
-		return true;
 	return false;
 }
 
@@ -22,17 +21,22 @@ void ParseDef::endParse(ParserIO& io)
 
 void ParseDef::setInt(const ParserIO& io, Language& lang,std::string tag, int value)
 {
-	std::cout << "ParserIntArg " << tag << " = " << value << std::endl;
+	throw ParseException(std::string("Invalid int-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());
 }
 
 void ParseDef::setBool(const ParserIO& io, Language& lang,std::string tag, bool value)
 {
-	std::cout << "ParserBoolArg " << tag << " = " << value << std::endl;
+	throw ParseException(std::string("Invalid bool-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());
 }
 
 void ParseDef::setString(const ParserIO& io, Language& lang,std::string tag, std::string value)
 {
-	std::cout << "ParserStringArg " << tag << " = " << value << std::endl;
+	throw ParseException(std::string("Invalid string-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());
+}
+
+void ParseDef::setGroup(ParserIO& io,Language& lang,std::string tag)
+{
+	throw ParseException(std::string("Invalid group-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());	
 }
 
 int ParseDef::parseInt(ParserIO& io)
@@ -87,6 +91,8 @@ void ParseDef::parseArgs(ParserIO& io, Language& lang)
 			setInt(io,lang,tag,io.getInt(name));
 		else if (io.peek(name) == '"' || io.peek(name)=='\'')
 			setString(io,lang,tag,io.getString(name));
+		else if (io.peek(name) == '{')
+			setGroup(io,lang,tag);
 		else
 			setBool(io,lang,tag,io.getBool(name));
 
@@ -98,12 +104,6 @@ void ParseDef::parseArgs(ParserIO& io, Language& lang)
 
 void ParseDef::parse(ParserIO& io, Language& lang)
 {
-	std::cout << "Test Definition" << std::endl;
 	beginParse(io);
-	std::cout << "INT:  " << parseInt(io) << std::endl;
-	std::cout << "BOOL: " << parseBool(io) << std::endl;
-
-	parseArgs(io,lang);		
-
 	endParse(io);
 }

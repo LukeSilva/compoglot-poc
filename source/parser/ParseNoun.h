@@ -3,12 +3,12 @@
 #include "../Language.h"
 #include "ParseDef.h"
 
-class ParseSentenceType : public ParseDef
+class ParseNoun : public ParseDef
 {
 protected:
-	void setBool(const ParserIO& io, Language& lang,std::string tag, bool value);
+	Noun& n;
 public:
-	ParseSentenceType() : ParseDef("Sentence-Type") {}
+	ParseNoun(Noun& n) : ParseDef("Noun"), n(n) {}
 
 	bool match(std::string name);
 	void parse(ParserIO& io, Language& lang);
