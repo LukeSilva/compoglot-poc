@@ -18,16 +18,17 @@ class de : public Language
 		
 		//Boilerplate
 		bool GotoSegment(std::ifstream& is, int Segment);
-    bool GotoLine(std::ifstream& is, int Line);
-    std::string GetSegment(std::ifstream& File);
+		bool GotoLine(std::ifstream& is, int Line);
+		std::string GetSegment(std::ifstream& File);
 		void ParseVerb(int verb,int n);
-		
+		Noun * getIt(int id);		
+
 		//Numerals
 		std::string GetNumeral(Noun& n);
 		
 		//Nouns
 		std::string GetNounString(Noun& n);
-    std::string GetNoun(Noun& n, int Case);
+		std::string GetNoun(Noun& n, int Case);
 		int GetNounType(Noun& n);
 		
 		//Articles

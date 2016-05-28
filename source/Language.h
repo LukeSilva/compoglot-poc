@@ -34,6 +34,8 @@ public:
 	int RelativeClauseObj;
 	bool IsRelativeClauseEssential;
 	int Data;
+	
+	void addAdjective(int adjectiveNum);
 };
 
 #include "settings.h"

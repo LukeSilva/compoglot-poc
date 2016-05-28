@@ -66,6 +66,20 @@ void de::ParseVerb(int verb,int n)
  
 }
 
+Noun * de::getIt(int id)
+{
+	Noun * n = new Noun();
+	n->ID = id;
+	int nType = GetNounType(*n);
+	if (nType == 'm')
+		n->ID = 3;
+	else if (nType == 'f')
+		n->ID = 4;
+	else if (nType == 'n')
+		n->ID = 5;
+	return n;
+}
+
 std::string de::createSentence()
 {
 	std::string SentenceString = "";

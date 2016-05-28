@@ -24,6 +24,19 @@ Noun::Noun()
 		Adjectives[i] = 0;
 	}
 }
+
+void Noun::addAdjective(int adjectiveNum)
+{
+	for (int i = 0; i < 16; ++i)
+	{
+		if (Adjectives[i]==0)
+		{
+			Adjectives[i] = adjectiveNum;
+			break;
+		}
+	}
+}
+
 Noun::~Noun()
 {
 }
