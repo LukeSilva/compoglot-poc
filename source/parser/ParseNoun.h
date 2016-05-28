@@ -7,6 +7,8 @@ class ParseNoun : public ParseDef
 {
 protected:
 	Noun& n;
+
+	void setInt(const ParserIO& io, Language& lang,std::string tag, int value);
 public:
 	ParseNoun(Noun& n) : ParseDef("Noun"), n(n) {}
 

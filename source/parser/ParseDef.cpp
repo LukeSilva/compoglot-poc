@@ -87,7 +87,7 @@ void ParseDef::parseArgs(ParserIO& io, Language& lang)
 		io.expect('=',name);
 		io.skipWhitespace(name);
 
-		if (std::isdigit(io.peek(name)))
+		if (std::isdigit(io.peek(name)) || io.peek(name) == '-')
 			setInt(io,lang,tag,io.getInt(name));
 		else if (io.peek(name) == '"' || io.peek(name)=='\'')
 			setString(io,lang,tag,io.getString(name));
