@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <memory>
 
 #define EN_FOLDER "en/"
 #define EN_EN_FOLDER "en/"
@@ -7,5 +8,5 @@
 #define EO_FOLDER "eo/"
 
 #include "Language.h"
-Language* getLanguageFromStringID(std::string ID);
+std::shared_ptr<Language> getLanguageFromStringID(std::string ID);
 #define DICTIONARY "/home/coolas/compoglot/lang/"

@@ -1,8 +1,6 @@
 #include "Language.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <string>
+#include <iostream>
 
 Noun::Noun()
 {
@@ -39,6 +37,19 @@ void Noun::addAdjective(int adjectiveNum)
 
 Noun::~Noun()
 {
+	if (ShouldUseGenitive && GenitiveNoun != NULL)
+	{
+		delete GenitiveNoun;
+	}
+}
+
+Language::Language()
+{
+	NewSentence();
+}
+
+Language::~Language()
+{
 }
 
 std::string Language::createSentence(){
@@ -62,6 +73,7 @@ Noun* Language::getIt(int id){
 	}
 	return n;
 }
+
 void Language::NewSentence(){
 	Data = 0;
 	Capital = true;

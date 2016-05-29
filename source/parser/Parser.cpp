@@ -1,3 +1,4 @@
+#include <memory>
 #include <iostream>
 
 #include "../Language.h"
@@ -26,7 +27,7 @@ void Parser::parseExt(std::string cmd, Language* lang, int verbNum)
 
 std::string Parser::parse(std::string langid, std::string cmd)
 {
-	Language *l = getLanguageFromStringID(langid);
+	std::shared_ptr<Language> l = getLanguageFromStringID(langid);
 	l->NewSentence();
 	l->st = PRESENT_SIMPLE;
 	try

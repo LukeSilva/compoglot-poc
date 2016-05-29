@@ -45,6 +45,10 @@ class Language
 protected:
 	int adverbs[0];
 public:
+
+	Language();
+	virtual ~Language();
+
 	int Data;
 	int st;
 	int Verb1;

@@ -5,26 +5,24 @@
 #include "parser/Parser.h"
 #include "cmdparse.h"
 #include "fileparse.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdexcept>
 #include <string>
 #include <iostream>
+#include <memory>
 
-Language* getLanguageFromStringID(std::string ID)
+std::shared_ptr<Language> getLanguageFromStringID(std::string ID)
 {
-	Language* ret;
 	if (ID.compare("en")==0)
-		ret = new en;
+		return std::shared_ptr<Language>(new en());
 	else if (ID.compare("de")==0)
-		ret = new de;
+		return std::shared_ptr<Language>(new de());
 	else if (ID.compare("eo")==0)
-		ret = new eo;
+		return std::shared_ptr<Language>(new eo());
 	else
 	{
-		std::cerr << "Unknown Language: \"" << ID << "\"" << std::endl;
-		exit(-1);
+		throw std::runtime_error("Unknown language ID");
 	}
-	return ret;
+	return std::shared_ptr<Language>(new Language());
 }
 
 
