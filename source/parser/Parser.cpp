@@ -4,16 +4,19 @@
 #include "../Language.h"
 #include "Parser.h"
 
+//---- Child Elements ----
 #include "ParseBasicVerb.h"
 #include "ParseSubject.h"
 #include "ParseSentenceType.h"
 #include "ParseExtVerb.h"
+#include "ParseObjList.h"
 
 Parser::Parser()
 {
 	addElement(new ParseSubject());
 	addElement(new ParseSentenceType());
 	addElement(new ParseExtVerb());
+	addElement(new ParseObjList(0));
 }
 
 void Parser::parseExt(std::string cmd, Language* lang, int verbNum)
