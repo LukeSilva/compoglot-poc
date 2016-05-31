@@ -3,8 +3,10 @@
 #include "../Language.h"
 #include "ParseGroup.h"
 
-class ParseNounGroup : public ParseGroup
+
+class ParseObject: public ParseGroup
 {
 public:
-	ParseNounGroup(Noun& n);
+	ParseObject();
+	bool match(std::string tag);
 };

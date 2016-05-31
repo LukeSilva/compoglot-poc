@@ -9,14 +9,14 @@
 #include "ParseSubject.h"
 #include "ParseSentenceType.h"
 #include "ParseExtVerb.h"
-#include "ParseObjList.h"
+#include "ParseObject.h"
 
 Parser::Parser()
 {
 	addElement(new ParseSubject());
 	addElement(new ParseSentenceType());
 	addElement(new ParseExtVerb());
-	addElement(new ParseObjList(0));
+	addElement(new ParseObject());
 }
 
 void Parser::parseExt(std::string cmd, Language* lang, int verbNum)
