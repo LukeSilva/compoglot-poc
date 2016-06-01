@@ -59,5 +59,6 @@ class de : public Language
 		std::string EndVerbs;
 		
 	public:
-    std::string createSentence();
+		de() : Language("de") {}
+		std::string createSentence();
 };

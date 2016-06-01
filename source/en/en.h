@@ -5,6 +5,7 @@
 #include <fstream>
 class en: public Language{
 	public:
+		en() : Language("en") {}
 		std::string createSentence();
 	private:
 

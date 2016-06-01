@@ -1,7 +1,10 @@
 #include "ParseException.h"
 #include "ParseNoun.h"
 
+//---- Child Groups ----
 #include "ParseNounGroup.h"
+#include "Parser.h"
+#include "../Language.h"
 
 
 void ParseNoun::setInt(const ParserIO& io, Language& lang,std::string tag, int value)
@@ -11,6 +14,10 @@ void ParseNoun::setInt(const ParserIO& io, Language& lang,std::string tag, int v
 		n.Numeral = value;
 		if (value > 1 || value < -1)
 			n.IsPlural = true;
+	}
+	else if (tag == "rclauseobj" || tag == "RelativeClauseObject")
+	{
+		n.RelativeClauseObj = value;
 	}
 	else if (tag == "prepos" || tag == "Preposition")
 		n.PreposNum = value;
@@ -23,6 +30,10 @@ void ParseNoun::setBool(const ParserIO& io, Language& lang,std::string tag, bool
 	if (tag == "reflex" || tag == "Reflexive")
 	{
 		n.IsReflexive = value;
+	}
+	else if (tag == "rclauseessential" || tag == "RelativeClauseEssential")
+	{
+		n.IsRelativeClauseEssential = value;
 	}
 	else
 		throw ParseException(std::string("Invalid bool-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());
@@ -38,6 +49,14 @@ void ParseNoun::setGroup(ParserIO& io, Language& lang,std::string tag)
 
 		n.GenitiveNoun = genitive;
 		n.ShouldUseGenitive = true;
+	}
+	else if (tag == "rclause" || tag == "RelativeClause")
+	{
+		std::shared_ptr<Language> rlang = getLanguageFromStringID(lang.LangID);
+		Parser p;
+		p.parse(io,*rlang);
+		n.ShouldUseRelativeClause = true;
+		n.RelativeClause = rlang;
 	}
 	else
 		throw ParseException(std::string("Invalid bool-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());

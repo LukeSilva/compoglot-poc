@@ -49,5 +49,6 @@ private:
 	std::string GetConjunction(int ConjunctionNum);
 	std::string GetSubClause();
 public:
+	eo() : Language("eo") {}
 	std::string createSentence();
 };

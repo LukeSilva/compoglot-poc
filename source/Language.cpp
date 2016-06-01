@@ -43,7 +43,12 @@ Noun::~Noun()
 	}
 }
 
-Language::Language()
+Language::Language() : LangID("lang")
+{
+	NewSentence();
+}
+
+Language::Language(std::string LangID) : LangID(LangID)
 {
 	NewSentence();
 }

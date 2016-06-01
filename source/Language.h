@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include <memory>
+
 class Language;
 
 class Noun
@@ -29,7 +31,7 @@ public:
 	int PreposNum;
 	// sixteen adjectives per noun
 	int Adjectives[16];
-	Language* RelativeClause;
+	std::shared_ptr<Language> RelativeClause;
 	bool ShouldUseRelativeClause;
 	int RelativeClauseObj;
 	bool IsRelativeClauseEssential;
@@ -44,7 +46,9 @@ class Language
 {
 protected:
 	int adverbs[0];
+	Language(std::string LangID);
 public:
+	std::string LangID;
 
 	Language();
 	virtual ~Language();

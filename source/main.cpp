@@ -20,7 +20,7 @@ std::shared_ptr<Language> getLanguageFromStringID(std::string ID)
 		return std::shared_ptr<Language>(new eo());
 	else
 	{
-		throw std::runtime_error("Unknown language ID");
+		throw std::runtime_error(std::string("Unknown language ID ") + ID);
 	}
 	return std::shared_ptr<Language>(new Language());
 }
