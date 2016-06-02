@@ -19,6 +19,8 @@ void ParseList::parse(ParserIO& io, Language& lang)
 	g->parse(io,lang);
 	delete g;
 
+	io.skipWhitespace(name);
+
 	while (io.peek(name)==',')
 	{
 		io.expect(',',name);
@@ -30,6 +32,6 @@ void ParseList::parse(ParserIO& io, Language& lang)
 
 		io.skipWhitespace(name);
 	}
-	
+
 	io.expect(']',name);
 }

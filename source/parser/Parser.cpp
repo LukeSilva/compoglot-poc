@@ -10,6 +10,7 @@
 #include "ParseSentenceType.h"
 #include "ParseExtVerb.h"
 #include "ParseObject.h"
+#include "ParseProperties.h"
 
 Parser::Parser()
 {
@@ -17,6 +18,7 @@ Parser::Parser()
 	addElement(new ParseSentenceType());
 	addElement(new ParseExtVerb());
 	addElement(new ParseObject());
+	addElement(new ParseProperties());
 }
 
 void Parser::parseExt(std::string cmd, Language* lang, int verbNum)
