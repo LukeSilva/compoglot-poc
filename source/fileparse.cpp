@@ -1,5 +1,5 @@
 #include "Language.h"
-#include "parser/parser.h"
+#include "parser/Parser.h"
 #include "settings.h"
 #include <string>
 #include <fstream>
@@ -31,20 +31,20 @@ int fileParse(int argc,char* argv[]){
 			wFile.put(c);
 		else
 		{
-			if (rFile.get(c) && c == '{')
+			if (rFile.get(c) && c == '<')
 				if (rFile.get(c) && c == 'L')
 					if (rFile.get(c) && c == 'A')
 						if (rFile.get(c) && c == 'N')
 							if (rFile.get(c) && c == 'G')
 							{
 								std::string input;
-								while (rFile.get(c) && c != '}')
+								while (rFile.get(c) && c != '>')
 								{
 									input += c;
 								}
 								Parser parser;
 								std::string output;
-								output = parser.parse(argv[2],input.c_str());
+								output = parser.parse(argv[2],input);
 								wFile << output;
 							}else wFile << "${LAN" << c;
 						else wFile << "${LA" << c;

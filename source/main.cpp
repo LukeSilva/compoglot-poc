@@ -36,10 +36,10 @@ int main(int argc, char *argv[])
 	{
 		return cmdParse(argc,argv);
 	} 
-	/*else if (std::string(argv[1]).compare("file")==0)
+	else if (std::string(argv[1]).compare("file")==0)
 	{
 		return fileParse(argc,argv);
-	}*/
+	}
 	else
 	{
 		std::cerr << "Unknown mode " << argv[1] << std::endl;

@@ -7,6 +7,7 @@ class ParseSentenceType : public ParseDef
 {
 protected:
 	void setBool(const ParserIO& io, Language& lang,std::string tag, bool value);
+	void setInt(const ParserIO& io, Language& lang,std::string tag, int value);
 public:
 	ParseSentenceType() : ParseDef("Sentence-Type") {}
 

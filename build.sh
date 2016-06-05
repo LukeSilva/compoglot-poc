@@ -1,5 +1,5 @@
 CFLAGS="-g -Wall -std=c++11"
-BASEFILES="cmdparse.cpp main.cpp Language.cpp general.cpp"
+BASEFILES="fileparse.cpp cmdparse.cpp main.cpp Language.cpp general.cpp"
 PARSERFILES="Parser.cpp ParserIO.cpp ParseException.cpp ParseElement.cpp ParseGroup.cpp ParseList.cpp ParseDef.cpp ParseNounGroup.cpp ParseBasicVerb.cpp ParseObject.cpp ParseSubject.cpp ParseObjList.cpp ParseNoun.cpp ParseAdjective.cpp ParseIt.cpp ParseExtVerb.cpp ParseSentenceType.cpp ParseProperties.cpp ParseTest.cpp "
 DEFILES="de.cpp de_nouns.cpp de_articles.cpp de_numerals.cpp de_verbs.cpp de_prepos.cpp de_adjectives.cpp de_conjunctions.cpp"
 ENFILES="en.cpp en_nouns.cpp en_articles.cpp en_numerals.cpp en_verbs.cpp en_prepos.cpp en_adjectives.cpp en_conjunctions.cpp en_passiveverbs.cpp"

@@ -9,29 +9,29 @@
 { Verb(9) }
 { Verb(10) }
 { Verb(11) }
-{ Verb(12)  oprepos(1,19) oprepos(2,18)}
-{ Verb(13)  oprepos(1,19) oprepos(2,18)}
+{ Verb(12) oprop(1,prepos=19) oprop(2,prepos=18)}
+{ Verb(13) oprop(1,prepos=19) oprop(2,prepos=18)}
 { Verb(14) }
 { Verb(15) }
 { Verb(16) }
-{ Verb(17)  oprepos(1,19) oprepos(2,18)}
-{ Verb(18)  oprepos(1,19) oprepos(2,18)}
-{ Verb(19)  oprepos(1,4)}
+{ Verb(17) oprop(1,prepos=19) oprop(2,prepos=18)}
+{ Verb(18) oprop(1,prepos=19) oprop(2,prepos=18)}
+{ Verb(19) oprop(1,prepos=4)}
 { Verb(20) }
-{ Verb(21)  oprepos(1,26)}
-{ Verb(22)  oprepos(1,14)}
+{ Verb(21) oprop(1,prepos=26)}
+{ Verb(22) oprop(1,prepos=14)}
 { Verb(23) }
 { Verb(24) }
 { Verb(25) }
 { Verb(26) }
 { Verb(27) }
 { Verb(28) }
-{ Verb(29)  oprepos(1,19) oprepos(2,18) oprepos(3,44) oarticle(3,0)}
+{ Verb(29) oprop(1,prepos=19) oprop(2,prepos=18) oprop(3,prepos=44,article=0)}
 { Verb(30) }
 { Verb(31) }
 { Verb(32) }
 { Verb(33) }
-{ Verb(34)  oprepos(1,20)}
+{ Verb(34) oprop(1,prepos=20)}
 { Verb(35) }
 { Verb(36) }
 { Verb(37) }
@@ -42,7 +42,7 @@
 { Verb(42) }
 { Verb(43) }
 { Verb(44) }
-{ Verb(45)  oprepos(1,4)}
+{ Verb(45) oprop(1,prepos=4)}
 { Verb(46) }
 { Verb(47) }
 { Verb(48) }
@@ -52,41 +52,41 @@
 { Verb(52) }
 { Verb(53) }
 { Verb(54) }
-{ Verb(55)  oprepos(2,14)}
+{ Verb(55) oprop(2,prepos=14)}
 { Verb(56) }
 { Verb(57) }
 { Verb(58) }
 { Verb(59) }
 { Verb(60) }
 { Verb(61) }
-{ Verb(62)  oprepos(1,49)}
+{ Verb(62) oprop(1,prepos=49)}
 { Verb(63) }
 { Verb(64) }
 { Verb(65) }
-{ Verb(66)  }
+{ Verb(66) }
 { Verb(67) }
-{ Verb(68)  }
+{ Verb(68) }
 { Verb(69) }
 { Verb(70) }
 { Verb(71) }
-{ Verb(72)  oprepos(1,19) oprepos(2,18)}
+{ Verb(72) oprop(1,prepos=19) oprop(2,prepos=18)}
 { Verb(73) }
 { Verb(74) }
 { Verb(75) }
-{ Verb(76)  oprepos(1,14)}
+{ Verb(76) oprop(1,prepos=14)}
 { Verb(77) }
 { Verb(78) }
 { Verb(79) }
 { Verb(80) }
-{ Verb(81)  oprepos(2,26)}
+{ Verb(81) oprop(2,prepos=26)}
 { Verb(82) }
-{ Verb(83)  oprepos(1,27)}
-{ Verb(84)  }
+{ Verb(83) oprop(1,prepos=27)}
+{ Verb(84) }
 { Verb(85) }
 { Verb(86) }
 { Verb(87) }
 { Verb(88) }
-{ Verb(89)  oprepos(2,4)}
+{ Verb(89) oprop(2,prepos=4)}
 { Verb(90) }
 { Verb(91) }
 { Verb(92) }
@@ -94,17 +94,17 @@
 { Verb(94) }
 { Verb(95) }
 { Verb(96) }
-{ Verb(1)  obj(1(adj(303))) oprepos(2,41) }
+{ Verb(1) obj{1[adj(303)]} oprop(2,prepos=41) }
 { Verb(98) }
 { Verb(99) }
 { Verb(100) }
-{ Verb(101)  oprepos(2,27)}
+{ Verb(101) oprop(2,prepos=27)}
 { Verb(102) }
 { Verb(103) }
 { Verb(104) }
 { Verb(105) }
 { Verb(106) }
-{ Verb(107)  oprepos(2,22)}
+{ Verb(107) oprop(2,prepos=22)}
 { Verb(108) }
 { Verb(109) }
 { Verb(110) }
@@ -115,8 +115,8 @@
 { Verb(115) }
 { Verb(116) }
 { Verb(117) }
-{ Verb(118)  oprepos(1,22)}
-{ Verb(119)  }
+{ Verb(118) oprop(1,prepos=22)}
+{ Verb(119) }
 { Verb(120) }
 { Verb(121) }
 { Verb(122) }
@@ -128,7 +128,7 @@
 { Verb(128) }
 { Verb(129) }
 { Verb(130) }
-{ Verb(131)  oprepos(2,27)}
+{ Verb(131) oprop(2,prepos=27)}
 { Verb(132) }
 { Verb(133) }
 { Verb(134) }
@@ -147,7 +147,7 @@
 { Verb(147) }
 { Verb(148) }
 { Verb(149) }
-{ Verb(150)  oprepos(2,19) oprepos(3,18)}
+{ Verb(150) oprop(2,prepos=19) oprop(3,prepos=18)}
 { Verb(151) }
 { Verb(152) }
 { Verb(153) }
@@ -161,7 +161,7 @@
 { Verb(161) }
 { Verb(162) }
 { Verb(163) }
-{ Verb(164)  }
+{ Verb(164) }
 { Verb(165) }
 { Verb(166) }
 { Verb(167) }
@@ -185,7 +185,7 @@
 { Verb(185) }
 { Verb(186) }
 { Verb(187) }
-{ Verb(188)  oprepos(1,19) oprepos(2,18)}
+{ Verb(188) oprop(1,prepos=19) oprop(2,prepos=18)}
 { Verb(189) }
 { Verb(190) }
 { Verb(191) }
@@ -208,17 +208,17 @@
 { Verb(208) }
 { Verb(209) }
 { Verb(210) }
-{ Verb(211)  oprepos(1,4)}
+{ Verb(211) oprop(1,prepos=4)}
 { Verb(212) }
 { Verb(213) }
 { Verb(214) }
 { Verb(215) }
-{ Verb(216)  oprepos(1,26)}
+{ Verb(216) oprop(1,prepos=26)}
 { Verb(217) }
 { Verb(218) }
-{ Verb(219)  oprepos(2,4)}
+{ Verb(219) oprop(2,prepos=4)}
 { Verb(220) }
-{ Verb(221)  oprepos(2,4)}
+{ Verb(221) oprop(2,prepos=4)}
 { Verb(222) }
 { Verb(223) }
 { Verb(224) }
@@ -227,7 +227,7 @@
 { Verb(227) }
 { Verb(228) }
 { Verb(229) }
-{ Verb(230)  oprepos(1,4)}
+{ Verb(230) oprop(1,prepos=4)}
 { Verb(231) }
 { Verb(232) }
 { Verb(233) }
@@ -246,13 +246,13 @@
 { Verb(246) }
 { Verb(247) }
 { Verb(248) }
-{ Verb(249)  oprepos(2,18)}
-{ Verb(250)  oprepos(1,14)}
+{ Verb(249) oprop(2,prepos=18)}
+{ Verb(250) oprop(1,prepos=14)}
 { Verb(251) }
 { Verb(252) }
 { Verb(253) }
 { Verb(254) }
-{ Verb(1)  oprepos(1,26) datao(1,2) }
+{ Verb(1) oprop(1,prepos=26) }
 { Verb(256) }
 { Verb(257) }
 { Verb(258) }

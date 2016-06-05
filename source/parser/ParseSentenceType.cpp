@@ -3,7 +3,7 @@
 
 void ParseSentenceType::setBool(const ParserIO& io, Language& lang, std::string tag, bool value)
 {
-	if (tag=="neg")
+	if (tag=="neg" || tag == "Negate")
 	{
 		lang.Negate = value;
 	}
@@ -15,6 +15,15 @@ void ParseSentenceType::setBool(const ParserIO& io, Language& lang, std::string 
 		throw ParseException(std::string("Invalid bool-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());
 }
 
+void ParseSentenceType::setInt(const ParserIO& io, Language& lang, std::string tag, int value)
+{
+	if (tag=="punc" || tag=="Punctuation")
+	{
+		lang.Punctuation = value;
+	}
+	else
+		throw ParseException(std::string("Invalid int-tag \"") + tag + "\", while parsing " + name,io.getInput(),io.getCurPos());
+}
 
 bool ParseSentenceType::match(std::string name)
 {
