@@ -158,7 +158,7 @@ std::string de::createSentence()
 	while (SentenceString[SentenceString.length()-1]==' ')
 		SentenceString.pop_back();
 	
-	if (Conjunction && SubClause != NULL)
+	if (Conjunction && SubClause)
 	{
 		SentenceString += GetSubClause();
 	}

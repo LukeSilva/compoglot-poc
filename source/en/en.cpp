@@ -138,7 +138,7 @@ std::string en::createSentence()
 	}
 
 	//If a conjunction and subclause exists, create the subclause, and add it to the sentence.
-	if (SubClause!=NULL && Conjunction != 0)
+	if (SubClause && Conjunction != 0)
 	{
 		Sentence += GetSubClause() + " ";
 	}

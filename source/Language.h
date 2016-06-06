@@ -75,7 +75,7 @@ public:
 	int ExtVerb2;
 	int ExtVerb3;
 	bool Negate;
-	Language* SubClause;
+	std::shared_ptr<Language> SubClause;
 	bool Capital;
 	int Punctuation;
 	int Question;

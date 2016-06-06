@@ -88,7 +88,6 @@ void Language::NewSentence(){
 	ExtVerb1 = 0;
 	ExtVerb2 = 0;
 	ExtVerb3 = 0;
-	SubClause=NULL;
 	Conjunction=0;
 	NumFilledSubjects=-1;
 	Verb1=0;
