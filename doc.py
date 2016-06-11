@@ -2,7 +2,7 @@
 
 import json,os,subprocess
 
-languages = ["en","eo","de"]
+languages = ["en"]
 
 # Build the noun list documentation
 
@@ -34,9 +34,10 @@ VerbHTML.write("\n\n\n")
 for Verb in VerbObj["verbs"]:
 	VerbHTML.write("<tr>\n")
 	VerbHTML.write("<td>"+str(Verb["id"])+"</td>\n")
-	VerbHTML.write("<td>${LANG( Verb"+str(Verb["type"])+"("+str(Verb["id"])+") punc 0 )}</td>\n<td>")
-	for example in Verb["examples"]:
-		VerbHTML.write("${LANG( " + example + " )}<br/>")
+	VerbHTML.write("<td>$<LANG{ Verb"+str(Verb["type"])+"("+str(Verb["id"])+") st(1,punc=0) }></td>\n<td>")
+	if ("examples" in Verb):
+		for example in Verb["examples"]:
+			VerbHTML.write("$<LANG{ " + example + " }><br/>")
 	VerbHTML.write("</td>\n<td></td>\n</tr>\n\n")
 
 VerbHTML.write("\n\n\n")
@@ -47,6 +48,6 @@ VerbHTML.close()
 
 for lang in languages:
 	subprocess.call(["compoglot","file",lang,os.path.join("documentation","nounlist.compoglot.html"),os.path.join("documentation","nounlist."+lang+".html")])
-	#subprocess.call(["compoglot","file",lang,os.path.join("documentation","verblist.compoglot.html"),os.path.join("documentation","verblist."+lang+".html")])
+	subprocess.call(["compoglot","file",lang,os.path.join("documentation","verblist.compoglot.html"),os.path.join("documentation","verblist."+lang+".html")])
 
 

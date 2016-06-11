@@ -37,20 +37,12 @@ std::string Parser::parse(std::string langid, std::string cmd)
 	std::shared_ptr<Language> l = getLanguageFromStringID(langid);
 	l->NewSentence();
 	l->st = PRESENT_SIMPLE;
-	try
-	{
-		ParserIO p(cmd);
-		p.skipWhitespace("beginning of input");
-		
-		parse(p,*l);
 
-		return l->createSentence();
-	}
-	catch (ParseException& pe)
-	{
-		std::cerr << pe << std::endl;
-		return "";
-	}
+	ParserIO p(cmd);
+	p.skipWhitespace("beginning of input");
+
+	parse(p,*l);
+	return l->createSentence();
 
 }
 

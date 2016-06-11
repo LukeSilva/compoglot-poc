@@ -55,6 +55,14 @@ void ParseNoun::setGroup(ParserIO& io, Language& lang,std::string tag)
 		std::shared_ptr<Language> rlang = getLanguageFromStringID(lang.LangID);
 		Parser p;
 		p.parse(io,*rlang);
+
+		if (rlang->NumFilledSubjects==-1)
+		{
+			rlang->Subjects[0].ID = 14;
+			rlang->Subjects[0].IsPlural = n.IsPlural;
+			rlang->NumFilledSubjects = 0;
+		}
+		
 		n.ShouldUseRelativeClause = true;
 		n.RelativeClause = rlang;
 	}

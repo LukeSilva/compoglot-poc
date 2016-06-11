@@ -1,5 +1,6 @@
 #include "Language.h"
 #include "parser/Parser.h"
+#include "parser/ParseException.h"
 #include "settings.h"
 #include <string>
 #include <fstream>
@@ -44,12 +45,19 @@ int fileParse(int argc,char* argv[]){
 								}
 								Parser parser;
 								std::string output;
-								output = parser.parse(argv[2],input);
+
+								try{
+									output = parser.parse(argv[2],input);
+								}
+								catch(ParseException& e){
+									std::cerr << e;
+									return -1;
+								}
 								wFile << output;
-							}else wFile << "${LAN" << c;
-						else wFile << "${LA" << c;
-					else wFile << "${L" << c;
-				else wFile << "${" << c;
+							}else wFile << "$<LAN" << c;
+						else wFile << "$<LA" << c;
+					else wFile << "$<L" << c;
+				else wFile << "$<" << c;
 			else wFile << "$" << c;
 		}
 	}
