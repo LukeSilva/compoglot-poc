@@ -1,261 +1,261 @@
-{ Verb(1) datao(1,0) }
-{ Verb(2) datao(1,1) }
-{ Verb(3)  }
-{ Verb(4)  }
-{ Verb(5)  }
-{ Verb(6)  }
-{ Verb(7)  }
-{ Verb(8) datao(1,1) }
-{ Verb(9)  }
-{ Verb(10)  }
-{ Verb(11)  }
-{ Verb(12) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) }
-{ Verb(13) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) }
-{ Verb(9) datao(1,1) }
-{ Verb(15) datao(1,1) }
+{ Verb(1) oprop(1,data=0) }
+{ Verb(2) oprop(1,data=1) }
+{ Verb(3) }
+{ Verb(4) }
+{ Verb(5) }
+{ Verb(6) }
+{ Verb(7) }
+{ Verb(8) oprop(1,data=1) }
+{ Verb(9) }
+{ Verb(10) }
+{ Verb(11) }
+{ Verb(12) oprop(1,data=2,prepos=19) oprop(2,data=2,prepos=18) }
+{ Verb(13) oprop(1,data=2,prepos=19) oprop(2,data=2,prepos=18) }
+{ Verb(9) oprop(1,data=1) }
+{ Verb(15) oprop(1,data=1) }
 { Verb(16) }
-{ Verb(17) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) }
-{ Verb(18) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) }
-{ Verb(19) datao(1,1) oprepos(1,4) }
-{ Verb(20) datao(1,1) }
-{ Verb(21) datao(1,2) oprepos(1,26) }
-{ Verb(22) datao(1,2) oprepos(1,14) }
-{ Verb(23) datao(1,2) }
-{ Verb(24) datao(1,1) }
-{ Verb(25) datao(1,1) }
-{ Verb(26)  }
-{ Verb(27) datao(1,1) }
-{ Verb(28)  }
-{ Verb(13) datao(3,2) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) oprepos(3,14) oarticle(3,-1)  }
-{ Verb(30)  }
-{ Verb(31)  }
-{ Verb(32)  }
-{ Verb(33)  }
-{ Verb(34) oprepos(1,14) datao(1,2) }
-{ Verb(35)  }
-{ Verb(36)  }
-{ Verb(37)  }
-{ Verb(38)  }
-{ Verb(39) datao(1,1) }
-{ Verb(40) datao(1,1) }
-{ Verb(41) datao(1,1) }
-{ Verb(42) datao(1,1) }
-{ Verb(43) datao(1,1) }
-{ Verb(44) datao(1,1) }
-{ Verb(45) datao(1,1) oprepos(1,4)  }
-{ Verb(37) datao(1,1) }
-{ Verb(47) datao(1,1) }
-{ Verb(48) datao(1,1) }
-{ Verb(49) datao(1,1) }
-{ Verb(50) datao(1,1) }
-{ Verb(51)  }
-{ Verb(52) datao(1,1) }
+{ Verb(17) oprop(1,data=2,prepos=19) oprop(2,data=2,prepos=18) }
+{ Verb(18) oprop(1,data=2,prepos=19) oprop(2,data=2,prepos=18) }
+{ Verb(19) oprop(1,data=1,prepos=4) }
+{ Verb(20) oprop(1,data=1) }
+{ Verb(21) oprop(1,data=2,prepos=26) }
+{ Verb(22) oprop(1,data=2,prepos=14) }
+{ Verb(23) oprop(1,data=2) }
+{ Verb(24) oprop(1,data=1) }
+{ Verb(25) oprop(1,data=1) }
+{ Verb(26) }
+{ Verb(27) oprop(1,data=1) }
+{ Verb(28) }
+{ Verb(13) oprop(3,data=2,prepos=14,article=-1) oprop(1,data=2,prepos=19) oprop(2,data=2,prepos=18) }
+{ Verb(30) }
+{ Verb(31) }
+{ Verb(32) }
+{ Verb(33) }
+{ Verb(34) oprop(1,data=2,prepos=14) }
+{ Verb(35) }
+{ Verb(36) }
+{ Verb(37) }
+{ Verb(38) }
+{ Verb(39) oprop(1,data=1) }
+{ Verb(40) oprop(1,data=1) }
+{ Verb(41) oprop(1,data=1) }
+{ Verb(42) oprop(1,data=1) }
+{ Verb(43) oprop(1,data=1) }
+{ Verb(44) oprop(1,data=1) }
+{ Verb(45) oprop(1,data=1,prepos=4) }
+{ Verb(37) oprop(1,data=1) }
+{ Verb(47) oprop(1,data=1) }
+{ Verb(48) oprop(1,data=1) }
+{ Verb(49) oprop(1,data=1) }
+{ Verb(50) oprop(1,data=1) }
+{ Verb(51) }
+{ Verb(52) oprop(1,data=1) }
 { Verb(27) }
-{ Verb(54) obj(7(n(14,0,false,false,0,false,true,20,false)))  }
-{ Verb(55) obj(7(n(14,0,false,false,0,false,true,20,false))) datao(2,3) oprepos(2,46) }
-{ Verb(56) datao(1,1) }
-{ Verb(57) datao(1,1) }
+{ Verb(54) obj{7[{n(14,0,F,prepos=20)}]} }
+{ Verb(55) obj{7[{n(14,0,F,prepos=20)}]} oprop(2,data=3,prepos=46) }
+{ Verb(56) oprop(1,data=1) }
+{ Verb(57) oprop(1,data=1) }
 { Verb(58) }
 { Verb(59) }
 {}
 { Verb(61) }
-{ Verb(62) datao(1,2) oprepos(1,30) }
-{ Verb(63) datao(1,1) }
-{ Verb(64) datao(1,1) }
-{ Verb(65) datao(1,1) }
-{ Verb(66) datao(1,1) }
-{ Verb(67) datao(1,1) }
-{ Verb(68) datao(1,1) }
-{ Verb(69) datao(1,1) }
-{ Verb(70) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false))) }
-{ Verb(71) datao(1,1) }
-{ Verb(72) datao(1,1) }
-{ v1(70) v2(73) datao(1,1) }
-{ Verb(74) datao(1,1) }
-{ Verb(75) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false))) }
-{ Verb(76) datao(1,2) oprepos(1,14) }
-{ Verb(24) obj(7(n(14,0,false,false,0,false,true,44,false))) }
-{ Verb(78) datao(1,1) }
-{ Verb(79) datao(1,1) obj(7(n(14,0,false,false,-2,false,false,false)))  }
+{ Verb(62) oprop(1,data=2,prepos=30) }
+{ Verb(63) oprop(1,data=1) }
+{ Verb(64) oprop(1,data=1) }
+{ Verb(65) oprop(1,data=1) }
+{ Verb(66) oprop(1,data=1) }
+{ Verb(67) oprop(1,data=1) }
+{ Verb(68) oprop(1,data=1) }
+{ Verb(69) oprop(1,data=1) }
+{ Verb(70) oprop(1,data=1) obj{7[{n(14,0,F,prepos=44)}]} }
+{ Verb(71) oprop(1,data=1) }
+{ Verb(72) oprop(1,data=1) }
+{ v1(70) v2(73) oprop(1,data=1) }
+{ Verb(74) oprop(1,data=1) }
+{ Verb(75) oprop(1,data=1) obj{7[{n(14,0,F,prepos=44)}]} }
+{ Verb(76) oprop(1,data=2,prepos=14) }
+{ Verb(24) obj{7[{n(14,0,F,prepos=44)}]} }
+{ Verb(78) oprop(1,data=1) }
+{ Verb(79) oprop(1,data=1) obj{7[{n(14,-2,F)}]} }
 { Verb(80) }
-{ Verb(81) datao(1,1) obj(7(n(14,0,false,false,-2,false,false,false)))  datao(1,2) oprepos(2,26) }
-{  }
-{ Verb(81) datao(1,1) oprepos(1,27) }
+{ Verb(81) oprop(1,data=1) obj{7[{n(14,-2,F)}]} oprop(2,data=2,prepos=26) }
+{ }
+{ Verb(81) oprop(1,data=1,prepos=27) }
 { Verb(84) }
-{  }
-{ v1(70) v2(73) datao(1,1) }
-{ Verb(87) datao(1,1) }
-{ Verb(88) datao(1,1) }
-{ Verb(89) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false))) datao(2,1) oprepos(2,4) }
-{ Verb(90) datao(1,1) }
-{ Verb(91) datao(1,1) }
-{ Verb(92) datao(1,1) }
+{ }
+{ v1(70) v2(73) oprop(1,data=1) }
+{ Verb(87) oprop(1,data=1) }
+{ Verb(88) oprop(1,data=1) }
+{ Verb(89) oprop(1,data=1) obj{7[{n(14,0,F,prepos=10)}]} oprop(2,data=1,prepos=4) }
+{ Verb(90) oprop(1,data=1) }
+{ Verb(91) oprop(1,data=1) }
+{ Verb(92) oprop(1,data=1) }
 { Verb(93) }
-{ Verb(72) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false)))  }
-{ Verb(95) datao(1,1) obj(7(n(14,0,false,false,0,false,true,13,false)))  }
-{ Verb(73) datao(1,1) }
-{ Verb(2) datao(2,2) oprepos(2,36) obj(1(n(1234,0,false,false,0,false,false,false)))  }
-{ Verb(32) datao(1,1) }
-{ Verb(99) datao(1,1) }
-{ Verb(100) datao(1,1) }
-{ Verb(101) datao(1,1) datao(2,1) oprepos(2,27) }
-{ Verb(245) datao(1,1) }
+{ Verb(72) oprop(1,data=1) obj{7[{n(14,0,F,prepos=10)}]} }
+{ Verb(95) oprop(1,data=1) obj{7[{n(14,0,F,prepos=13)}]} }
+{ Verb(73) oprop(1,data=1) }
+{ Verb(2) oprop(2,data=2,prepos=36) obj{1[{n(1234,0,F)}]} }
+{ Verb(32) oprop(1,data=1) }
+{ Verb(99) oprop(1,data=1) }
+{ Verb(100) oprop(1,data=1) }
+{ Verb(101) oprop(1,data=1) oprop(2,data=1,prepos=27) }
+{ Verb(245) oprop(1,data=1) }
 { Verb(103) }
 { Verb(104) }
 { Verb(105) }
 { Verb(106) }
-{ Verb(107) obj(1(reflex())) oprepos(2,22) datao(2,1)  }
-{ Verb(108) datao(1,1) }
+{ Verb(107) oprop(1,reflex=T) oprop(2,data=1,prepos=22) }
+{ Verb(108) oprop(1,data=1) }
 { Verb(109) }
 { Verb(110) }
 { Verb(111) }
-{ Verb(112) datao(1,2) datao(2,1) }
-{ Verb(113) datao(1,1) }
+{ Verb(112) oprop(1,data=2) oprop(2,data=1) }
+{ Verb(113) oprop(1,data=1) }
 { Verb(114) }
 { Verb(115) }
 { Verb(116) }
-{ Verb(117) datao(1,1) }
-{ Verb(118) datao(1,2) oprepos(1,21) }
-{ Verb(119) datao(1,1) }
-{ Verb(120) datao(1,1) }
-{ Verb(121) datao(1,1) }
-{ Verb(122) datao(1,2) }
+{ Verb(117) oprop(1,data=1) }
+{ Verb(118) oprop(1,data=2,prepos=21) }
+{ Verb(119) oprop(1,data=1) }
+{ Verb(120) oprop(1,data=1) }
+{ Verb(121) oprop(1,data=1) }
+{ Verb(122) oprop(1,data=2) }
 { Verb(123) }
 { Verb(124) }
-{ Verb(125) datao(1,1) }
-{ Verb(126) datao(1,1) }
-{ Verb(127) datao(1,1) }
+{ Verb(125) oprop(1,data=1) }
+{ Verb(126) oprop(1,data=1) }
+{ Verb(127) oprop(1,data=1) }
 { Verb(128) }
-{ Verb(28) obj(1(reflex())) datao(2,2)  }
-} { Verb(72) obj(7(n(14,0,false,false,-2,false,false,false)))  }
-{ Verb(131) datao(1,1) oprepos(2,26) datao(2,1) }
-{ Verb(132) obj(7(n(14,0,false,false,0,false,true,44,false)))  }
-{ Verb(112) obj(7(n(14,0,false,false,-2,false,false,false)))  }
-{ Verb(134) datao(1,1) obj(7(n(14,0,false,false,0,false,true,12,false)))  }
-{ Verb(135) datao(1,1) }
+{ Verb(28) oprop(1,reflex=T) oprop(2,data=2) }
+{ Verb(72) obj{7[{n(14,-2,F)}]} }
+{ Verb(131) oprop(1,data=1) oprop(2,data=1,prepos=26) }
+{ Verb(132) obj{7[{n(14,0,F,prepos=44)}]} }
+{ Verb(112) obj{7[{n(14,-2,F)}]} }
+{ Verb(134) oprop(1,data=1) obj{7[{n(14,0,F,prepos=12)}]} }
+{ Verb(135) oprop(1,data=1) }
 { Verb(136) }
-{ Verb(137) datao(1,1) datao(2,1) obj(7(n(14,0,false,false,0,false,true,22,false)) 2(reflex()))  }
-{ Verb(134) datao(1,1) }
-{ Verb(139) datao(1,1) }
+{ Verb(137) oprop(1,data=1) oprop(2,data=1,reflex=T) obj{7[{n(14,0,F,prepos=22)}]} }
+{ Verb(134) oprop(1,data=1) }
+{ Verb(139) oprop(1,data=1) }
 { Verb(140) }
-{ Verb(141) datao(1,1) }
-{ Verb(142) datao(1,1) }
+{ Verb(141) oprop(1,data=1) }
+{ Verb(142) oprop(1,data=1) }
 { Verb(143) }
-{ Verb(144) datao(1,1) }
+{ Verb(144) oprop(1,data=1) }
 { Verb(145) }
-{ Verb(196) obj(7(n(14,0,false,false,0,false,true,10,false)))  }
-{ Verb(147) datao(1,1) }
-{ Verb(148) datao(1,1) }
-{ Verb(149) datao(1,1) }
-{ Verb(150) datao(2,2) oprepos(2,19) datao(3,2) oprepos(3,18) }
-{ Verb(151) datao(1,1) }
-{ Verb(152) datao(1,1) }
-{ Verb(153) datao(1,1) }
-{ Verb(154) datao(1,1) obj(7(n(14,0,false,false,0,false,true,20,false)))  }
-{ Verb(155) datao(1,1) obj(7(n(14,0,false,false,0,false,true,20,false)))  }
-{ Verb(156) datao(1,1) }
-{ Verb(157) obj(1(n(14,0,false,false,0,false,false,false) reflex()))  }
-{ Verb(112) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false)))  }
-{ Verb(159) datao(1,1) }
-{ Verb(160) datao(1,1) }
-{ Verb(161) datao(1,1) }
-{ Verb(162) datao(1,1) }
-{ Verb(163) datao(1,1) }
-{ Verb(164) datao(1,1) }
+{ Verb(196) obj{7[{n(14,0,F,prepos=10)}]} }
+{ Verb(147) oprop(1,data=1) }
+{ Verb(148) oprop(1,data=1) }
+{ Verb(149) oprop(1,data=1) }
+{ Verb(150) oprop(2,data=2,prepos=19) oprop(3,data=2,prepos=18) }
+{ Verb(151) oprop(1,data=1) }
+{ Verb(152) oprop(1,data=1) }
+{ Verb(153) oprop(1,data=1) }
+{ Verb(154) oprop(1,data=1) obj{7[{n(14,0,F,prepos=20)}]} }
+{ Verb(155) oprop(1,data=1) obj{7[{n(14,0,F,prepos=20)}]} }
+{ Verb(156) oprop(1,data=1) }
+{ Verb(157) obj{1[{n(14,0,F)}]} oprop(1,reflex=T) }
+{ Verb(112) oprop(1,data=1) obj{7[{n(14,0,F,prepos=10)}]} }
+{ Verb(159) oprop(1,data=1) }
+{ Verb(160) oprop(1,data=1) }
+{ Verb(161) oprop(1,data=1) }
+{ Verb(162) oprop(1,data=1) }
+{ Verb(163) oprop(1,data=1) }
+{ Verb(164) oprop(1,data=1) }
 { Verb(165) }
-{ Verb(166) datao(1,1) }
-{ Verb(167) datao(1,1) }
-{ Verb(168) datao(1,1) }
-{ Verb(169) datao(1,1) }
-{ Verb(170) datao(1,1) }
+{ Verb(166) oprop(1,data=1) }
+{ Verb(167) oprop(1,data=1) }
+{ Verb(168) oprop(1,data=1) }
+{ Verb(169) oprop(1,data=1) }
+{ Verb(170) oprop(1,data=1) }
 { Verb(59) }
-{ Verb(172) datao(1,1) }
-{ Verb(173) datao(1,1) }
-{ Verb(174) datao(1,1) }
-{ Verb(175) datao(1,1) }
-{ Verb(160) datao(1,1) }
-{ Verb(177) datao(1,1) }
-{ Verb(179) datao(1,1) }
-{ Verb(179) datao(1,1) }
-{ Verb(180) datao(1,1) }
-{ Verb(181) datao(1,1) obj(7(n(14,0,false,false,0,false,true,22,false)))  }
-} { Verb(182) datao(1,1) }
-{ Verb(183) datao(1,1) }
-{ Verb(184) datao(1,1) }
-{ Verb(185)  }
+{ Verb(172) oprop(1,data=1) }
+{ Verb(173) oprop(1,data=1) }
+{ Verb(174) oprop(1,data=1) }
+{ Verb(175) oprop(1,data=1) }
+{ Verb(160) oprop(1,data=1) }
+{ Verb(177) oprop(1,data=1) }
+{ Verb(179) oprop(1,data=1) }
+{ Verb(179) oprop(1,data=1) }
+{ Verb(180) oprop(1,data=1) }
+{ Verb(181) oprop(1,data=1) obj{7[{n(14,0,F,prepos=22)}]} }
+{ Verb(182) oprop(1,data=1) }
+{ Verb(183) oprop(1,data=1) }
+{ Verb(184) oprop(1,data=1) }
+{ Verb(185) }
 { Verb(186) }
-{ Verb(187) datao(1,1) }
-{ Verb(188) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) }
+{ Verb(187) oprop(1,data=1) }
+{ Verb(188) oprop(1,data=2,prepos=19) oprop(2,data=2,prepos=18) }
 { Verb(188) }
-{ Verb(190) datao(1,1) }
-{ Verb(191) datao(1,1) }
-{ Verb(192) datao(1,1) }
+{ Verb(190) oprop(1,data=1) }
+{ Verb(191) oprop(1,data=1) }
+{ Verb(192) oprop(1,data=1) }
 { Verb(193) }
 { Verb(194) }
 { Verb(195) }
-{ Verb(196) datao(1,1) }
-{ Verb(197) datao(1,1) }
-{ Verb(198) datao(1,1) }
-{ Verb(199) datao(1,1) }
+{ Verb(196) oprop(1,data=1) }
+{ Verb(197) oprop(1,data=1) }
+{ Verb(198) oprop(1,data=1) }
+{ Verb(199) oprop(1,data=1) }
 { Verb(200) }
-{ Verb(201) obj(7(n(14,0,false,false,0,false,true,10,false)))  }
-{ Verb(202) datao(1,1) }
-{ Verb(203) datao(1,1) }
+{ Verb(201) obj{7[{n(14,0,F,prepos=10)}]} }
+{ Verb(202) oprop(1,data=1) }
+{ Verb(203) oprop(1,data=1) }
 { Verb(204) }
 { Verb(205) }
 { Verb(206) }
 { Verb(207) }
-{ Verb(208) datao(1,1) }
-{ Verb(209) datao(1,1) }
-{ Verb(210) datao(1,1) }
-{ Verb(211) datao(1,2) oprepos(1,15) }
-{ Verb(212) datao(1,1) }
-{ Verb(213) datao(1,1) obj(1(reflex()))  }
-{ Verb(214) datao(1,2) datao(1,1) obj(7(n(14,0,false,false,0,false,true,36,false)))  }
-{ Verb(215)  }
-{ Verb(216) datao(1,1) }
-{ Verb(217) datao(1,1) }
-{ Verb(218) datao(1,1) }
-{ Verb(219) datao(1,1) datao(2,1) oprepos(2,4) }
-{ Verb(220) datao(1,1) }
-{ Verb(89) datao(1,1) datao(2,1) oprepos(2,4) }
-{ Verb(222) datao(1,1) obj(7(n(14,0,false,false,0,false,true,10,false)))  }
-{ Verb(223) datao(1,1) }
-{ Verb(223) datao(1,1) }
-{ Verb(225) datao(1,1) }
-{ Verb(226) datao(1,1) }
-{ Verb(227) datao(1,1) }
-{ Verb(228) datao(1,1) }
-{ Verb(229) datao(1,1) }
-{ Verb(226) datao(1,1) oprepos(1,4) }
+{ Verb(208) oprop(1,data=1) }
+{ Verb(209) oprop(1,data=1) }
+{ Verb(210) oprop(1,data=1) }
+{ Verb(211) oprop(1,data=2,prepos=15) }
+{ Verb(212) oprop(1,data=1) }
+{ Verb(213) oprop(1,data=1,reflex=T) }
+{ Verb(214) oprop(1,data=2) oprop(2,data=1) obj{7[{n(14,0,F,prepos=36)}]} }
+{ Verb(215) }
+{ Verb(216) oprop(1,data=1) }
+{ Verb(217) oprop(1,data=1) }
+{ Verb(218) oprop(1,data=1) }
+{ Verb(219) oprop(1,data=1) oprop(2,data=1,prepos=4) }
+{ Verb(220) oprop(1,data=1) }
+{ Verb(89) oprop(1,data=1) oprop(2,data=1,prepos=4) }
+{ Verb(222) oprop(1,data=1) obj{7[{n(14,0,F,prepos=10)}]} }
+{ Verb(223) oprop(1,data=1) }
+{ Verb(223) oprop(1,data=1) }
+{ Verb(225) oprop(1,data=1) }
+{ Verb(226) oprop(1,data=1) }
+{ Verb(227) oprop(1,data=1) }
+{ Verb(228) oprop(1,data=1) }
+{ Verb(229) oprop(1,data=1) }
+{ Verb(226) oprop(1,data=1,prepos=4) }
 {}
-{ Verb(232) datao(1,1) }
+{ Verb(232) oprop(1,data=1) }
 { Verb(233) }
 { Verb(234) }
 { Verb(235) }
-{ Verb(12) datao(1,2) oprepos(1,19) datao(2,2) oprepos(2,18) obj(7(n(14,0,false,false,0,false,true,20,false)))  }
-{ Verb(237) datao(1,1) }
-{ Verb(238) datao(1,1) }
-{ Verb(239) datao(1,1) }
-{ Verb(240) datao(1,1) }
-{ Verb(241) datao(1,0) }
-{ Verb(242) datao(1,2) }
-{ Verb(243) datao(1,1) }
-{ Verb(244) datao(1,1) }
-{ Verb(245) datao(1,1) obj(7(n(14,0,false,false,0,false,true,44,false)))  }
-{ Verb(246) datao(1,1) }
+{ Verb(12) oprop(1,data=2,prepos=19) oprop(2,data=2,prepos=18) obj{7[{n(14,0,F,prepos=20)}]} }
+{ Verb(237) oprop(1,data=1) }
+{ Verb(238) oprop(1,data=1) }
+{ Verb(239) oprop(1,data=1) }
+{ Verb(240) oprop(1,data=1) }
+{ Verb(241) oprop(1,data=0) }
+{ Verb(242) oprop(1,data=2) }
+{ Verb(243) oprop(1,data=1) }
+{ Verb(244) oprop(1,data=1) }
+{ Verb(245) oprop(1,data=1) obj{7[{n(14,0,F,prepos=44)}]} }
+{ Verb(246) oprop(1,data=1) }
 { Verb(247) }
 { Verb(248) }
-{ Verb(249) datao(1,1) datao(2,2) oprepos(2,18) }
-{ Verb(24) oprepos(1,14) datao(1,2) obj(7(n(14,0,false,false,0,false,false,false) adj(160)))  }
-{ Verb(33)  }
+{ Verb(249) oprop(1,data=1) oprop(2,data=2,prepos=18) }
+{ Verb(24) oprop(1,data=2,prepos=14) obj{7[{n(14,0,F) adj(160)}]} }
+{ Verb(33) }
 { Verb(252) }
-{ Verb(42) datao(1,1) }
-{ Verb(254) datao(1,1) }
-{ Verb(1) oprepos(1,26) datao(1,2)  }
+{ Verb(42) oprop(1,data=1) }
+{ Verb(254) oprop(1,data=1) }
+{ Verb(1) oprop(1,data=2,prepos=26) }
 { Verb(256) }
-{ Verb(257) datao(1,1) }
-{ Verb(258) datao(1,1) }
-{ Verb(259) datao(1,1) }
+{ Verb(257) oprop(1,data=1) }
+{ Verb(258) oprop(1,data=1) }
+{ Verb(259) oprop(1,data=1) }
 { Verb(260) }
 

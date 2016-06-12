@@ -2,7 +2,7 @@
 
 import json,os,subprocess
 
-languages = ["en"]
+languages = ["en","de"]
 
 # Build the noun list documentation
 
