@@ -1,261 +1,261 @@
 { Verb(1) }
-{ Verb(2) datao(1,1) }
-{ Verb(2) obj(7(n(70,0,false,false,0,false,false,false))) datao(7,1) }
+{ Verb(2) oprop(1,data=1) }
+{ Verb(2) obj{7[{n(70,0,F)}]} oprop(7,data=1) }
 { Verb(4) }
 { Verb(5) }
 { Verb(6) }
 { Verb(6) }
 { Verb(8) }
 { Verb(9) }
-{ Verb(5) datao(1,1) }
-{ Verb(8) datao(1,1) }
-{ Verb(12) oprepos(1,2) }
-{ Verb(13) oprepos(1,2) }
-{ Verb(9) datao(1,1) }
-{ Verb(15) datao(1,1) }
+{ Verb(5) oprop(1,data=1) }
+{ Verb(8) oprop(1,data=1) }
+{ Verb(12) oprop(1,prepos=2) }
+{ Verb(13) oprop(1,prepos=2) }
+{ Verb(9) oprop(1,data=1) }
+{ Verb(15) oprop(1,data=1) }
 { Verb(16) }
-{ Verb(17) oprepos(1,2) }
-{ Verb(18) oprepos(1,2) }
+{ Verb(17) oprop(1,prepos=2) }
+{ Verb(18) oprop(1,prepos=2) }
 { Verb(19) }
-{ Verb(20) datao(1,1) }
-{ Verb(21) oprepos(1,1) }
-{ Verb(22) oprepos(1,3) }
+{ Verb(20) oprop(1,data=1) }
+{ Verb(21) oprop(1,prepos=1) }
+{ Verb(22) oprop(1,prepos=3) }
 { Verb(23) }
-{ Verb(24) datao(1,1) }
-{ Verb(25) datao(1,1) }
-{ Verb(26) datao(1,1) }
-{ Verb(27) datao(1,1) }
+{ Verb(24) oprop(1,data=1) }
+{ Verb(25) oprop(1,data=1) }
+{ Verb(26) oprop(1,data=1) }
+{ Verb(27) oprop(1,data=1) }
 { Verb(28) }
-{ Verb(29) oprepos(1,2) }
+{ Verb(29) oprop(1,prepos=2) }
 { Verb(30) }
-{ Verb(31) datao(1,1) }
-{ Verb(32) datao(1,1) }
+{ Verb(31) oprop(1,data=1) }
+{ Verb(32) oprop(1,data=1) }
 { Verb(33) }
-{ Verb(34) oprepos(1,4) }
-{ Verb(35) datao(1,1) }
-{ Verb(36) datao(1,1) }
-{ Verb(37) datao(1,1) }
+{ Verb(34) oprop(1,prepos=4) }
+{ Verb(35) oprop(1,data=1) }
+{ Verb(36) oprop(1,data=1) }
+{ Verb(37) oprop(1,data=1) }
 { Verb(38) }
-{ Verb(39) datao(1,1) }
-{ Verb(40) datao(1,1) }
+{ Verb(39) oprop(1,data=1) }
+{ Verb(40) oprop(1,data=1) }
 { Verb(41) }
-{ Verb(42) datao(1,1) }
-{ Verb(43) datao(1,1) }
-{ Verb(44) datao(1,1) }
-{ Verb(45) oprepos(1,5) }
-{ Verb(46) datao(1,1) }
-{ Verb(47) datao(1,1) }
+{ Verb(42) oprop(1,data=1) }
+{ Verb(43) oprop(1,data=1) }
+{ Verb(44) oprop(1,data=1) }
+{ Verb(45) oprop(1,prepos=5) }
+{ Verb(46) oprop(1,data=1) }
+{ Verb(47) oprop(1,data=1) }
 { Verb(48) }
 { Verb(49) }
-{ Verb(50) datao(1,1) }
+{ Verb(50) oprop(1,data=1) }
 { Verb(51) }
-{ Verb(52) datao(1,1) }
+{ Verb(52) oprop(1,data=1) }
 { Verb(53) }
-{ Verb(54) datao(1,1) }
-{ Verb(55) datao(1,1) oprepos(2,6) }
-{ Verb(56) datao(1,1) }
-{ Verb(57) datao(1,1) }
+{ Verb(54) oprop(1,data=1) }
+{ Verb(55) oprop(1,data=1) oprop(2,prepos=6) }
+{ Verb(56) oprop(1,data=1) }
+{ Verb(57) oprop(1,data=1) }
 { Verb(58) }
-{ Verb(59) datao(1,1) }
-{  }
-{ Verb(61) datao(1,1) }
-{ Verb(62) oprepos(1,6) }
+{ Verb(59) oprop(1,data=1) }
+{ }
+{ Verb(61) oprop(1,data=1) }
+{ Verb(62) oprop(1,prepos=6) }
 { Verb(63) }
-{ Verb(64) datao(1,1) }
-{ Verb(65) datao(1,1) }
-{  }
-{ Verb(67) datao(1,1) }
+{ Verb(64) oprop(1,data=1) }
+{ Verb(65) oprop(1,data=1) }
+{ }
+{ Verb(67) oprop(1,data=1) }
 { Verb(68) }
-{ Verb(69) datao(1,1) }
-{ Verb(70) datao(1,1) }
-{ Verb(71) datao(1,1) }
-{ Verb(13) oprepos(1,2) }
-{ Verb(73) datao(1,1) }
-{ Verb(74) datao(1,1) }
-{ Verb(75) datao(1,1) }
-{ Verb(76) oprepos(1,3) }
+{ Verb(69) oprop(1,data=1) }
+{ Verb(70) oprop(1,data=1) }
+{ Verb(71) oprop(1,data=1) }
+{ Verb(13) oprop(1,prepos=2) }
+{ Verb(73) oprop(1,data=1) }
+{ Verb(74) oprop(1,data=1) }
+{ Verb(75) oprop(1,data=1) }
+{ Verb(76) oprop(1,prepos=3) }
 { Verb(77) }
 { Verb(78) }
-{ Verb(79) datao(1,1) }
+{ Verb(79) oprop(1,data=1) }
 { Verb(80) }
-{ Verb(81) datao(1,1) oprepos(2,7) }
-{  }
-{ Verb(83) oprepos(1,7) }
+{ Verb(81) oprop(1,data=1) oprop(2,prepos=7) }
+{ }
+{ Verb(83) oprop(1,prepos=7) }
 { Verb(84) }
-{  }
-{ Verb(73) datao(1,1) }
-{ Verb(87) datao(1,1) }
-{ Verb(88) datao(1,1) }
-{ Verb(89) datao(1,1) oprepos(2,5) }
+{ }
+{ Verb(73) oprop(1,data=1) }
+{ Verb(87) oprop(1,data=1) }
+{ Verb(88) oprop(1,data=1) }
+{ Verb(89) oprop(1,data=1) oprop(2,prepos=5) }
 { Verb(90) }
-{ Verb(91) datao(1,1) }
-{ Verb(92) datao(1,1) }
+{ Verb(91) oprop(1,data=1) }
+{ Verb(92) oprop(1,data=1) }
 { Verb(93) }
-{ Verb(94) datao(1,1) }
-{ Verb(95) datao(1,1) }
+{ Verb(94) oprop(1,data=1) }
+{ Verb(95) oprop(1,data=1) }
 { Verb(96) }
-{ Verb(97) datao(2,1) }
+{ Verb(97) oprop(2,data=1) }
 { Verb(98) }
-{ Verb(99) datao(1,1) }
-{ Verb(100) datao(1,1) }
-{ Verb(101) datao(1,1) }
-{ Verb(102) datao(1,1) }
-{ Verb(103) datao(1,1) }
-{ Verb(104) datao(1,1) }
-{  }
-{ Verb(106) datao(1,1) }
-{ Verb(107) oprepos(2,4) }
-{ Verb(108) datao(1,1) }
-{ Verb(109) datao(1,1) }
+{ Verb(99) oprop(1,data=1) }
+{ Verb(100) oprop(1,data=1) }
+{ Verb(101) oprop(1,data=1) }
+{ Verb(102) oprop(1,data=1) }
+{ Verb(103) oprop(1,data=1) }
+{ Verb(104) oprop(1,data=1) }
+{ }
+{ Verb(106) oprop(1,data=1) }
+{ Verb(107) oprop(2,prepos=4) }
+{ Verb(108) oprop(1,data=1) }
+{ Verb(109) oprop(1,data=1) }
 { Verb(110) }
 { Verb(111) }
-{ Verb(112) oprepos(1,2) datao(2,1) }
-{ Verb(113) datao(1,1) }
+{ Verb(112) oprop(1,prepos=2) oprop(2,data=1) }
+{ Verb(113) oprop(1,data=1) }
 { Verb(114) }
-{ Verb(115) datao(1,1) }
+{ Verb(115) oprop(1,data=1) }
 { Verb(116) }
 { Verb(117) }
-{ Verb(118) oprepos(1,4) }
-{ Verb(119) datao(1,1) }
-{ Verb(120) datao(1,1) }
+{ Verb(118) oprop(1,prepos=4) }
+{ Verb(119) oprop(1,data=1) }
+{ Verb(120) oprop(1,data=1) }
 { Verb(121) }
-{ Verb(122) datao(1,1) }
+{ Verb(122) oprop(1,data=1) }
 { Verb(123) }
 { Verb(124) }
-{ Verb(125) datao(1,1) }
-{ Verb(126) datao(1,1) }
-{ Verb(127) datao(1,1) }
+{ Verb(125) oprop(1,data=1) }
+{ Verb(126) oprop(1,data=1) }
+{ Verb(127) oprop(1,data=1) }
 { Verb(128) }
-{ Verb(129) datao(2,1) }
-{ Verb(130) datao(1,1) }
-{ Verb(131) datao(1,1) }
-{ Verb(132) datao(1,1) }
-{ Verb(133) datao(1,1) }
-{ Verb(134) datao(1,1) }
-{ Verb(135) datao(1,1) }
+{ Verb(129) oprop(2,data=1) }
+{ Verb(130) oprop(1,data=1) }
+{ Verb(131) oprop(1,data=1) }
+{ Verb(132) oprop(1,data=1) }
+{ Verb(133) oprop(1,data=1) }
+{ Verb(134) oprop(1,data=1) }
+{ Verb(135) oprop(1,data=1) }
 { Verb(136) }
-{ Verb(137) datao(1,1) }
-{ Verb(138) datao(1,1) }
-{ Verb(139) datao(1,1) }
+{ Verb(137) oprop(1,data=1) }
+{ Verb(138) oprop(1,data=1) }
+{ Verb(139) oprop(1,data=1) }
 { Verb(140) }
-{ Verb(141) datao(1,1) }
-{ Verb(142) datao(1,1) }
+{ Verb(141) oprop(1,data=1) }
+{ Verb(142) oprop(1,data=1) }
 { Verb(143) }
-{ Verb(144) datao(1,1) }
+{ Verb(144) oprop(1,data=1) }
 { Verb(145) }
 { Verb(146) }
-{ Verb(147) datao(1,1) }
+{ Verb(147) oprop(1,data=1) }
 { Verb(148) }
-{ Verb(149) datao(1,1) }
-{ Verb(150) datao(1,1) }
-{ Verb(151) datao(1,1) }
-{ Verb(152) datao(1,1) }
-{ Verb(153) datao(1,1) }
+{ Verb(149) oprop(1,data=1) }
+{ Verb(150) oprop(1,data=1) }
+{ Verb(151) oprop(1,data=1) }
+{ Verb(152) oprop(1,data=1) }
+{ Verb(153) oprop(1,data=1) }
 { Verb(154) }
-{ Verb(155) datao(1,1) }
-{ Verb(156) datao(1,1) }
-{ Verb(157) datao(1,1) }
-{ Verb(158) datao(1,1) }
-{ Verb(159) datao(1,1) }
-{ Verb(160) datao(1,1) }
-{ Verb(161) datao(1,1) }
-{ Verb(162) datao(1,1) }
+{ Verb(155) oprop(1,data=1) }
+{ Verb(156) oprop(1,data=1) }
+{ Verb(157) oprop(1,data=1) }
+{ Verb(158) oprop(1,data=1) }
+{ Verb(159) oprop(1,data=1) }
+{ Verb(160) oprop(1,data=1) }
+{ Verb(161) oprop(1,data=1) }
+{ Verb(162) oprop(1,data=1) }
 { Verb(163) }
-{ Verb(164) datao(1,1) }
+{ Verb(164) oprop(1,data=1) }
 { Verb(165) }
-{ Verb(166) datao(1,1) }
-{ Verb(167) datao(1,1) }
-{ Verb(168) datao(1,1) }
-{ Verb(169) datao(1,1) }
-{ Verb(170) datao(1,1) oprepos(2,4) }
-{ Verb(171) datao(1,1) }
-{ Verb(172) datao(1,1) }
-{ Verb(173) datao(1,1) }
+{ Verb(166) oprop(1,data=1) }
+{ Verb(167) oprop(1,data=1) }
+{ Verb(168) oprop(1,data=1) }
+{ Verb(169) oprop(1,data=1) }
+{ Verb(170) oprop(1,data=1) oprop(2,prepos=4) }
+{ Verb(171) oprop(1,data=1) }
+{ Verb(172) oprop(1,data=1) }
+{ Verb(173) oprop(1,data=1) }
 { Verb(174) }
-{ Verb(175) datao(1,1) }
-{  }
-{ Verb(177) datao(1,1) }
-{ Verb(178) datao(1,1) }
-{ Verb(178) datao(1,1) }
-{ Verb(180) datao(1,1) }
-{ Verb(181) datao(1,1) }
+{ Verb(175) oprop(1,data=1) }
+{ }
+{ Verb(177) oprop(1,data=1) }
+{ Verb(178) oprop(1,data=1) }
+{ Verb(178) oprop(1,data=1) }
+{ Verb(180) oprop(1,data=1) }
+{ Verb(181) oprop(1,data=1) }
 { Verb(182) }
 { Verb(183) }
-{ Verb(184) datao(1,1) }
+{ Verb(184) oprop(1,data=1) }
 { Verb(185) }
 { Verb(186) }
-{ Verb(187) datao(1,1) }
-{ Verb(188) oprepos(1,2) }
-{ Verb(188) oprepos(1,2) }
-{ Verb(190) datao(1,1) }
-{ Verb(191) datao(1,1) }
-{ Verb(192) datao(1,1) }
+{ Verb(187) oprop(1,data=1) }
+{ Verb(188) oprop(1,prepos=2) }
+{ Verb(188) oprop(1,prepos=2) }
+{ Verb(190) oprop(1,data=1) }
+{ Verb(191) oprop(1,data=1) }
+{ Verb(192) oprop(1,data=1) }
 { Verb(193) }
 { Verb(194) }
 { Verb(195) }
-{ Verb(196) datao(1,1) }
-{ Verb(197) datao(1,1) }
-{ Verb(198) datao(1,1) }
-{ Verb(199) datao(1,1) }
+{ Verb(196) oprop(1,data=1) }
+{ Verb(197) oprop(1,data=1) }
+{ Verb(198) oprop(1,data=1) }
+{ Verb(199) oprop(1,data=1) }
 { Verb(200) }
 { Verb(201) }
-{ Verb(202) datao(1,1) }
-{ Verb(203) datao(1,1) }
+{ Verb(202) oprop(1,data=1) }
+{ Verb(203) oprop(1,data=1) }
 { Verb(204) }
 { Verb(205) }
 { Verb(206) }
-{ Verb(207) datao(1,1) }
-{ Verb(208) datao(1,1) }
-{ Verb(209) datao(1,1) }
+{ Verb(207) oprop(1,data=1) }
+{ Verb(208) oprop(1,data=1) }
+{ Verb(209) oprop(1,data=1) }
 { Verb(210) }
-{ Verb(211) datao(1,1) }
-{ Verb(212) datao(1,1) }
+{ Verb(211) oprop(1,data=1) }
+{ Verb(212) oprop(1,data=1) }
 { Verb(213) }
-{ Verb(214) oprepos(1,2) datao(2,1) }
+{ Verb(214) oprop(1,prepos=2) oprop(2,data=1) }
 { Verb(215) }
-{ Verb(216) oprepos(1,7) }
-{ Verb(217) datao(1,1) }
-{ Verb(218) datao(1,1) }
-{ Verb(219) oprepos(2,5) }
-{ Verb(220) datao(1,1) }
-{ Verb(219) oprepos(2,5) }
-{ Verb(222) datao(1,1) }
-{ Verb(223) datao(1,1) }
-{ Verb(224) datao(1,1) }
-{ Verb(225) datao(1,1) }
-{ Verb(226) datao(1,1) }
-{ Verb(227) datao(1,1) }
-{ Verb(228) datao(1,1) }
-{ Verb(229) datao(1,1) }
-{ Verb(230) oprepos(1,5) }
-{  }
-{ Verb(232) datao(1,1) }
+{ Verb(216) oprop(1,prepos=7) }
+{ Verb(217) oprop(1,data=1) }
+{ Verb(218) oprop(1,data=1) }
+{ Verb(219) oprop(2,prepos=5) }
+{ Verb(220) oprop(1,data=1) }
+{ Verb(219) oprop(2,prepos=5) }
+{ Verb(222) oprop(1,data=1) }
+{ Verb(223) oprop(1,data=1) }
+{ Verb(224) oprop(1,data=1) }
+{ Verb(225) oprop(1,data=1) }
+{ Verb(226) oprop(1,data=1) }
+{ Verb(227) oprop(1,data=1) }
+{ Verb(228) oprop(1,data=1) }
+{ Verb(229) oprop(1,data=1) }
+{ Verb(230) oprop(1,prepos=5) }
+{ }
+{ Verb(232) oprop(1,data=1) }
 { Verb(233) }
 { Verb(234) }
 { Verb(235) }
 { Verb(236) }
-{ Verb(237) datao(1,1) }
-{ Verb(238) datao(1,1) }
-{ Verb(239) datao(1,1) }
-{ Verb(240) datao(1,1) }
-{ Verb(241) datao(1,1) }
+{ Verb(237) oprop(1,data=1) }
+{ Verb(238) oprop(1,data=1) }
+{ Verb(239) oprop(1,data=1) }
+{ Verb(240) oprop(1,data=1) }
+{ Verb(241) oprop(1,data=1) }
 { Verb(242) }
-{ Verb(243) datao(1,1) }
-{ Verb(244) datao(1,1) }
-{  }
-{ Verb(246) datao(1,1) }
+{ Verb(243) oprop(1,data=1) }
+{ Verb(244) oprop(1,data=1) }
+{ }
+{ Verb(246) oprop(1,data=1) }
 { Verb(247) }
-{ Verb(248) datao(1,1) }
-{ Verb(249) datao(1,1) oprepos(2,8) }
-{ Verb(250) datao(1,1) }
+{ Verb(248) oprop(1,data=1) }
+{ Verb(249) oprop(1,data=1) oprop(2,prepos=8) }
+{ Verb(250) oprop(1,data=1) }
 { Verb(251) }
-{ Verb(252) datao(1,1) }
-{ Verb(253) datao(1,1) }
-{ Verb(254) datao(1,1) }
-{  }
-{ Verb(256) datao(1,1) }
-{ Verb(257) datao(1,1) }
-{ Verb(258) datao(1,1) }
+{ Verb(252) oprop(1,data=1) }
+{ Verb(253) oprop(1,data=1) }
+{ Verb(254) oprop(1,data=1) }
+{ }
+{ Verb(256) oprop(1,data=1) }
+{ Verb(257) oprop(1,data=1) }
+{ Verb(258) oprop(1,data=1) }
 { Verb(259) }
 { Verb(260) }
 
