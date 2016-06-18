@@ -5,7 +5,7 @@
 #include "ParseObjList.h"
 
 
-ParseObject::ParseObject()
+ParseObject::ParseObject() : ParseGroup("ObjGroup")
 {
 	for (int i = 0; i < 8; ++i)
 		addElement(new ParseObjList(i));

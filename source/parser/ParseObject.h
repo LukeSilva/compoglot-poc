@@ -7,6 +7,6 @@
 class ParseObject: public ParseGroup
 {
 public:
-	ParseObject() : ParseGroup("GroupObj");
+	ParseObject();
 	bool match(std::string tag);
 };
