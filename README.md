@@ -3,7 +3,8 @@ Compoglot is a tool that allows developers to easily create localizations in a v
 
 
 ## Can I see an example?
-![Compoglot Example](http://i.imgur.com/ger2qzy.png)
+![Compoglot Example](http://i.imgur.com/HlDOhj7.png)
+
 Note that the compoglot code doesn't change in all of the examples, only the language name.
 
 
