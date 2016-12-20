@@ -1,5 +1,12 @@
+
+#THIS REPOSITORY IS A PROOF OF CONCEPT
+
+This repository served as a testing ground for this idea, to find out whether it would, or would not work. This project is now being properly redesigned, and completely rewritten at: https://github.com/CoolAs/compoglot
+
 ## What is Compoglot?
-Compoglot is a tool that allows developers to easily create localizations in a variety of different languages without necessarily knowing them. Compoglot uses a programming language as it's input which restricts the user to a vocabulary and grammar that is common between the supported output languages. As this programming language is explicit and without ambiguities, the localizations created by Compoglot are generally quite accurate.
+Compoglot defines a subset of natural language that is common between a variety of different natural languages.  Perfect machine translations can be made from this common subset into these natural languages with the compoglot tool, allowing developers to create localisations for a variety of different languages, without knowing every single language that they wish to target.
+
+The compoglot language is extremely explicit. It has separate definitions in its language for every separate meaning. This means that it has at least two different translations for the English word "glass", one for the material (The window is made of glass), and one for the drinking instrument (I drink out of a glass). As these two different meanings may have different words or spellings related to them in different languages, they have different entries in the compoglot language. This (along with many other explicit features) allows for accurate machine translation from compoglot's language to a natural language.
 
 
 ## Can I see an example?
