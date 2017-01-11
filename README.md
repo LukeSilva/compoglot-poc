@@ -1,7 +1,7 @@
 
 #THIS REPOSITORY IS A PROOF OF CONCEPT
 
-This repository served as a testing ground for this idea, to find out whether it would, or would not work. This project is now being properly redesigned, and completely rewritten at: https://github.com/CoolAs/compoglot
+This repository served as a testing ground for this idea, to find out whether it would, or would not work. This project is now being properly redesigned, and completely rewritten.
 
 ## What is Compoglot?
 Compoglot defines a subset of natural language that is common between a variety of different natural languages.  Perfect machine translations can be made from this common subset into these natural languages with the compoglot tool, allowing developers to create localisations for a variety of different languages, without knowing every single language that they wish to target.
